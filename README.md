@@ -26,3 +26,6 @@ Please, report any problems that you find on the projects integrated
 issue tracker. If you've added some improvements and you want them
 included upstream don't hesitate to send me a patch or even better - a
 GitHub pull request.
+
+# Contributors
+  * Ranko Radonić
