@@ -421,9 +421,8 @@ static char *gnus-pointer[] = {
           '(icompletep-nb-candidates ((t (:foreground "#AFD8AF")))) ; zenburn-green+3
           '(icompletep-keys ((t (:foreground "#CC9393")))) ; zenburn-red
 
-          `(isearch ((t (:foreground ,zenburn-fg :background "#506070"))))
-          `(isearch-lazy-highlight
-            ((t (:foreground ,zenburn-fg :background "#1e2320" :weight normal))))
+          `(isearch ((t (:background "#668b8b" :foreground ,zenburn-fg :underline nil))))
+          `(lazy-highlight ((t (:background "#506070" :foreground ,zenburn-fg :underline nil))))
 
           '(mtorus-highlight ((t (:inherit zenburn-highlight-bluish))))
           '(mtorus-notify-highlight ((t (:inherit zenburn-primary-1))))
