@@ -519,6 +519,26 @@ static char *gnus-pointer[] = {
           '(diff-context ((t (:inherit font-lock-comment))))
           '(diff-refine-change ((t (:inherit zenburn-background-2))))
 
+          `(ediff-current-diff-A ((t (:background "#495766" :foreground ,zenburn-fg))))
+          `(ediff-current-diff-Ancestor ((t (:background "#495766" :foreground ,zenburn-fg))))
+          `(ediff-current-diff-B ((t (:background "#495766" :foreground ,zenburn-fg))))
+          `(ediff-current-diff-C ((t (:background "#495766" :foreground ,zenburn-fg))))
+
+          `(ediff-even-diff-A ((t (:background ,zenburn-bg+1))))
+          `(ediff-even-diff-Ancestor ((t (:background ,zenburn-bg+1))))
+          `(ediff-even-diff-B ((t (:background ,zenburn-bg+1))))
+          `(ediff-even-diff-C ((t (:background ,zenburn-bg+1))))
+
+          `(ediff-odd-diff-A ((t (:background ,zenburn-bg+1))))
+          `(ediff-odd-diff-Ancestor ((t (:background ,zenburn-bg+1))))
+          `(ediff-odd-diff-B ((t (:background ,zenburn-bg+1))))
+          `(ediff-odd-diff-C ((t (:background ,zenburn-bg+1))))
+
+          `(ediff-fine-diff-A ((t (:background "#668b8b"))))
+          `(ediff-fine-diff-Ancestor ((t (:background "#668b8b" :foreground ,zenburn-fg))))
+          `(ediff-fine-diff-B ((t (:background "#668b8b" :foreground ,zenburn-fg))))
+          `(ediff-fine-diff-C ((t (:background "#668b8b" :foreground ,zenburn-fg))))
+
           `(emms-pbi-song ((t (:foreground ,zenburn-yellow))))
           '(emms-pbi-current ((t (:inherit zenburn-primary-1))))
           '(emms-pbi-mark-marked ((t (:inherit zenburn-primary-2))))
