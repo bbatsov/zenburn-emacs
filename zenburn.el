@@ -290,6 +290,8 @@ static char *gnus-pointer[] = {
           '(font-lock-warning
             ((t (:inherit zenburn-highlight-alerting))))
 
+          '(sh-heredoc ((t (:inherit font-lock-string))))
+
           '(fixme-face ((t (:foreground "#dcdccc" :background "#3f3f3f"
                                         :weight bold :box nil)))) ; Colours taken from vim ":hl Todo"
 
