@@ -398,14 +398,13 @@ static char *gnus-pointer[] = {
           `(secondary-selection ((t (:foreground nil :background "#506070"))))
 
           '(trailing-whitespace ((t (:inherit font-lock-warning))))
-          '(highlight ((t (:underline t))))
+          '(highlight ((t (:background "#506070"))))
           '(paren ((t (:inherit zenburn-lowlight-1))))
           '(show-paren-mismatch ((t (:inherit font-lock-warning))))
           `(show-paren-match ((t (:foreground ,zenburn-blue-1 :underline t))))
           '(match ((t (:weight bold))))
 
-          `(button ((t (:foreground ,zenburn-yellow :background "#506070"
-                                    :weight bold :underline t))))
+          `(button ((t (:foreground ,zenburn-yellow :underline t))))
 
           `(cursor ((t (:background "#aaaaaa" :foreground nil))))
           '(hover-highlight ((t (:underline t :foreground "#f8f893"))))
