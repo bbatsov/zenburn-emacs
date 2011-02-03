@@ -535,7 +535,7 @@ static char *gnus-pointer[] = {
           `(ediff-odd-diff-B ((t (:background ,zenburn-bg+1))))
           `(ediff-odd-diff-C ((t (:background ,zenburn-bg+1))))
 
-          `(ediff-fine-diff-A ((t (:background "#668b8b"))))
+          `(ediff-fine-diff-A ((t (:background "#668b8b" :foreground ,zenburn-fg))))
           `(ediff-fine-diff-Ancestor ((t (:background "#668b8b" :foreground ,zenburn-fg))))
           `(ediff-fine-diff-B ((t (:background "#668b8b" :foreground ,zenburn-fg))))
           `(ediff-fine-diff-C ((t (:background "#668b8b" :foreground ,zenburn-fg))))
@@ -877,6 +877,10 @@ static char *gnus-pointer[] = {
           '(outline-1 ((t (:inherit outline-2 :height 1.0))))
 
           '(setnu-line-number ((t (:inherit zenburn-lowlight-2))))
+
+          `(smerge-mine ((t (:inherit font-lock-default-face))))
+          `(smerge-other ((t (:inherit font-lock-default-face))))
+          `(smerge-refined-change ((t (:background "#668b8b" :foreground ,zenburn-fg))))
 
           '(speedbar-button ((t (:inherit zenburn-primary-1))))
           '(speedbar-file ((t (:inherit zenburn-primary-2))))
