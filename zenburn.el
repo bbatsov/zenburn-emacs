@@ -145,13 +145,8 @@ to values."
   '(unless (zenburn-format-spec-works-p)
      (zenburn-define-format-spec)))
 
-(setq-default mode-line-buffer-identification
-              (list (propertize "%12b" 'face
-                                (list :weight 'bold
-                                      :foreground zenburn-yellow))))
-(setq-default mode-line-frame-identification "")
 (setq-default erc-mode-line-format
-              (concat (propertize "%t" 'face
+              (concat (propertize "%S" 'face
                                   (list :weight 'bold
                                         :foreground zenburn-yellow))
                       " %a"))
@@ -505,6 +500,8 @@ static char *gnus-pointer[] = {
             ((t (:weight bold :underline t))))
           '(custom-variable-tag
             ((t (:inherit zenburn-primary-2))))
+
+          `(mode-line-buffer-id ((t (:foreground ,zenburn-yellow :weight bold))))
 
           '(dictionary-button ((t (:inherit fancy-widget-button))))
           '(dictionary-reference ((t (:inherit zenburn-primary-1))))

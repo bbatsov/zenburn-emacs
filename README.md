@@ -29,3 +29,4 @@ GitHub pull request.
 
 # Contributors
   * Ranko Radonić
+  * Dr. Mark A. Friedman
