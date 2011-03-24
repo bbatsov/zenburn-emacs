@@ -19,6 +19,7 @@ Zenburn depends on the color-theme package, so you should have it
 installed. After that just put this in your .emacs(or equivalent):
 
 `(require 'zenburn)`
+`(zenburn)`
 
 # Bugs & Improvements #
 
