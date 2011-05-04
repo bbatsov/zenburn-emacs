@@ -782,7 +782,7 @@ static char *gnus-pointer[] = {
           `(org-special-keyword ((t (:foreground ,zenburn-yellow-1))))
           `(org-table ((t (:foreground ,zenburn-green+2))))
           '(org-tag ((t (:bold t :weight bold))))
-          `(org-time-grid ((t (:foreground ,zenburn-orange+1))))
+          `(org-time-grid ((t (:foreground ,zenburn-orange))))
           `(org-todo ((t (:bold t :foreground ,zenburn-red :weight bold))))
           '(org-upcoming-deadline ((t (:inherit font-lock-keyword-face))))
           `(org-warning ((t (:bold t :foreground ,zenburn-red :weight bold))))
@@ -808,7 +808,7 @@ static char *gnus-pointer[] = {
           '(speedbar-directory ((t (:inherit zenburn-primary-5))))
           '(speedbar-tag ((t (:inherit font-lock-function-name))))
           '(speedbar-highlight ((t (:underline t))))
-          
+
           ;; sunrise commander
           '(sr-active-path-face ((t (:inherit zenburn-primary-1))))
           '(sr-alt-marked-dir-face ((t (:inherit zenburn-highlight-subtle :bold))))
