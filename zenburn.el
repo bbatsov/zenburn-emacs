@@ -115,9 +115,11 @@
      (isearch ((t (:foreground ,zenburn-yellow))))
      (menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
      (minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
+     (header-line ((t (:background ,zenburn-bg-1
+                                :box (:color ,zenburn-bg+2 :line-width 2)))))
      (mode-line
       ((t (:foreground ,zenburn-green+1 :background ,zenburn-bg-1))))
-     (mode-line-buffer-id ((t (:foreground ,zenburn-fg))))
+     (mode-line-buffer-id ((t (:foreground ,zenburn-yellow :weight bold))))
      (mode-line-inactive
       ((t (:foreground ,zenburn-green-1  :background ,zenburn-bg-1))))
      (region ((t (:background ,zenburn-bg-1))))
@@ -194,6 +196,11 @@
 
      ;; hl-line-mode
      (hl-line-face ((t (:background ,zenburn-bg-1))))
+     
+     ;; ido-mode
+     (ido-first-match ((t (:foreground ,zenburn-yellow :weight bold))))
+     (ido-only-match ((t (:foreground ,zenburn-orange :weight bold))))
+     (ido-subdir ((t (:foreground ,zenburn-yellow))))
 
      ;; magit
      (magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
