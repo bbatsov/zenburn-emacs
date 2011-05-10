@@ -109,7 +109,7 @@
      (escape-glyph-face ((t (:foreground ,zenburn-red))))
      (fringe ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
      (header-line ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
-     (highlight ((t (:background ,zenburn-bg-1))))
+     (highlight ((t (:background ,zenburn-bg+1))))
      (isearch ((t (:foreground ,zenburn-yellow))))
      (menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
      (minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
@@ -119,7 +119,7 @@
      (mode-line-inactive
       ((t (:foreground ,zenburn-fg  :background ,zenburn-bg-1))))
      (region ((t (:background ,zenburn-bg-1))))
-     (secondary-selection ((t (:background ,zenburn-bg-1))))
+     (secondary-selection ((t (:background ,zenburn-bg+2))))
      (trailing-whitespace ((t (:foreground ,zenburn-red))))
      (vertical-border ((t (:foreground ,zenburn-fg))))
 
@@ -127,9 +127,9 @@
      (diff-added ((t (:foreground ,zenburn-green))))
      (diff-changed ((t (:foreground ,zenburn-yellow))))
      (diff-removed ((t (:foreground ,zenburn-red))))
-     (diff-header ((t (:background ,zenburn-bg))))
+     (diff-header ((t (:background ,zenburn-bg+1))))
      (diff-file-header
-      ((t (:background ,zenburn-bg :foreground ,zenburn-fg :bold t))))
+      ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))))
 
      ;; font lock
      (font-lock-builtin-face ((t (:foreground ,zenburn-blue))))
@@ -149,8 +149,80 @@
 
      ;;; external
 
+     ;; erc
+     (erc-action-face ((t (:inherit erc-default))))
+     (erc-bold-face ((t (:weight bold))))
+     (erc-current-nick-face ((t (:foreground ,zenburn-yellow :weight bold))))
+     (erc-dangerous-host-face ((t (:inherit font-lock-warning))))
+     (erc-default-face ((t (:foreground ,zenburn-fg))))
+     (erc-direct-msg-face ((t (:inherit erc-default))))
+     (erc-error-face ((t (:inherit font-lock-warning))))
+     (erc-fool-face ((t (:inherit erc-default))))
+     (erc-highlight-face ((t (:inherit hover-highlight))))
+     (erc-input-face ((t (:foreground ,zenburn-yellow))))
+     (erc-keyword-face ((t (:foreground ,zenburn-yellow :weight bold))))
+     (erc-nick-default-face ((t (:weigth bold))))
+     (erc-nick-msg-face ((t (:inherit erc-default))))
+     (erc-notice-face ((t (:foreground ,zenburn-green))))
+     (erc-pal-face ((t (:foreground ,zenburn-orange :weight bold))))
+     (erc-prompt-face ((t (:foreground ,zenburn-orange :weight bold))))
+     (erc-timestamp-face ((t (:foreground ,zenburn-green+1))))
+     (erc-underline-face ((t (:underline t))))
+
      ;; hl-line-mode
      (hl-line-face ((t (:background ,zenburn-bg-1))))
+
+     ;; mew
+     (mew-face-header-subject ((t (:foreground ,zenburn-orange))))
+     (mew-face-header-from ((t (:foreground ,zenburn-yellow))))
+     (mew-face-header-date ((t (:foreground ,zenburn-green))))
+     (mew-face-header-to ((t (:foreground ,zenburn-red))))
+     (mew-face-header-key ((t (:foreground ,zenburn-green))))
+     (mew-face-header-private ((t (:foreground ,zenburn-green))))
+     (mew-face-header-important ((t (:foreground ,zenburn-blue))))
+     (mew-face-header-marginal ((t (:foreground ,zenburn-fg :weight bold))))
+     (mew-face-header-warning ((t (:foreground ,zenburn-red))))
+     (mew-face-header-xmew ((t (:foreground ,zenburn-green))))
+     (mew-face-header-xmew-bad ((t (:foreground ,zenburn-red))))
+     (mew-face-body-url ((t (:foreground ,zenburn-orange))))
+     (mew-face-body-comment ((t (:foreground ,zenburn-fg :slant italic))))
+     (mew-face-body-cite1 ((t (:foreground ,zenburn-green))))
+     (mew-face-body-cite2 ((t (:foreground ,zenburn-blue))))
+     (mew-face-body-cite3 ((t (:foreground ,zenburn-orange))))
+     (mew-face-body-cite4 ((t (:foreground ,zenburn-yellow))))
+     (mew-face-body-cite5 ((t (:foreground ,zenburn-red))))
+     (mew-face-mark-review ((t (:foreground ,zenburn-blue))))
+     (mew-face-mark-escape ((t (:foreground ,zenburn-green))))
+     (mew-face-mark-delete ((t (:foreground ,zenburn-red))))
+     (mew-face-mark-unlink ((t (:foreground ,zenburn-yellow))))
+     (mew-face-mark-refile ((t (:foreground ,zenburn-green))))
+     (mew-face-mark-unread ((t (:foreground ,zenburn-red-2))))
+     (mew-face-eof-message ((t (:foreground ,zenburn-green))))
+     (mew-face-eof-part ((t (:foreground ,zenburn-yellow))))
+
+     ;; nav
+     (nav-face-heading ((t (:foreground ,zenburn-yellow))))
+     (nav-face-button-num ((t (:foreground ,zenburn-cyan))))
+     (nav-face-dir ((t (:foreground ,zenburn-green))))
+     (nav-face-hdir ((t (:foreground ,zenburn-red))))
+     (nav-face-file ((t (:foreground ,zenburn-fg))))
+     (nav-face-hfile ((t (:foreground ,zenburn-red-4))))
+
+     ;; rpm-mode
+     (rpm-spec-dir-face ((t (:foreground ,zenburn-green))))
+     (rpm-spec-doc-face ((t (:foreground ,zenburn-green))))
+     (rpm-spec-ghost-face ((t (:foreground ,zenburn-red))))
+     (rpm-spec-macro-face ((t (:foreground ,zenburn-yellow))))
+     (rpm-spec-obsolete-tag-face ((t (:foreground ,zenburn-red))))
+     (rpm-spec-package-face ((t (:foreground ,zenburn-red))))
+     (rpm-spec-section-face ((t (:foreground ,zenburn-yellow))))
+     (rpm-spec-tag-face ((t (:foreground ,zenburn-blue))))
+     (rpm-spec-var-face ((t (:foreground ,zenburn-red))))
+
+     ;; show-paren
+     (show-paren-mismatch ((t (:inherit font-lock-warning))))
+     (show-paren-match ((t (:foreground ,zenburn-blue-1 :weight bold))))
+
      )))
 
 (defalias 'zenburn #'color-theme-zenburn)
