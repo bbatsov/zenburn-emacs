@@ -3,11 +3,11 @@
 ;; Copyright (C) 2011 Bozhidar Batsov
 
 ;; Author: Bozhidar Batsov <bozhidar.batsov [at] gmail.com>
-;; Keywords: convenience, emulations
+;; Keywords: color, theme, zenburn
 ;; X-URL: http://github.com/bbatsov/zenburn-emacs
 ;; URL: http://github.com/bbatsov/zenburn-emacs
 ;; EmacsWiki: ColorThemeZenburn
-;; Version: 1.0
+;; Version: 0.1
 ;; Revision: $Rev$ ($LastChangedDate$)
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -29,7 +29,7 @@
 ;; the color-theme package. There exists one other version of the
 ;; theme by Daniel Brockman. Mine version was originally based on it,
 ;; but it was in such a disarray that I decided to rewrite it from
-;; scratch in a more maintainable manner (hopefully). 
+;; scratch in a more maintainable manner (hopefully).
 ;;
 ;;; Installation:
 ;;
@@ -39,6 +39,8 @@
 ;; Don't forget that the theme requires the presence of the
 ;; color-theme package in your Emacs load-path.
 ;;; Bugs
+;;
+;; None that I'm aware of.
 ;;
 ;;; Credits
 ;;
@@ -214,12 +216,12 @@
 
      ;; org-mode
      (org-agenda-date-today-face
-       ((t (:foreground "white" :slant italic :weight bold))) t)
+      ((t (:foreground "white" :slant italic :weight bold))) t)
      (org-agenda-structure-face
-       ((t (:inherit font-lock-comment-face))))
+      ((t (:inherit font-lock-comment-face))))
      (org-archived-face ((t (:foreground ,zenburn-fg :weight bold))))
      (org-checkbox-face ((t (:background ,zenburn-bg+2 :foreground "white"
-                                     :box (:line-width 1 :style released-button)))))
+                                         :box (:line-width 1 :style released-button)))))
      (org-date-face ((t (:foreground ,zenburn-blue :underline t))))
      (org-deadline-announce-face ((t (:foreground ,zenburn-red-1))))
      (org-done-face ((t (:bold t :weight bold :foreground ,zenburn-green+3))))
@@ -280,11 +282,5 @@
                              "Bozhidar Batsov <bozhidar.batsov@gmail.com"))
 
 (provide 'zenburn)
-
-;; Local Variables:
-;; time-stamp-format: "%:y-%02m-%02d %02H:%02M"
-;; time-stamp-start: "Updated: "
-;; time-stamp-end: "$"
-;; End:
 
 ;;; zenburn.el ends here.
