@@ -28,7 +28,7 @@ installed. After that just put this in your .emacs(or equivalent):
 
 if you want to use the new Zenburn or 
 
-`(require 'zenburn-legacy)
+`(require 'zenburn-legacy)`
 
 if you wish to use the legacy version. 
 
