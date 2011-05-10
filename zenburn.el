@@ -172,6 +172,10 @@
      ;; hl-line-mode
      (hl-line-face ((t (:background ,zenburn-bg-1))))
 
+     ;; magit
+     (magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
+     (magit-branch ((t (:foreground ,zenburn-orange :weight bold))))
+
      ;; mew
      (mew-face-header-subject ((t (:foreground ,zenburn-orange))))
      (mew-face-header-from ((t (:foreground ,zenburn-yellow))))
