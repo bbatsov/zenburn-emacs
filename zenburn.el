@@ -98,13 +98,13 @@
   (interactive)
   (color-theme-install
    `(color-theme-zenburn
-     ;; color-theme mapping
+     ;;; color-theme mapping
      ((foreground-color . ,zenburn-fg)
       (background-color . ,zenburn-bg)
       (background-mode . dark)
       (cursor-color . ,zenburn-fg))
 
-     ;; basic colouring
+     ;;; basic colouring
      (default ((t (:foreground ,zenburn-fg))))
      (cursor
       ((t (:foreground ,zenburn-fg))))
@@ -125,15 +125,7 @@
      (trailing-whitespace ((t (:foreground ,zenburn-red))))
      (vertical-border ((t (:foreground ,zenburn-fg))))
 
-     ;; diff
-     (diff-added ((t (:foreground ,zenburn-green))))
-     (diff-changed ((t (:foreground ,zenburn-yellow))))
-     (diff-removed ((t (:foreground ,zenburn-red))))
-     (diff-header ((t (:background ,zenburn-bg+1))))
-     (diff-file-header
-      ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))))
-
-     ;; font lock
+     ;;; font lock
      (font-lock-builtin-face ((t (:foreground ,zenburn-blue))))
      (font-lock-comment-face ((t (:foreground ,zenburn-green))))
      (font-lock-comment-delimiter-face ((t (:foreground ,zenburn-green))))
@@ -150,6 +142,35 @@
      (font-lock-warning-face ((t (:foreground ,zenburn-red))))
 
      ;;; external
+
+     ;; diff
+     (diff-added ((t (:foreground ,zenburn-green))))
+     (diff-changed ((t (:foreground ,zenburn-yellow))))
+     (diff-removed ((t (:foreground ,zenburn-red))))
+     (diff-header ((t (:background ,zenburn-bg+1))))
+     (diff-file-header
+      ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))))
+
+     ;; eshell
+     (eshell-prompt ((t (:foreground ,zenburn-yellow :weight bold))))
+     (eshell-ls-archive ((t (:foreground ,zenburn-red-1 :weight bold))))
+     (eshell-ls-backup ((t (:inherit font-lock-comment))))
+     (eshell-ls-clutter ((t (:inherit font-lock-comment))))
+     (eshell-ls-directory ((t (:foreground ,zenburn-blue+1 :weight bold))))
+     (eshell-ls-executable ((t (:foreground ,zenburn-red+1 :weight bold))))
+     (eshell-ls-unreadable ((t (:foreground ,zenburn-fg))))
+     (eshell-ls-missing ((t (:inherit font-lock-warning))))
+     (eshell-ls-product ((t (:inherit font-lock-doc))))
+     (eshell-ls-special ((t (:foreground ,zenburn-yellow :weight bold))))
+     (eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
+
+     ;; flymake
+     (flymake-errline ((t (:underline t :foreground ,zenburn-red-1))))
+     (flymake-warnline ((t (:underline t :foreground ,zenburn-yellow))))
+
+     ;; flyspell
+     (flyspell-duplicate ((t (:foreground ,zenburn-yellow :underline t))))
+     (flyspell-incorrect ((t (:foreground ,zenburn-red-1 :underline t))))
 
      ;; erc
      (erc-action-face ((t (:inherit erc-default))))
