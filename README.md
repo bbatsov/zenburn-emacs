@@ -13,12 +13,24 @@ I gathered here all improvements over the last official Zenburn
 version and started this fork of the project. It's my hope that it
 will be become a central place for zenburn development.  
 
+Daniel's version of Zenburn had reached a state in which it took me
+too much to make improvements to it so I started work on clean new
+version of the theme with a simpler design and code base. It's in very
+early stage of development and it doesn't currently include all the
+faces from the old version, but this will quickly change (hopefully).
+
 # Installation #
 
 Zenburn depends on the color-theme package, so you should have it
 installed. After that just put this in your .emacs(or equivalent):
 
 `(require 'zenburn)`
+
+if you want to use the new Zenburn or 
+
+`(require 'zenburn-legacy)
+
+if you wish to use the legacy version. 
 
 `(zenburn)`
 
