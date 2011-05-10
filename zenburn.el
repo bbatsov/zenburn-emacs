@@ -114,10 +114,10 @@
      (menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
      (minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
      (mode-line
-      ((t (:foreground ,zenburn-fg :background ,zenburn-bg-1))))
+      ((t (:foreground ,zenburn-green+1 :background ,zenburn-bg-1))))
      (mode-line-buffer-id ((t (:foreground ,zenburn-fg))))
      (mode-line-inactive
-      ((t (:foreground ,zenburn-fg  :background ,zenburn-bg-1))))
+      ((t (:foreground ,zenburn-green-1  :background ,zenburn-bg-1))))
      (region ((t (:background ,zenburn-bg-1))))
      (secondary-selection ((t (:background ,zenburn-bg+2))))
      (trailing-whitespace ((t (:foreground ,zenburn-red))))
