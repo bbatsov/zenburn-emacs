@@ -104,6 +104,12 @@
       (background-mode . dark)
       (cursor-color . ,zenburn-fg))
 
+     ;;; define some reusable zenburn faces that we can inherit from afterwards
+     (zenburn-strong-1-face ((t (:foreground ,zenburn-yellow :weight bold))))
+     (zenburn-strong-2-face ((t (:foreground ,zenburn-orange :weight bold))))
+     (zenburn-warning-face ((t (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
+     (zenburn-error-face ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
+
      ;;; basic colouring
      (default ((t (:foreground ,zenburn-fg))))
      (cursor
@@ -119,7 +125,7 @@
                                    :box (:color ,zenburn-bg+2 :line-width 2)))))
      (mode-line
       ((t (:foreground ,zenburn-green+1 :background ,zenburn-bg-1))))
-     (mode-line-buffer-id ((t (:foreground ,zenburn-yellow :weight bold))))
+     (mode-line-buffer-id ((t (:inherit zenburn-strong-1-face))))
      (mode-line-inactive
       ((t (:foreground ,zenburn-green-1  :background ,zenburn-bg-1))))
      (region ((t (:background ,zenburn-bg-1))))
@@ -135,13 +141,13 @@
      (font-lock-doc-face ((t (:foreground ,zenburn-green+1))))
      (font-lock-doc-string-face ((t (:foreground ,zenburn-blue+1))))
      (font-lock-function-name-face ((t (:foreground ,zenburn-blue))))
-     (font-lock-keyword-face ((t (:foreground ,zenburn-yellow :weight bold))))
+     (font-lock-keyword-face ((t (:inherit zenburn-strong-1-face))))
      (font-lock-negation-char-face ((t (:foreground ,zenburn-fg))))
      (font-lock-preprocessor-face ((t (:foreground ,zenburn-blue))))
      (font-lock-string-face ((t (:foreground ,zenburn-red))))
      (font-lock-type-face ((t (:foreground ,zenburn-yellow))))
      (font-lock-variable-name-face ((t (:foreground ,zenburn-yellow))))
-     (font-lock-warning-face ((t (:foreground ,zenburn-red))))
+     (font-lock-warning-face ((t (:inherit zenburn-warning-face))))
 
      ;;; external
 
@@ -154,7 +160,7 @@
       ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))))
 
      ;; eshell
-     (eshell-prompt ((t (:foreground ,zenburn-yellow :weight bold))))
+     (eshell-prompt ((t (:inherit zenburn-strong-1-face))))
      (eshell-ls-archive ((t (:foreground ,zenburn-red-1 :weight bold))))
      (eshell-ls-backup ((t (:inherit font-lock-comment))))
      (eshell-ls-clutter ((t (:inherit font-lock-comment))))
@@ -163,21 +169,21 @@
      (eshell-ls-unreadable ((t (:foreground ,zenburn-fg))))
      (eshell-ls-missing ((t (:inherit font-lock-warning))))
      (eshell-ls-product ((t (:inherit font-lock-doc))))
-     (eshell-ls-special ((t (:foreground ,zenburn-yellow :weight bold))))
+     (eshell-ls-special ((t (:inherit zenburn-strong-1-face))))
      (eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
 
      ;; flymake
-     (flymake-errline ((t (:underline t :foreground ,zenburn-red-1))))
-     (flymake-warnline ((t (:underline t :foreground ,zenburn-yellow))))
+     (flymake-errline ((t (:inherit zenburn-error-face))))
+     (flymake-warnline ((t (:inherit zenburn-warning-face))))
 
      ;; flyspell
-     (flyspell-duplicate ((t (:foreground ,zenburn-yellow :underline t))))
-     (flyspell-incorrect ((t (:foreground ,zenburn-red-1 :underline t))))
+     (flyspell-duplicate ((t (:inherit zenburn-warning-face))))
+     (flyspell-incorrect ((t (:inherit zenburn-error-face))))
 
      ;; erc
      (erc-action-face ((t (:inherit erc-default))))
      (erc-bold-face ((t (:weight bold))))
-     (erc-current-nick-face ((t (:foreground ,zenburn-yellow :weight bold))))
+     (erc-current-nick-face ((t (:inherit zenburn-strong-1-face))))
      (erc-dangerous-host-face ((t (:inherit font-lock-warning))))
      (erc-default-face ((t (:foreground ,zenburn-fg))))
      (erc-direct-msg-face ((t (:inherit erc-default))))
@@ -185,12 +191,12 @@
      (erc-fool-face ((t (:inherit erc-default))))
      (erc-highlight-face ((t (:inherit hover-highlight))))
      (erc-input-face ((t (:foreground ,zenburn-yellow))))
-     (erc-keyword-face ((t (:foreground ,zenburn-yellow :weight bold))))
+     (erc-keyword-face ((t (:inherit zenburn-strong-1-face))))
      (erc-nick-default-face ((t (:weigth bold))))
      (erc-nick-msg-face ((t (:inherit erc-default))))
      (erc-notice-face ((t (:foreground ,zenburn-green))))
      (erc-pal-face ((t (:foreground ,zenburn-orange :weight bold))))
-     (erc-prompt-face ((t (:foreground ,zenburn-orange :weight bold))))
+     (erc-prompt-face ((t (:inherit zenburn-strong-2-face))))
      (erc-timestamp-face ((t (:foreground ,zenburn-green+1))))
      (erc-underline-face ((t (:underline t))))
 
@@ -224,17 +230,17 @@
      (gnus-summary-cancelled-face ((t (:foreground ,zenburn-orange))))
      (gnus-summary-high-ancient-face ((t (:foreground ,zenburn-blue))))
      (gnus-summary-high-read-face ((t (:foreground ,zenburn-green :weight bold))))
-     (gnus-summary-high-ticked-face ((t (:foreground ,zenburn-orange :weight bold))))
+     (gnus-summary-high-ticked-face ((t (:inherit zenburn-strong-2-face))))
      (gnus-summary-high-unread-face ((t (:foreground ,zenburn-fg :weight bold))))
      (gnus-summary-low-ancient-face ((t (:foreground ,zenburn-blue))))
      (gnus-summary-low-read-face ((t (:foreground ,zenburn-green))))
-     (gnus-summary-low-ticked-face ((t (:foreground ,zenburn-orange :weight bold))))
+     (gnus-summary-low-ticked-face ((t (:inherit zenburn-strong-2-face))))
      (gnus-summary-low-unread-face ((t (:foreground ,zenburn-fg))))
      (gnus-summary-normal-ancient-face ((t (:foreground ,zenburn-blue))))
      (gnus-summary-normal-read-face ((t (:foreground ,zenburn-green))))
-     (gnus-summary-normal-ticked-face ((t (:foreground ,zenburn-orange :weight bold))))
+     (gnus-summary-normal-ticked-face ((t (:inherit zenburn-strong-2-face))))
      (gnus-summary-normal-unread-face ((t (:foreground ,zenburn-fg))))
-     (gnus-summary-selected-face ((t (:foreground ,zenburn-yellow :weight bold))))
+     (gnus-summary-selected-face ((t (:inherit zenburn-strong-1-face))))
      (gnus-cite-1-face ((t (:foreground ,zenburn-blue))))
      (gnus-cite-10-face ((t (:foreground ,zenburn-yellow-1))))
      (gnus-cite-11-face ((t (:foreground ,zenburn-yellow))))
@@ -260,25 +266,25 @@
      (hl-line-face ((t (:background ,zenburn-bg-1))))
 
      ;; ido-mode
-     (ido-first-match ((t (:foreground ,zenburn-yellow :weight bold))))
-     (ido-only-match ((t (:foreground ,zenburn-orange :weight bold))))
+     (ido-first-match ((t (:inherit zenburn-strong-1-face))))
+     (ido-only-match ((t (:inherit zenburn-strong-2-face))))
      (ido-subdir ((t (:foreground ,zenburn-yellow))))
 
      ;; magit
-     (magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
-     (magit-branch ((t (:foreground ,zenburn-orange :weight bold))))
+     (magit-section-title ((t (:inherit zenburn-strong-1-face))))
+     (magit-branch ((t (:inherit zenburn-strong-2-face))))
 
      ;; message-mode
      (message-cited-text-face ((t (:inherit font-lock-comment))))
      (message-header-name-face ((t (:foreground ,zenburn-green+1))))
      (message-header-other-face ((t (:foreground ,zenburn-green))))
-     (message-header-to-face ((t (:foreground ,zenburn-yellow :weight bold))))
-     (message-header-from-face ((t (:foreground ,zenburn-yellow :weight bold))))
-     (message-header-cc-face ((t (:foreground ,zenburn-yellow :weight bold))))
-     (message-header-newsgroups-face ((t (:foreground ,zenburn-yellow :weight bold))))
-     (message-header-subject-face ((t (:foreground ,zenburn-orange :weight bold))))
+     (message-header-to-face ((t (:inherit zenburn-strong-1-face))))
+     (message-header-from-face ((t (:inherit zenburn-strong-1-face))))
+     (message-header-cc-face ((t (:inherit zenburn-strong-1-face))))
+     (message-header-newsgroups-face ((t (:inherit zenburn-strong-1-face))))
+     (message-header-subject-face ((t (:inherit zenburn-strong-2-face))))
      (message-header-xheader-face ((t (:foreground ,zenburn-green))))
-     (message-mml-face ((t (:foreground ,zenburn-yellow :weight bold))))
+     (message-mml-face ((t (:inherit zenburn-strong-1-face))))
      (message-separator-face ((t (:inherit font-lock-comment))))
 
      ;; mew
