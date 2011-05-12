@@ -406,8 +406,8 @@
                                                           :slant italic))))
      (wl-highlight-summary-new-face ((t (:foreground ,zenburn-blue))))
      (wl-highlight-summary-normal-face ((t (:foreground ,zenburn-fg))))
-     (wl-highlight-summary-thread-top-face ((t (:foreground "#efdcbc"))))
-     (wl-highlight-thread-indent-face ((t (:foreground "#ecbcec"))))
+     (wl-highlight-summary-thread-top-face ((t (:foreground ,zenburn-yellow))))
+     (wl-highlight-thread-indent-face ((t (:foreground ,zenburn-magenta))))
      (wl-highlight-summary-refiled-face ((t (:foreground ,zenburn-fg))))
      (wl-highlight-summary-displaying-face ((t (:underline t :weight bold))))
 
