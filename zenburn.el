@@ -116,13 +116,17 @@
       ((t (:foreground ,zenburn-fg))))
      (escape-glyph-face ((t (:foreground ,zenburn-red))))
      (fringe ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
-     (header-line ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
+     (header-line ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1
+                                   :box (:color ,zenburn-green :line-width 2)))))
      (highlight ((t (:background ,zenburn-bg+1))))
-     (isearch ((t (:foreground ,zenburn-yellow))))
+
+     ;; faces used by isearch
+     (isearch ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
+     (isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
+     (lazy-highlight ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+2))))
+
      (menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
      (minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
-     (header-line ((t (:background ,zenburn-bg-1
-                                   :box (:color ,zenburn-bg+2 :line-width 2)))))
      (mode-line
       ((t (:foreground ,zenburn-green+1 :background ,zenburn-bg-1))))
      (mode-line-buffer-id ((t (:inherit zenburn-strong-1-face))))
@@ -130,7 +134,7 @@
       ((t (:foreground ,zenburn-green-1  :background ,zenburn-bg-1))))
      (region ((t (:background ,zenburn-bg-1))))
      (secondary-selection ((t (:background ,zenburn-bg+2))))
-     (trailing-whitespace ((t (:foreground ,zenburn-red))))
+     (trailing-whitespace ((t (:background ,zenburn-red))))
      (vertical-border ((t (:foreground ,zenburn-fg))))
 
      ;;; font lock
@@ -152,7 +156,7 @@
      ;;; external
 
      ;; diff
-     (diff-added ((t (:foreground ,zenburn-green))))
+     (diff-added ((t (:foreground ,zenburn-green+4))))
      (diff-changed ((t (:foreground ,zenburn-yellow))))
      (diff-removed ((t (:foreground ,zenburn-red))))
      (diff-header ((t (:background ,zenburn-bg+1))))
