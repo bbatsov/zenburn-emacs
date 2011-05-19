@@ -1,4 +1,4 @@
-;;; zenburn.el --- A low contrast colour theme for Emacs.
+;;; color-theme-zenburn.el --- A low contrast color theme for Emacs.
 
 ;; Copyright (C) 2011 Bozhidar Batsov
 
@@ -24,17 +24,18 @@
 ;;
 ;; A port of the popular Vim theme Zenburn for Emacs, built on top of
 ;; the color-theme package. There exists one other version of the
-;; theme by Daniel Brockman. Mine version was originally based on it,
-;; but it was in such a disarray that I decided to rewrite it from
+;; theme by Daniel Brockman. My version was originally based on it,
+;; but it was in such a disarray, that I decided to rewrite it from
 ;; scratch in a more maintainable manner (hopefully).
 ;;
 ;;; Installation:
 ;;
-;;   (require 'zenburn)
-;;   (zenburn)
+;;   (require 'color-theme-zenburn)
+;;   (color-theme-zenburn)
 ;;
 ;; Don't forget that the theme requires the presence of the
 ;; color-theme package in your Emacs load-path.
+;;
 ;;; Bugs
 ;;
 ;; None that I'm aware of.
@@ -49,8 +50,8 @@
 ;; requires
 (require 'color-theme)
 
-;; colour definitions
-;; colours with +x are lighter, colours with -x are darker
+;; color definitions
+;; colors with +x are lighter, colors with -x are darker
 (defvar zenburn-fg "#dcdccc")
 (defvar zenburn-bg-1 "#2b2b2b")
 (defvar zenburn-bg "#3f3f3f")
@@ -107,7 +108,7 @@
      (zenburn-warning-face ((t (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
      (zenburn-error-face ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
 
-     ;;; basic colouring
+     ;;; basic coloring
      (default ((t (:foreground ,zenburn-fg))))
      (cursor
       ((t (:foreground ,zenburn-fg))))
@@ -414,12 +415,10 @@
 
      )))
 
-(defalias 'zenburn #'color-theme-zenburn)
-
 (add-to-list 'color-themes '(color-theme-zenburn
                              "Zenburn"
                              "Bozhidar Batsov <bozhidar.batsov@gmail.com"))
 
-(provide 'zenburn)
+(provide 'color-theme-zenburn)
 
-;;; zenburn.el ends here.
+;;; color-theme-zenburn.el ends here.
