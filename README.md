@@ -10,14 +10,20 @@ the eyes.
 # Installation #
 
 Zenburn depends on the color-theme package, so you should have it
-installed. After that just put this in your .emacs(or equivalent):
+installed. In zenburn's repo you'll find a stripped down version of
+color-theme (without the built-in themes) suitable for use with
+zenburn. Finally put this in your .emacs(or init.el):
 
 `(require 'color-theme-zenburn)`
 
 `(color-theme-zenburn)`
 
 Zenburn for Emacs is also available for installation via the
-[Marmalade](http://marmalade-repo.org/) package repository.
+[Marmalade](http://marmalade-repo.org/) package repository. Follow the
+installation instructions there to install **package.el** and
+afterwards you can install the zenburn theme like this:
+
+`M-x package-install color-theme-zenburn`
 
 # Bugs & Improvements #
 

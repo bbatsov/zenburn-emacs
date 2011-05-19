@@ -5,7 +5,7 @@
 ;; Author: Bozhidar Batsov <bozhidar.batsov@gmail.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
 ;; Version: 0.1
-;; Package-Requires: ((color-theme "6.6.0"))
+;; Package-Requires: ((color-theme "6.6.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

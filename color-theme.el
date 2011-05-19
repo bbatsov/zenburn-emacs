@@ -4,7 +4,7 @@
 ;; Copyright (C) 2000, 2001, 2002, 2003  Alex Schroeder <alex@gnu.org>
 ;; Copyright (C) 2003, 2004, 2005, 2006  Xavier Maillard <zedek@gnu.org>
 
-;; Version: 6.6.0
+;; Version: 6.6.1
 ;; Keywords: faces
 ;; Author: Jonadab the Unsightly One <jonadab@bright.net>
 ;; Maintainer: Xavier Maillard <zedek@gnu.org>
@@ -42,22 +42,16 @@
 ;; Brian Palmer for color-theme-library ideas and code
 ;; All the users that contributed their color themes.
 
-
-
 ;;; Code:
 (eval-when-compile
   (require 'easymenu)
-  (require 'reporter)
-  (require 'sendmail))
+  (require 'reporter))
 
 (require 'cl); set-difference is a function...
 
 ;; for custom-face-attributes-get or face-custom-attributes-get
 (require 'cus-face)
 (require 'wid-edit); for widget-apply stuff in cus-face.el
-
-(defconst color-theme-maintainer-address "zedek@gnu.org"
-  "Address used by `submit-color-theme'.")
 
 ;; Emacs / XEmacs compatibility and workaround layer
 
