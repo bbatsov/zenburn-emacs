@@ -183,7 +183,7 @@
      (flyspell-incorrect ((t (:inherit zenburn-error-face))))
 
      ;; erc
-     (erc-action-face ((t (:inherit erc-default))))
+     (erc-action-face ((t (:inherit erc-default-face))))
      (erc-bold-face ((t (:weight bold))))
      (erc-current-nick-face ((t (:inherit zenburn-strong-1-face))))
      (erc-dangerous-host-face ((t (:inherit font-lock-warning))))
