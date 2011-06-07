@@ -4,7 +4,7 @@
 
 ;; Author: Bozhidar Batsov <bozhidar.batsov@gmail.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
-;; Version: 0.1
+;; Version: 0.3
 ;; Package-Requires: ((color-theme "6.6.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -395,7 +395,7 @@
      (rpm-spec-var-face ((t (:foreground ,zenburn-red))))
 
      ;; show-paren
-     (show-paren-mismatch ((t (:inherit font-lock-warning))))
+     (show-paren-mismatch ((t (:foreground ,zenburn-red-3 :weight bold))))
      (show-paren-match ((t (:foreground ,zenburn-blue-1 :weight bold))))
 
      ;; wanderlust
@@ -425,9 +425,7 @@
      (wl-highlight-summary-thread-top-face ((t (:foreground ,zenburn-yellow))))
      (wl-highlight-thread-indent-face ((t (:foreground ,zenburn-magenta))))
      (wl-highlight-summary-refiled-face ((t (:foreground ,zenburn-fg))))
-     (wl-highlight-summary-displaying-face ((t (:underline t :weight bold))))
-
-     )))
+     (wl-highlight-summary-displaying-face ((t (:underline t :weight bold)))))))
 
 (add-to-list 'color-themes '(color-theme-zenburn
                              "Zenburn"
