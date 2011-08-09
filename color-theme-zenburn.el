@@ -118,6 +118,26 @@
                                    :box (:color ,zenburn-green :line-width 2)))))
      (highlight ((t (:background ,zenburn-bg+1))))
 
+     ;;; compilation
+     (compilation-column-face ((t (:foreground ,zenburn-yellow))))
+     (compilation-enter-directory-face ((t (:foreground ,zenburn-green))))
+     (compilation-error-face ((t (:inherit zenburn-error-face))))
+     (compilation-face ((t (:foreground ,zenburn-fg))))
+     (compilation-info-face ((t (:foreground ,zenburn-blue))))
+     (compilation-info ((t (:foreground ,zenburn-green+4 :underline t))))
+     (compilation-leave-directory-face ((t (:foreground ,zenburn-green))))
+     (compilation-line-face ((t (:foreground ,zenburn-yellow))))
+     (compilation-line-number ((t (:foreground ,zenburn-yellow))))
+     (compilation-message-face ((t (:foreground ,zenburn-blue))))
+     (compilation-warning-face ((t (:inherit zenburn-warning-face))))
+
+     ;;; grep
+     (grep-context-face ((t (:foreground ,zenburn-fg))))
+     (grep-error-face ((t (:inherit zenburn-error-face))))
+     (grep-hit-face ((t (:foreground ,zenburn-blue))))
+     (grep-match-face ((t (:inherit zenburn-strong-2-face))))
+     (match ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
+
      ;; faces used by isearch
      (isearch ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
      (isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
