@@ -215,6 +215,7 @@
      (erc-input-face ((t (:foreground ,zenburn-yellow))))
      (erc-keyword-face ((t (:inherit zenburn-strong-1-face))))
      (erc-nick-default-face ((t (:weigth bold))))
+     (erc-my-nick-face ((t (:foreground ,zenburn-red :weigth bold))))
      (erc-nick-msg-face ((t (:inherit erc-default))))
      (erc-notice-face ((t (:foreground ,zenburn-green))))
      (erc-pal-face ((t (:foreground ,zenburn-orange :weight bold))))
