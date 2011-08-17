@@ -53,6 +53,7 @@
 ;; color definitions
 ;; colors with +x are lighter, colors with -x are darker
 (defvar zenburn-fg "#dcdccc")
+(defvar zenburn-fg-1 "#656555")
 (defvar zenburn-bg-1 "#2b2b2b")
 (defvar zenburn-bg "#3f3f3f")
 (defvar zenburn-bg+1 "#4f4f4f")
@@ -292,6 +293,9 @@
      (ido-first-match ((t (:inherit zenburn-strong-1-face))))
      (ido-only-match ((t (:inherit zenburn-strong-2-face))))
      (ido-subdir ((t (:foreground ,zenburn-yellow))))
+
+     ;; linum-mode
+     (linum ((t (:foreground ,zenburn-fg-7 :background ,zenburn-bg-1))))
 
      ;; magit
      (magit-section-title ((t (:inherit zenburn-strong-1-face))))
