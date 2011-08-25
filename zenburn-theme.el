@@ -46,10 +46,9 @@
 ;;; Code
 (deftheme zenburn "The Zenburn color theme")
 
-;; color definitions
-;; colors with +x are lighter, colors with -x are darker
 (let ((class '((class color) (min-colors 89)))
       ;; Zenburn pallette
+      ;; colors with +x are lighter, colors with -x are darker
       (zenburn-fg "#dcdccc")
       (zenburn-fg-1 "#656555")
       (zenburn-bg-1 "#2b2b2b")
