@@ -87,13 +87,13 @@
    '(link-visited ((t (:foreground "#8b008b" :underline t))))
    '(button ((t (:underline t))))
 
-;;; define some reusable zenburn faces that we can inherit from afterwards
+   ;;; define some reusable zenburn faces that we can inherit from afterwards
    `(zenburn-strong-1-face ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(zenburn-strong-2-face ((,class (:foreground ,zenburn-orange :weight bold))))
    `(zenburn-warning-face ((,class (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
    `(zenburn-error-face ((,class (:foreground ,zenburn-red-1 :weight bold :underline t))))
 
-;;; basic coloring
+   ;;; basic coloring
    `(default ((,class (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(cursor ((,class (:foreground ,zenburn-fg))))
    `(escape-glyph-face ((,class (:foreground ,zenburn-red))))
@@ -102,7 +102,7 @@
                                   :box (:color ,zenburn-green :line-width 2)))))
    `(highlight ((,class (:background ,zenburn-bg+1))))
 
-;;; compilation
+   ;;; compilation
    `(compilation-column-face ((,class (:foreground ,zenburn-yellow))))
    `(compilation-enter-directory-face ((,class (:foreground ,zenburn-green))))
    `(compilation-error-face ((,class (:foreground ,zenburn-red-1 :weight bold :underline t))))
@@ -115,7 +115,7 @@
    `(compilation-message-face ((,class (:foreground ,zenburn-blue))))
    `(compilation-warning-face ((,class (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
 
-;;; grep
+   ;;; grep
    `(grep-context-face ((,class (:foreground ,zenburn-fg))))
    `(grep-error-face ((,class (:foreground ,zenburn-red-1 :weight bold :underline t))))
    `(grep-hit-face ((,class (:foreground ,zenburn-blue))))
