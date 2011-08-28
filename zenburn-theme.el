@@ -142,7 +142,7 @@
    `(font-lock-builtin-face ((,class (:foreground ,zenburn-blue))))
    `(font-lock-comment-face ((,class (:foreground ,zenburn-green))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,zenburn-green))))
-   `(font-lock-constant-face ((,class (:foreground ,zenburn-fg))))
+   `(font-lock-constant-face ((,class (:foreground ,zenburn-green+4))))
    `(font-lock-doc-face ((,class (:foreground ,zenburn-green+1))))
    `(font-lock-doc-string-face ((,class (:foreground ,zenburn-blue+1))))
    `(font-lock-function-name-face ((,class (:foreground ,zenburn-blue))))
@@ -150,8 +150,8 @@
    `(font-lock-negation-char-face ((,class (:foreground ,zenburn-fg))))
    `(font-lock-preprocessor-face ((,class (:foreground ,zenburn-blue))))
    `(font-lock-string-face ((,class (:foreground ,zenburn-red))))
-   `(font-lock-type-face ((,class (:foreground ,zenburn-yellow))))
-   `(font-lock-variable-name-face ((,class (:foreground ,zenburn-yellow))))
+   `(font-lock-type-face ((,class (:foreground ,zenburn-blue))))
+   `(font-lock-variable-name-face ((,class (:foreground ,zenburn-orange))))
    `(font-lock-warning-face ((,class (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
 
    ;;; external
