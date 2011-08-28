@@ -47,7 +47,7 @@
 (deftheme zenburn "The Zenburn color theme")
 
 (let ((class '((class color) (min-colors 89)))
-      ;; Zenburn pallette
+      ;; Zenburn palette
       ;; colors with +x are lighter, colors with -x are darker
       (zenburn-fg "#dcdccc")
       (zenburn-fg-1 "#656555")
@@ -138,7 +138,7 @@
    `(trailing-whitespace ((,class (:background ,zenburn-red))))
    `(vertical-border ((,class (:foreground ,zenburn-fg))))
 
-;;; font lock
+   ;;; font lock
    `(font-lock-builtin-face ((,class (:foreground ,zenburn-blue))))
    `(font-lock-comment-face ((,class (:foreground ,zenburn-green))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,zenburn-green))))
@@ -154,7 +154,7 @@
    `(font-lock-variable-name-face ((,class (:foreground ,zenburn-yellow))))
    `(font-lock-warning-face ((,class (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
 
-;;; external
+   ;;; external
 
    ;; diff
    `(diff-added ((,class (:foreground ,zenburn-green+4))))
@@ -402,8 +402,8 @@
    `(rpm-spec-var-face ((,class (:foreground ,zenburn-red))))
 
    ;; show-paren
-   `(show-paren-mismatch ((,class (:foreground ,zenburn-red-3 :weight bold))))
-   `(show-paren-match ((,class (:foreground ,zenburn-blue-1 :weight bold))))
+   `(show-paren-mismatch ((,class (:foreground ,zenburn-red-3 :background ,zenburn-bg :weight bold))))
+   `(show-paren-match ((,class (:foreground ,zenburn-blue-1 :background ,zenburn-bg :weight bold))))
 
    ;; wanderlust
    `(wl-highlight-folder-few-face ((,class (:foreground ,zenburn-red-2))))
