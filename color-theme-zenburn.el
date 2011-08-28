@@ -160,7 +160,7 @@
      (font-lock-builtin-face ((t (:foreground ,zenburn-blue))))
      (font-lock-comment-face ((t (:foreground ,zenburn-green))))
      (font-lock-comment-delimiter-face ((t (:foreground ,zenburn-green))))
-     (font-lock-constant-face ((t (:foreground ,zenburn-fg))))
+     (font-lock-constant-face ((t (:foreground ,zenburn-green+4))))
      (font-lock-doc-face ((t (:foreground ,zenburn-green+1))))
      (font-lock-doc-string-face ((t (:foreground ,zenburn-blue+1))))
      (font-lock-function-name-face ((t (:foreground ,zenburn-blue))))
@@ -168,7 +168,7 @@
      (font-lock-negation-char-face ((t (:foreground ,zenburn-fg))))
      (font-lock-preprocessor-face ((t (:foreground ,zenburn-blue))))
      (font-lock-string-face ((t (:foreground ,zenburn-red))))
-     (font-lock-type-face ((t (:foreground ,zenburn-yellow))))
+     (font-lock-type-face ((t (:foreground ,zenburn-blue))))
      (font-lock-variable-name-face ((t (:foreground ,zenburn-yellow))))
      (font-lock-warning-face ((t (:inherit zenburn-warning-face))))
 
