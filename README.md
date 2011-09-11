@@ -35,7 +35,7 @@ afterwards you can install the zenburn theme like this:
 Download **zenburn-theme.el** to ~/.emacs.d/themes. Add this your
 .emacs.d:
 
-`(add-to-list custom-theme-load-path "~/.emacs.d/themes")`
+`(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")`
 
 Now you can load the theme with the interactive function **load-theme**.
 
