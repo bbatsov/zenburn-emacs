@@ -115,8 +115,7 @@
       ((t (:foreground ,zenburn-fg))))
      (escape-glyph-face ((t (:foreground ,zenburn-red))))
      (fringe ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
-     (header-line ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1
-                                   :box (:color ,zenburn-green :line-width 2)))))
+     (header-line ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
      (highlight ((t (:background ,zenburn-bg+1))))
 
      ;;; compilation
