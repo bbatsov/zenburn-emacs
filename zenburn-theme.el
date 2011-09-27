@@ -82,9 +82,9 @@
       (zenburn-magenta "#dc8cc3"))
   (custom-theme-set-faces 
    'zenburn
-   '(link ((t (:foreground "#f0dfaf" :underline t))))
-   '(link-visited ((t (:foreground "#8b008b" :underline t))))
    '(button ((t (:underline t))))
+   `(link ((,class (:foreground ,zenburn-yellow :underline t :weight bold))))
+   `(link-visited ((,class (:foreground ,zenburn-yellow-2 :underline t :weight normal))))
 
    ;;; define some reusable zenburn faces that we can inherit from afterwards
    `(zenburn-strong-1-face ((,class (:foreground ,zenburn-yellow :weight bold))))
