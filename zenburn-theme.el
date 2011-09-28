@@ -80,11 +80,11 @@
       (zenburn-blue-4 "#4c7073")
       (zenburn-blue-5 "#366060")
       (zenburn-magenta "#dc8cc3"))
-  (custom-theme-set-faces 
+  (custom-theme-set-faces
    'zenburn
-   '(link ((t (:foreground "#f0dfaf" :underline t))))
-   '(link-visited ((t (:foreground "#8b008b" :underline t))))
    '(button ((t (:underline t))))
+   `(link ((,class (:foreground ,zenburn-yellow :underline t :weight bold))))
+   `(link-visited ((,class (:foreground ,zenburn-yellow-2 :underline t :weight normal))))
 
    ;;; define some reusable zenburn faces that we can inherit from afterwards
    `(zenburn-strong-1-face ((,class (:foreground ,zenburn-yellow :weight bold))))
@@ -96,9 +96,9 @@
    `(default ((,class (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(cursor ((,class (:foreground ,zenburn-fg))))
    `(escape-glyph-face ((,class (:foreground ,zenburn-red))))
-   `(fringe ((,class (:foreground ,zenburn-fg :background ,zenburn-bg))))
+   `(fringe ((,class (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(header-line ((,class (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
-   `(highlight ((,class (:background ,zenburn-bg+1))))
+   `(highlight ((,class (:foreground ,zenburn-cyan :background ,zenburn-bg-1))))
 
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,zenburn-yellow))))
@@ -435,7 +435,7 @@
 
 (custom-theme-set-variables
  'zenburn
- '(ansi-color-names-vector [zenburn-bg zenburn-red zenburn-green zenburn-yellow 
+ '(ansi-color-names-vector [zenburn-bg zenburn-red zenburn-green zenburn-yellow
                                        zenburn-blue zenburn-magenta zenburn-cyan zenburn-fg]))
 
 (provide-theme 'zenburn)
