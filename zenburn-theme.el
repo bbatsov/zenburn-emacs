@@ -98,7 +98,7 @@
    `(escape-glyph-face ((,class (:foreground ,zenburn-red))))
    `(fringe ((,class (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(header-line ((,class (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
-   `(highlight ((,class (:foreground ,zenburn-cyan :background ,zenburn-bg-1))))
+   `(highlight ((,class (:background ,zenburn-bg-1))))
 
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,zenburn-yellow))))
