@@ -51,7 +51,9 @@
       ;; colors with +x are lighter, colors with -x are darker
       (zenburn-fg "#dcdccc")
       (zenburn-fg-1 "#656555")
+      (zenburn-bg-2 "#1f1f1f")
       (zenburn-bg-1 "#2b2b2b")
+      (zenburn-bg-05 "#383838")
       (zenburn-bg "#3f3f3f")
       (zenburn-bg+1 "#4f4f4f")
       (zenburn-bg+2 "#5f5f5f")
@@ -97,7 +99,7 @@
    `(cursor ((,class (:foreground ,zenburn-fg))))
    `(escape-glyph-face ((,class (:foreground ,zenburn-red))))
    `(fringe ((,class (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
-   `(header-line ((,class (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
+   `(header-line ((,class (:foreground ,zenburn-yellow :background ,zenburn-bg-2))))
    `(highlight ((,class (:background ,zenburn-bg-1))))
 
    ;;; compilation
@@ -132,7 +134,7 @@
    `(mode-line-buffer-id ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
      ((,class (:foreground ,zenburn-green-1  :background ,zenburn-bg-1))))
-   `(region ((,class (:background ,zenburn-bg-1))))
+   `(region ((,class (:background ,zenburn-bg-05))))
    `(secondary-selection ((,class (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((,class (:background ,zenburn-red))))
    `(vertical-border ((,class (:foreground ,zenburn-fg))))
