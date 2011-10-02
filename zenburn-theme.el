@@ -401,8 +401,11 @@
    `(rpm-spec-var-face ((,class (:foreground ,zenburn-red))))
 
    ;; show-paren
-   `(show-paren-mismatch ((,class (:foreground ,zenburn-red-3 :background ,zenburn-bg :weight bold))))
-   `(show-paren-match ((,class (:foreground ,zenburn-blue-1 :background ,zenburn-bg :weight bold))))
+   `(show-paren-mismatch ((,class (:foreground ,zenburn-red-3 :weight bold))))
+   `(show-paren-match ((,class (:foreground ,zenburn-blue-1 :weight bold))))
+
+   ;; SLIME
+   `(slime-repl-inputed-output-face ((,class (:foreground ,zenburn-red))))
 
    ;; wanderlust
    `(wl-highlight-folder-few-face ((,class (:foreground ,zenburn-red-2))))
