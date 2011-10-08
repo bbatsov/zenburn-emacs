@@ -100,7 +100,7 @@
    `(escape-glyph-face ((,class (:foreground ,zenburn-red))))
    `(fringe ((,class (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(header-line ((,class (:foreground ,zenburn-yellow :background ,zenburn-bg-2))))
-   `(highlight ((,class (:background ,zenburn-bg-1))))
+   `(highlight ((,class (:background ,zenburn-bg-05))))
 
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,zenburn-yellow))))
@@ -134,7 +134,7 @@
    `(mode-line-buffer-id ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
      ((,class (:foreground ,zenburn-green-1  :background ,zenburn-bg-1))))
-   `(region ((,class (:background ,zenburn-bg-05))))
+   `(region ((,class (:background ,zenburn-bg-1))))
    `(secondary-selection ((,class (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((,class (:background ,zenburn-red))))
    `(vertical-border ((,class (:foreground ,zenburn-fg))))
