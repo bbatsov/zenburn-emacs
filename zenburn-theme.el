@@ -133,7 +133,7 @@
      ((,class (:foreground ,zenburn-green+1 :background ,zenburn-bg-1))))
    `(mode-line-buffer-id ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
-     ((,class (:foreground ,zenburn-green-1  :background ,zenburn-bg-1))))
+     ((,class (:foreground ,zenburn-green-1  :background ,zenburn-bg))))
    `(region ((,class (:background ,zenburn-bg-1))))
    `(secondary-selection ((,class (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((,class (:background ,zenburn-red))))
