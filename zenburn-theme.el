@@ -133,7 +133,7 @@
      ((,class (:foreground ,zenburn-green+1 :background ,zenburn-bg-1))))
    `(mode-line-buffer-id ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
-     ((,class (:foreground ,zenburn-green-1  :background ,zenburn-bg-1))))
+     ((,class (:foreground ,zenburn-green-1  :background ,zenburn-bg-05))))
    `(region ((,class (:background ,zenburn-bg-1))))
    `(secondary-selection ((,class (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((,class (:background ,zenburn-red))))
@@ -203,7 +203,7 @@
    `(erc-nick-msg-face ((,class (:inherit erc-default))))
    `(erc-notice-face ((,class (:foreground ,zenburn-green))))
    `(erc-pal-face ((,class (:foreground ,zenburn-orange :weight bold))))
-   `(erc-prompt-face ((,class (:foreground ,zenburn-orange :weight bold))))
+   `(erc-prompt-face ((,class (:background ,zenburn-bg :foreground ,zenburn-orange :weight bold))))
    `(erc-timestamp-face ((,class (:foreground ,zenburn-green+1))))
    `(erc-underline-face ((t (:underline t))))
 
