@@ -270,7 +270,7 @@
    `(gnus-x-face ((,class (:background ,zenburn-fg :foreground ,zenburn-bg))))
 
    ;; hl-line-mode
-   `(hl-line-face ((,class (:background ,zenburn-bg-1))))
+   `(hl-line ((,class (:background ,zenburn-bg+1))))
 
    ;; ido-mode
    `(ido-first-match ((,class (:foreground ,zenburn-yellow :weight bold))))
