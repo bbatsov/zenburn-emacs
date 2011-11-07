@@ -155,6 +155,8 @@
    `(font-lock-variable-name-face ((,class (:foreground ,zenburn-orange))))
    `(font-lock-warning-face ((,class (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
 
+   `(c-annotation-face ((,class (:inherit font-lock-constant-face))))
+
    ;;; external
 
    ;; diff
