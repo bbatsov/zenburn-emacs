@@ -136,9 +136,13 @@
                            :box (:line-width -1 :style released-button)))))
    `(mode-line-buffer-id ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
+<<<<<<< HEAD
      ((,class (:foreground ,zenburn-green-1
                            :background ,zenburn-bg-1
                            :box (:line-width -1 :style released-button)))))
+=======
+     ((,class (:foreground ,zenburn-green-1  :background ,zenburn-bg-05))))
+>>>>>>> b1ccc0ac7975473c30e8555c550733e0b192a0ae
    `(region ((,class (:background ,zenburn-bg-1))))
    `(secondary-selection ((,class (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((,class (:background ,zenburn-red))))
@@ -408,8 +412,8 @@
    `(rpm-spec-var-face ((,class (:foreground ,zenburn-red))))
 
    ;; show-paren
-   `(show-paren-mismatch ((,class (:foreground ,zenburn-red-3 :weight bold))))
-   `(show-paren-match ((,class (:foreground ,zenburn-blue-1 :weight bold))))
+   `(show-paren-mismatch ((,class (:foreground ,zenburn-red-3 :background ,zenburn-bg :weight bold))))
+   `(show-paren-match ((,class (:foreground ,zenburn-blue-1 :background ,zenburn-bg :weight bold))))
 
    ;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,zenburn-red))))
@@ -418,7 +422,7 @@
    `(whitespace-space ((,class (:background ,zenburn-bg :foreground ,zenburn-bg+1))))
    `(whitespace-hspace ((,class (:background ,zenburn-bg :foreground ,zenburn-bg+1))))
    `(whitespace-tab ((,class (:background ,zenburn-bg :foreground ,zenburn-red))))
-   `(whitespace-newline ((,class (:foreground ,zenburn-bg+1 :background ,zenburn-bg))))
+   `(whitespace-newline ((,class (:foreground ,zenburn-bg+1))))
    `(whitespace-trailing ((,class (:foreground ,zenburn-red :background ,zenburn-bg))))
    `(whitespace-line ((,class (:background ,zenburn-bg-05 :foreground ,zenburn-magenta))))
    `(whitespace-space-before-tab ((,class (:background ,zenburn-orange :foreground ,zenburn-orange))))
