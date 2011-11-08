@@ -134,7 +134,7 @@
    `(mode-line-buffer-id ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
      ((,class (:foreground ,zenburn-green-1  :background ,zenburn-bg-05))))
-   `(region ((,class (:background ,zenburn-bg-1))))
+   `(region ((,class (:background ,zenburn-bg-2))))
    `(secondary-selection ((,class (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((,class (:background ,zenburn-red))))
    `(vertical-border ((,class (:foreground ,zenburn-fg))))
