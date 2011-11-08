@@ -171,6 +171,8 @@
      (font-lock-variable-name-face ((t (:foreground ,zenburn-orange))))
      (font-lock-warning-face ((t (:inherit zenburn-warning-face))))
 
+     (c-annotation-face ((t (:inherit font-lock-constant-face))))
+
      ;;; external
 
      ;; diff
