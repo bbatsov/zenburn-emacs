@@ -455,7 +455,10 @@
    `(wl-highlight-summary-thread-top-face ((,class (:foreground ,zenburn-yellow))))
    `(wl-highlight-thread-indent-face ((,class (:foreground ,zenburn-magenta))))
    `(wl-highlight-summary-refiled-face ((,class (:foreground ,zenburn-fg))))
-   `(wl-highlight-summary-displaying-face ((,class (:underline t :weight bold))))))
+   `(wl-highlight-summary-displaying-face ((,class (:underline t :weight bold))))
+   
+   ;; which-func-mode
+   `(which-func ((,class (:foreground ,zenburn-green+1))))))
 
 (custom-theme-set-variables
  'zenburn
