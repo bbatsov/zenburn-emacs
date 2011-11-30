@@ -451,7 +451,21 @@
      (wl-highlight-summary-thread-top-face ((t (:foreground ,zenburn-yellow))))
      (wl-highlight-thread-indent-face ((t (:foreground ,zenburn-magenta))))
      (wl-highlight-summary-refiled-face ((t (:foreground ,zenburn-fg))))
-     (wl-highlight-summary-displaying-face ((t (:underline t :weight bold)))))))
+     (wl-highlight-summary-displaying-face ((t (:underline t :weight bold))))
+
+     (js2-warning-face ((t (:underline ,zenburn-orange))))
+     (js2-error-face ((t (:inherit zenburn-error-face))))
+     (js2-jsdoc-tag-face ((t (:foreground ,zenburn-green-1))))
+     (js2-jsdoc-type-face ((t (:foreground ,zenburn-green+2))))
+     (js2-jsdoc-value-face ((t (:foreground ,zenburn-green+3))))
+     (js2-function-param-face ((t (:foreground, zenburn-green+3))))
+     ;(js2-instance-member-face)
+     ;(js2-private-member-face)
+     ;(js2-private-function-call-face)
+     ;(js2-jsdoc-html-tag-name-face)
+     ;(js2-jsdoc-html-tag-delimiter-face)
+     ;(js2-magic-paren-face)
+     (js2-external-variable-face ((t (:foreground ,zenburn-orange)))))))
 
 (add-to-list 'color-themes '(color-theme-zenburn
                              "Zenburn"
