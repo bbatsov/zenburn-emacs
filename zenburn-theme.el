@@ -87,12 +87,6 @@
    `(link ((,class (:foreground ,zenburn-yellow :underline t :weight bold))))
    `(link-visited ((,class (:foreground ,zenburn-yellow-2 :underline t :weight normal))))
 
-   ;;; define some reusable zenburn faces that we can inherit from afterwards
-   `(zenburn-strong-1-face ((,class (:foreground ,zenburn-yellow :weight bold))))
-   `(zenburn-strong-2-face ((,class (:foreground ,zenburn-orange :weight bold))))
-   `(zenburn-warning-face ((,class (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
-   `(zenburn-error-face ((,class (:foreground ,zenburn-red-1 :weight bold :underline t))))
-
    ;;; basic coloring
    `(default ((,class (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(cursor ((,class (:foreground ,zenburn-fg))))
@@ -456,7 +450,7 @@
    `(wl-highlight-thread-indent-face ((,class (:foreground ,zenburn-magenta))))
    `(wl-highlight-summary-refiled-face ((,class (:foreground ,zenburn-fg))))
    `(wl-highlight-summary-displaying-face ((,class (:underline t :weight bold))))
-   
+
    ;; which-func-mode
    `(which-func ((,class (:foreground ,zenburn-green+1))))))
 
