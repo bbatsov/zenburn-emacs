@@ -309,6 +309,17 @@
      ;(js2-magic-paren-face)
      (js2-external-variable-face ((t (:foreground ,zenburn-orange))))
 
+     ;; jabber-mode
+     (jabber-roster-user-away ((t (:foreground ,zenburn-green+2))))
+     (jabber-roster-user-online ((t (:foreground ,zenburn-blue-1))))
+     (jabber-roster-user-dnd ((t (:foreground ,zenburn-red+1))))
+     (jabber-rare-time-face ((t (:foreground ,zenburn-green+1))))
+     (jabber-chat-prompt-local ((t (:foreground ,zenburn-blue-1))))
+     (jabber-chat-prompt-foreign ((t (:foreground ,zenburn-red+1))))
+     (jabber-activity-face((t (:foreground ,zenburn-red+1))))
+     (jabber-activity-personal-face ((t (:foreground ,zenburn-blue+1))))
+
+
      ;; linum-mode
      (linum ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg-1))))
 
