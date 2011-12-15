@@ -58,6 +58,7 @@
 (defvar zenburn-bg "#3f3f3f")
 (defvar zenburn-bg+1 "#4f4f4f")
 (defvar zenburn-bg+2 "#5f5f5f")
+(defvar zenburn-bg+3 "#6f6f6f")
 (defvar zenburn-red+1 "#dca3a3")
 (defvar zenburn-red "#cc9393")
 (defvar zenburn-red-1 "#bc8383")
@@ -174,6 +175,14 @@
      (c-annotation-face ((t (:inherit font-lock-constant-face))))
 
      ;;; external
+
+     ;; auto-complete
+     (ac-candidate-face ((t (:background ,zenburn-bg+3 :foreground "black"))))
+     (ac-selection-face ((t (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
+     (popup-tip-face ((t (:background ,zenburn-yellow-2 :foreground "black"))))
+     (popup-scroll-bar-foreground-face ((t (:background ,zenburn-blue-5))))
+     (popup-scroll-bar-background-face ((t (:background ,zenburn-bg-1))))
+     (popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
 
      ;; diff
      (diff-added ((t (:foreground ,zenburn-green+4))))
