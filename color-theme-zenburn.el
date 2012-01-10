@@ -58,6 +58,7 @@
 (defvar zenburn-bg "#3f3f3f")
 (defvar zenburn-bg+1 "#4f4f4f")
 (defvar zenburn-bg+2 "#5f5f5f")
+(defvar zenburn-bg+3 "#6f6f6f")
 (defvar zenburn-red+1 "#dca3a3")
 (defvar zenburn-red "#cc9393")
 (defvar zenburn-red-1 "#bc8383")
@@ -174,6 +175,14 @@
      (c-annotation-face ((t (:inherit font-lock-constant-face))))
 
      ;;; external
+
+     ;; auto-complete
+     (ac-candidate-face ((t (:background ,zenburn-bg+3 :foreground "black"))))
+     (ac-selection-face ((t (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
+     (popup-tip-face ((t (:background ,zenburn-yellow-2 :foreground "black"))))
+     (popup-scroll-bar-foreground-face ((t (:background ,zenburn-blue-5))))
+     (popup-scroll-bar-background-face ((t (:background ,zenburn-bg-1))))
+     (popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
 
      ;; diff
      (diff-added ((t (:foreground ,zenburn-green+4))))
@@ -308,6 +317,17 @@
      ;(js2-jsdoc-html-tag-delimiter-face)
      ;(js2-magic-paren-face)
      (js2-external-variable-face ((t (:foreground ,zenburn-orange))))
+
+     ;; jabber-mode
+     (jabber-roster-user-away ((t (:foreground ,zenburn-green+2))))
+     (jabber-roster-user-online ((t (:foreground ,zenburn-blue-1))))
+     (jabber-roster-user-dnd ((t (:foreground ,zenburn-red+1))))
+     (jabber-rare-time-face ((t (:foreground ,zenburn-green+1))))
+     (jabber-chat-prompt-local ((t (:foreground ,zenburn-blue-1))))
+     (jabber-chat-prompt-foreign ((t (:foreground ,zenburn-red+1))))
+     (jabber-activity-face((t (:foreground ,zenburn-red+1))))
+     (jabber-activity-personal-face ((t (:foreground ,zenburn-blue+1))))
+
 
      ;; linum-mode
      (linum ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg-1))))

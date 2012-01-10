@@ -56,6 +56,7 @@
       (zenburn-bg "#3f3f3f")
       (zenburn-bg+1 "#4f4f4f")
       (zenburn-bg+2 "#5f5f5f")
+      (zenburn-bg+3 "#6f6f6f")
       (zenburn-red+1 "#dca3a3")
       (zenburn-red "#cc9393")
       (zenburn-red-1 "#bc8383")
@@ -157,6 +158,14 @@
    `(c-annotation-face ((,class (:inherit font-lock-constant-face))))
 
    ;;; external
+
+   ;; auto-complete
+   `(ac-candidate-face ((,class (:background ,zenburn-bg+3 :foreground "black"))))
+   `(ac-selection-face ((,class (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
+   `(popup-tip-face ((,class (:background ,zenburn-yellow-2 :foreground "black"))))
+   `(popup-scroll-bar-foreground-face ((,class (:background ,zenburn-blue-5))))
+   `(popup-scroll-bar-background-face ((,class (:background ,zenburn-bg-1))))
+   `(popup-isearch-match ((,class (:background ,zenburn-bg :foreground ,zenburn-fg))))
 
    ;; diff
    `(diff-added ((,class (:foreground ,zenburn-green+4))))
