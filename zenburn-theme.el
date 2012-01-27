@@ -159,6 +159,12 @@
 
    ;;; external
 
+   ;; full-ack
+   `(ack-separator ((,class (:foreground ,zenburn-fg))))
+   `(ack-file ((,class (:foreground ,zenburn-blue))))
+   `(ack-line ((,class (:foreground ,zenburn-yellow))))
+   `(ack-match ((,class (:foreground ,zenburn-orange :background ,zenburn-bg-1 :weigth bold))))
+
    ;; auto-complete
    `(ac-candidate-face ((,class (:background ,zenburn-bg+3 :foreground "black"))))
    `(ac-selection-face ((,class (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
