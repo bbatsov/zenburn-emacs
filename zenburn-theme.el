@@ -467,12 +467,12 @@
    `(wl-highlight-summary-displaying-face ((,class (:underline t :weight bold))))
 
    ;; which-func-mode
-   `(which-func ((,class (:foreground ,zenburn-green+1))))))
+   `(which-func ((,class (:foreground ,zenburn-green+1)))))
 
-(custom-theme-set-variables
- 'zenburn
- '(ansi-color-names-vector [zenburn-bg zenburn-red zenburn-green zenburn-yellow
-                                       zenburn-blue zenburn-magenta zenburn-cyan zenburn-fg]))
+  (custom-theme-set-variables
+   'zenburn
+   `(ansi-color-names-vector [,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
+                                          ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg])))
 
 ;;;###autoload
 (when load-file-name
