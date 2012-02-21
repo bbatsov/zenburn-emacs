@@ -472,7 +472,12 @@
   (custom-theme-set-variables
    'zenburn
    `(ansi-color-names-vector [,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
-                                          ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg])))
+                                          ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg])
+
+   ;;; external
+
+   ;; fill-column-indicator
+   `(fci-rule-color ,zenburn-bg-05)))
 
 ;;;###autoload
 (when load-file-name
