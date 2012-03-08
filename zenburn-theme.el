@@ -4,7 +4,7 @@
 
 ;; Author: Bozhidar Batsov <bozhidar.batsov@gmail.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
-;; Version: 1.3
+;; Version: 1.4
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
