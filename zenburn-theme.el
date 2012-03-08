@@ -294,7 +294,7 @@
    `(ido-subdir ((,class (:foreground ,zenburn-yellow))))
 
    ;; linum-mode
-   `(linum ((,class (:foreground ,zenburn-fg-1 :background ,zenburn-bg-1))))
+   `(linum ((,class (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
 
    ;; magit
    `(magit-section-title ((,class (:foreground ,zenburn-yellow :weight bold))))
