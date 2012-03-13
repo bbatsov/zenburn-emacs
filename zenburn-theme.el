@@ -418,6 +418,14 @@
    `(rpm-spec-tag-face ((,class (:foreground ,zenburn-blue))))
    `(rpm-spec-var-face ((,class (:foreground ,zenburn-red))))
 
+   ;; rst-mode
+   `(rst-level-1-face ((,class (:foreground ,zenburn-orange))))
+   `(rst-level-2-face ((,class (:foreground ,zenburn-green+1))))
+   `(rst-level-3-face ((,class (:foreground ,zenburn-blue-1))))
+   `(rst-level-4-face ((,class (:foreground ,zenburn-yellow-2))))
+   `(rst-level-5-face ((,class (:foreground ,zenburn-cyan))))
+   `(rst-level-6-face ((,class (:foreground ,zenburn-green-1))))
+
    ;; show-paren
    `(show-paren-mismatch ((,class (:foreground ,zenburn-red-3 :background ,zenburn-bg :weight bold))))
    `(show-paren-match ((,class (:foreground ,zenburn-blue-1 :background ,zenburn-bg :weight bold))))

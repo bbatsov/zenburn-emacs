@@ -454,6 +454,14 @@
      (rpm-spec-tag-face ((t (:foreground ,zenburn-blue))))
      (rpm-spec-var-face ((t (:foreground ,zenburn-red))))
 
+     ;; rst-mode
+     (rst-level-1-face ((t (:foreground ,zenburn-orange))))
+     (rst-level-2-face ((t (:foreground ,zenburn-green+1))))
+     (rst-level-3-face ((t (:foreground ,zenburn-blue-1))))
+     (rst-level-4-face ((t (:foreground ,zenburn-yellow-2))))
+     (rst-level-5-face ((t (:foreground ,zenburn-cyan))))
+     (rst-level-6-face ((t (:foreground ,zenburn-green-1))))
+
      ;; show-paren
      (show-paren-mismatch ((t (:foreground ,zenburn-red-3 :weight bold))))
      (show-paren-match ((t (:foreground ,zenburn-blue-1 :weight bold))))
