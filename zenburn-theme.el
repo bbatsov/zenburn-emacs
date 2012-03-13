@@ -293,6 +293,35 @@
    `(ido-only-match ((,class (:foreground ,zenburn-orange :weight bold))))
    `(ido-subdir ((,class (:foreground ,zenburn-yellow))))
 
+   ;; js2
+   `(js2-warning-face ((t (:underline ,zenburn-orange))))
+   `(js2-error-face ((t (:inherit zenburn-error-face))))
+   `(js2-jsdoc-tag-face ((t (:foreground ,zenburn-green-1))))
+   `(js2-jsdoc-type-face ((t (:foreground ,zenburn-green+2))))
+   `(js2-jsdoc-value-face ((t (:foreground ,zenburn-green+3))))
+   `(js2-function-param-face ((t (:foreground, zenburn-green+3))))
+   ;;`(js2-instance-member-face)
+   ;;`(js2-private-member-face)
+   ;;`(js2-private-function-call-face)
+   ;;`(js2-jsdoc-html-tag-name-face)
+   ;;`(js2-jsdoc-html-tag-delimiter-face)
+   ;;`(js2-magic-paren-face)
+   `(js2-external-variable-face ((t (:foreground ,zenburn-orange))))
+      
+   ;; jabber-mode
+   `(jabber-roster-user-away ((t (:foreground ,zenburn-green+2))))
+   `(jabber-roster-user-online ((t (:foreground ,zenburn-blue-1))))
+   `(jabber-roster-user-dnd ((t (:foreground ,zenburn-red+1))))
+   `(jabber-rare-time-face ((t (:foreground ,zenburn-green+1))))
+   `(jabber-chat-prompt-local ((t (:foreground ,zenburn-blue-1))))
+   `(jabber-chat-prompt-foreign ((t (:foreground ,zenburn-red+1))))
+   `(jabber-activity-face((t (:foreground ,zenburn-red+1))))
+   `(jabber-activity-personal-face ((t (:foreground ,zenburn-blue+1))))
+   `(jabber-title-small ((t (:height 1.1 :weight bold))))
+   `(jabber-title-medium ((t (:height 1.2 :weight bold))))
+   `(jabber-title-large ((t (:height 1.3 :weight bold))))
+
+   
    ;; linum-mode
    `(linum ((,class (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
 
