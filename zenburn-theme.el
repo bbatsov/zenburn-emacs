@@ -295,7 +295,7 @@
 
    ;; js2-mode
    `(js2-warning-face ((,class (:underline ,zenburn-orange))))
-   `(js2-error-face ((,class (:inherit zenburn-error-face))))
+   `(js2-error-face ((,class (:foreground ,zenburn-red :weight bold))))
    `(js2-jsdoc-tag-face ((,class (:foreground ,zenburn-green-1))))
    `(js2-jsdoc-type-face ((,class (:foreground ,zenburn-green+2))))
    `(js2-jsdoc-value-face ((,class (:foreground ,zenburn-green+3))))
