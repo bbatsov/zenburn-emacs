@@ -285,6 +285,9 @@
    `(gnus-signature-face ((,class (:foreground ,zenburn-yellow))))
    `(gnus-x-face ((,class (:background ,zenburn-fg :foreground ,zenburn-bg))))
 
+   ;; helm
+   `(helm-selection ((,class (:background ,zenburn-bg-1))))
+
    ;; hl-line-mode
    `(hl-line-face ((,class (:background ,zenburn-bg-1))))
 
