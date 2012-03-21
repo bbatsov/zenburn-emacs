@@ -55,8 +55,5 @@ Prelude's default color theme. You can load Zenburn at any time by
 Please, report any problems that you find on the projects integrated
 issue tracker. If you've added some improvements and you want them
 included upstream don't hesitate to send me a patch or even better - a
-GitHub pull request.
-
-# Contributors
-
-So far - none. You could be the first. :-)
+GitHub pull request.  [These](https://github.com/bbatsov/zenburn-emacs/contributors)
+contributors have done so.
