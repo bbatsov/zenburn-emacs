@@ -165,6 +165,12 @@
    `(ack-line ((,class (:foreground ,zenburn-yellow))))
    `(ack-match ((,class (:foreground ,zenburn-orange :background ,zenburn-bg-1 :weigth bold))))
 
+   ;; auctex
+   `(font-latex-bold ((,class (:inherit bold))))
+   `(font-latex-warning ((,class (:inherit font-lock-warning))))
+   `(font-latex-sedate ((,class (:foreground ,zenburn-yellow :weight bold ))))
+   `(font-latex-title-4 ((,class (:inherit variable-pitch :weight bold))))
+
    ;; auto-complete
    `(ac-candidate-face ((,class (:background ,zenburn-bg+3 :foreground "black"))))
    `(ac-selection-face ((,class (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))

@@ -176,6 +176,12 @@
 
      ;;; external
 
+     ;; auctex
+     (font-latex-bold ((t (:inherit bold))))
+     (font-latex-warning ((t (:inherit font-lock-warning-face))))
+     (font-latex-sedate ((t (:inherit zenburn-strong-1-face))))
+     (font-latex-title-4 ((t (:inherit variable-pitch :weight bold))))
+
      ;; auto-complete
      (ac-candidate-face ((t (:background ,zenburn-bg+3 :foreground "black"))))
      (ac-selection-face ((t (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
