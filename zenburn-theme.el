@@ -326,17 +326,17 @@
    `(magit-branch ((,class (:foreground ,zenburn-orange :weight bold))))
 
    ;; message-mode
-   `(message-cited-text-face ((,class (:inherit font-lock-comment))))
-   `(message-header-name-face ((,class (:foreground ,zenburn-green+1))))
-   `(message-header-other-face ((,class (:foreground ,zenburn-green))))
-   `(message-header-to-face ((,class (:foreground ,zenburn-yellow :weight bold))))
-   `(message-header-from-face ((,class (:foreground ,zenburn-yellow :weight bold))))
-   `(message-header-cc-face ((,class (:foreground ,zenburn-yellow :weight bold))))
-   `(message-header-newsgroups-face ((,class (:foreground ,zenburn-yellow :weight bold))))
-   `(message-header-subject-face ((,class (:foreground ,zenburn-orange :weight bold))))
-   `(message-header-xheader-face ((,class (:foreground ,zenburn-green))))
-   `(message-mml-face ((,class (:foreground ,zenburn-yellow :weight bold))))
-   `(message-separator-face ((,class (:inherit font-lock-comment))))
+   `(message-cited-text ((,class (:inherit font-lock-comment))))
+   `(message-header-name ((,class (:foreground ,zenburn-green+1))))
+   `(message-header-other ((,class (:foreground ,zenburn-green))))
+   `(message-header-to ((,class (:foreground ,zenburn-yellow :weight bold))))
+   `(message-header-from ((,class (:foreground ,zenburn-yellow :weight bold))))
+   `(message-header-cc ((,class (:foreground ,zenburn-yellow :weight bold))))
+   `(message-header-newsgroups ((,class (:foreground ,zenburn-yellow :weight bold))))
+   `(message-header-subject ((,class (:foreground ,zenburn-orange :weight bold))))
+   `(message-header-xheader ((,class (:foreground ,zenburn-green))))
+   `(message-mml ((,class (:foreground ,zenburn-yellow :weight bold))))
+   `(message-separator ((,class (:inherit font-lock-comment))))
 
    ;; mew
    `(mew-face-header-subject ((,class (:foreground ,zenburn-orange))))
