@@ -292,7 +292,20 @@
    `(gnus-x ((,class (:background ,zenburn-fg :foreground ,zenburn-bg))))
 
    ;; helm
+   `(helm-header
+     ((,class (:foreground ,zenburn-green
+			   :background ,zenburn-bg
+			   :underline nil
+			   :box nil))))
+   `(helm-source-header
+     ((,class (:foreground ,zenburn-yellow
+                           :background ,zenburn-bg-1
+			   :weight bold
+                           :box (:line-width -1 :style released-button)))))
    `(helm-selection ((,class (:background ,zenburn-bg-1))))
+   `(helm-selection-line ((,class (:background ,zenburn-bg-1))))
+   `(helm-visible-mark ((,class (:foreground ,zenburn-bg :background ,zenburn-yellow-2))))
+   `(helm-candidate-number ((,class (:foreground ,zenburn-green+4 :background ,zenburn-bg-1))))
 
    ;; hl-line-mode
    `(hl-line-face ((,class (:background ,zenburn-bg-1))))
