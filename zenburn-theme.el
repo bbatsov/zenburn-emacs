@@ -385,6 +385,11 @@
    `(mew-face-eof-message ((,class (:foreground ,zenburn-green))))
    `(mew-face-eof-part ((,class (:foreground ,zenburn-yellow))))
 
+   ;; mic-paren
+   `(paren-face-match ((,class (:foreground ,zenburn-cyan :background ,zenburn-bg :weight bold))))
+   `(paren-face-mismatch ((,class (:foreground ,zenburn-bg :background ,zenburn-magenta :weight bold))))
+   `(paren-face-no-match ((,class (:foreground ,zenburn-bg :background ,zenburn-red :weight bold))))
+
    ;; nav
    `(nav-face-heading ((,class (:foreground ,zenburn-yellow))))
    `(nav-face-button-num ((,class (:foreground ,zenburn-cyan))))
