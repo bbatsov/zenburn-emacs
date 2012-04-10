@@ -506,7 +506,7 @@
    `(wl-highlight-summary-displaying-face ((,class (:underline t :weight bold))))
 
    ;; which-func-mode
-   `(which-func ((,class (:foreground ,zenburn-green+1)))))
+   `(which-func ((,class (:foreground ,zenburn-green+4)))))
 
   ;;; custom theme variables
   (custom-theme-set-variables
