@@ -187,6 +187,10 @@
    `(diff-file-header
      ((,class (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))))
 
+   ;; ert
+   `(ert-test-result-expected ((,class (:foreground ,zenburn-green+4 :background ,zenburn-bg))))
+   `(ert-test-result-unexpected ((,class (:foreground ,zenburn-red :background ,zenburn-bg))))
+
    ;; eshell
    `(eshell-prompt ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(eshell-ls-archive ((,class (:foreground ,zenburn-red-1 :weight bold))))
