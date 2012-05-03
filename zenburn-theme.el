@@ -492,7 +492,7 @@
    `(whitespace-hspace ((,class (:background ,zenburn-bg :foreground ,zenburn-bg+1))))
    `(whitespace-tab ((,class (:background ,zenburn-bg :foreground ,zenburn-red))))
    `(whitespace-newline ((,class (:foreground ,zenburn-bg+1))))
-   `(whitespace-trailing ((,class (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(whitespace-trailing ((,class (:background ,zenburn-red))))
    `(whitespace-line ((,class (:background ,zenburn-bg-05 :foreground ,zenburn-magenta))))
    `(whitespace-space-before-tab ((,class (:background ,zenburn-orange :foreground ,zenburn-orange))))
    `(whitespace-indentation ((,class (:background ,zenburn-yellow :foreground ,zenburn-red))))
