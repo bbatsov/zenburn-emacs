@@ -341,7 +341,6 @@
      ;; magit
      (magit-section-title ((t (:inherit zenburn-strong-1-face))))
      (magit-branch ((t (:inherit zenburn-strong-2-face))))
-     (magit-item-highlight ((t (:background ,zenburn-bg-1))))
 
      ;; message-mode
      (message-cited-text-face ((t (:inherit font-lock-comment))))
