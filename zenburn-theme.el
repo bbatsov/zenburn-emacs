@@ -4,7 +4,7 @@
 
 ;; Author: Bozhidar Batsov <bozhidar.batsov@gmail.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
-;; Version: 1.4
+;; Version: 1.5
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -298,13 +298,13 @@
    ;; helm
    `(helm-header
      ((,class (:foreground ,zenburn-green
-			   :background ,zenburn-bg
-			   :underline nil
-			   :box nil))))
+                           :background ,zenburn-bg
+                           :underline nil
+                           :box nil))))
    `(helm-source-header
      ((,class (:foreground ,zenburn-yellow
                            :background ,zenburn-bg-1
-			   :weight bold
+                           :weight bold
                            :box (:line-width -1 :style released-button)))))
    `(helm-selection ((,class (:background ,zenburn-bg-1))))
    `(helm-selection-line ((,class (:background ,zenburn-bg-1))))
