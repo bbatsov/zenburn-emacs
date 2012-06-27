@@ -395,6 +395,10 @@
    `(paren-face-mismatch ((,class (:foreground ,zenburn-bg :background ,zenburn-magenta :weight bold))))
    `(paren-face-no-match ((,class (:foreground ,zenburn-bg :background ,zenburn-red :weight bold))))
 
+   ;; mumamo
+   `(mumamo-background-chunk-major ((,class (:background nil))))
+   `(mumamo-background-chunk-submode1 ((,class (:background ,zenburn-bg-1))))
+
    ;; nav
    `(nav-face-heading ((,class (:foreground ,zenburn-yellow))))
    `(nav-face-button-num ((,class (:foreground ,zenburn-cyan))))
