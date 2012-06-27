@@ -347,6 +347,7 @@
    ;; magit
    `(magit-section-title ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(magit-branch ((,class (:foreground ,zenburn-orange :weight bold))))
+   `(magit-item-highlight ((,class (:background ,zenburn-bg+1 :weight bold))))
 
    ;; message-mode
    `(message-cited-text ((,class (:inherit font-lock-comment))))
