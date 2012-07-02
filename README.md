@@ -7,34 +7,13 @@ that of its many users I presume) that it's one of the best low
 contrast color themes out there and that it's is exceptionally easy on
 the eyes. 
 
-The theme has two versions - one for Emacs 23, relying on the
-`color-theme` package and another for Emacs 24 using the built-in
-theming support there.
+The theme has two versions - one for Emacs 24 using it's new built-in
+theming support, which you can find in this branch.  A version for
+Emacs 23 exist in the emacs23 branch.
 
 # Installation
 
-## Emacs 23
-
-Zenburn depends on the `color-theme` package, so you should have it
-installed. In zenburn's repo you'll find a stripped down version of
-color-theme (without the built-in themes), suitable for use with
-zenburn. Finally put this in your `.emacs`(or `init.el`):
-
-``` elisp
-(require 'color-theme-zenburn)
-(color-theme-zenburn)
-```
-
-Zenburn for Emacs is also available for installation via the
-[Marmalade](http://marmalade-repo.org/) package repository. Follow the
-installation instructions there to install `package.el` and
-afterwards you can install the zenburn theme like this:
-
-`M-x package-install color-theme-zenburn`
-
-## Emacs 24
-
-### Manual
+## Manual
 
 Download `zenburn-theme.el` to the directory `~/.emacs.d/themes/`. Add this to your
 `.emacs`:
@@ -45,7 +24,7 @@ Now you can load the theme with the interactive function `load-theme` like this:
 
 `M-x load-theme RET zenburn`
 
-### Package.el
+## Package.el
 
 Zenburn is available in both [Marmalade](http://marmalade-repo.org) and [MELPA](http://melpa.milkbox.net).
 You can install with the following command:
