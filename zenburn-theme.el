@@ -548,6 +548,7 @@
 
 ;; Local Variables:
 ;; no-byte-compile: t
+;; indent-tabs-mode: nil
 ;; End:
 
 ;;; zenburn-theme.el ends here.
