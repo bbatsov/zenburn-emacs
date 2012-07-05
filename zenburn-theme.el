@@ -402,6 +402,13 @@
    `(nav-face-file ((,class (:foreground ,zenburn-fg))))
    `(nav-face-hfile ((,class (:foreground ,zenburn-red-4))))
 
+   ;; mumamo
+   `(mumamo-background-chunk-major ((,class (:background nil))))
+   `(mumamo-background-chunk-submode1 ((,class (:background ,zenburn-bg-1))))
+   `(mumamo-background-chunk-submode2 ((,class (:background ,zenburn-bg+2))))
+   `(mumamo-background-chunk-submode3 ((,class (:background ,zenburn-bg+3))))
+   `(mumamo-background-chunk-submode4 ((,class (:background ,zenburn-bg+1))))
+
    ;; org-mode
    `(org-agenda-date-today
      ((,class (:foreground "white" :slant italic :weight bold))) t)
