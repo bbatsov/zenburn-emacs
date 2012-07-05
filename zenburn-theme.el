@@ -306,8 +306,8 @@
                            :background ,zenburn-bg-1
                            :weight bold
                            :box (:line-width -1 :style released-button)))))
-   `(helm-selection ((,class (:background ,zenburn-bg-1))))
-   `(helm-selection-line ((,class (:background ,zenburn-bg-1))))
+   `(helm-selection ((,class (:background ,zenburn-bg+1 :underline nil))))
+   `(helm-selection-line ((,class (:background ,zenburn-bg+1))))
    `(helm-visible-mark ((,class (:foreground ,zenburn-bg :background ,zenburn-yellow-2))))
    `(helm-candidate-number ((,class (:foreground ,zenburn-green+4 :background ,zenburn-bg-1))))
 
