@@ -556,6 +556,7 @@
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
+;; eval: (rainbow-mode 1)
 ;; End:
 
 ;;; zenburn-theme.el ends here.
