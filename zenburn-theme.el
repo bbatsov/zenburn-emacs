@@ -493,6 +493,9 @@
    ;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,zenburn-red))))
 
+   ;; volatile-highlights
+   `(vhl/default-face ((,class (:background ,zenburn-bg+1))))
+
    ;; whitespace-mode
    `(whitespace-space ((,class (:background ,zenburn-bg :foreground ,zenburn-bg+1))))
    `(whitespace-hspace ((,class (:background ,zenburn-bg :foreground ,zenburn-bg+1))))
