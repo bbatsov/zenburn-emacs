@@ -7,9 +7,8 @@ that of its many users I presume) that it's one of the best low
 contrast color themes out there and that it's is exceptionally easy on
 the eyes. 
 
-The theme has two versions - one for Emacs 24 using it's new built-in
-theming support, which you can find in this branch.  A version for
-Emacs 23 exist in the emacs23 branch.
+This theme uses the new built-in theming support available starting
+with Emacs 24.
 
 # Installation
 
