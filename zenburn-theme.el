@@ -323,6 +323,7 @@
    `(helm-source-header
      ((,class (:foreground ,zenburn-yellow
                            :background ,zenburn-bg-1
+                           :underline nil
                            :weight bold
                            :box (:line-width -1 :style released-button)))))
    `(helm-selection ((,class (:background ,zenburn-bg+1 :underline nil))))
