@@ -202,7 +202,7 @@
    `(diff-added ((,class (:foreground ,zenburn-green+4))))
    `(diff-changed ((,class (:foreground ,zenburn-yellow))))
    `(diff-removed ((,class (:foreground ,zenburn-red))))
-   `(diff-header ((,class (:background ,zenburn-bg+1))))
+   `(diff-header ((,class (:background ,zenburn-bg+2))))
    `(diff-file-header
      ((,class (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))))
 
@@ -367,6 +367,7 @@
    ;; magit
    `(magit-section-title ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(magit-branch ((,class (:foreground ,zenburn-orange :weight bold))))
+   `(magit-item-highlight ((,class (:background ,zenburn-bg+1 :weight bold))))
 
    ;; message-mode
    `(message-cited-text ((,class (:inherit font-lock-comment))))
@@ -413,6 +414,10 @@
    `(paren-face-match ((,class (:foreground ,zenburn-cyan :background ,zenburn-bg :weight bold))))
    `(paren-face-mismatch ((,class (:foreground ,zenburn-bg :background ,zenburn-magenta :weight bold))))
    `(paren-face-no-match ((,class (:foreground ,zenburn-bg :background ,zenburn-red :weight bold))))
+
+   ;; mumamo
+   `(mumamo-background-chunk-major ((,class (:background nil))))
+   `(mumamo-background-chunk-submode1 ((,class (:background ,zenburn-bg-1))))
 
    ;; nav
    `(nav-face-heading ((,class (:foreground ,zenburn-yellow))))
