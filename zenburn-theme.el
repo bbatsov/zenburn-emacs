@@ -535,7 +535,12 @@
    `(wl-highlight-summary-displaying-face ((,class (:underline t :weight bold))))
 
    ;; which-func-mode
-   `(which-func ((,class (:foreground ,zenburn-green+4)))))
+   `(which-func ((,class (:foreground ,zenburn-green+4))))
+
+   ;; yascroll
+   `(yascroll:thumb-text-area ((,class (:background ,zenburn-bg-1))))
+   `(yascroll:thumb-fringe ((,class (:background ,zenburn-bg-1 :foreground ,zenburn-bg-1))))
+   )
 
   ;;; custom theme variables
   (custom-theme-set-variables
