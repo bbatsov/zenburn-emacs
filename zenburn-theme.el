@@ -183,7 +183,7 @@
    `(diff-added ((,class (:foreground ,zenburn-green+4))))
    `(diff-changed ((,class (:foreground ,zenburn-yellow))))
    `(diff-removed ((,class (:foreground ,zenburn-red))))
-   `(diff-header ((,class (:background ,zenburn-bg+1))))
+   `(diff-header ((,class (:background ,zenburn-bg+2))))
    `(diff-file-header
      ((,class (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))))
 
