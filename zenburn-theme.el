@@ -157,6 +157,25 @@
 
    `(c-annotation-face ((,class (:inherit font-lock-constant-face))))
 
+   ;;; newsticker
+   `(newsticker-date-face ((,class (:foreground ,zenburn-fg))))
+   `(newsticker-default-face ((,class (:foreground ,zenburn-fg))))
+   `(newsticker-enclosure-face ((,class (:foreground ,zenburn-green+3))))
+   `(newsticker-extra-face ((,class (:foreground ,zenburn-bg+2 :height 0.8))))
+   `(newsticker-feed-face ((,class (:foreground ,zenburn-fg))))
+   `(newsticker-immortal-item-face ((,class (:foreground ,zenburn-green))))
+   `(newsticker-new-item-face ((,class (:foreground ,zenburn-blue))))
+   `(newsticker-obsolete-item-face ((,class (:foreground ,zenburn-red))))
+   `(newsticker-old-item-face ((,class (:foreground ,zenburn-bg+3))))
+   `(newsticker-statistics-face ((,class (:foreground ,zenburn-fg))))
+   `(newsticker-treeview-face ((,class (:foreground ,zenburn-fg))))
+   `(newsticker-treeview-immortal-face ((,class (:foreground ,zenburn-green))))
+   `(newsticker-treeview-listwindow-face ((,class (:foreground ,zenburn-fg))))
+   `(newsticker-treeview-new-face ((,class (:foreground ,zenburn-blue :weight bold))))
+   `(newsticker-treeview-obsolete-face ((,class (:foreground ,zenburn-red))))
+   `(newsticker-treeview-old-face ((,class (:foreground ,zenburn-bg+3))))
+   `(newsticker-treeview-selection-face ((,class (:foreground ,zenburn-yellow))))
+
    ;;; external
 
    ;; full-ack
