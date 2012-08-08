@@ -462,7 +462,9 @@
    `(org-time-grid ((,class (:foreground ,zenburn-orange))))
    `(org-todo ((,class (:bold t :foreground ,zenburn-red :weight bold))))
    `(org-upcoming-deadline ((,class (:inherit font-lock-keyword-face))))
-   `(org-warning ((,class (:bold t :foreground ,zenburn-red :weight bold))))
+   `(org-warning ((,class (:bold t :foreground ,zenburn-red :weight bold :underline nil))))
+   `(org-column ((,class (:background ,zenburn-bg-1))))
+   `(org-column-title ((,class (:background ,zenburn-bg-1 :underline t :weight bold))))
 
    ;; outline
    `(outline-8 ((,class (:inherit default))))
