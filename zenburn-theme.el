@@ -4,7 +4,7 @@
 
 ;; Author: Bozhidar Batsov <bozhidar.batsov@gmail.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
-;; Version: 1.5
+;; Version: 1.6
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -581,7 +581,7 @@
   (eval-after-load 'term
     `(setq ansi-term-color-vector
          (vector 'unspecified ,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
-		   ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg))))
+                   ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg))))
 
 ;;;###autoload
 (when load-file-name
