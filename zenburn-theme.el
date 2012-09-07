@@ -140,18 +140,18 @@
    `(vertical-border ((,class (:foreground ,zenburn-fg))))
 
    ;;; font lock
-   `(font-lock-builtin-face ((,class (:foreground ,zenburn-blue))))
+   `(font-lock-builtin-face ((,class (:foreground ,zenburn-cyan))))
    `(font-lock-comment-face ((,class (:foreground ,zenburn-green))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,zenburn-green))))
    `(font-lock-constant-face ((,class (:foreground ,zenburn-green+4))))
    `(font-lock-doc-face ((,class (:foreground ,zenburn-green+1))))
-   `(font-lock-doc-string-face ((,class (:foreground ,zenburn-blue+1))))
+   `(font-lock-doc-string-face ((,class (:foreground ,zenburn-blue-2))))
    `(font-lock-function-name-face ((,class (:foreground ,zenburn-blue))))
    `(font-lock-keyword-face ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(font-lock-negation-char-face ((,class (:foreground ,zenburn-fg))))
-   `(font-lock-preprocessor-face ((,class (:foreground ,zenburn-blue))))
+   `(font-lock-preprocessor-face ((,class (:foreground ,zenburn-blue+1))))
    `(font-lock-string-face ((,class (:foreground ,zenburn-red))))
-   `(font-lock-type-face ((,class (:foreground ,zenburn-blue))))
+   `(font-lock-type-face ((,class (:foreground ,zenburn-blue-1))))
    `(font-lock-variable-name-face ((,class (:foreground ,zenburn-orange))))
    `(font-lock-warning-face ((,class (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
 
@@ -488,7 +488,7 @@
    `(rainbow-delimiters-depth-9-face ((,class (:foreground ,zenburn-blue-2))))
    `(rainbow-delimiters-depth-10-face ((,class (:foreground ,zenburn-orange))))
    `(rainbow-delimiters-depth-11-face ((,class (:foreground ,zenburn-green))))
-   `(rainbow-delimiters-depth-12-face ((,class (:foreground ,zenburn-blue-5))))
+   `( rainbow-delimiters-depth-12-face ((,class (:foreground ,zenburn-blue-5))))
 
    ;; rpm-mode
    `(rpm-spec-dir-face ((,class (:foreground ,zenburn-green))))
