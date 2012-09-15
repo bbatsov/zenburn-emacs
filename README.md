@@ -17,7 +17,9 @@ with Emacs 24.
 Download `zenburn-theme.el` to the directory `~/.emacs.d/themes/`. Add this to your
 `.emacs`:
 
-`(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")`
+```lisp
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+```
 
 Now you can load the theme with the interactive function `load-theme` like this:
 
@@ -25,14 +27,18 @@ Now you can load the theme with the interactive function `load-theme` like this:
 
 ## Package.el
 
-Zenburn is available in both [Marmalade](http://marmalade-repo.org) and [MELPA](http://melpa.milkbox.net).
-You can install with the following command:
+Zenburn is available in both [Marmalade](http://marmalade-repo.org)
+and [MELPA](http://melpa.milkbox.net).
+Keep in mind the fact the version in the Marmalade repo may not always
+be up-to-date.
+
+You can install `zenburn` with the following command:
 
 `M-x package-install zenburn-theme`
 
 To load it automatically on Emacs startup add this to your init file:
 
-```elisp
+```lisp
 (load-theme 'zenburn t)
 ```
 
@@ -49,8 +55,8 @@ Prelude's default color theme. You can load Zenburn at any time by
 Please, report any problems that you find on the projects integrated
 issue tracker. If you've added some improvements and you want them
 included upstream don't hesitate to send me a patch or even better - a
-GitHub pull request.  [These](https://github.com/bbatsov/zenburn-emacs/contributors)
+GitHub pull request. [These](https://github.com/bbatsov/zenburn-emacs/contributors)
 contributors have done so.
 
-Cheers,</br>
+Cheers,<br\>
 Bozhidar
