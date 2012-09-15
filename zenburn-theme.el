@@ -513,11 +513,39 @@
    `(show-paren-mismatch ((,class (:foreground ,zenburn-red-3 :background ,zenburn-bg :weight bold))))
    `(show-paren-match ((,class (:foreground ,zenburn-blue-1 :background ,zenburn-bg :weight bold))))
 
+   ;; sml-mode-line
+   '(sml-modeline-end-face ((t :inherit default :width condensed)))
+
    ;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,zenburn-red))))
 
+   ;; tabbar
+   `(tabbar-button ((,class (:foreground ,zenburn-fg
+                             :background ,zenburn-bg))))
+   `(tabbar-selected ((,class (:foreground ,zenburn-fg
+                               :background ,zenburn-bg
+                               :box (:line-width -1 :style pressed-button)))))
+   `(tabbar-unselected ((,class (:foreground ,zenburn-fg
+                                 :background ,zenburn-bg+1
+                                 :box (:line-width -1 :style released-button)))))
+
    ;; volatile-highlights
    `(vhl/default-face ((,class (:background ,zenburn-bg+1))))
+
+   ;; emacs-w3m
+   `(w3m-anchor ((,class (:foreground ,zenburn-yellow :underline t
+                          :weight bold))))
+   `(w3m-arrived-anchor ((,class (:foreground ,zenburn-yellow-2
+                                  :underline t :weight normal))))
+   `(w3m-form ((,class (:foreground ,zenburn-red-1 :underline t))))
+   `(w3m-header-line-location-title ((,class (:foreground ,zenburn-yellow
+                                              :underline t :weight bold))))
+   '(w3m-history-current-url ((t (:inherit match))))
+   `(w3m-lnum ((,class (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(w3m-lnum-match ((,class (:background ,zenburn-bg-1
+                              :foreground ,zenburn-orange
+                              :weight bold))))
+   `(w3m-lnum-minibuffer-prompt ((,class (:foreground ,zenburn-yellow))))
 
    ;; whitespace-mode
    `(whitespace-space ((,class (:background ,zenburn-bg :foreground ,zenburn-bg+1))))
