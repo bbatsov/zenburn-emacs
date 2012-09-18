@@ -456,7 +456,7 @@
    `(org-scheduled ((,class (:foreground ,zenburn-green+4))))
    `(org-scheduled-previously ((,class (:foreground ,zenburn-red-4))))
    `(org-scheduled-today ((,class (:foreground ,zenburn-blue+1))))
-   `(org-special-keyword ((,class (:foreground ,zenburn-yellow-1))))
+   `(org-special-keyword ((,class (:foreground ,zenburn-fg-1 :weight normal))))
    `(org-table ((,class (:foreground ,zenburn-green+2))))
    `(org-tag ((,class (:bold t :weight bold))))
    `(org-time-grid ((,class (:foreground ,zenburn-orange))))
