@@ -332,7 +332,7 @@
    `(helm-candidate-number ((,class (:foreground ,zenburn-green+4 :background ,zenburn-bg-1))))
 
    ;; hl-line-mode
-   `(hl-line-face ((,class (:background ,zenburn-bg-1))))
+   `(hl-line-face ((,class (:background ,zenburn-bg-05))))
 
    ;; ido-mode
    `(ido-first-match ((,class (:foreground ,zenburn-yellow :weight bold))))
