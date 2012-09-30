@@ -334,6 +334,9 @@
    ;; hl-line-mode
    `(hl-line-face ((,class (:background ,zenburn-bg-05))))
 
+   ;; hl-sexp
+   `(hl-sexp-face ((,class (:background ,zenburn-bg+1))))
+
    ;; ido-mode
    `(ido-first-match ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(ido-only-match ((,class (:foreground ,zenburn-orange :weight bold))))
