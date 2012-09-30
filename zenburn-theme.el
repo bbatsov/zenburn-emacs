@@ -333,6 +333,7 @@
 
    ;; hl-line-mode
    `(hl-line-face ((,class (:background ,zenburn-bg-05))))
+   `(hl-line ((,class (:background ,zenburn-bg-05)))) ; old emacsen
 
    ;; hl-sexp
    `(hl-sexp-face ((,class (:background ,zenburn-bg+1))))
@@ -615,9 +616,11 @@
                    ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg))))
 
 ;;;###autoload
-(when load-file-name
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory
+                   (file-name-directory load-file-name))))
 
 (provide-theme 'zenburn)
 
