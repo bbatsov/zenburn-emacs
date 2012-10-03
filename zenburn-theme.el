@@ -469,7 +469,7 @@
    `(org-scheduled ((t (:foreground ,zenburn-green+4))))
    `(org-scheduled-previously ((t (:foreground ,zenburn-red-4))))
    `(org-scheduled-today ((t (:foreground ,zenburn-blue+1))))
-   `(org-special-keyword ((t (:foreground ,zenburn-yellow-1))))
+   `(org-special-keyword ((t (:foreground ,zenburn-fg-1 :weight normal))))
    `(org-table ((t (:foreground ,zenburn-green+2))))
    `(org-tag ((t (:bold t :weight bold))))
    `(org-time-grid ((t (:foreground ,zenburn-orange))))
