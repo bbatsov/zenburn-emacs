@@ -207,12 +207,12 @@
    `(clojure-test-success-face ((t (:foreground ,zenburn-green+1 :weight bold :underline t))))
 
    ;; diff
-   `(diff-added ((,class (:foreground ,zenburn-green+4))
-                 (t (:foreground ,zenburn-green-1))))
-   `(diff-changed ((t (:foreground ,zenburn-yellow))))
-   `(diff-removed ((,class (:foreground ,zenburn-red))
-                   (t (:foreground ,zenburn-red-3))))
-   `(diff-header ((,class (:background ,zenburn-bg+2))
+   `(diff-added ((,class (:foreground ,zenburn-green+4 :background nil))
+                 (t (:foreground ,zenburn-green-1 :background nil))))
+   `(diff-changed ((t (:foreground ,zenburn-yellow :background nil))))
+   `(diff-removed ((,class (:foreground ,zenburn-red :background nil))
+                   (t (:foreground ,zenburn-red-3 :background nil))))
+   `(diff-header ((,class (:background ,zenburn-bg+2 :background nil))
                   (t (:background ,zenburn-fg :foreground ,zenburn-bg))))
    `(diff-file-header
      ((,class (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))
