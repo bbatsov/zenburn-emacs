@@ -110,7 +110,7 @@
    `(compilation-line-face ((t (:foreground ,zenburn-yellow))))
    `(compilation-line-number ((t (:foreground ,zenburn-yellow))))
    `(compilation-message-face ((t (:foreground ,zenburn-blue))))
-   `(compilation-warning-face ((t (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
+   `(compilation-warning-face ((t (:foreground ,zenburn-orange :weight bold :underline t))))
 
    ;;; grep
    `(grep-context-face ((t (:foreground ,zenburn-fg))))
@@ -156,7 +156,7 @@
    `(font-lock-string-face ((t (:foreground ,zenburn-red))))
    `(font-lock-type-face ((t (:foreground ,zenburn-blue-1))))
    `(font-lock-variable-name-face ((t (:foreground ,zenburn-orange))))
-   `(font-lock-warning-face ((t (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
+   `(font-lock-warning-face ((t (:foreground ,zenburn-orange :weight bold :underline t))))
 
    `(c-annotation-face ((t (:inherit font-lock-constant-face))))
 
@@ -232,10 +232,10 @@
 
    ;; flymake
    `(flymake-errline ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
-   `(flymake-warnline ((t (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
+   `(flymake-warnline ((t (:foreground ,zenburn-orange :weight bold :underline t))))
 
    ;; flyspell
-   `(flyspell-duplicate ((t (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
+   `(flyspell-duplicate ((t (:foreground ,zenburn-orange :weight bold :underline t))))
    `(flyspell-incorrect ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
 
    ;; erc
