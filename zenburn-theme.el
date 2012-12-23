@@ -562,15 +562,15 @@
    `(w3m-lnum-minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
 
    ;; whitespace-mode
-   `(whitespace-space ((t (:background ,zenburn-bg :foreground ,zenburn-bg+1))))
-   `(whitespace-hspace ((t (:background ,zenburn-bg :foreground ,zenburn-bg+1))))
-   `(whitespace-tab ((t (:background ,zenburn-bg :foreground ,zenburn-red))))
+   `(whitespace-space ((t (:background ,zenburn-bg+1 :foreground ,zenburn-bg+1))))
+   `(whitespace-hspace ((t (:background ,zenburn-bg+1 :foreground ,zenburn-bg+1))))
+   `(whitespace-tab ((t (:background ,zenburn-red-1))))
    `(whitespace-newline ((t (:foreground ,zenburn-bg+1))))
-   `(whitespace-trailing ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
-   `(whitespace-line ((t (:background ,zenburn-bg-05 :foreground ,zenburn-magenta))))
+   `(whitespace-trailing ((t (:background ,zenburn-red))))
+   `(whitespace-line ((t (:background ,zenburn-bg :foreground ,zenburn-magenta))))
    `(whitespace-space-before-tab ((t (:background ,zenburn-orange :foreground ,zenburn-orange))))
    `(whitespace-indentation ((t (:background ,zenburn-yellow :foreground ,zenburn-red))))
-   `(whitespace-empty ((t (:background ,zenburn-yellow :foreground ,zenburn-red))))
+   `(whitespace-empty ((t (:background ,zenburn-yellow))))
    `(whitespace-space-after-tab ((t (:background ,zenburn-yellow :foreground ,zenburn-red))))
 
    ;; wanderlust
