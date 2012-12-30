@@ -201,6 +201,11 @@
    `(popup-scroll-bar-background-face ((t (:background ,zenburn-bg-1))))
    `(popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
 
+   ;; clojure-test-mode
+   `(clojure-test-failure-face ((t (:foreground ,zenburn-orange))))
+   `(clojure-test-error-face ((t (:foreground ,zenburn-red))))
+   `(clojure-test-success-face ((t (:foreground ,zenburn-green+1))))
+
    ;; diff
    `(diff-added ((,class (:foreground ,zenburn-green+4))
                  (t (:foreground ,zenburn-green-1))))
