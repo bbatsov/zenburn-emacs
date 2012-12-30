@@ -202,9 +202,9 @@
    `(popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
 
    ;; clojure-test-mode
-   `(clojure-test-failure-face ((t (:foreground ,zenburn-orange))))
-   `(clojure-test-error-face ((t (:foreground ,zenburn-red))))
-   `(clojure-test-success-face ((t (:foreground ,zenburn-green+1))))
+   `(clojure-test-failure-face ((t (:foreground ,zenburn-orange :weight bold :underline t))))
+   `(clojure-test-error-face ((t (:foreground ,zenburn-red :weight bold :underline t))))
+   `(clojure-test-success-face ((t (:foreground ,zenburn-green+1 :weight bold :underline t))))
 
    ;; diff
    `(diff-added ((,class (:foreground ,zenburn-green+4))
