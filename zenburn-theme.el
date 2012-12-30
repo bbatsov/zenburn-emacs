@@ -234,6 +234,10 @@
    `(flymake-errline ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
    `(flymake-warnline ((t (:foreground ,zenburn-orange :weight bold :underline t))))
 
+   ;; flycheck
+   `(flycheck-error-face ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
+   `(flymake-warning-face ((t (:foreground ,zenburn-orange :weight bold :underline t))))
+
    ;; flyspell
    `(flyspell-duplicate ((t (:foreground ,zenburn-orange :weight bold :underline t))))
    `(flyspell-incorrect ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
