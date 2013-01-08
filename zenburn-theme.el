@@ -624,15 +624,11 @@
    'zenburn
    `(ansi-color-names-vector [,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
                                           ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg])
+   `(ansi-term-color-vector [,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
+                                         ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg])
 
    ;; fill-column-indicator
-   `(fci-rule-color ,zenburn-bg-05))
-
-  ;;; colors for the ansi-term
-  (eval-after-load 'term
-    `(setq ansi-term-color-vector
-           (vector 'unspecified ,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
-                   ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg))))
+   `(fci-rule-color ,zenburn-bg-05)))
 
 ;;;###autoload
 (and load-file-name
