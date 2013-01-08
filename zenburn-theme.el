@@ -631,7 +631,7 @@
   ;;; colors for the ansi-term
   (eval-after-load 'term
     `(setq ansi-term-color-vector
-           (vector 'unspecified ,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
+           (vector ,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
                    ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg))))
 
 ;;;###autoload
