@@ -156,7 +156,7 @@
    `(font-lock-string-face ((t (:foreground ,zenburn-red))))
    `(font-lock-type-face ((t (:foreground ,zenburn-blue-1))))
    `(font-lock-variable-name-face ((t (:foreground ,zenburn-orange))))
-   `(font-lock-warning-face ((t (:foreground ,zenburn-orange :weight bold :underline t))))
+   `(font-lock-warning-face ((t (:foreground ,zenburn-yellow-2 :weight bold))))
 
    `(c-annotation-face ((t (:inherit font-lock-constant-face))))
 
