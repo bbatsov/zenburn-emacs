@@ -92,7 +92,7 @@
    ;;; basic coloring
    `(default ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(cursor ((t (:foreground ,zenburn-fg :background "white"))))
-   `(escape-glyph-face ((t (:foreground ,zenburn-red))))
+   `(escape-glyph ((t (:foreground ,zenburn-yellow :bold t))))
    `(fringe ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(header-line ((t (:foreground ,zenburn-yellow
                                   :background ,zenburn-bg-1
