@@ -1,8 +1,8 @@
 ;;; zenburn-theme.el --- A low contrast color theme for Emacs.
 
-;; Copyright (C) 2011 Bozhidar Batsov
+;; Copyright (C) 2011-2013 Bozhidar Batsov
 
-;; Author: Bozhidar Batsov <bozhidar.batsov@gmail.com>
+;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
 ;; Version: 1.7
 
@@ -22,22 +22,7 @@
 ;;; Commentary:
 ;;
 ;; A port of the popular Vim theme Zenburn for Emacs 24, built on top
-;; of the new built-in theme support in Emacs 24. There exists one
-;; other version of the theme by Daniel Brockman. My version was
-;; originally based on it, but it was in such a disarray, that I
-;; decided to rewrite it from scratch in a more maintainable manner
-;; (hopefully).
-;;
-;;; Installation:
-;;
-;; Drop the theme in a folder that is on `custom-theme-load-path' and
-;; enjoy!
-;;
-;; Don't forget that the theme requires Emacs 24.
-;;
-;;; Bugs:
-;;
-;; None that I'm aware of.
+;; of the new built-in theme support in Emacs 24.
 ;;
 ;;; Credits:
 ;;
@@ -677,4 +662,4 @@
 ;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
 ;; End:
 
-;;; zenburn-theme.el ends here.
+;;; zenburn-theme.el ends here
