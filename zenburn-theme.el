@@ -569,6 +569,24 @@
                                         :background ,zenburn-bg+1
                                         :box (:line-width -1 :style released-button)))))
 
+   ;; term
+   `(term-default-fg-color ((t (:foreground ,zenburn-fg
+                                            :background ,zenburn-fg-1))))
+   `(term-default-bg-color ((t (:foreground ,zenburn-bg
+                                            :background ,zenburn-bg-1))))
+   `(term-color-red ((t (:foreground ,zenburn-red-2
+                                       :background ,zenburn-red-4))))
+   `(term-color-green ((t (:foreground ,zenburn-green
+                                       :background ,zenburn-green+2))))
+   `(term-color-yellow ((t (:foreground ,zenburn-orange
+                                       :background ,zenburn-yellow))))
+   `(term-color-blue ((t (:foreground ,zenburn-blue-1
+                                      :background ,zenburn-blue-4))))
+   `(term-color-magenta ((t (:foreground ,zenburn-magenta
+                                         :background ,zenburn-red))))
+   `(term-color-cyan ((t (:foreground ,zenburn-cyan
+                                       :background ,zenburn-blue))))
+
    ;; volatile-highlights
    `(vhl/default-face ((t (:background ,zenburn-bg+1))))
 
@@ -641,8 +659,6 @@
    'zenburn
    `(ansi-color-names-vector [,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
                                           ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg])
-   `(ansi-term-color-vector [,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
-                                         ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg])
 
    ;; fill-column-indicator
    `(fci-rule-color ,zenburn-bg-05)))
