@@ -570,10 +570,8 @@
                                         :box (:line-width -1 :style released-button)))))
 
    ;; term
-   `(term-default-fg-color ((t (:foreground ,zenburn-fg
-                                            :background ,zenburn-fg-1))))
-   `(term-default-bg-color ((t (:foreground ,zenburn-bg
-                                            :background ,zenburn-bg-1))))
+   `(term-color-black ((t (:foreground ,zenburn-bg
+                                       :background ,zenburn-bg-1))))
    `(term-color-red ((t (:foreground ,zenburn-red-2
                                        :background ,zenburn-red-4))))
    `(term-color-green ((t (:foreground ,zenburn-green
@@ -586,6 +584,10 @@
                                          :background ,zenburn-red))))
    `(term-color-cyan ((t (:foreground ,zenburn-cyan
                                        :background ,zenburn-blue))))
+   `(term-color-white ((t (:foreground ,zenburn-fg
+                                       :background ,zenburn-fg-1))))
+   '(term-default-fg-color ((t (:inherit term-color-white))))
+   '(term-default-bg-color ((t (:inherit term-color-black))))
 
    ;; volatile-highlights
    `(vhl/default-face ((t (:background ,zenburn-bg+1))))
