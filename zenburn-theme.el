@@ -469,11 +469,11 @@
    `(org-headline-done ((t (:foreground ,zenburn-green+3))))
    `(org-hide ((t (:foreground ,zenburn-bg-1))))
    `(org-level-1 ((t (:foreground ,zenburn-orange))))
-   `(org-level-2 ((t (:foreground ,zenburn-green+1))))
+   `(org-level-2 ((t (:foreground ,zenburn-green+4))))
    `(org-level-3 ((t (:foreground ,zenburn-blue-1))))
    `(org-level-4 ((t (:foreground ,zenburn-yellow-2))))
    `(org-level-5 ((t (:foreground ,zenburn-cyan))))
-   `(org-level-6 ((t (:foreground ,zenburn-green-1))))
+   `(org-level-6 ((t (:foreground ,zenburn-green+2))))
    `(org-level-7 ((t (:foreground ,zenburn-red-4))))
    `(org-level-8 ((t (:foreground ,zenburn-blue-4))))
    `(org-link ((t (:foreground ,zenburn-yellow-2 :underline t))))
@@ -492,11 +492,11 @@
 
    ;; outline
    `(outline-1 ((t (:foreground ,zenburn-orange))))
-   `(outline-2 ((t (:foreground ,zenburn-green+1))))
+   `(outline-2 ((t (:foreground ,zenburn-green+4))))
    `(outline-3 ((t (:foreground ,zenburn-blue-1))))
    `(outline-4 ((t (:foreground ,zenburn-yellow-2))))
    `(outline-5 ((t (:foreground ,zenburn-cyan))))
-   `(outline-6 ((t (:foreground ,zenburn-green-1))))
+   `(outline-6 ((t (:foreground ,zenburn-green+2))))
    `(outline-7 ((t (:foreground ,zenburn-red-4))))
    `(outline-8 ((t (:foreground ,zenburn-blue-4))))
 
