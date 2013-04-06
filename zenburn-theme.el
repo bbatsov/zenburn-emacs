@@ -110,9 +110,9 @@
    `(match ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
 
    ;; faces used by isearch
-   `(isearch ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
+   `(isearch ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg-1))))
    `(isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
-   `(lazy-highlight ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+2))))
+   `(lazy-highlight ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg-05))))
 
    `(menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
@@ -639,7 +639,7 @@
    '(term-default-bg-color ((t (:inherit term-color-black))))
 
    ;; volatile-highlights
-   `(vhl/default-face ((t (:background ,zenburn-bg+1))))
+   `(vhl/default-face ((t (:background ,zenburn-bg-05))))
 
    ;; emacs-w3m
    `(w3m-anchor ((t (:foreground ,zenburn-yellow :underline t
