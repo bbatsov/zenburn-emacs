@@ -469,6 +469,14 @@
    `(paren-face-mismatch ((t (:foreground ,zenburn-bg :background ,zenburn-magenta :weight bold))))
    `(paren-face-no-match ((t (:foreground ,zenburn-bg :background ,zenburn-red :weight bold))))
 
+   ;; mingus
+   `(mingus-directory-face ((t (:foreground ,zenburn-blue))))
+   `(mingus-pausing-face ((t (:foreground ,zenburn-magenta))))
+   `(mingus-playing-face ((t (:foreground ,zenburn-cyan))))
+   `(mingus-playlist-face ((t (:foreground ,zenburn-cyan ))))
+   `(mingus-song-file-face ((t (:foreground ,zenburn-yellow))))
+   `(mingus-stopped-face ((t (:foreground ,zenburn-red))))
+
    ;; nav
    `(nav-face-heading ((t (:foreground ,zenburn-yellow))))
    `(nav-face-button-num ((t (:foreground ,zenburn-cyan))))
