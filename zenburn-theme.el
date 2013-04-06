@@ -213,6 +213,11 @@
    `(clojure-test-error-face ((t (:foreground ,zenburn-red :weight bold :underline t))))
    `(clojure-test-success-face ((t (:foreground ,zenburn-green+1 :weight bold :underline t))))
 
+   ;; ctable
+   `(ctbl:face-cell-select ((,class (:background ,zenburn-blue :foreground ,zenburn-bg))))
+   `(ctbl:face-continue-bar ((,class (:background ,zenburn-bg-01 :foreground ,zenburn-bg))))
+   `(ctbl:face-row-select ((,class (:background ,zenburn-cyan :foreground ,zenburn-bg))))
+
    ;; diff
    `(diff-added ((,class (:foreground ,zenburn-green+4 :background nil))
                  (t (:foreground ,zenburn-green-1 :background nil))))
