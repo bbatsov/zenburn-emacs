@@ -287,6 +287,12 @@
    `(git-gutter:added ((,class (:foreground ,zenburn-green :weight bold :inverse-video t))))
    `(git-gutter:deleted ((,class (:foreground ,zenburn-red :weight bold :inverse-video t))))
    `(git-gutter:modified ((,class (:foreground ,zenburn-magenta :weight bold :inverse-video t))))
+   `(git-gutter:unchanged ((,class (:foreground ,zenburn-fg :weight bold :inverse-video t))))
+
+   ;; git-gutter-fr
+   `(git-gutter-fr:added ((,class (:foreground ,zenburn-green  :weight bold))))
+   `(git-gutter-fr:deleted ((,class (:foreground ,zenburn-red :weight bold))))
+   `(git-gutter-fr:modified ((,class (:foreground ,zenburn-magenta :weight bold))))
 
    ;; gnus
    `(gnus-group-mail-1 ((t (:bold t :inherit gnus-group-mail-1-empty))))
