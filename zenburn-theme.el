@@ -117,7 +117,7 @@
    `(menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
    `(mode-line
-     ((,class (:foreground ,zenburn-green+1
+     ((t (:foreground ,zenburn-green+1
                            :background ,zenburn-bg-1
                            :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
@@ -126,7 +126,7 @@
      ((t (:foreground ,zenburn-green-1
                       :background ,zenburn-bg-05
                       :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:background ,zenburn-bg-1))
+   `(region ((t (:background ,zenburn-bg-1))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((t (:background ,zenburn-red))))
@@ -171,9 +171,9 @@
 
    ;;; external
    `(ace-jump-face-background
-     ((,class (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
    `(ace-jump-face-foreground
-     ((,class (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil))))
 
    ;; full-ack
    `(ack-separator ((t (:foreground ,zenburn-fg))))
@@ -196,17 +196,17 @@
    `(popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
 
    ;; android mode
-   `(android-mode-debug-face ((,class (:foreground ,zenburn-green+1))))
-   `(android-mode-error-face ((,class (:foreground ,zenburn-orange :weight bold))))
-   `(android-mode-info-face ((,class (:foreground ,zenburn-fg))))
-   `(android-mode-verbose-face ((,class (:foreground ,zenburn-green))))
-   `(android-mode-warning-face ((,class (:foreground ,zenburn-yellow))))
+   `(android-mode-debug-face ((t (:foreground ,zenburn-green+1))))
+   `(android-mode-error-face ((t (:foreground ,zenburn-orange :weight bold))))
+   `(android-mode-info-face ((t (:foreground ,zenburn-fg))))
+   `(android-mode-verbose-face ((t (:foreground ,zenburn-green))))
+   `(android-mode-warning-face ((t (:foreground ,zenburn-yellow))))
 
    ;; bm
-   `(bm-face ((,class (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
-   `(bm-fringe-face ((,class (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
-   `(bm-fringe-persistent-face ((,class (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
-   `(bm-persistent-face ((,class (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
+   `(bm-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
+   `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
+   `(bm-fringe-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
+   `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
 
    ;; clojure-test-mode
    `(clojure-test-failure-face ((t (:foreground ,zenburn-orange :weight bold :underline t))))
@@ -214,23 +214,23 @@
    `(clojure-test-success-face ((t (:foreground ,zenburn-green+1 :weight bold :underline t))))
 
    ;; ctable
-   `(ctbl:face-cell-select ((,class (:background ,zenburn-blue :foreground ,zenburn-bg))))
-   `(ctbl:face-continue-bar ((,class (:background ,zenburn-bg-01 :foreground ,zenburn-bg))))
-   `(ctbl:face-row-select ((,class (:background ,zenburn-cyan :foreground ,zenburn-bg))))
+   `(ctbl:face-cell-select ((t (:background ,zenburn-blue :foreground ,zenburn-bg))))
+   `(ctbl:face-continue-bar ((t (:background ,zenburn-bg-05 :foreground ,zenburn-bg))))
+   `(ctbl:face-row-select ((t (:background ,zenburn-cyan :foreground ,zenburn-bg))))
 
    ;; diff
-   `(diff-added ((,class (:foreground ,zenburn-green+4 :background nil))
+   `(diff-added ((t (:foreground ,zenburn-green+4 :background nil))
                  (t (:foreground ,zenburn-green-1 :background nil))))
    `(diff-changed ((t (:foreground ,zenburn-yellow))))
-   `(diff-removed ((,class (:foreground ,zenburn-red :background nil))
+   `(diff-removed ((t (:foreground ,zenburn-red :background nil))
                    (t (:foreground ,zenburn-red-3 :background nil))))
    `(diff-refine-added ((t :inherit diff-added :weight bold)))
    `(diff-refine-change ((t :inherit diff-changed :weight bold)))
    `(diff-refine-removed ((t :inherit diff-removed :weight bold)))
-   `(diff-header ((,class (:background ,zenburn-bg+2))
+   `(diff-header ((t (:background ,zenburn-bg+2))
                   (t (:background ,zenburn-fg :foreground ,zenburn-bg))))
    `(diff-file-header
-     ((,class (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))
+     ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))
       (t (:background ,zenburn-fg :foreground ,zenburn-bg :bold t))))
 
    ;; ert
@@ -284,15 +284,15 @@
    `(erc-underline-face ((t (:underline t))))
 
    ;; git-gutter
-   `(git-gutter:added ((,class (:foreground ,zenburn-green :weight bold :inverse-video t))))
-   `(git-gutter:deleted ((,class (:foreground ,zenburn-red :weight bold :inverse-video t))))
-   `(git-gutter:modified ((,class (:foreground ,zenburn-magenta :weight bold :inverse-video t))))
-   `(git-gutter:unchanged ((,class (:foreground ,zenburn-fg :weight bold :inverse-video t))))
+   `(git-gutter:added ((t (:foreground ,zenburn-green :weight bold :inverse-video t))))
+   `(git-gutter:deleted ((t (:foreground ,zenburn-red :weight bold :inverse-video t))))
+   `(git-gutter:modified ((t (:foreground ,zenburn-magenta :weight bold :inverse-video t))))
+   `(git-gutter:unchanged ((t (:foreground ,zenburn-fg :weight bold :inverse-video t))))
 
    ;; git-gutter-fr
-   `(git-gutter-fr:added ((,class (:foreground ,zenburn-green  :weight bold))))
-   `(git-gutter-fr:deleted ((,class (:foreground ,zenburn-red :weight bold))))
-   `(git-gutter-fr:modified ((,class (:foreground ,zenburn-magenta :weight bold))))
+   `(git-gutter-fr:added ((t (:foreground ,zenburn-green  :weight bold))))
+   `(git-gutter-fr:deleted ((t (:foreground ,zenburn-red :weight bold))))
+   `(git-gutter-fr:modified ((t (:foreground ,zenburn-magenta :weight bold))))
 
    ;; gnus
    `(gnus-group-mail-1 ((t (:bold t :inherit gnus-group-mail-1-empty))))
@@ -379,13 +379,13 @@
    `(helm-candidate-number ((t (:foreground ,zenburn-green+4 :background ,zenburn-bg-1))))
 
    ;; hl-line-mode
-   `(hl-line-face ((,class (:background ,zenburn-bg-05))
+   `(hl-line-face ((t (:background ,zenburn-bg-05))
                    (t :weight bold)))
-   `(hl-line ((,class (:background ,zenburn-bg-05)) ; old emacsen
+   `(hl-line ((t (:background ,zenburn-bg-05)) ; old emacsen
               (t :weight bold)))
 
    ;; hl-sexp
-   `(hl-sexp-face ((,class (:background ,zenburn-bg+1))
+   `(hl-sexp-face ((t (:background ,zenburn-bg+1))
                    (t :weight bold)))
 
    ;; ido-mode
