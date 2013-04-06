@@ -356,6 +356,11 @@
    `(gnus-signature ((t (:foreground ,zenburn-yellow))))
    `(gnus-x ((t (:background ,zenburn-fg :foreground ,zenburn-bg))))
 
+   ;; guide-key
+   `(guide-key/highlight-command-face ((t (:foreground ,zenburn-blue))))
+   `(guide-key/key-face ((t (:foreground ,zenburn-green))))
+   `(guide-key/prefix-command-face ((t (:foreground ,zenburn-green+1))))
+
    ;; helm
    `(helm-header
      ((t (:foreground ,zenburn-green
