@@ -235,7 +235,7 @@
 
    ;; dired+
    `(diredp-display-msg ((t (:foreground ,zenburn-blue))))
-   `(diredp-compressed-file-suffix ((t (:foreground ,zenburn-))))
+   `(diredp-compressed-file-suffix ((t (:foreground ,zenburn-orange))))
    `(diredp-date-time ((t (:foreground ,zenburn-magenta))))
    `(diredp-deletion ((t (:foreground ,zenburn-yellow))))
    `(diredp-deletion-file-name ((t (:foreground ,zenburn-red))))
@@ -253,9 +253,9 @@
    `(diredp-mode-line-marked ((t (:foreground ,zenburn-orange))))
    `(diredp-no-priv ((t (:foreground ,zenburn-fg))))
    `(diredp-number ((t (:foreground ,zenburn-green+1))))
-   `(diredp-other-priv ((t (:foreground ,zenburn-yellow+1))))
+   `(diredp-other-priv ((t (:foreground ,zenburn-yellow-1))))
    `(diredp-rare-priv ((t (:foreground ,zenburn-red-1))))
-   `(diredp-read-priv ((t (:foreground ,zenburn-green-2))))
+   `(diredp-read-priv ((t (:foreground ,zenburn-green-1))))
    `(diredp-symlink ((t (:foreground ,zenburn-yellow))))
    `(diredp-write-priv ((t (:foreground ,zenburn-magenta))))
 
