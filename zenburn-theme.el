@@ -117,7 +117,7 @@
    `(menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
    `(mode-line
-     ((t (:foreground ,zenburn-green+1
+     ((,class (:foreground ,zenburn-green+1
                            :background ,zenburn-bg-1
                            :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
@@ -126,7 +126,7 @@
      ((t (:foreground ,zenburn-green-1
                       :background ,zenburn-bg-05
                       :box (:line-width -1 :style released-button)))))
-   `(region ((t (:background ,zenburn-bg-1))
+   `(region ((,class (:background ,zenburn-bg-1))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((t (:background ,zenburn-red))))
@@ -219,18 +219,18 @@
    `(ctbl:face-row-select ((t (:background ,zenburn-cyan :foreground ,zenburn-bg))))
 
    ;; diff
-   `(diff-added ((t (:foreground ,zenburn-green+4 :background nil))
+   `(diff-added ((,class (:foreground ,zenburn-green+4 :background nil))
                  (t (:foreground ,zenburn-green-1 :background nil))))
    `(diff-changed ((t (:foreground ,zenburn-yellow))))
-   `(diff-removed ((t (:foreground ,zenburn-red :background nil))
+   `(diff-removed ((,class (:foreground ,zenburn-red :background nil))
                    (t (:foreground ,zenburn-red-3 :background nil))))
    `(diff-refine-added ((t :inherit diff-added :weight bold)))
    `(diff-refine-change ((t :inherit diff-changed :weight bold)))
    `(diff-refine-removed ((t :inherit diff-removed :weight bold)))
-   `(diff-header ((t (:background ,zenburn-bg+2))
+   `(diff-header ((,class (:background ,zenburn-bg+2))
                   (t (:background ,zenburn-fg :foreground ,zenburn-bg))))
    `(diff-file-header
-     ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))
+     ((,class (:background ,zenburn-bg+2 :foreground ,zenburn-fg :bold t))
       (t (:background ,zenburn-fg :foreground ,zenburn-bg :bold t))))
 
    ;; dired+
@@ -406,13 +406,13 @@
    `(helm-ff-directory ((t (:foreground ,zenburn-magenta))))
 
    ;; hl-line-mode
-   `(hl-line-face ((t (:background ,zenburn-bg-05))
+   `(hl-line-face ((,class (:background ,zenburn-bg-05))
                    (t :weight bold)))
-   `(hl-line ((t (:background ,zenburn-bg-05)) ; old emacsen
+   `(hl-line ((,class (:background ,zenburn-bg-05)) ; old emacsen
               (t :weight bold)))
 
    ;; hl-sexp
-   `(hl-sexp-face ((t (:background ,zenburn-bg+1))
+   `(hl-sexp-face ((,class (:background ,zenburn-bg+1))
                    (t :weight bold)))
 
    ;; ido-mode
