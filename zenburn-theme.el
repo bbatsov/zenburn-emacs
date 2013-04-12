@@ -738,7 +738,31 @@
                                           ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg])
 
    ;; fill-column-indicator
-   `(fci-rule-color ,zenburn-bg-05)))
+   `(fci-rule-color ,zenburn-bg-05)
+
+   ;; vc-annotate
+   `(vc-annotate-color-map
+     '(( 20. . ,zenburn-red-1)
+       ( 40. . ,zenburn-red)
+       ( 60. . ,zenburn-orange)
+       ( 80. . ,zenburn-yellow-2)
+       (100. . ,zenburn-yellow-1)
+       (120. . ,zenburn-yellow)
+       (140. . ,zenburn-green-1)
+       (160. . ,zenburn-green)
+       (180. . ,zenburn-green+1)
+       (200. . ,zenburn-green+2)
+       (220. . ,zenburn-green+3)
+       (240. . ,zenburn-green+4)
+       (260. . ,zenburn-cyan)
+       (280. . ,zenburn-blue-2)
+       (300. . ,zenburn-blue-1)
+       (320. . ,zenburn-blue)
+       (340. . ,zenburn-blue+1)
+       (360. . ,zenburn-magenta)))
+   `(vc-annotate-very-old-color ,zenburn-magenta)
+   `(vc-annotate-background ,zenburn-bg-05)
+   ))
 
 ;;;###autoload
 (and load-file-name
