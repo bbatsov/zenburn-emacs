@@ -449,7 +449,7 @@
    `(magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-branch ((t (:foreground ,zenburn-orange :weight bold))))
    `(magit-item-highlight ((t (:background ,zenburn-bg+1))))
-   
+
    ;; egg
    `(egg-text-base ((t (:foreground ,zenburn-fg))))
    `(egg-help-header-1 ((t (:foreground ,zenburn-yellow))))
@@ -774,7 +774,7 @@
        (340. . ,zenburn-blue+1)
        (360. . ,zenburn-magenta)))
    `(vc-annotate-very-old-color ,zenburn-magenta)
-   `(vc-annotate-background ,zenburn-bg-05)
+   `(vc-annotate-background ,zenburn-bg-1)
    ))
 
 ;;;###autoload
