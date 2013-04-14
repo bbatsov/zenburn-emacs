@@ -445,6 +445,20 @@
    ;; linum-mode
    `(linum ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
 
+   ;; macrostep
+   `(macrostep-gensym-1
+     ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg-1))))
+   `(macrostep-gensym-2
+     ((t (:foreground ,zenburn-red+1 :background ,zenburn-bg-1))))
+   `(macrostep-gensym-3
+     ((t (:foreground ,zenburn-blue+1 :background ,zenburn-bg-1))))
+   `(macrostep-gensym-4
+     ((t (:foreground ,zenburn-magenta :background ,zenburn-bg-1))))
+   `(macrostep-gensym-5
+     ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
+   `(macrostep-macro-face
+     ((t (:underline t))))
+
    ;; magit
    `(magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-branch ((t (:foreground ,zenburn-orange :weight bold))))
