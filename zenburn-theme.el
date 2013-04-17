@@ -456,6 +456,8 @@
      ((t (:foreground ,zenburn-magenta :background ,zenburn-bg-1))))
    `(macrostep-gensym-5
      ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
+   `(macrostep-expansion-highlight-face
+     ((t (:inherit highlight))))
    `(macrostep-macro-face
      ((t (:underline t))))
 
