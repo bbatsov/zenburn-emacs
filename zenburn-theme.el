@@ -20,12 +20,12 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-;;
+
 ;; A port of the popular Vim theme Zenburn for Emacs 24, built on top
 ;; of the new built-in theme support in Emacs 24.
-;;
+
 ;;; Credits:
-;;
+
 ;; Jani Nurminen created the original theme for vim on such this port
 ;; is based.
 
