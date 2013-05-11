@@ -35,49 +35,58 @@
 
 ;;; Color Palette
 
-;; +N suffixes indicate a color is lighter
-;; -N suffixes indicate a color is darker
+(defvar zenburn-colors-alist
+  '(("zenburn-fg"       . "#DCDCCC")
+    ("zenburn-fg-1"     . "#656555")
+    ("zenburn-bg-1"     . "#2B2B2B")
+    ("zenburn-bg-05"    . "#383838")
+    ("zenburn-bg"       . "#3F3F3F")
+    ("zenburn-bg+1"     . "#4F4F4F")
+    ("zenburn-bg+2"     . "#5F5F5F")
+    ("zenburn-bg+3"     . "#6F6F6F")
+    ("zenburn-red+1"    . "#DCA3A3")
+    ("zenburn-red"      . "#CC9393")
+    ("zenburn-red-1"    . "#BC8383")
+    ("zenburn-red-2"    . "#AC7373")
+    ("zenburn-red-3"    . "#9C6363")
+    ("zenburn-red-4"    . "#8C5353")
+    ("zenburn-orange"   . "#DFAF8F")
+    ("zenburn-yellow"   . "#F0DFAF")
+    ("zenburn-yellow-1" . "#E0CF9F")
+    ("zenburn-yellow-2" . "#D0BF8F")
+    ("zenburn-green-1"  . "#5F7F5F")
+    ("zenburn-green"    . "#7F9F7F")
+    ("zenburn-green+1"  . "#8FB28F")
+    ("zenburn-green+2"  . "#9FC59F")
+    ("zenburn-green+3"  . "#AFD8AF")
+    ("zenburn-green+4"  . "#BFEBBF")
+    ("zenburn-cyan"     . "#93E0E3")
+    ("zenburn-blue+1"   . "#94BFF3")
+    ("zenburn-blue"     . "#8CD0D3")
+    ("zenburn-blue-1"   . "#7CB8BB")
+    ("zenburn-blue-2"   . "#6CA0A3")
+    ("zenburn-blue-3"   . "#5C888B")
+    ("zenburn-blue-4"   . "#4C7073")
+    ("zenburn-blue-5"   . "#366060")
+    ("zenburn-magenta"  . "#DC8CC3"))
+  "List of Zenburn colors.
+Each element has the form (NAME . HEX).
 
-;; `rainbow-mode' is a minor-mode which sets the background color of
-;; strings that match color names.  It is available from GNU Elpa and
-;; is automatically turned on in this file if installed.
+`+N' suffixes indicate a color is lighter.
+`-N' suffixes indicate a color is darker.")
 
-(let ((class '((class color) (min-colors 89)))
-      (zenburn-fg "#dcdccc")
-      (zenburn-fg-1 "#656555")
-      (zenburn-bg-1 "#2b2b2b")
-      (zenburn-bg-05 "#383838")
-      (zenburn-bg "#3f3f3f")
-      (zenburn-bg+1 "#4f4f4f")
-      (zenburn-bg+2 "#5f5f5f")
-      (zenburn-bg+3 "#6f6f6f")
-      (zenburn-red+1 "#dca3a3")
-      (zenburn-red "#cc9393")
-      (zenburn-red-1 "#bc8383")
-      (zenburn-red-2 "#ac7373")
-      (zenburn-red-3 "#9c6363")
-      (zenburn-red-4 "#8c5353")
-      (zenburn-orange "#dfaf8f")
-      (zenburn-yellow "#f0dfaf")
-      (zenburn-yellow-1 "#e0cf9f")
-      (zenburn-yellow-2 "#d0bf8f")
-      (zenburn-green-1 "#5f7f5f")
-      (zenburn-green "#7f9f7f")
-      (zenburn-green+1 "#8fb28f")
-      (zenburn-green+2 "#9fc59f")
-      (zenburn-green+3 "#afd8af")
-      (zenburn-green+4 "#bfebbf")
-      (zenburn-cyan "#93e0e3")
-      (zenburn-blue+1 "#94bff3")
-      (zenburn-blue "#8cd0d3")
-      (zenburn-blue-1 "#7cb8bb")
-      (zenburn-blue-2 "#6ca0a3")
-      (zenburn-blue-3 "#5c888b")
-      (zenburn-blue-4 "#4c7073")
-      (zenburn-blue-5 "#366060")
-      (zenburn-magenta "#dc8cc3"))
+(defmacro zenburn-with-color-variables (&rest body)
+  "`let' bind all colors defined in `zenburn-colors-alist'.
+Also bind `class' to ((class color) (min-colors 89))."
+  (declare (indent 0))
+  `(let ((class '((class color) (min-colors 89)))
+         ,@(mapcar (lambda (cons)
+                     (list (intern (car cons)) (cdr cons)))
+                   zenburn-colors-alist))
+     ,@body))
 
-;;; Set Faces
+;;; Theme Faces
+(zenburn-with-color-variables
   (custom-theme-set-faces
    'zenburn
 ;;;; Built-in
@@ -711,9 +720,10 @@
 ;;;;; yascroll
    `(yascroll:thumb-text-area ((t (:background ,zenburn-bg-1))))
    `(yascroll:thumb-fringe ((t (:background ,zenburn-bg-1 :foreground ,zenburn-bg-1))))
-   )
+   ))
 
-;;; Set Variables
+;;; Theme Variables
+(zenburn-with-color-variables
   (custom-theme-set-variables
    'zenburn
 ;;;;; ansi-color
@@ -745,6 +755,45 @@
    `(vc-annotate-background ,zenburn-bg-1)
    ))
 
+;;; Rainbow Support
+
+(declare-function rainbow-mode 'rainbow-mode)
+(declare-function rainbow-colorize-by-assoc 'rainbow-mode)
+
+(defvar zenburn-add-font-lock-keywords nil
+  "Whether to add font-lock keywords for zenburn color names.
+In buffers visiting library `zenburn-theme.el' the zenburn
+specific keywords are always added.  In all other Emacs-Lisp
+buffers this variable controls whether this should be done.
+This requires library `rainbow-mode'.")
+
+(defvar zenburn-colors-font-lock-keywords nil)
+
+;;;###autoload
+(defun zenburn-turn-on-rainbow-mode ()
+  "Turn on Rainbow mode if it is available."
+  (when (require 'rainbow-mode nil t)
+    (rainbow-mode 1)))
+
+;;;###autoload
+(put 'zenburn-turn-on-rainbow-mode 'safe-local-eval-function t)
+
+(defadvice rainbow-turn-on (after zenburn activate)
+  "Maybe also add font-lock keywords for zenburn colors."
+  (when (and (derived-mode-p 'emacs-lisp-mode)
+             (or zenburn-add-font-lock-keywords
+                 (equal (file-name-nondirectory (buffer-file-name))
+                        "zenburn-theme.el")))
+    (unless zenburn-colors-font-lock-keywords
+      (setq zenburn-colors-font-lock-keywords
+            `((,(regexp-opt (mapcar 'car zenburn-colors-alist) 'words)
+               (0 (rainbow-colorize-by-assoc zenburn-colors-alist))))))
+    (font-lock-add-keywords nil zenburn-colors-font-lock-keywords)))
+
+(defadvice rainbow-turn-off (after zenburn activate)
+  "Also remove font-lock keywords for zenburn colors."
+  (font-lock-remove-keywords nil zenburn-colors-font-lock-keywords))
+
 ;;; Footer
 
 ;;;###autoload
@@ -759,7 +808,6 @@
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
-;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
+;; eval: (zenburn-turn-on-rainbow-mode)
 ;; End:
-
 ;;; zenburn-theme.el ends here
