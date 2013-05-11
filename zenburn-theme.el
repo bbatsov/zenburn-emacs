@@ -35,9 +35,14 @@
 
 ;;; Color Palette
 
+;; +N suffixes indicate a color is lighter
+;; -N suffixes indicate a color is darker
+
+;; `rainbow-mode' is a minor-mode which sets the background color of
+;; strings that match color names.  It is available from GNU Elpa and
+;; is automatically turned on in this file if installed.
+
 (let ((class '((class color) (min-colors 89)))
-      ;; Zenburn palette
-      ;; colors with +x are lighter, colors with -x are darker
       (zenburn-fg "#dcdccc")
       (zenburn-fg-1 "#656555")
       (zenburn-bg-1 "#2b2b2b")
