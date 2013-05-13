@@ -431,7 +431,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(jabber-title-medium ((t (:height 1.2 :weight bold))))
    `(jabber-title-large ((t (:height 1.3 :weight bold))))
 ;;;;; linum-mode
-   `(linum ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(linum ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg+1))))
 ;;;;; macrostep
    `(macrostep-gensym-1
      ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg-1))))
