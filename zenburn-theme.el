@@ -769,15 +769,6 @@ This requires library `rainbow-mode'.")
 
 (defvar zenburn-colors-font-lock-keywords nil)
 
-;;;###autoload
-(defun zenburn-turn-on-rainbow-mode ()
-  "Turn on Rainbow mode if it is available."
-  (when (require 'rainbow-mode nil t)
-    (rainbow-mode 1)))
-
-;;;###autoload
-(put 'zenburn-turn-on-rainbow-mode 'safe-local-eval-function t)
-
 (defadvice rainbow-turn-on (after zenburn activate)
   "Maybe also add font-lock keywords for zenburn colors."
   (when (and (derived-mode-p 'emacs-lisp-mode)
@@ -804,6 +795,10 @@ This requires library `rainbow-mode'.")
                    (file-name-directory load-file-name))))
 
 (provide-theme 'zenburn)
+
+;;;###autoload
+(add-to-list 'safe-local-eval-forms
+             '(when (require 'rainbow-mode nil t) (rainbow-mode 1)))
 
 ;; Local Variables:
 ;; no-byte-compile: t
