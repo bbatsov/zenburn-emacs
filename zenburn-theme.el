@@ -279,16 +279,34 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(eshell-ls-special ((t (:foreground ,zenburn-yellow :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
 ;;;;; flycheck
-   `(flycheck-error ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
-   `(flycheck-warning ((t (:foreground ,zenburn-orange :weight bold :underline t))))
+   `(flycheck-error
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-red)))
+      (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
+   `(flycheck-warning
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-orange)))
+      (t (:foreground ,zenburn-orange :weight bold :underline t))))
    `(flycheck-fringe-error ((t (:foreground ,zenburn-red-1 :weight bold))))
    `(flycheck-fringe-warning ((t (:foreground ,zenburn-orange :weight bold))))
 ;;;;; flymake
-   `(flymake-errline ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
-   `(flymake-warnline ((t (:foreground ,zenburn-orange :weight bold :underline t))))
+   `(flymake-errline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-red)))
+      (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
+   `(flymake-warnline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-orange)))
+      (t (:foreground ,zenburn-orange :weight bold :underline t))))
 ;;;;; flyspell
-   `(flyspell-duplicate ((t (:foreground ,zenburn-orange :weight bold :underline t))))
-   `(flyspell-incorrect ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
+   `(flyspell-duplicate
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-orange)))
+      (t (:foreground ,zenburn-orange :weight bold :underline t))))
+   `(flyspell-incorrect
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-red)))
+      (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
 ;;;;; erc
    `(erc-action-face ((t (:inherit erc-default-face))))
    `(erc-bold-face ((t (:weight bold))))
