@@ -279,8 +279,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(eshell-ls-special ((t (:foreground ,zenburn-yellow :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
 ;;;;; flycheck
-   `(flycheck-error-face ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
-   `(flycheck-warning-face ((t (:foreground ,zenburn-orange :weight bold :underline t))))
+   `(flycheck-error ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
+   `(flycheck-warning ((t (:foreground ,zenburn-orange :weight bold :underline t))))
 ;;;;; flymake
    `(flymake-errline ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
    `(flymake-warnline ((t (:foreground ,zenburn-orange :weight bold :underline t))))
