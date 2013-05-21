@@ -281,6 +281,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; flycheck
    `(flycheck-error ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
    `(flycheck-warning ((t (:foreground ,zenburn-orange :weight bold :underline t))))
+   `(flycheck-fringe-error ((t (:foreground ,zenburn-red-1 :weight bold))))
+   `(flycheck-fringe-warning ((t (:foreground ,zenburn-orange :weight bold))))
 ;;;;; flymake
    `(flymake-errline ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
    `(flymake-warnline ((t (:foreground ,zenburn-orange :weight bold :underline t))))
