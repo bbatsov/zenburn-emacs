@@ -298,6 +298,10 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,zenburn-orange)))
       (t (:foreground ,zenburn-orange :weight bold :underline t))))
+   `(flymake-infoline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-green)))
+      (t (:foreground ,zenburn-green-1 :weight bold :underline t))))
 ;;;;; flyspell
    `(flyspell-duplicate
      ((((supports :underline (:style wave)))
