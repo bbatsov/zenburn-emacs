@@ -281,35 +281,38 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,zenburn-red)))
+       (:underline (:style wave :color ,zenburn-red) :inherit unspecified))
       (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
    `(flycheck-warning
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,zenburn-orange)))
+       (:underline (:style wave :color ,zenburn-orange) :inherit unspecified))
       (t (:foreground ,zenburn-orange :weight bold :underline t))))
    `(flycheck-fringe-error ((t (:foreground ,zenburn-red-1 :weight bold))))
    `(flycheck-fringe-warning ((t (:foreground ,zenburn-orange :weight bold))))
 ;;;;; flymake
    `(flymake-errline
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,zenburn-red)))
+       (:underline (:style wave :color ,zenburn-red)
+                   :inherit unspecified :foreground unspecified :background unspecified))
       (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
    `(flymake-warnline
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,zenburn-orange)))
+       (:underline (:style wave :color ,zenburn-orange)
+                   :inherit unspecified :foreground unspecified :background unspecified))
       (t (:foreground ,zenburn-orange :weight bold :underline t))))
    `(flymake-infoline
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,zenburn-green)))
+       (:underline (:style wave :color ,zenburn-green)
+                   :inherit unspecified :foreground unspecified :background unspecified))
       (t (:foreground ,zenburn-green-1 :weight bold :underline t))))
 ;;;;; flyspell
    `(flyspell-duplicate
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,zenburn-orange)))
+       (:underline (:style wave :color ,zenburn-orange) :inherit unspecified))
       (t (:foreground ,zenburn-orange :weight bold :underline t))))
    `(flyspell-incorrect
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,zenburn-red)))
+       (:underline (:style wave :color ,zenburn-red) :inherit unspecified))
       (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
 ;;;;; erc
    `(erc-action-face ((t (:inherit erc-default-face))))
