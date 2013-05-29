@@ -477,7 +477,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; magit
    `(magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-branch ((t (:foreground ,zenburn-orange :weight bold))))
-   `(magit-item-highlight ((t (:background ,zenburn-bg+1))))
+   `(magit-item-highlight ((t (:background ,zenburn-bg+1 :bold nil))))
 ;;;;; egg
    `(egg-text-base ((t (:foreground ,zenburn-fg))))
    `(egg-help-header-1 ((t (:foreground ,zenburn-yellow))))
