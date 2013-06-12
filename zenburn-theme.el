@@ -572,7 +572,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-checkbox ((t (:background ,zenburn-bg+2 :foreground "white"
                                    :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,zenburn-blue :underline t))))
-   `(org-sexp-date ((t (:foreground ,zenburn-blue+1 :underline t))))
    `(org-deadline-announce ((t (:foreground ,zenburn-red-1))))
    `(org-done ((t (:bold t :weight bold :foreground ,zenburn-green+3))))
    `(org-formula ((t (:foreground ,zenburn-yellow-2))))
@@ -590,6 +589,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-scheduled ((t (:foreground ,zenburn-green+4))))
    `(org-scheduled-previously ((t (:foreground ,zenburn-red-4))))
    `(org-scheduled-today ((t (:foreground ,zenburn-blue+1))))
+   `(org-sexp-date ((t (:foreground ,zenburn-blue+1 :underline t))))
    `(org-special-keyword ((t (:foreground ,zenburn-fg-1 :weight normal))))
    `(org-table ((t (:foreground ,zenburn-green+2))))
    `(org-tag ((t (:bold t :weight bold))))
