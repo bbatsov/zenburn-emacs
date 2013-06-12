@@ -572,6 +572,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-checkbox ((t (:background ,zenburn-bg+2 :foreground "white"
                                    :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,zenburn-blue :underline t))))
+   `(org-sexp-date ((t (:foreground ,zenburn-blue+1 :underline t))))
    `(org-deadline-announce ((t (:foreground ,zenburn-red-1))))
    `(org-done ((t (:bold t :weight bold :foreground ,zenburn-green+3))))
    `(org-formula ((t (:foreground ,zenburn-yellow-2))))
