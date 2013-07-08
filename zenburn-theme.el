@@ -156,7 +156,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-lock-doc-string-face ((t (:foreground ,zenburn-blue-2))))
    `(font-lock-function-name-face ((t (:foreground ,zenburn-blue))))
    `(font-lock-keyword-face ((t (:foreground ,zenburn-yellow :weight bold))))
-   `(font-lock-negation-char-face ((t (:foreground ,zenburn-fg))))
+   `(font-lock-negation-char-face ((t (:foreground ,zenburn-yellow :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,zenburn-blue+1))))
    `(font-lock-string-face ((t (:foreground ,zenburn-red))))
    `(font-lock-type-face ((t (:foreground ,zenburn-blue-1))))
