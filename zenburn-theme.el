@@ -158,6 +158,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-lock-keyword-face ((t (:foreground ,zenburn-yellow :weight bold))))
    `(font-lock-negation-char-face ((t (:foreground ,zenburn-yellow :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,zenburn-blue+1))))
+   `(font-lock-regexp-grouping-construct ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(font-lock-regexp-grouping-backslash ((t (:foreground ,zenburn-green :weight bold))))
    `(font-lock-string-face ((t (:foreground ,zenburn-red))))
    `(font-lock-type-face ((t (:foreground ,zenburn-blue-1))))
    `(font-lock-variable-name-face ((t (:foreground ,zenburn-orange))))
