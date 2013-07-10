@@ -76,7 +76,7 @@ Each element has the form (NAME . HEX).
 `-N' suffixes indicate a color is darker.")
 
 (defmacro zenburn-with-color-variables (&rest body)
-  "`let' bind all colors defined in `zenburn-colors-alist'.
+  "`let' bind all colors defined in `zenburn-colors-alist' around BODY.
 Also bind `class' to ((class color) (min-colors 89))."
   (declare (indent 0))
   `(let ((class '((class color) (min-colors 89)))
