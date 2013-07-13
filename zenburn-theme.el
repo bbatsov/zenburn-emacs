@@ -279,6 +279,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(eshell-ls-product ((t (:inherit font-lock-doc))))
    `(eshell-ls-special ((t (:foreground ,zenburn-yellow :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
+;;;;; flx
+   `(flx-highlight-face ((t (:foreground ,zenburn-green+2 :weight bold))))
 ;;;;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
