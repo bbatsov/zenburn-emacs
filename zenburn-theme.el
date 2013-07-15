@@ -152,7 +152,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-lock-comment-face ((t (:foreground ,zenburn-green))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,zenburn-green-1))))
    `(font-lock-constant-face ((t (:foreground ,zenburn-green+4))))
-   `(font-lock-doc-face ((t (:foreground ,zenburn-green+1))))
+   `(font-lock-doc-face ((t (:foreground ,zenburn-green+2))))
    `(font-lock-function-name-face ((t (:foreground ,zenburn-cyan))))
    `(font-lock-keyword-face ((t (:foreground ,zenburn-yellow :weight bold))))
    `(font-lock-negation-char-face ((t (:foreground ,zenburn-yellow :weight bold))))
