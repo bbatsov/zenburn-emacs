@@ -195,10 +195,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ack-line ((t (:foreground ,zenburn-yellow))))
    `(ack-match ((t (:foreground ,zenburn-orange :background ,zenburn-bg-1 :weight bold))))
 ;;;;; auctex
-   `(font-latex-bold ((t (:inherit bold))))
-   `(font-latex-warning ((t (:inherit font-lock-warning))))
-   `(font-latex-sedate ((t (:foreground ,zenburn-yellow :weight bold ))))
-   `(font-latex-title-4 ((t (:inherit variable-pitch :weight bold))))
+   `(font-latex-bold-face ((t (:inherit bold))))
+   `(font-latex-warning-face ((t (:inherit font-lock-warning))))
+   `(font-latex-sectioning-5-face ((t (:foreground ,zenburn-red :weight bold ))))
+   `(font-latex-sedate-face ((t (:foreground ,zenburn-yellow))))
 ;;;;; auto-complete
    `(ac-candidate-face ((t (:background ,zenburn-bg+3 :foreground "black"))))
    `(ac-selection-face ((t (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
