@@ -621,7 +621,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-column-title ((t (:background ,zenburn-bg-1 :underline t :weight bold))))
    `(org-code ((t (:inherit (shadow fixed-pitch)))))
    `(org-block ((t (:inherit (shadow fixed-pitch)))))
-   `(org-block-background ((t (:inherit fixed-pitch))))
 ;;;;; outline
    `(outline-1 ((t (:foreground ,zenburn-orange))))
    `(outline-2 ((t (:foreground ,zenburn-green+4))))
