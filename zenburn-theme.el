@@ -611,7 +611,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-scheduled-today ((t (:foreground ,zenburn-blue+1))))
    `(org-sexp-date ((t (:foreground ,zenburn-blue+1 :underline t))))
    `(org-special-keyword ((t (:foreground ,zenburn-fg-1 :weight normal))))
-   `(org-table ((t (:inherit fixed-pitch :foreground ,zenburn-green+2))))
+   `(org-table ((t (:foreground ,zenburn-green+2))))
    `(org-tag ((t (:bold t :weight bold))))
    `(org-time-grid ((t (:foreground ,zenburn-orange))))
    `(org-todo ((t (:bold t :foreground ,zenburn-red :weight bold))))
@@ -619,9 +619,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-warning ((t (:bold t :foreground ,zenburn-red :weight bold :underline nil))))
    `(org-column ((t (:background ,zenburn-bg-1))))
    `(org-column-title ((t (:background ,zenburn-bg-1 :underline t :weight bold))))
-   `(org-code ((t (:inherit (shadow fixed-pitch)))))
-   `(org-block ((t (:inherit (shadow fixed-pitch)))))
-   `(org-block-background ((t (:inherit fixed-pitch))))
 ;;;;; outline
    `(outline-1 ((t (:foreground ,zenburn-orange))))
    `(outline-2 ((t (:foreground ,zenburn-green+4))))
