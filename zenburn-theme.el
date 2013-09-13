@@ -763,6 +763,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-server-background-face ((,class (:background ,zenburn-bg))))
    `(web-mode-server-comment-face ((,class (:inherit web-mode-comment-face))))
    `(web-mode-server-string-face ((,class (:inherit web-mode-string-face))))
+   `(web-mode-symbol-face ((,class (:inherit font-lock-constant-face))))
    `(web-mode-warning-face ((,class (:inherit font-lock-warning-face))))
    `(web-mode-whitespaces-face ((,class (:background ,zenburn-red))))
 ;;;;; whitespace-mode
