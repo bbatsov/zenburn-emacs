@@ -189,6 +189,8 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
    `(ace-jump-face-foreground
      ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil))))
+;;;;; anzu
+   `(anzu-mode-line ((t (:foreground ,zenburn-cyan :weight bold))))
 ;;;;; full-ack
    `(ack-separator ((t (:foreground ,zenburn-fg))))
    `(ack-file ((t (:foreground ,zenburn-blue))))
