@@ -302,6 +302,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(eshell-ls-product ((t (:inherit font-lock-doc))))
    `(eshell-ls-special ((t (:foreground ,zenburn-yellow :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
+;;;;; evil
+   `(evil-ex-commands ((t (:foreground nil :inherit font-lock-keyword-face))))
+   `(evil-ex-info ((t (:foreground nil :inherit font-lock-doc-face))))
+   `(evil-ex-lazy-highlight ((t (:foreground ,zenburn-cyan :weight bold))))
+   `(evil-ex-search ((t (:foreground ,zenburn-cyan :weight normal))))
+   `(evil-ex-substitute-matches ((t (:foreground ,zenburn-cyan :weight normal))))
+   `(evil-ex-substitute-replacement ((t (:foreground ,zenburn-red))))
 ;;;;; flx
    `(flx-highlight-face ((t (:foreground ,zenburn-green+2 :weight bold))))
 ;;;;; flycheck
