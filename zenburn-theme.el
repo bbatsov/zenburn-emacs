@@ -36,8 +36,10 @@
 ;;; Color Palette
 
 (defvar zenburn-colors-alist
-  '(("zenburn-fg"       . "#DCDCCC")
+  '(("zenburn-fg+1"     . "#FFFFEF")
+    ("zenburn-fg"       . "#DCDCCC")
     ("zenburn-fg-1"     . "#656555")
+    ("zenburn-bg-2"     . "#000000")
     ("zenburn-bg-1"     . "#2B2B2B")
     ("zenburn-bg-05"    . "#383838")
     ("zenburn-bg"       . "#3F3F3F")
@@ -95,7 +97,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(link ((t (:foreground ,zenburn-yellow :underline t :weight bold))))
    `(link-visited ((t (:foreground ,zenburn-yellow-2 :underline t :weight normal))))
    `(default ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
-   `(cursor ((t (:foreground ,zenburn-fg :background "white"))))
+   `(cursor ((t (:foreground ,zenburn-fg :background ,zenburn-fg+1))))
    `(escape-glyph ((t (:foreground ,zenburn-yellow :bold t))))
    `(fringe ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(header-line ((t (:foreground ,zenburn-yellow
@@ -202,9 +204,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-latex-sectioning-5-face ((t (:foreground ,zenburn-red :weight bold ))))
    `(font-latex-sedate-face ((t (:foreground ,zenburn-yellow))))
 ;;;;; auto-complete
-   `(ac-candidate-face ((t (:background ,zenburn-bg+3 :foreground "black"))))
+   `(ac-candidate-face ((t (:background ,zenburn-bg+3 :foreground ,zenburn-bg-2))))
    `(ac-selection-face ((t (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
-   `(popup-tip-face ((t (:background ,zenburn-yellow-2 :foreground "black"))))
+   `(popup-tip-face ((t (:background ,zenburn-yellow-2 :foreground ,zenburn-bg-2))))
    `(popup-scroll-bar-foreground-face ((t (:background ,zenburn-blue-5))))
    `(popup-scroll-bar-background-face ((t (:background ,zenburn-bg-1))))
    `(popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
@@ -589,11 +591,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mumamo-background-chunk-submode4 ((t (:background ,zenburn-bg+1))))
 ;;;;; org-mode
    `(org-agenda-date-today
-     ((t (:foreground "white" :slant italic :weight bold))) t)
+     ((t (:foreground ,zenburn-fg+1 :slant italic :weight bold))) t)
    `(org-agenda-structure
      ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,zenburn-fg :weight bold))))
-   `(org-checkbox ((t (:background ,zenburn-bg+2 :foreground "white"
+   `(org-checkbox ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg+1
                                    :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,zenburn-blue :underline t))))
    `(org-deadline-announce ((t (:foreground ,zenburn-red-1))))
