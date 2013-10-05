@@ -515,7 +515,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(egg-section-title ((t (:foreground ,zenburn-yellow))))
    `(egg-stash-mono ((t (:foreground ,zenburn-green+4))))
 ;;;;; message-mode
-   `(message-cited-text ((t (:inherit font-lock-comment))))
+   `(message-cited-text ((t (:inherit font-lock-comment-face))))
    `(message-header-name ((t (:foreground ,zenburn-green+1))))
    `(message-header-other ((t (:foreground ,zenburn-green))))
    `(message-header-to ((t (:foreground ,zenburn-yellow :weight bold))))
@@ -525,7 +525,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(message-header-subject ((t (:foreground ,zenburn-orange :weight bold))))
    `(message-header-xheader ((t (:foreground ,zenburn-green))))
    `(message-mml ((t (:foreground ,zenburn-yellow :weight bold))))
-   `(message-separator ((t (:inherit font-lock-comment))))
+   `(message-separator ((t (:inherit font-lock-comment-face))))
 ;;;;; mew
    `(mew-face-header-subject ((t (:foreground ,zenburn-orange))))
    `(mew-face-header-from ((t (:foreground ,zenburn-yellow))))
