@@ -630,6 +630,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-warning ((t (:bold t :foreground ,zenburn-red :weight bold :underline nil))))
    `(org-column ((t (:background ,zenburn-bg-1))))
    `(org-column-title ((t (:background ,zenburn-bg-1 :underline t :weight bold))))
+   `(org-mode-line-clock ((t (:foreground ,zenburn-fg :background ,zenburn-bg-1))))
+   `(org-mode-line-clock-overrun ((t (:foreground ,zenburn-bg :background ,zenburn-red-1))))
+   `(org-ellipsis ((t (:foreground ,zenburn-yellow-1 :underline t))))
+   `(org-footnote ((t (:foreground ,zenburn-cyan :underline t))))
 ;;;;; outline
    `(outline-1 ((t (:foreground ,zenburn-orange))))
    `(outline-2 ((t (:foreground ,zenburn-green+4))))
