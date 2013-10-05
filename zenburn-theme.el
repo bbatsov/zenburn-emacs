@@ -451,6 +451,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-visible-mark ((t (:foreground ,zenburn-bg :background ,zenburn-yellow-2))))
    `(helm-candidate-number ((t (:foreground ,zenburn-green+4 :background ,zenburn-bg-1))))
    `(helm-ff-directory ((t (:foreground ,zenburn-magenta))))
+   `(helm-time-zone-home ((t (:foreground ,zenburn-red))))
+   `(helm-time-zone-current ((t (:foreground ,zenburn-green))))
 ;;;;; hl-line-mode
    `(hl-line-face ((,class (:background ,zenburn-bg-05))
                    (t :weight bold)))
