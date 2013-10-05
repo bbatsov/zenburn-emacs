@@ -226,7 +226,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(clojure-test-error-face ((t (:foreground ,zenburn-red :weight bold :underline t))))
    `(clojure-test-success-face ((t (:foreground ,zenburn-green+1 :weight bold :underline t))))
 ;;;;; coq
-   `(coq-solve-tactics-face ((t (:inherit font-lock-constant-face))))
+   `(coq-solve-tactics-face ((t (:foreground nil :inherit font-lock-constant-face))))
 ;;;;; ctable
    `(ctbl:face-cell-select ((t (:background ,zenburn-blue :foreground ,zenburn-bg))))
    `(ctbl:face-continue-bar ((t (:background ,zenburn-bg-05 :foreground ,zenburn-bg))))
@@ -674,15 +674,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(proof-declaration-name-face ((t (:inherit font-lock-keyword-face))))
    `(proof-eager-annotation-face ((t (:foreground ,zenburn-bg :background ,zenburn-orange))))
    `(proof-error-face ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
-   `(proof-highlight-dependency-face ((t (:foreground ,zenburn-bg :background ,zenburn-green+3))))
-   `(proof-highlight-dependent-face ((t (:foreground ,zenburn-fg :background ,zenburn-green-1))))
+   `(proof-highlight-dependency-face ((t (:foreground ,zenburn-bg :background ,zenburn-yellow))))
+   `(proof-highlight-dependent-face ((t (:foreground ,zenburn-bg :background ,zenburn-orange))))
    `(proof-locked-face ((t (:foreground ,zenburn-bg :background ,zenburn-blue-2))))
    `(proof-mouse-highlight-face ((t (:foreground ,zenburn-bg :background ,zenburn-yellow))))
    `(proof-queue-face ((t (:foreground ,zenburn-bg :background ,zenburn-magenta))))
    `(proof-region-mouse-highlight-face ((t (:inherit proof-mouse-highlight-face))))
    `(proof-script-highlight-error-face ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
-   `(proof-tacticals-name-face ((t (:foreground ,zenburn-green+3 :background ,zenburn-bg))))
-   `(proof-tactics-name-face ((t (:foreground ,zenburn-green :background ,zenburn-bg))))
+   `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,zenburn-bg))))
+   `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,zenburn-bg))))
    `(proof-warning-face ((t (:foreground ,zenburn-bg :background ,zenburn-yellow))))
 ;;;;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,zenburn-fg))))
