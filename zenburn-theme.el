@@ -200,7 +200,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ack-match ((t (:foreground ,zenburn-orange :background ,zenburn-bg-1 :weight bold))))
 ;;;;; auctex
    `(font-latex-bold-face ((t (:inherit bold))))
-   `(font-latex-warning-face ((t (:inherit font-lock-warning-face))))
+   `(font-latex-warning-face ((t (:foreground nil :inherit font-lock-warning-face))))
    `(font-latex-sectioning-5-face ((t (:foreground ,zenburn-red :weight bold ))))
    `(font-latex-sedate-face ((t (:foreground ,zenburn-yellow))))
 ;;;;; auto-complete
