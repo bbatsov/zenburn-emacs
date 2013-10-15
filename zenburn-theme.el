@@ -642,6 +642,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(p4-diff-file-face ((t :inherit diff-file-header)))
    `(p4-diff-head-face ((t :inherit diff-header)))
    `(p4-diff-ins-face ((t :inherit diff-added)))
+;;;;; perspective
+   `(persp-selected-face ((t (:foreground ,zenburn-yellow-2 :inherit mode-line))))
 ;;;;; powerline
    `(powerline-active1 ((t (:background ,zenburn-bg-05 :inherit mode-line))))
    `(powerline-active2 ((t (:background ,zenburn-bg+2 :inherit mode-line))))
