@@ -768,7 +768,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    '(term-default-fg-color ((t (:inherit term-color-white))))
    '(term-default-bg-color ((t (:inherit term-color-black))))
 ;;;;; undo-tree
-   `(undo-tree-visualizer-active-branch-face ((t (:foreground ,zenburn-fg+1 :weight bold))))
+   `(undo-tree-visualizer-active-branch-face ((t (:foreground ,zenburn-fg-1 :weight bold))))
    `(undo-tree-visualizer-current-face ((t (:foreground ,zenburn-red-1 :weight bold))))
    `(undo-tree-visualizer-default-face ((t (:foreground ,zenburn-fg))))
    `(undo-tree-visualizer-register-face ((t (:foreground ,zenburn-yellow))))
