@@ -732,6 +732,12 @@ Also bind `class' to ((class color) (min-colors 89))."
                                        :background ,zenburn-fg-1))))
    '(term-default-fg-color ((t (:inherit term-color-white))))
    '(term-default-bg-color ((t (:inherit term-color-black))))
+;;;;; undo-tree
+   `(undo-tree-visualizer-active-branch-face ((t (:foreground ,zenburn-fg+1 :weight bold))))
+   `(undo-tree-visualizer-current-face ((t (:foreground ,zenburn-red-1 :weight bold))))
+   `(undo-tree-visualizer-default-face ((t (:foreground ,zenburn-fg))))
+   `(undo-tree-visualizer-register-face ((t (:foreground ,zenburn-yellow))))
+   `(undo-tree-visualizer-unmodified-face ((t (:foreground ,zenburn-cyan))))
 ;;;;; volatile-highlights
    `(vhl/default-face ((t (:background ,zenburn-bg-05))))
 ;;;;; emacs-w3m
