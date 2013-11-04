@@ -198,7 +198,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ack-match ((t (:foreground ,zenburn-orange :background ,zenburn-bg-1 :weight bold))))
 ;;;;; auctex
    `(font-latex-bold-face ((t (:inherit bold))))
-   `(font-latex-warning-face ((t (:inherit font-lock-warning))))
+   `(font-latex-warning-face ((t (:foreground nil :inherit font-lock-warning-face))))
    `(font-latex-sectioning-5-face ((t (:foreground ,zenburn-red :weight bold ))))
    `(font-latex-sedate-face ((t (:foreground ,zenburn-yellow))))
 ;;;;; auto-complete
@@ -289,13 +289,13 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; eshell
    `(eshell-prompt ((t (:foreground ,zenburn-yellow :weight bold))))
    `(eshell-ls-archive ((t (:foreground ,zenburn-red-1 :weight bold))))
-   `(eshell-ls-backup ((t (:inherit font-lock-comment))))
-   `(eshell-ls-clutter ((t (:inherit font-lock-comment))))
+   `(eshell-ls-backup ((t (:inherit font-lock-comment-face))))
+   `(eshell-ls-clutter ((t (:inherit font-lock-comment-face))))
    `(eshell-ls-directory ((t (:foreground ,zenburn-blue+1 :weight bold))))
    `(eshell-ls-executable ((t (:foreground ,zenburn-red+1 :weight bold))))
    `(eshell-ls-unreadable ((t (:foreground ,zenburn-fg))))
-   `(eshell-ls-missing ((t (:inherit font-lock-warning))))
-   `(eshell-ls-product ((t (:inherit font-lock-doc))))
+   `(eshell-ls-missing ((t (:inherit font-lock-warning-face))))
+   `(eshell-ls-product ((t (:inherit font-lock-doc-face))))
    `(eshell-ls-special ((t (:foreground ,zenburn-yellow :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
 ;;;;; flx
@@ -340,10 +340,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-action-face ((t (:inherit erc-default-face))))
    `(erc-bold-face ((t (:weight bold))))
    `(erc-current-nick-face ((t (:foreground ,zenburn-blue :weight bold))))
-   `(erc-dangerous-host-face ((t (:inherit font-lock-warning))))
+   `(erc-dangerous-host-face ((t (:inherit font-lock-warning-face))))
    `(erc-default-face ((t (:foreground ,zenburn-fg))))
    `(erc-direct-msg-face ((t (:inherit erc-default))))
-   `(erc-error-face ((t (:inherit font-lock-warning))))
+   `(erc-error-face ((t (:inherit font-lock-warning-face))))
    `(erc-fool-face ((t (:inherit erc-default))))
    `(erc-highlight-face ((t (:inherit hover-highlight))))
    `(erc-input-face ((t (:foreground ,zenburn-yellow))))
@@ -515,7 +515,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(egg-section-title ((t (:foreground ,zenburn-yellow))))
    `(egg-stash-mono ((t (:foreground ,zenburn-green+4))))
 ;;;;; message-mode
-   `(message-cited-text ((t (:inherit font-lock-comment))))
+   `(message-cited-text ((t (:inherit font-lock-comment-face))))
    `(message-header-name ((t (:foreground ,zenburn-green+1))))
    `(message-header-other ((t (:foreground ,zenburn-green))))
    `(message-header-to ((t (:foreground ,zenburn-yellow :weight bold))))
@@ -525,7 +525,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(message-header-subject ((t (:foreground ,zenburn-orange :weight bold))))
    `(message-header-xheader ((t (:foreground ,zenburn-green))))
    `(message-mml ((t (:foreground ,zenburn-yellow :weight bold))))
-   `(message-separator ((t (:inherit font-lock-comment))))
+   `(message-separator ((t (:inherit font-lock-comment-face))))
 ;;;;; mew
    `(mew-face-header-subject ((t (:foreground ,zenburn-orange))))
    `(mew-face-header-from ((t (:foreground ,zenburn-yellow))))
