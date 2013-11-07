@@ -307,18 +307,18 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,zenburn-red) :inherit unspecified))
+       (:underline (:style wave :color ,zenburn-red-1) :inherit unspecified))
       (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
    `(flycheck-warning
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,zenburn-orange) :inherit unspecified))
-      (t (:foreground ,zenburn-orange :weight bold :underline t))))
+       (:underline (:style wave :color ,zenburn-yellow) :inherit unspecified))
+      (t (:foreground ,zenburn-yellow :weight bold :underline t))))
    `(flycheck-info
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,zenburn-cyan) :inherit unspecified))
       (t (:foreground ,zenburn-cyan :weight bold :underline t))))
    `(flycheck-fringe-error ((t (:foreground ,zenburn-red-1 :weight bold))))
-   `(flycheck-fringe-warning ((t (:foreground ,zenburn-orange :weight bold))))
+   `(flycheck-fringe-warning ((t (:foreground ,zenburn-yellow :weight bold))))
    `(flycheck-fringe-info ((t (:foreground ,zenburn-cyan :weight bold))))
 ;;;;; flymake
    `(flymake-errline
