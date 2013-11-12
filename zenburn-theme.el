@@ -737,7 +737,29 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; sml-mode-line
    '(sml-modeline-end-face ((t :inherit default :width condensed)))
 ;;;;; SLIME
-   `(slime-repl-inputed-output-face ((t (:foreground ,zenburn-red))))
+   `(slime-repl-output-face ((t (:foreground ,zenburn-red))))
+   `(slime-repl-inputed-output-face ((t (:foreground ,zenburn-green))))
+   `(slime-error-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-red)))
+      ((t
+        (:underline ,zenburn-red)))))
+   `(slime-warning-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-orange)))
+      ((t
+        (:underline ,zenburn-orange)))))
+   `(slime-style-warning-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-yellow)))
+      ((t
+        (:underline ,zenburn-yellow)))))
+   `(slime-note-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-green)))
+      ((t
+        (:underline ,zenburn-green)))))
+   `(slime-highlight-face ((t (:inherit highlight))))
 ;;;;; speedbar
    `(speedbar-button-face ((t (:foreground ,zenburn-green+2))))
    `(speedbar-directory-face ((t (:foreground ,zenburn-cyan))))
