@@ -455,7 +455,35 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-selection-line ((t (:background ,zenburn-bg+1))))
    `(helm-visible-mark ((t (:foreground ,zenburn-bg :background ,zenburn-yellow-2))))
    `(helm-candidate-number ((t (:foreground ,zenburn-green+4 :background ,zenburn-bg-1))))
-   `(helm-ff-directory ((t (:foreground ,zenburn-magenta))))
+   `(helm-separator ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(helm-time-zone-current ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(helm-time-zone-home ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(helm-bookmark-addressbook ((t (:foreground ,zenburn-orange :background ,zenburn-bg))))
+   `(helm-bookmark-directory ((t (:foreground nil :background nil :inherit helm-ff-directory))))
+   `(helm-bookmark-file ((t (:foreground nil :background nil :inherit helm-ff-file))))
+   `(helm-bookmark-gnus ((t (:foreground ,zenburn-magenta :background ,zenburn-bg))))
+   `(helm-bookmark-info ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(helm-bookmark-man ((t (:foreground ,zenburn-yellow :background ,zenburn-bg))))
+   `(helm-bookmark-w3m ((t (:foreground ,zenburn-magenta :background ,zenburn-bg))))
+   `(helm-buffer-not-saved ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(helm-buffer-process ((t (:foreground ,zenburn-cyan :background ,zenburn-bg))))
+   `(helm-buffer-saved-out ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
+   `(helm-buffer-size ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg))))
+   `(helm-ff-directory ((t (:foreground ,zenburn-cyan :background ,zenburn-bg :weight bold))))
+   `(helm-ff-file ((t (:foreground ,zenburn-fg :background ,zenburn-bg :weight normal))))
+   `(helm-ff-executable ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :weight normal))))
+   `(helm-ff-invalid-symlink ((t (:foreground ,zenburn-red :background ,zenburn-bg :weight bold))))
+   `(helm-ff-symlink ((t (:foreground ,zenburn-yellow :background ,zenburn-bg :weight bold))))
+   `(helm-ff-prefix ((t (:foreground ,zenburn-bg :background ,zenburn-yellow :weight normal))))
+   `(helm-grep-cmd-line ((t (:foreground ,zenburn-cyan :background ,zenburn-bg))))
+   `(helm-grep-file ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
+   `(helm-grep-finish ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(helm-grep-lineno ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg))))
+   `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
+   `(helm-grep-running ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(helm-moccur-buffer ((t (:foreground ,zenburn-cyan :background ,zenburn-bg))))
+   `(helm-mu-contacts-address-face ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg))))
+   `(helm-mu-contacts-name-face ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
 ;;;;; hl-line-mode
    `(hl-line-face ((,class (:background ,zenburn-bg-05))
                    (t :weight bold)))
@@ -468,6 +496,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ido-first-match ((t (:foreground ,zenburn-yellow :weight bold))))
    `(ido-only-match ((t (:foreground ,zenburn-orange :weight bold))))
    `(ido-subdir ((t (:foreground ,zenburn-yellow))))
+   `(ido-indicator ((t (:foreground ,zenburn-yellow :background ,zenburn-red-4))))
 ;;;;; iedit-mode
    `(iedit-occurrence ((t (:background ,zenburn-bg+2 :weight bold))))
 ;;;;; js2-mode
@@ -737,7 +766,29 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; sml-mode-line
    '(sml-modeline-end-face ((t :inherit default :width condensed)))
 ;;;;; SLIME
-   `(slime-repl-inputed-output-face ((t (:foreground ,zenburn-red))))
+   `(slime-repl-output-face ((t (:foreground ,zenburn-red))))
+   `(slime-repl-inputed-output-face ((t (:foreground ,zenburn-green))))
+   `(slime-error-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-red)))
+      (t
+       (:underline ,zenburn-red))))
+   `(slime-warning-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-orange)))
+      (t
+       (:underline ,zenburn-orange))))
+   `(slime-style-warning-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-yellow)))
+      (t
+       (:underline ,zenburn-yellow))))
+   `(slime-note-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-green)))
+      (t
+       (:underline ,zenburn-green))))
+   `(slime-highlight-face ((t (:inherit highlight))))
 ;;;;; speedbar
    `(speedbar-button-face ((t (:foreground ,zenburn-green+2))))
    `(speedbar-directory-face ((t (:foreground ,zenburn-cyan))))
