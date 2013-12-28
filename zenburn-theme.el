@@ -203,6 +203,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-latex-warning-face ((t (:foreground nil :inherit font-lock-warning-face))))
    `(font-latex-sectioning-5-face ((t (:foreground ,zenburn-red :weight bold ))))
    `(font-latex-sedate-face ((t (:foreground ,zenburn-yellow))))
+   `(font-latex-italic-face ((t (:foreground ,zenburn-cyan :slant italic))))
+   `(font-latex-string-face ((t (:inherit ,font-lock-string-face))))
+   `(font-latex-math-face ((t (:foreground ,zenburn-orange))))
 ;;;;; auto-complete
    `(ac-candidate-face ((t (:background ,zenburn-bg+3 :foreground ,zenburn-bg-2))))
    `(ac-selection-face ((t (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
