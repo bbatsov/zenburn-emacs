@@ -184,7 +184,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(newsticker-treeview-new-face ((t (:foreground ,zenburn-blue :weight bold))))
    `(newsticker-treeview-obsolete-face ((t (:foreground ,zenburn-red))))
    `(newsticker-treeview-old-face ((t (:foreground ,zenburn-bg+3))))
-   `(newsticker-treeview-selection-face ((t (:foreground ,zenburn-yellow))))
+   `(newsticker-treeview-selection-face ((t (:background ,zenburn-bg-1 :foreground ,zenburn-yellow))))
 ;;;; Third-party
 ;;;;; ace-jump
    `(ace-jump-face-background
