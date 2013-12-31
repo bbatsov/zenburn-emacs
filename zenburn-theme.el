@@ -670,7 +670,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-level-8 ((t (:foreground ,zenburn-blue-4))))
    `(org-link ((t (:foreground ,zenburn-yellow-2 :underline t))))
    `(org-scheduled ((t (:foreground ,zenburn-green+4))))
-   `(org-scheduled-previously ((t (:foreground ,zenburn-red-4))))
+   `(org-scheduled-previously ((t (:foreground ,zenburn-red))))
    `(org-scheduled-today ((t (:foreground ,zenburn-blue+1))))
    `(org-sexp-date ((t (:foreground ,zenburn-blue+1 :underline t))))
    `(org-special-keyword ((t (:foreground ,zenburn-fg-1 :weight normal))))
