@@ -128,7 +128,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(grep-match-face ((t (:foreground ,zenburn-orange :weight bold))))
    `(match ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
 ;;;;; isearch
-   `(isearch ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-red-4))))
+   `(isearch ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg+2))))
    `(isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
    `(lazy-highlight ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg-05))))
 
