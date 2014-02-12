@@ -184,7 +184,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(newsticker-treeview-new-face ((t (:foreground ,zenburn-blue :weight bold))))
    `(newsticker-treeview-obsolete-face ((t (:foreground ,zenburn-red))))
    `(newsticker-treeview-old-face ((t (:foreground ,zenburn-bg+3))))
-   `(newsticker-treeview-selection-face ((t (:foreground ,zenburn-yellow))))
+   `(newsticker-treeview-selection-face ((t (:background ,zenburn-bg-1 :foreground ,zenburn-yellow))))
 ;;;; Third-party
 ;;;;; ace-jump
    `(ace-jump-face-background
@@ -203,6 +203,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-latex-warning-face ((t (:foreground nil :inherit font-lock-warning-face))))
    `(font-latex-sectioning-5-face ((t (:foreground ,zenburn-red :weight bold ))))
    `(font-latex-sedate-face ((t (:foreground ,zenburn-yellow))))
+   `(font-latex-italic-face ((t (:foreground ,zenburn-cyan :slant italic))))
+   `(font-latex-string-face ((t (:inherit ,font-lock-string-face))))
+   `(font-latex-math-face ((t (:foreground ,zenburn-orange))))
 ;;;;; auto-complete
    `(ac-candidate-face ((t (:background ,zenburn-bg+3 :foreground ,zenburn-bg-2))))
    `(ac-selection-face ((t (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
@@ -363,7 +366,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-notice-face ((t (:foreground ,zenburn-green))))
    `(erc-pal-face ((t (:foreground ,zenburn-orange :weight bold))))
    `(erc-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
-   `(erc-timestamp-face ((t (:foreground ,zenburn-green+1))))
+   `(erc-timestamp-face ((t (:foreground ,zenburn-green+4))))
    `(erc-underline-face ((t (:underline t))))
 ;;;;; git-gutter
    `(git-gutter:added ((t (:foreground ,zenburn-green :weight bold :inverse-video t))))
@@ -519,6 +522,24 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(jabber-title-small ((t (:height 1.1 :weight bold))))
    `(jabber-title-medium ((t (:height 1.2 :weight bold))))
    `(jabber-title-large ((t (:height 1.3 :weight bold))))
+;;;;; ledger-mode
+   `(ledger-font-payee-uncleared-face ((t (:foreground ,zenburn-red-1 :weight bold))))
+   `(ledger-font-payee-cleared-face ((t (:foreground ,zenburn-fg :weight normal))))
+   `(ledger-font-xact-highlight-face ((t (:background ,zenburn-bg+1))))
+   `(ledger-font-pending-face ((t (:foreground ,zenburn-orange weight: normal))))
+   `(ledger-font-other-face ((t (:foreground ,zenburn-fg))))
+   `(ledger-font-posting-account-face ((t (:foreground ,zenburn-blue-1))))
+   `(ledger-font-posting-account-cleared-face ((t (:foreground ,zenburn-fg))))
+   `(ledger-font-posting-account-pending-face ((t (:foreground ,zenburn-orange))))
+   `(ledger-font-posting-amount-face ((t (:foreground ,zenburn-orange))))
+   `(ledger-font-posting-account-pending-face ((t (:foreground ,zenburn-orange))))
+   `(ledger-occur-narrowed-face ((t (:foreground ,zenburn-fg-1 :invisible t))))
+   `(ledger-occur-xact-face ((t (:background ,zenburn-bg+1))))
+   `(ledger-font-comment-face ((t (:foreground ,zenburn-green))))
+   `(ledger-font-reconciler-uncleared-face ((t (:foreground ,zenburn-red-1 :weight bold))))
+   `(ledger-font-reconciler-cleared-face ((t (:foreground ,zenburn-fg :weight normal))))
+   `(ledger-font-reconciler-pending-face ((t (:foreground ,zenburn-orange :weight normal))))
+   `(ledger-font-report-clickable-face ((t (:foreground ,zenburn-orange :weight normal))))
 ;;;;; linum-mode
    `(linum ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
 ;;;;; macrostep
@@ -649,10 +670,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-level-8 ((t (:foreground ,zenburn-blue-4))))
    `(org-link ((t (:foreground ,zenburn-yellow-2 :underline t))))
    `(org-scheduled ((t (:foreground ,zenburn-green+4))))
-   `(org-scheduled-previously ((t (:foreground ,zenburn-red-4))))
+   `(org-scheduled-previously ((t (:foreground ,zenburn-red))))
    `(org-scheduled-today ((t (:foreground ,zenburn-blue+1))))
    `(org-sexp-date ((t (:foreground ,zenburn-blue+1 :underline t))))
-   `(org-special-keyword ((t (:foreground ,zenburn-fg-1 :weight normal))))
+   `(org-special-keyword ((t (:inherit font-lock-comment-face))))
    `(org-table ((t (:foreground ,zenburn-green+2))))
    `(org-tag ((t (:bold t :weight bold))))
    `(org-time-grid ((t (:foreground ,zenburn-orange))))
