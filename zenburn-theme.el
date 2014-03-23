@@ -590,7 +590,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; magit
    `(magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-branch ((t (:foreground ,zenburn-orange :weight bold))))
-   `(magit-item-highlight ((t (:background ,zenburn-bg+1 :bold nil))))
+   `(magit-item-highlight ((t (:background ,zenburn-bg+1))))
    `(magit-log-author ((t (:foreground, zenburn-orange))))
    `(magit-log-sha1 ((t (:foreground, zenburn-orange))))
 ;;;;; message-mode
