@@ -598,10 +598,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(macrostep-macro-face
      ((t (:underline t))))
 ;;;;; magit
-   `(magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
-   `(magit-branch ((t (:foreground ,zenburn-orange :weight bold))))
    `(magit-item-highlight ((t (:background ,zenburn-bg+1))))
-   `(magit-log-author ((t (:foreground, zenburn-orange))))
+   `(magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(magit-process-ok ((t (:foreground ,zenburn-green :weight bold))))
+   `(magit-process-ng ((t (:foreground ,zenburn-red :weight bold))))
+   `(magit-branch ((t (:foreground ,zenburn-blue :weight bold))))
+   `(magit-log-author ((t (:foreground ,zenburn-orange))))
    `(magit-log-sha1 ((t (:foreground, zenburn-orange))))
 ;;;;; message-mode
    `(message-cited-text ((t (:inherit font-lock-comment-face))))
