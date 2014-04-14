@@ -214,6 +214,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(popup-scroll-bar-foreground-face ((t (:background ,zenburn-blue-5))))
    `(popup-scroll-bar-background-face ((t (:background ,zenburn-bg-1))))
    `(popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
+;;;;; company-mode
+   `(company-tooltip ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+1))))
+   `(company-tooltip-selection ((t (:foreground ,zenburn-fg :background ,zenburn-bg-1))))
+   `(company-tooltip-mouse ((t (:background ,zenburn-bg-1))))
+   `(company-tooltip-common ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
+   `(company-tooltip-common-selection ((t (:background ,zenburn-bg-1))))
+   `(company-scrollbar-fg ((t (:background ,zenburn-green+1))))
+   `(company-scrollbar-bg ((t (:background ,zenburn-bg-1))))
+   `(company-preview ((t (:background ,zenburn-green+1))))
+   `(company-preview-common ((t (:background ,zenburn-bg-1))))
 ;;;;; bm
    `(bm-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
