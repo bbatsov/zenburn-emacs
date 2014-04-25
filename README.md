@@ -69,5 +69,9 @@ included upstream don't hesitate to send me a patch or even better - a
 GitHub pull request. [These](https://github.com/bbatsov/zenburn-emacs/contributors)
 contributors have done so.
 
+If you like the project, consider supporting its development via [gittip](https://www.gittip.com/bbatsov).
+
+[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/bbatsov)
+
 Cheers,<br\>
 Bozhidar
