@@ -74,4 +74,4 @@ If you like the project, consider supporting its development via [gittip](https:
 [![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/bbatsov)
 
 Cheers,<br\>
-Bozhidar
+[Bozhidar](http://twitter.com/bbatsov)
