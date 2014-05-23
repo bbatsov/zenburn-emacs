@@ -604,7 +604,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(macrostep-macro-face
      ((t (:underline t))))
 ;;;;; magit
-   `(magit-item-highlight ((t (:background ,zenburn-bg+1))))
+   `(magit-item-highlight ((t (:background ,zenburn-bg+05))))
    `(magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-process-ok ((t (:foreground ,zenburn-green :weight bold))))
    `(magit-process-ng ((t (:foreground ,zenburn-red :weight bold))))
