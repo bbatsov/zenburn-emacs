@@ -43,6 +43,7 @@
     ("zenburn-bg-1"     . "#2B2B2B")
     ("zenburn-bg-05"    . "#383838")
     ("zenburn-bg"       . "#3F3F3F")
+    ("zenburn-bg+05"    . "#494949")
     ("zenburn-bg+1"     . "#4F4F4F")
     ("zenburn-bg+2"     . "#5F5F5F")
     ("zenburn-bg+3"     . "#6F6F6F")
@@ -603,7 +604,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(macrostep-macro-face
      ((t (:underline t))))
 ;;;;; magit
-   `(magit-item-highlight ((t (:background ,zenburn-bg+1))))
+   `(magit-item-highlight ((t (:background ,zenburn-bg+05))))
    `(magit-section-title ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-process-ok ((t (:foreground ,zenburn-green :weight bold))))
    `(magit-process-ng ((t (:foreground ,zenburn-red :weight bold))))
