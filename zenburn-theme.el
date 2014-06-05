@@ -315,6 +315,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(egg-diff-file-header ((t (:foreground ,zenburn-yellow-2))))
    `(egg-section-title ((t (:foreground ,zenburn-yellow))))
    `(egg-stash-mono ((t (:foreground ,zenburn-green+4))))
+;;;;; elfeed
+   `(elfeed-search-date-face ((t (:foreground ,zenburn-yellow-1 :underline t
+                                              :weight bold))))
+   `(elfeed-search-tag-face ((t (:foreground ,zenburn-green))))
+   `(elfeed-search-feed-face ((t (:foreground ,zenburn-cyan))))
 ;;;;; emacs-w3m
    `(w3m-anchor ((t (:foreground ,zenburn-yellow :underline t
                                  :weight bold))))
