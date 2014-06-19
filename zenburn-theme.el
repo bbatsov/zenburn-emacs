@@ -4,7 +4,8 @@
 
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
-;; Version: 2.1
+;; Version: 20140613.207
+;; X-Original-Version: 2.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -54,9 +55,11 @@
     ("zenburn-red-3"    . "#9C6363")
     ("zenburn-red-4"    . "#8C5353")
     ("zenburn-orange"   . "#DFAF8F")
-    ("zenburn-yellow"   . "#F0DFAF")
-    ("zenburn-yellow-1" . "#E0CF9F")
     ("zenburn-yellow-2" . "#D0BF8F")
+    ("zenburn-yellow-1" . "#E0CF9F")
+    ("zenburn-yellow"   . "#F0DFAF")
+    ("zenburn-yellow+1" . "#FFEF9F")
+    ("zenburn-yellow+2" . "#FFEF6F")
     ("zenburn-green-1"  . "#5F7F5F")
     ("zenburn-green"    . "#7F9F7F")
     ("zenburn-green+1"  . "#8FB28F")
@@ -188,10 +191,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(newsticker-treeview-selection-face ((t (:background ,zenburn-bg-1 :foreground ,zenburn-yellow))))
 ;;;; Third-party
 ;;;;; ace-jump
-   `(ace-jump-face-background
-     ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
+   ;; `(ace-jump-face-background
+     ;; ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
    `(ace-jump-face-foreground
-     ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-bg-2 :background ,zenburn-yellow+2 :inverse-video nil))))
 ;;;;; android mode
    `(android-mode-debug-face ((t (:foreground ,zenburn-green+1))))
    `(android-mode-error-face ((t (:foreground ,zenburn-orange :weight bold))))
@@ -690,45 +693,46 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mumamo-background-chunk-submode3 ((t (:background ,zenburn-bg+3))))
    `(mumamo-background-chunk-submode4 ((t (:background ,zenburn-bg+1))))
 ;;;;; org-mode
-   `(org-agenda-date-today
-     ((t (:foreground ,zenburn-fg+1 :slant italic :weight bold))) t)
-   `(org-agenda-structure
-     ((t (:inherit font-lock-comment-face))))
-   `(org-archived ((t (:foreground ,zenburn-fg :weight bold))))
-   `(org-checkbox ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg+1
-                                   :box (:line-width 1 :style released-button)))))
-   `(org-date ((t (:foreground ,zenburn-blue :underline t))))
-   `(org-deadline-announce ((t (:foreground ,zenburn-red-1))))
-   `(org-done ((t (:bold t :weight bold :foreground ,zenburn-green+3))))
-   `(org-formula ((t (:foreground ,zenburn-yellow-2))))
-   `(org-headline-done ((t (:foreground ,zenburn-green+3))))
-   `(org-hide ((t (:foreground ,zenburn-bg-1))))
-   `(org-level-1 ((t (:foreground ,zenburn-orange))))
-   `(org-level-2 ((t (:foreground ,zenburn-green+4))))
-   `(org-level-3 ((t (:foreground ,zenburn-blue-1))))
-   `(org-level-4 ((t (:foreground ,zenburn-yellow-2))))
-   `(org-level-5 ((t (:foreground ,zenburn-cyan))))
-   `(org-level-6 ((t (:foreground ,zenburn-green+2))))
-   `(org-level-7 ((t (:foreground ,zenburn-red-4))))
-   `(org-level-8 ((t (:foreground ,zenburn-blue-4))))
-   `(org-link ((t (:foreground ,zenburn-yellow-2 :underline t))))
-   `(org-scheduled ((t (:foreground ,zenburn-green+4))))
-   `(org-scheduled-previously ((t (:foreground ,zenburn-red))))
-   `(org-scheduled-today ((t (:foreground ,zenburn-blue+1))))
-   `(org-sexp-date ((t (:foreground ,zenburn-blue+1 :underline t))))
-   `(org-special-keyword ((t (:inherit font-lock-comment-face))))
-   `(org-table ((t (:foreground ,zenburn-green+2))))
-   `(org-tag ((t (:bold t :weight bold))))
-   `(org-time-grid ((t (:foreground ,zenburn-orange))))
-   `(org-todo ((t (:bold t :foreground ,zenburn-red :weight bold))))
-   `(org-upcoming-deadline ((t (:inherit font-lock-keyword-face))))
-   `(org-warning ((t (:bold t :foreground ,zenburn-red :weight bold :underline nil))))
-   `(org-column ((t (:background ,zenburn-bg-1))))
-   `(org-column-title ((t (:background ,zenburn-bg-1 :underline t :weight bold))))
-   `(org-mode-line-clock ((t (:foreground ,zenburn-fg :background ,zenburn-bg-1))))
+   `(org-agenda-date-today       ((t (:foreground ,zenburn-fg+1 :slant italic :weight bold))) t)
+   `(org-agenda-structure        ((t (:inherit font-lock-comment-face))))
+   `(org-archived                ((t (:foreground ,zenburn-fg :weight bold))))
+   `(org-block                   ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
+   `(org-block-background        ((t (:background ,zenburn-bg+1))))
+   `(org-block-begin-line        ((t (:foreground ,zenburn-fg :background ,zenburn-bg+05 :underline ,zenburn-bg))))
+   `(org-block-end-line          ((t (:foreground ,zenburn-fg :background ,zenburn-bg+05 :overline ,zenburn-bg))))
+   `(org-checkbox                ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg+1 :box (:line-width 1 :style released-button)))))
+   `(org-date                    ((t (:foreground ,zenburn-blue :underline t))))
+   `(org-deadline-announce       ((t (:foreground ,zenburn-red-1))))
+   `(org-done                    ((t (:bold t :weight bold :foreground ,zenburn-green+3))))
+   `(org-formula                 ((t (:foreground ,zenburn-yellow-2))))
+   `(org-headline-done           ((t (:foreground ,zenburn-green+3))))
+   `(org-hide                    ((t (:foreground ,zenburn-bg-1))))
+   `(org-level-1                 ((t (:height 1.3 :weight bold :overline ,zenburn-bg+1 :foreground ,zenburn-orange   ))))
+   `(org-level-2                 ((t (:height 1.1 :weight bold :overline ,zenburn-bg+1 :foreground ,zenburn-green+4  ))))
+   `(org-level-3                 ((t (:height 1.0 :weight bold                     :foreground ,zenburn-blue-1   ))))
+   `(org-level-4                 ((t (:height 1.0 :weight bold :slant normal       :foreground ,zenburn-yellow-2 ))))
+   `(org-level-5                 ((t (:height 1.0 :weight bold :slant normal       :foreground ,zenburn-cyan     ))))
+   `(org-level-6                 ((t (:height 1.0 :weight bold :slant italic       :foreground ,zenburn-green+2  ))))
+   `(org-level-7                 ((t (:height 1.0 :weight bold :slant italic       :foreground ,zenburn-red-4    ))))
+   `(org-level-8                 ((t (:height 1.0 :weight bold :slant italic       :foreground ,zenburn-blue-4   ))))
+   `(org-link                    ((t (:foreground ,zenburn-yellow-2 :underline t))))
+   `(org-scheduled               ((t (:foreground ,zenburn-green+4))))
+   `(org-scheduled-previously    ((t (:foreground ,zenburn-red))))
+   `(org-scheduled-today         ((t (:foreground ,zenburn-blue+1))))
+   `(org-sexp-date               ((t (:foreground ,zenburn-blue+1 :underline t))))
+   `(org-special-keyword         ((t (:inherit font-lock-comment-face))))
+   `(org-table                   ((t (:foreground ,zenburn-green+2))))
+   `(org-tag                     ((t (:bold t :weight bold))))
+   `(org-time-grid               ((t (:foreground ,zenburn-orange))))
+   `(org-todo                    ((t (:bold t :foreground ,zenburn-red :weight bold))))
+   `(org-upcoming-deadline       ((t (:inherit font-lock-keyword-face))))
+   `(org-warning                 ((t (:bold t :foreground ,zenburn-red :weight bold :underline nil))))
+   `(org-column                  ((t (:background ,zenburn-bg-1))))
+   `(org-column-title            ((t (:background ,zenburn-bg-1 :underline t :weight bold))))
+   `(org-mode-line-clock         ((t (:foreground ,zenburn-fg :background ,zenburn-bg-1))))
    `(org-mode-line-clock-overrun ((t (:foreground ,zenburn-bg :background ,zenburn-red-1))))
-   `(org-ellipsis ((t (:foreground ,zenburn-yellow-1 :underline t))))
-   `(org-footnote ((t (:foreground ,zenburn-cyan :underline t))))
+   `(org-ellipsis                ((t (:foreground ,zenburn-yellow-1 :underline t))))
+   `(org-footnote                ((t (:foreground ,zenburn-cyan :underline t))))
 ;;;;; outline
    `(outline-1 ((t (:foreground ,zenburn-orange))))
    `(outline-2 ((t (:foreground ,zenburn-green+4))))
