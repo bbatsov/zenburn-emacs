@@ -1042,10 +1042,6 @@ This requires library `rainbow-mode'.")
 
 (provide-theme 'zenburn)
 
-;;;###autoload
-(add-to-list 'safe-local-eval-forms
-             '(when (require 'rainbow-mode nil t) (rainbow-mode 1)))
-
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
