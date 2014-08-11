@@ -246,9 +246,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diff-changed ((t (:foreground ,zenburn-yellow))))
    `(diff-removed ((,class (:foreground ,zenburn-red :background nil))
                    (t (:foreground ,zenburn-red-3 :background nil))))
-   `(diff-refine-added ((t :inherit diff-added :weight bold)))
-   `(diff-refine-change ((t :inherit diff-changed :weight bold)))
-   `(diff-refine-removed ((t :inherit diff-removed :weight bold)))
+   `(diff-refine-added ((t (:inherit diff-added :weight bold))))
+   `(diff-refine-change ((t (:inherit diff-changed :weight bold))))
+   `(diff-refine-removed ((t (:inherit diff-removed :weight bold))))
    `(diff-header ((,class (:background ,zenburn-bg+2))
                   (t (:background ,zenburn-fg :foreground ,zenburn-bg))))
    `(diff-file-header
