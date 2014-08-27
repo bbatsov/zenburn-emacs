@@ -71,7 +71,9 @@
     ("zenburn-blue-3"   . "#5C888B")
     ("zenburn-blue-4"   . "#4C7073")
     ("zenburn-blue-5"   . "#366060")
-    ("zenburn-magenta"  . "#DC8CC3"))
+    ("zenburn-magenta"  . "#DC8CC3")
+    ("zenburn-gray"     . "#CCCCCC")
+    )
   "List of Zenburn colors.
 Each element has the form (NAME . HEX).
 
@@ -271,7 +273,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diredp-dir-priv ((t (:foreground ,zenburn-cyan))))
    `(diredp-exec-priv ((t (:foreground ,zenburn-red))))
    `(diredp-executable-tag ((t (:foreground ,zenburn-green+1))))
-   `(diredp-file-name ((t (:foreground ,zenburn-blue))))
+   `(diredp-file-name ((t (:foreground ,zenburn-gray))))
    `(diredp-file-suffix ((t (:foreground ,zenburn-green))))
    `(diredp-flag-mark ((t (:foreground ,zenburn-yellow))))
    `(diredp-flag-mark-line ((t (:foreground ,zenburn-orange))))
