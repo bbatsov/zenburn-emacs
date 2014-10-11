@@ -4,7 +4,7 @@ Zenburn for Emacs is a direct port of the popular
 [Zenburn](http://slinky.imukuppi.org/zenburnpage/) theme for vim,
 developed by Jani Nurminen. It's my personal belief (and
 that of its many users I presume) that it's one of the best low
-contrast color themes out there and that it's is exceptionally easy on
+contrast color themes out there and that it is exceptionally easy on
 the eyes.
 
 This theme uses the new built-in theming support available starting
