@@ -33,7 +33,7 @@ Now you can load the theme with the interactive function `load-theme` like this:
 ### Package.el
 
 Zenburn is available in both [Marmalade](http://marmalade-repo.org)
-and [MELPA](http://melpa.milkbox.net).
+and [MELPA](http://melpa.org).
 Keep in mind the fact the version in the Marmalade repo may not always
 be up-to-date.
 
