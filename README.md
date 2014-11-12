@@ -1,3 +1,8 @@
+[![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
+[![MELPA](http://melpa.org/packages/zenburn-theme-badge.svg)](http://melpa.org/#/zenburn-theme)
+[![MELPA Stable](http://stable.melpa.org/packages/zenburn-theme-badge.svg)](http://stable.melpa.org/#/zenburn-theme)
+[![Gratipay](http://img.shields.io/gratipay/bbatsov.svg)](https://www.gratipay.com/bbatsov/)
+
 ## About
 
 Zenburn for Emacs is a direct port of the popular
@@ -75,3 +80,5 @@ If you like the project, consider supporting its development via [gittip](https:
 
 Cheers,<br\>
 [Bozhidar](http://twitter.com/bbatsov)
+
+[badge-license]: https://img.shields.io/badge/license-GPL_3-green.svg
