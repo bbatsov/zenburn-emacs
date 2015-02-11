@@ -583,7 +583,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-posting-account-cleared-face ((t (:foreground ,zenburn-fg))))
    `(ledger-font-posting-account-pending-face ((t (:foreground ,zenburn-orange))))
    `(ledger-font-posting-amount-face ((t (:foreground ,zenburn-orange))))
-   `(ledger-font-posting-account-pending-face ((t (:foreground ,zenburn-orange))))
    `(ledger-occur-narrowed-face ((t (:foreground ,zenburn-fg-1 :invisible t))))
    `(ledger-occur-xact-face ((t (:background ,zenburn-bg+1))))
    `(ledger-font-comment-face ((t (:foreground ,zenburn-green))))
