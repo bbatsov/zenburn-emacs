@@ -234,7 +234,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(bm-fringe-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
    `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
 ;;;;; circe
-   `(circe-hilight-nick-face ((t (:foreground ,zenburn-fg))))
+   `(circe-highlight-nick-face ((t (:foreground ,zenburn-cyan))))
    `(circe-my-message-face ((t (:foreground ,zenburn-fg))))
    `(circe-fool-face ((t (:foreground ,zenburn-red+1))))
    `(circe-topic-diff-removed-face ((t (:foreground ,zenburn-red :weight bold))))
