@@ -233,6 +233,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    `(bm-fringe-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
    `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
+;;;;; circe
+   `(circe-hilight-nick-face ((t (:foreground ,zenburn-fg))))
+   `(circe-my-message-face ((t (:foreground ,zenburn-fg))))
+   `(circe-fool-face ((t (:foreground ,zenburn-red+1))))
+   `(circe-topic-diff-removed-face ((t (:foreground ,zenburn-red :weight bold))))
+   `(circe-originator-face ((t (:foreground ,zenburn-fg))))
+   `(circe-server-face ((t (:foreground ,zenburn-green))))
+   `(circe-topic-diff-new-face ((t (:foreground ,zenburn-orange :weight bold))))
+   `(circe-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
 ;;;;; clojure-test-mode
    `(clojure-test-failure-face ((t (:foreground ,zenburn-orange :weight bold :underline t))))
    `(clojure-test-error-face ((t (:foreground ,zenburn-red :weight bold :underline t))))
@@ -598,6 +607,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-report-clickable-face ((t (:foreground ,zenburn-orange :weight normal))))
 ;;;;; linum-mode
    `(linum ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+;;;;; lui
+   `(lui-time-stamp-face ((t (:foreground ,zenburn-blue-1))))
+   `(lui-hilight-face ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(lui-button-face ((t (:inherit hover-highlight))))
 ;;;;; macrostep
    `(macrostep-gensym-1
      ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg-1))))
