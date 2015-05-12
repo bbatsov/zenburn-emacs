@@ -220,6 +220,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; avy
    `(avy-background-face
      ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
+   `(avy-lead-face-0
+     ((t (:foreground ,zenburn-green+3 :background ,zenburn-bg :inverse-video nil))))
    `(avy-lead-face
      ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil))))
 ;;;;; company-mode
