@@ -656,7 +656,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-diff-hunk-heading-selection ((t (:background ,zenburn-bg+2
                                             :foreground ,zenburn-orange))))
    `(magit-diff-lines-heading          ((t (:background ,zenburn-orange
-                                            :foreground ,zenburn-black))))
+                                            :foreground ,zenburn-bg+2))))
    `(magit-diff-context-highlight      ((t (:background ,zenburn-bg+05
                                             :foreground "grey70"))))
    `(magit-diffstat-added   ((t (:foreground ,zenburn-green+4))))
