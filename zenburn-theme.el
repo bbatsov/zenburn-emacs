@@ -26,7 +26,7 @@
 
 ;;; Credits:
 
-;; Jani Nurminen created the original theme for vim on such this port
+;; Jani Nurminen created the original theme for vim on which this port
 ;; is based.
 
 ;;; Code:
