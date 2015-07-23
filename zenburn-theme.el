@@ -1081,10 +1081,18 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(emms-browser-track-face ((t (:foreground ,zenburn-yellow-2))))
    `(emms-browser-year/genre-face ((t (:foreground ,zenburn-yellow :height 1.2 :weight bold))))
 ;;;;; smart-mode-line
-   `(sml/discharging ((t (:foreground ,zenburn-red+1 :inherit sml/global))))
-   `(sml/modified ((t (:foreground ,zenburn-red :inherit sml/not-modified))))
-   `(sml/outside-modified ((t (:background ,zenburn-red-4 :foreground ,zenburn-fg :inherit sml/not-modified))))
+   `(sml/discharging ((t (:foreground ,zenburn-red+1))))
+   `(sml/modified ((t (:foreground ,zenburn-red))))
+   `(sml/outside-modified ((t (:background ,zenburn-red-4 :foreground ,zenburn-fg))))
    `(sml/sudo ((t (:inherit sml/outside-modified))))
+   `(sml/filename ((t (:foreground ,zenburn-yellow))))
+   `(sml/prefix ((t (:foreground ,zenburn-orange))))
+   `(sml/position-percentage ((t (:foreground ,zenburn-blue))))
+   `(sml/git ((t (:foreground ,zenburn-orange))))
+   `(sml/process ((t (:weight bold))))
+   `(sml/read-only ((t (:foreground ,zenburn-yellow-2))))
+   `(sml/vc-edited ((t (:foreground ,zenburn-blue+1))))
+   `(sml/charging ((t (:foreground ,zenburn-green+1))))
    ))
 
 ;;; Theme Variables
