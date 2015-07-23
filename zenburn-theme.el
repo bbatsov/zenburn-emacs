@@ -1080,6 +1080,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(emms-browser-performer-face ((t (:foreground ,zenburn-yellow :height 1.2 :weight bold))))
    `(emms-browser-track-face ((t (:foreground ,zenburn-yellow-2))))
    `(emms-browser-year/genre-face ((t (:foreground ,zenburn-yellow :height 1.2 :weight bold))))
+;;;;; smart-mode-line
+   `(sml/discharging ((t (:foreground ,zenburn-red+1 :inherit sml/global))))
+   `(sml/modified ((t (:foreground ,zenburn-red :inherit sml/not-modified))))
+   `(sml/outside-modified ((t (:background ,zenburn-red-4 :foreground ,zenburn-fg :inherit sml/not-modified))))
+   `(sml/sudo ((t (:inherit sml/outside-modified))))
    ))
 
 ;;; Theme Variables
