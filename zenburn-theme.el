@@ -1071,6 +1071,15 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; yascroll
    `(yascroll:thumb-text-area ((t (:background ,zenburn-bg-1))))
    `(yascroll:thumb-fringe ((t (:background ,zenburn-bg-1 :foreground ,zenburn-bg-1))))
+;;;;; emms
+   `(emms-playlist-selected-face ((t (:foreground ,zenburn-blue+1 :weight bold))))
+   `(emms-playlist-track-face ((t (:foreground ,zenburn-yellow-2))))
+   `(emms-browser-album-face ((t (:foreground ,zenburn-yellow-1 :height 1.1 :weight bold))))
+   `(emms-browser-artist-face ((t (:foreground ,zenburn-yellow :height 1.2 :weight bold))))
+   `(emms-browser-composer-face ((t (:foreground ,zenburn-yellow :height 1.2 :weight bold))))
+   `(emms-browser-performer-face ((t (:foreground ,zenburn-yellow :height 1.2 :weight bold))))
+   `(emms-browser-track-face ((t (:foreground ,zenburn-yellow-2))))
+   `(emms-browser-year/genre-face ((t (:foreground ,zenburn-yellow :height 1.2 :weight bold))))
    ))
 
 ;;; Theme Variables
