@@ -241,6 +241,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    `(bm-fringe-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
    `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
+;;;;; cider
+   `(cider-result-overlay-face ((t (:foreground ,zenburn-fg-1))))
 ;;;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,zenburn-cyan))))
    `(circe-my-message-face ((t (:foreground ,zenburn-fg))))
