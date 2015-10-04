@@ -268,6 +268,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(circe-server-face ((t (:foreground ,zenburn-green))))
    `(circe-topic-diff-new-face ((t (:foreground ,zenburn-orange :weight bold))))
    `(circe-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
+;;;;; context-coloring
+   `(context-coloring-level-0-face ((t :foreground ,zenburn-fg)))
+   `(context-coloring-level-1-face ((t :foreground ,zenburn-cyan)))
+   `(context-coloring-level-2-face ((t :foreground ,zenburn-green+4)))
+   `(context-coloring-level-3-face ((t :foreground ,zenburn-yellow)))
+   `(context-coloring-level-4-face ((t :foreground ,zenburn-orange)))
+   `(context-coloring-level-5-face ((t :foreground ,zenburn-magenta)))
+   `(context-coloring-level-6-face ((t :foreground ,zenburn-blue+1)))
+   `(context-coloring-level-7-face ((t :foreground ,zenburn-green+2)))
+   `(context-coloring-level-8-face ((t :foreground ,zenburn-yellow-2)))
+   `(context-coloring-level-9-face ((t :foreground ,zenburn-red+1)))
 ;;;;; coq
    `(coq-solve-tactics-face ((t (:foreground nil :inherit font-lock-constant-face))))
 ;;;;; ctable
