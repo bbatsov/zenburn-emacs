@@ -602,6 +602,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(hydra-face-blue ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
    `(hydra-face-pink ((t (:foreground ,zenburn-magenta :background ,zenburn-bg))))
    `(hydra-face-teal ((t (:foreground ,zenburn-cyan :background ,zenburn-bg))))
+;;;; ivy
+   `(ivy-confirm-face ((t (:foreground ,zenburn-green :background ,zenburn-bg))))
+   `(ivy-match-required-face ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(ivy-remote ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
+   `(ivy-subdir ((t (:foreground ,zenburn-yellow :background ,zenburn-bg))))
+   `(ivy-current-match ((t (:foreground ,zenburn-yellow :weight bold :underline t))))
+   `(ivy-minibuffer-match-face-1 ((t (:background ,zenburn-bg+1))))
+   `(ivy-minibuffer-match-face-2 ((t (:background ,zenburn-green-1))))
+   `(ivy-minibuffer-match-face-3 ((t (:background ,zenburn-green))))
+   `(ivy-minibuffer-match-face-4 ((t (:background ,zenburn-green+1))))
 ;;;;; ido-mode
    `(ido-first-match ((t (:foreground ,zenburn-yellow :weight bold))))
    `(ido-only-match ((t (:foreground ,zenburn-orange :weight bold))))
@@ -648,6 +658,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-report-clickable-face ((t (:foreground ,zenburn-orange :weight normal))))
 ;;;;; linum-mode
    `(linum ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+;;;;; ruler-mode
+   `(ruler-mode-column-number ((t (:inherit 'ruler-mode-default :foreground ,zenburn-fg))))
+   `(ruler-mode-fill-column ((t (:inherit 'ruler-mode-default :foreground ,zenburn-yellow))))
+   `(ruler-mode-goal-column ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-comment-column ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-tab-stop ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-current-column ((t (:foreground ,zenburn-yellow :box t))))
+   `(ruler-mode-default ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+
 ;;;;; lui
    `(lui-time-stamp-face ((t (:foreground ,zenburn-blue-1))))
    `(lui-hilight-face ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
