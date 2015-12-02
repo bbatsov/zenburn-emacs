@@ -217,7 +217,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(agda2-highlight-symbol-face ((t (:foreground ,zenburn-orange))))
    `(agda2-highlight-primitive-type-face ((t (:foreground ,zenburn-blue-1))))
    `(agda2-highlight-inductive-constructor-face ((t (:foreground ,zenburn-fg))))
-   `(agda2-highlight-coinductive-constructor-face ((t (:foreground ,zenburn-fg))))    
+   `(agda2-highlight-coinductive-constructor-face ((t (:foreground ,zenburn-fg))))
    `(agda2-highlight-datatype-face ((t (:foreground ,zenburn-blue))))
    `(agda2-highlight-function-face ((t (:foreground ,zenburn-blue))))
    `(agda2-highlight-module-face ((t (:foreground ,zenburn-blue-1))))
@@ -236,11 +236,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
 ;;;;; avy
    `(avy-background-face
-     ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
-   `(avy-lead-face-0
-     ((t (:foreground ,zenburn-green+3 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-fg :background ,zenburn-bg :inverse-video nil))))
    `(avy-lead-face
-     ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-fg :background ,zenburn-red-4 :inverse-video nil))))
+   `(avy-lead-face-0
+     ((t (:foreground ,zenburn-fg :background ,zenburn-blue-5 :inverse-video nil))))
+   `(avy-lead-face-1
+     ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1 :inverse-video nil))))
+   `(avy-lead-face-2
+     ((t (:foreground ,zenburn-bg :background ,zenburn-fg :inverse-video nil))))
 ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,zenburn-orange :background ,zenburn-bg+1))))
