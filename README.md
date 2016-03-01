@@ -55,6 +55,27 @@ Prelude user - you're probably already using Zenburn, since it's
 Prelude's default color theme. You can load Zenburn at any time by
 `M-x load-theme zenburn`.
 
+## Customization
+
+If you'd like to tweak the theme by changing just a few colors, you can
+do so by defining new values in the `zenburn-override-colors-alist`
+variable before loading the theme.
+
+For example, to customize just the lighter background colors, you could add
+to your init file:
+
+```elisp
+(defvar zenburn-override-colors-alist
+  '(("zenburn-bg+05" . "#282828")
+    ("zenburn-bg+1"  . "#2F2F2F")
+    ("zenburn-bg+2"  . "#3F3F3F")
+    ("zenburn-bg+3"  . "#4F4F4F")))
+(load-theme 'zenburn t)
+```
+
+To see the full list of color names you can override, consult the
+`zenburn-theme.el` source file.
+
 ## Ugly colors in the terminal Emacs version
 
 If your Emacs looks considerably uglier in a terminal (compared to the
