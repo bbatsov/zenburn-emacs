@@ -217,7 +217,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(agda2-highlight-symbol-face ((t (:foreground ,zenburn-orange))))
    `(agda2-highlight-primitive-type-face ((t (:foreground ,zenburn-blue-1))))
    `(agda2-highlight-inductive-constructor-face ((t (:foreground ,zenburn-fg))))
-   `(agda2-highlight-coinductive-constructor-face ((t (:foreground ,zenburn-fg))))    
+   `(agda2-highlight-coinductive-constructor-face ((t (:foreground ,zenburn-fg))))
    `(agda2-highlight-datatype-face ((t (:foreground ,zenburn-blue))))
    `(agda2-highlight-function-face ((t (:foreground ,zenburn-blue))))
    `(agda2-highlight-module-face ((t (:foreground ,zenburn-blue-1))))
@@ -238,9 +238,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(avy-background-face
      ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
    `(avy-lead-face-0
-     ((t (:foreground ,zenburn-green+3 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-green+3 :background ,zenburn-bg :inverse-video nil :weight bold))))
+   `(avy-lead-face-1
+     ((t (:foreground ,zenburn-yellow :background ,zenburn-bg :inverse-video nil :weight bold))))
+   `(avy-lead-face-2
+     ((t (:foreground ,zenburn-red+1 :background ,zenburn-bg :inverse-video nil :weight bold))))
    `(avy-lead-face
-     ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil :weight bold))))
 ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,zenburn-orange :background ,zenburn-bg+1))))
@@ -704,15 +708,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-diff-file-heading           ((t (:weight bold))))
    `(magit-diff-file-heading-highlight ((t (:background ,zenburn-bg+05  :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,zenburn-bg+05
-                                            :foreground ,zenburn-orange :weight bold))))
+                                                        :foreground ,zenburn-orange :weight bold))))
    `(magit-diff-hunk-heading           ((t (:background ,zenburn-bg+1))))
    `(magit-diff-hunk-heading-highlight ((t (:background ,zenburn-bg+2))))
    `(magit-diff-hunk-heading-selection ((t (:background ,zenburn-bg+2
-                                            :foreground ,zenburn-orange))))
+                                                        :foreground ,zenburn-orange))))
    `(magit-diff-lines-heading          ((t (:background ,zenburn-orange
-                                            :foreground ,zenburn-bg+2))))
+                                                        :foreground ,zenburn-bg+2))))
    `(magit-diff-context-highlight      ((t (:background ,zenburn-bg+05
-                                            :foreground "grey70"))))
+                                                        :foreground "grey70"))))
    `(magit-diffstat-added   ((t (:foreground ,zenburn-green+4))))
    `(magit-diffstat-removed ((t (:foreground ,zenburn-red))))
 ;;;;;; popup
@@ -1059,17 +1063,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(term-color-black ((t (:foreground ,zenburn-bg
                                        :background ,zenburn-bg-1))))
    `(term-color-red ((t (:foreground ,zenburn-red-2
-                                       :background ,zenburn-red-4))))
+                                     :background ,zenburn-red-4))))
    `(term-color-green ((t (:foreground ,zenburn-green
                                        :background ,zenburn-green+2))))
    `(term-color-yellow ((t (:foreground ,zenburn-orange
-                                       :background ,zenburn-yellow))))
+                                        :background ,zenburn-yellow))))
    `(term-color-blue ((t (:foreground ,zenburn-blue-1
                                       :background ,zenburn-blue-4))))
    `(term-color-magenta ((t (:foreground ,zenburn-magenta
                                          :background ,zenburn-red))))
    `(term-color-cyan ((t (:foreground ,zenburn-cyan
-                                       :background ,zenburn-blue))))
+                                      :background ,zenburn-blue))))
    `(term-color-white ((t (:foreground ,zenburn-fg
                                        :background ,zenburn-fg-1))))
    '(term-default-fg-color ((t (:inherit term-color-white))))
