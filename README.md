@@ -36,6 +36,10 @@ Zenburn is available in both [Marmalade](http://marmalade-repo.org)
 and [MELPA](http://melpa.org).
 Keep in mind the fact the version in the Marmalade repo may not always
 be up-to-date.
+If your Emacs has not previously been configured
+to use a third-party package repository, we thus
+recommend that you set it up to fetch packages from MELPA;
+[here are their configuration instructions.](http://melpa.org/#/getting-started)
 
 You can install `zenburn` with the following command:
 
