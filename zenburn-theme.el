@@ -35,7 +35,7 @@
 
 ;;; Color Palette
 
-(defvar zenburn-colors-alist
+(defvar zenburn-default-colors-alist
   '(("zenburn-fg+1"     . "#FFFFEF")
     ("zenburn-fg"       . "#DCDCCC")
     ("zenburn-fg-1"     . "#656555")
@@ -77,6 +77,16 @@ Each element has the form (NAME . HEX).
 
 `+N' suffixes indicate a color is lighter.
 `-N' suffixes indicate a color is darker.")
+
+(defvar zenburn-override-colors-alist
+  '()
+  "Place to override default theme colors.
+
+You can override a subset of the theme's default colors by
+defining them in this alist before loading the theme.")
+
+(defvar zenburn-colors-alist
+  (append zenburn-default-colors-alist zenburn-override-colors-alist))
 
 (defmacro zenburn-with-color-variables (&rest body)
   "`let' bind all colors defined in `zenburn-colors-alist' around BODY.
