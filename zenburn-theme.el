@@ -672,7 +672,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(js2-private-function-call ((t (:foreground ,zenburn-cyan))))
    `(js2-function-call ((t (:foreground ,zenburn-cyan))))
    `(js2-private-member ((t (:foreground ,zenburn-blue-1))))
-   `(js2-keywords e((t (:foreground ,zenburn-magenta))))
+   `(js2-keywords ((t (:foreground ,zenburn-magenta))))
 ;;;;; ledger-mode
    `(ledger-font-payee-uncleared-face ((t (:foreground ,zenburn-red-1 :weight bold))))
    `(ledger-font-payee-cleared-face ((t (:foreground ,zenburn-fg :weight normal))))
