@@ -4,6 +4,7 @@
 
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
+;; Package-Version: 20160316.2239
 ;; Version: 2.3-cvs
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -43,10 +44,10 @@
     ("zenburn-bg-1"     . "#2B2B2B")
     ("zenburn-bg-05"    . "#383838")
     ("zenburn-bg"       . "#3F3F3F")
-    ("zenburn-bg+05"    . "#494949")
-    ("zenburn-bg+1"     . "#4F4F4F")
-    ("zenburn-bg+2"     . "#5F5F5F")
-    ("zenburn-bg+3"     . "#6F6F6F")
+    ("zenburn-bg+05" . "#282828")
+    ("zenburn-bg+1"  . "#2F2F2F")
+    ("zenburn-bg+2"  . "#3F3F3F")
+    ("zenburn-bg+3"  . "#4F4F4F")
     ("zenburn-red+1"    . "#DCA3A3")
     ("zenburn-red"      . "#CC9393")
     ("zenburn-red-1"    . "#BC8383")
@@ -170,7 +171,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-lock-constant-face ((t (:foreground ,zenburn-green+4))))
    `(font-lock-doc-face ((t (:foreground ,zenburn-green+2))))
    `(font-lock-function-name-face ((t (:foreground ,zenburn-cyan))))
-   `(font-lock-keyword-face ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(font-lock-keyword-face ((t (:foreground ,zenburn-green+1 :weight bold))))
    `(font-lock-negation-char-face ((t (:foreground ,zenburn-yellow :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,zenburn-blue+1))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,zenburn-yellow :weight bold))))
@@ -661,14 +662,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(js2-jsdoc-tag ((t (:foreground ,zenburn-green-1))))
    `(js2-jsdoc-type ((t (:foreground ,zenburn-green+2))))
    `(js2-jsdoc-value ((t (:foreground ,zenburn-green+3))))
-   `(js2-function-param ((t (:foreground, zenburn-green+3))))
+   `(js2-function-param ((t (:foreground, zenburn-orange))))
    `(js2-external-variable ((t (:foreground ,zenburn-orange))))
 ;;;;; additional js2 mode attributes for better syntax highlighting
    `(js2-instance-member ((t (:foreground ,zenburn-green-1))))
    `(js2-jsdoc-html-tag-delimiter ((t (:foreground ,zenburn-orange))))
    `(js2-jsdoc-html-tag-name ((t (:foreground ,zenburn-red-1))))
-   `(js2-object-property ((t (:foreground ,zenburn-orange))))
-   `(js2-magic-paren ((t (:foreground ,zenburn-orange))))
+   `(js2-object-property ((t (:foreground ,zenburn-blue+1))))
+   `(js2-magic-paren ((t (:foreground ,zenburn-blue-5))))
    `(js2-private-function-call ((t (:foreground ,zenburn-cyan))))
    `(js2-function-call ((t (:foreground ,zenburn-cyan))))
    `(js2-private-member ((t (:foreground ,zenburn-blue-1))))
