@@ -254,7 +254,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(avy-lead-face-2
      ((t (:foreground ,zenburn-red+1 :background ,zenburn-bg :inverse-video nil :weight bold))))
    `(avy-lead-face
-     ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil :weight bold))))
+     ((t (:foreground ,zenburn-cyan :background ,zenburn-bg :inverse-video nil :weight bold))))
 ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,zenburn-orange :background ,zenburn-bg+1))))
