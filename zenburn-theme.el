@@ -274,6 +274,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
 ;;;;; cider
    `(cider-result-overlay-face ((t (:foreground ,zenburn-fg-1 :background unspecified))))
+   `(cider-enlightened-face ((t (:box (:color ,zenburn-orange :line-width -1)))))
+   `(cider-enlightened-local-face ((t (:weight bold :foreground ,zenburn-green+1)))))
+   `(cider-deprecated-face ((t (:background ,zenburn-yellow-2))))
+   `(cider-instrumented-face ((t (:box (:color ,zenburn-red :line-width -1)))))
+   `(cider-traced-face ((t (:box (:color ,zenburn-cyan :line-width -1)))))
+   `(cider-test-failure-face ((t (:background ,zenburn-red-4))))
+   `(cider-test-error-face ((t (:background ,zenburn-magenta))))
+   `(cider-test-success-face ((t (:background ,zenburn-green-1))))
 ;;;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,zenburn-cyan))))
    `(circe-my-message-face ((t (:foreground ,zenburn-fg))))
