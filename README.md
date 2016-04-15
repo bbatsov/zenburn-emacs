@@ -32,10 +32,8 @@ Now you can load the theme with the interactive function `load-theme` like this:
 
 ### Package.el
 
-Zenburn is available in both [Marmalade](http://marmalade-repo.org)
+Zenburn is available in both [MELPA Stable](http://stable.melpa.org)
 and [MELPA](http://melpa.org).
-Keep in mind the fact the version in the Marmalade repo may not always
-be up-to-date.
 
 You can install `zenburn` with the following command:
 
@@ -85,7 +83,7 @@ GUI version) try adding this to your `.bashrc` or `.zshrc`:
 export TERM=xterm-256color
 ```
 
-Source the `.bashrc`(`.zshrc`) file and start Emacs again.
+Source the `.bashrc` (or `.zshrc`) file and start Emacs again.
 
 # Bugs & Improvements
 
