@@ -275,7 +275,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; cider
    `(cider-result-overlay-face ((t (:foreground ,zenburn-fg-1 :background unspecified))))
    `(cider-enlightened-face ((t (:box (:color ,zenburn-orange :line-width -1)))))
-   `(cider-enlightened-local-face ((t (:weight bold :foreground ,zenburn-green+1)))))
+   `(cider-enlightened-local-face ((t (:weight bold :foreground ,zenburn-green+1))))
    `(cider-deprecated-face ((t (:background ,zenburn-yellow-2))))
    `(cider-instrumented-face ((t (:box (:color ,zenburn-red :line-width -1)))))
    `(cider-traced-face ((t (:box (:color ,zenburn-cyan :line-width -1)))))
