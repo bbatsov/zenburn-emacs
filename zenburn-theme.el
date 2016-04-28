@@ -213,6 +213,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(android-mode-warning-face ((t (:foreground ,zenburn-yellow))))
 ;;;;; anzu
    `(anzu-mode-line ((t (:foreground ,zenburn-cyan :weight bold))))
+   `(anzu-match-1 ((t (:foreground ,zenburn-bg :background ,zenburn-green))))
+   `(anzu-match-2 ((t (:foreground ,zenburn-bg :background ,zenburn-orange))))
+   `(anzu-match-3 ((t (:foreground ,zenburn-bg :background ,zenburn-blue))))
+   `(anzu-replace-to ((t (:inherit anzu-replace-highlight :foreground ,zenburn-yellow))))
 ;;;;; auctex
    `(font-latex-bold-face ((t (:inherit bold))))
    `(font-latex-warning-face ((t (:foreground nil :inherit font-lock-warning-face))))
