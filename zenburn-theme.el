@@ -360,6 +360,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diredp-symlink ((t (:foreground ,zenburn-yellow))))
    `(diredp-write-priv ((t (:foreground ,zenburn-magenta))))
 ;;;;; dired-async
+   `(dired-async-failures ((t (:foreground ,zenburn-red :weight bold))))
    `(dired-async-message ((t (:foreground ,zenburn-yellow :weight bold))))
    `(dired-async-mode-message ((t (:foreground ,zenburn-yellow))))
 ;;;;; ediff
