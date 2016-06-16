@@ -53,6 +53,11 @@ Prelude user - you're probably already using Zenburn, since it's
 Prelude's default color theme. You can load Zenburn at any time by
 `M-x load-theme zenburn`.
 
+### Debian and Ubuntu
+
+Users of Debian 9 or later or Ubuntu 16.10 or later may simply
+`apt-get install elpa-zenburn-theme`.
+
 ## Customization
 
 If you'd like to tweak the theme by changing just a few colors, you can
