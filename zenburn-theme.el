@@ -1226,6 +1226,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(nrepl-message-colors
      '(,zenburn-red ,zenburn-orange ,zenburn-yellow ,zenburn-green ,zenburn-green+4
                     ,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
+;;;;; pdf-tools
+   `(pdf-view-midnight-colors '(,zenburn-fg . ,zenburn-bg-05))
 ;;;;; vc-annotate
    `(vc-annotate-color-map
      '(( 20. . ,zenburn-red-1)
