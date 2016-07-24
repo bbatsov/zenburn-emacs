@@ -645,7 +645,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(hydra-face-blue ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
    `(hydra-face-pink ((t (:foreground ,zenburn-magenta :background ,zenburn-bg))))
    `(hydra-face-teal ((t (:foreground ,zenburn-cyan :background ,zenburn-bg))))
-;;;; ivy
+;;;;; ivy
    `(ivy-confirm-face ((t (:foreground ,zenburn-green :background ,zenburn-bg))))
    `(ivy-match-required-face ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
    `(ivy-remote ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
