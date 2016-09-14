@@ -895,6 +895,23 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mumamo-background-chunk-submode2 ((t (:background ,zenburn-bg+2))))
    `(mumamo-background-chunk-submode3 ((t (:background ,zenburn-bg+3))))
    `(mumamo-background-chunk-submode4 ((t (:background ,zenburn-bg+1))))
+;;;;; neotree
+   `(neo-banner-face ((t (:foreground ,zenburn-blue+1 :weight bold))))
+   `(neo-header-face ((t (:foreground ,zenburn-fg))))
+   `(neo-root-dir-face ((t (:foreground ,zenburn-blue+1 :weight bold))))
+   `(neo-dir-link-face ((t (:foreground ,zenburn-blue))))
+   `(neo-file-link-face ((t (:foreground ,zenburn-fg))))
+   `(neo-expand-btn-face ((t (:foreground ,zenburn-blue))))
+   `(neo-vc-default-face ((t (:foreground ,zenburn-fg+1))))
+   `(neo-vc-user-face ((t (:foreground ,zenburn-red :slant italic))))
+   `(neo-vc-up-to-date-face ((t (:foreground ,zenburn-fg))))
+   `(neo-vc-edited-face ((t (:foreground ,zenburn-magenta))))
+   `(neo-vc-needs-merge-face ((t (:foreground ,zenburn-red+1))))
+   `(neo-vc-unlocked-changes-face ((t (:foreground ,zenburn-red :background ,zenburn-blue-5))))
+   `(neo-vc-added-face ((t (:foreground ,zenburn-green+1))))
+   `(neo-vc-conflict-face ((t (:foreground ,zenburn-red+1))))
+   `(neo-vc-missing-face ((t (:foreground ,zenburn-red+1))))
+   `(neo-vc-ignored-face ((t (:foreground ,zenburn-fg-1))))
 ;;;;; org-mode
    `(org-agenda-date-today
      ((t (:foreground ,zenburn-fg+1 :slant italic :weight bold))) t)
