@@ -281,7 +281,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(bm-fringe-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
    `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
 ;;;;; cider
-   `(cider-result-overlay-face ((t (:foreground ,zenburn-fg-1 :background unspecified))))
+   `(cider-result-overlay-face ((t (:background unspecified))))
    `(cider-enlightened-face ((t (:box (:color ,zenburn-orange :line-width -1)))))
    `(cider-enlightened-local-face ((t (:weight bold :foreground ,zenburn-green+1))))
    `(cider-deprecated-face ((t (:background ,zenburn-yellow-2))))
