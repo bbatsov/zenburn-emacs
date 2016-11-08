@@ -713,9 +713,13 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; ledger-mode
    `(ledger-font-payee-uncleared-face ((t (:foreground ,zenburn-red-1 :weight bold))))
    `(ledger-font-payee-cleared-face ((t (:foreground ,zenburn-fg :weight normal))))
+   `(ledger-font-payee-pending-face ((t (:foreground ,zenburn-red :weight normal))))
    `(ledger-font-xact-highlight-face ((t (:background ,zenburn-bg+1))))
+   `(ledger-font-auto-xact-face ((t (:foreground ,zenburn-yellow-1 :weight normal))))
+   `(ledger-font-periodic-xact-face ((t (:foreground ,zenburn-green :weight normal))))
    `(ledger-font-pending-face ((t (:foreground ,zenburn-orange weight: normal))))
    `(ledger-font-other-face ((t (:foreground ,zenburn-fg))))
+   `(ledger-font-posting-date-face ((t (:foreground ,zenburn-orange :weight normal))))
    `(ledger-font-posting-account-face ((t (:foreground ,zenburn-blue-1))))
    `(ledger-font-posting-account-cleared-face ((t (:foreground ,zenburn-fg))))
    `(ledger-font-posting-account-pending-face ((t (:foreground ,zenburn-orange))))
