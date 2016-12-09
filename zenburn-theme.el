@@ -143,6 +143,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(match ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
 ;;;;; info
    `(Info-quoted ((t (:inherit font-lock-constant-face))))
+;;;;; irfc
+   `(irfc-head-name-face ((t (:foreground ,zenburn-red :weight bold))))
+   `(irfc-head-number-face ((t (:foreground ,zenburn-red :weight bold))))
+   `(irfc-reference-face ((t (:foreground ,zenburn-blue-1 :weight bold))))
+   `(irfc-requirement-keyword-face ((t (:inherit font-lock-keyword-face))))
+   `(irfc-rfc-link-face ((t (:inherit link))))
+   `(irfc-rfc-number-face ((t (:foreground ,zenburn-cyan :weight bold))))
+   `(irfc-std-number-face ((t (:foreground ,zenburn-green+4 :weight bold))))
+   `(irfc-table-item-face ((t (:foreground ,zenburn-green+3))))
+   `(irfc-title-face ((t (:foreground ,zenburn-yellow
+                                      :underline t :weight bold))))
 ;;;;; isearch
    `(isearch ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg+2))))
    `(isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
