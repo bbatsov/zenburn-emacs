@@ -230,6 +230,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(android-mode-warning-face ((t (:foreground ,zenburn-yellow))))
 ;;;;; anzu
    `(anzu-mode-line ((t (:foreground ,zenburn-cyan :weight bold))))
+   `(anzu-mode-line-no-match ((t (:foreground ,zenburn-red :weight bold))))
    `(anzu-match-1 ((t (:foreground ,zenburn-bg :background ,zenburn-green))))
    `(anzu-match-2 ((t (:foreground ,zenburn-bg :background ,zenburn-orange))))
    `(anzu-match-3 ((t (:foreground ,zenburn-bg :background ,zenburn-blue))))
