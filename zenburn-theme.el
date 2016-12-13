@@ -1055,6 +1055,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(rcirc-track-keyword ((t (:bold t))))
    `(rcirc-url ((t (:bold t))))
    `(rcirc-keyword ((t (:foreground ,zenburn-yellow :bold t))))
+;;;;; re-builder
+   `(reb-match-0 ((t (:foreground ,zenburn-bg :background ,zenburn-magenta))))
+   `(reb-match-1 ((t (:foreground ,zenburn-bg :background ,zenburn-blue))))
+   `(reb-match-2 ((t (:foreground ,zenburn-bg :background ,zenburn-orange))))
+   `(reb-match-3 ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
 ;;;;; rpm-mode
    `(rpm-spec-dir-face ((t (:foreground ,zenburn-green))))
    `(rpm-spec-doc-face ((t (:foreground ,zenburn-green))))
