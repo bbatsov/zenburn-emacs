@@ -1087,6 +1087,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(reb-match-1 ((t (:foreground ,zenburn-bg :background ,zenburn-blue))))
    `(reb-match-2 ((t (:foreground ,zenburn-bg :background ,zenburn-orange))))
    `(reb-match-3 ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
+;;;;; regex-tool
+   `(regex-tool-matched-face ((t (:background ,zenburn-blue-4 :weight bold))))
 ;;;;; rpm-mode
    `(rpm-spec-dir-face ((t (:foreground ,zenburn-green))))
    `(rpm-spec-doc-face ((t (:foreground ,zenburn-green))))
