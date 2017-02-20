@@ -340,6 +340,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ctbl:face-cell-select ((t (:background ,zenburn-blue :foreground ,zenburn-bg))))
    `(ctbl:face-continue-bar ((t (:background ,zenburn-bg-05 :foreground ,zenburn-bg))))
    `(ctbl:face-row-select ((t (:background ,zenburn-cyan :foreground ,zenburn-bg))))
+;;;;; debbugs
+   `(debbugs-gnu-done ((t (:foreground ,zenburn-fg-1))))
+   `(debbugs-gnu-handled ((t (:foreground ,zenburn-green))))
+   `(debbugs-gnu-new ((t (:foreground ,zenburn-red))))
+   `(debbugs-gnu-pending ((t (:foreground ,zenburn-blue))))
+   `(debbugs-gnu-stale ((t (:foreground ,zenburn-orange))))
+   `(debbugs-gnu-tagged ((t (:foreground ,zenburn-red))))
 ;;;;; diff
    `(diff-added          ((t (:background "#335533" :foreground ,zenburn-green))))
    `(diff-changed        ((t (:background "#555511" :foreground ,zenburn-yellow-1))))
