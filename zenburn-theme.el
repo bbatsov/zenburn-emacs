@@ -146,9 +146,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;;;;; info+
    `(info-command-ref-item ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange))))
    `(info-constant-ref-item ((t (:background ,zenburn-bg-1 :foreground ,zenburn-magenta))))
-   `(info-double-quoted-name ((t (:foreground ,zenburn-cyan))))
+   `(info-double-quoted-name ((t (:inherit font-lock-comment-face))))
    `(info-file ((t (:background ,zenburn-bg-1 :foreground ,zenburn-yellow))))
-   `(info-function-ref-item ((t (:background ,zenburn-bg-1 :foreground ,zenburn-blue))))
+   `(info-function-ref-item ((t (:background ,zenburn-bg-1 :inherit font-lock-function-name-face))))
    `(info-macro-ref-item ((t (:background ,zenburn-bg-1 :foreground ,zenburn-yellow))))
    `(info-menu ((t (:foreground ,zenburn-yellow))))
    `(info-quoted-name ((t (:inherit font-lock-constant-face))))
