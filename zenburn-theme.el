@@ -720,6 +720,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ido-only-match ((t (:foreground ,zenburn-orange :weight bold))))
    `(ido-subdir ((t (:foreground ,zenburn-yellow))))
    `(ido-indicator ((t (:foreground ,zenburn-yellow :background ,zenburn-red-4))))
+;;;;; ivy-mode
+   `(ivy-current-match ((t (:background ,zenburn-bg+2))))
 ;;;;; iedit-mode
    `(iedit-occurrence ((t (:background ,zenburn-bg+2 :weight bold))))
 ;;;;; jabber-mode
