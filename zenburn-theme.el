@@ -320,6 +320,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(cider-test-failure-face ((t (:background ,zenburn-red-4))))
    `(cider-test-error-face ((t (:background ,zenburn-magenta))))
    `(cider-test-success-face ((t (:background ,zenburn-green-1))))
+   `(cider-fringe-good-face ((t (:foreground ,zenburn-green+4))))
 ;;;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,zenburn-cyan))))
    `(circe-my-message-face ((t (:foreground ,zenburn-fg))))
