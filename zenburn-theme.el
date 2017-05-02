@@ -963,6 +963,18 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(nav-face-hdir ((t (:foreground ,zenburn-red))))
    `(nav-face-file ((t (:foreground ,zenburn-fg))))
    `(nav-face-hfile ((t (:foreground ,zenburn-red-4))))
+;;;;; merlin
+   `(merlin-type-face ((t (:inherit highlight))))
+   `(merlin-compilation-warning-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-orange)))
+      (t
+       (:underline ,zenburn-orange))))
+   `(merlin-compilation-error-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-red)))
+      (t
+       (:underline ,zenburn-red))))
 ;;;;; mu4e
    `(mu4e-cited-1-face ((t (:foreground ,zenburn-blue    :slant italic))))
    `(mu4e-cited-2-face ((t (:foreground ,zenburn-green+2 :slant italic))))
