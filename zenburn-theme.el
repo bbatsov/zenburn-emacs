@@ -723,15 +723,15 @@ Also bind `class' to ((class color) (min-colors 89))."
                                       :underline t :weight bold))))
 ;;;;; ivy
    `(ivy-confirm-face ((t (:foreground ,zenburn-green :background ,zenburn-bg))))
+   `(ivy-current-match ((t (:foreground ,zenburn-yellow :weight bold :underline t))))
    `(ivy-cursor ((t (:foreground ,zenburn-bg :background ,zenburn-fg))))
    `(ivy-match-required-face ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
-   `(ivy-remote ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
-   `(ivy-subdir ((t (:foreground ,zenburn-yellow :background ,zenburn-bg))))
-   `(ivy-current-match ((t (:foreground ,zenburn-yellow :weight bold :underline t))))
    `(ivy-minibuffer-match-face-1 ((t (:background ,zenburn-bg+1))))
    `(ivy-minibuffer-match-face-2 ((t (:background ,zenburn-green-1))))
    `(ivy-minibuffer-match-face-3 ((t (:background ,zenburn-green))))
    `(ivy-minibuffer-match-face-4 ((t (:background ,zenburn-green+1))))
+   `(ivy-remote ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
+   `(ivy-subdir ((t (:foreground ,zenburn-yellow :background ,zenburn-bg))))
 ;;;;; ido-mode
    `(ido-first-match ((t (:foreground ,zenburn-yellow :weight bold))))
    `(ido-only-match ((t (:foreground ,zenburn-orange :weight bold))))
