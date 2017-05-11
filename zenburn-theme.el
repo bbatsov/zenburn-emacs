@@ -723,6 +723,7 @@ Also bind `class' to ((class color) (min-colors 89))."
                                       :underline t :weight bold))))
 ;;;;; ivy
    `(ivy-confirm-face ((t (:foreground ,zenburn-green :background ,zenburn-bg))))
+   `(ivy-cursor ((t (:foreground ,zenburn-bg :background ,zenburn-fg))))
    `(ivy-match-required-face ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
    `(ivy-remote ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
    `(ivy-subdir ((t (:foreground ,zenburn-yellow :background ,zenburn-bg))))
