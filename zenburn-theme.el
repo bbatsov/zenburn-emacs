@@ -141,6 +141,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(grep-hit-face ((t (:foreground ,zenburn-blue))))
    `(grep-match-face ((t (:foreground ,zenburn-orange :weight bold))))
    `(match ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
+;;;;; hi-lock
+   `(hi-blue    ((t (:background ,zenburn-cyan    :foreground ,zenburn-bg-1))))
+   `(hi-green   ((t (:background ,zenburn-green+4 :foreground ,zenburn-bg-1))))
+   `(hi-pink    ((t (:background ,zenburn-magenta :foreground ,zenburn-bg-1))))
+   `(hi-yellow  ((t (:background ,zenburn-yellow  :foreground ,zenburn-bg-1))))
+   `(hi-blue-b  ((t (:foreground ,zenburn-blue    :weight     bold))))
+   `(hi-green-b ((t (:foreground ,zenburn-green+2 :weight     bold))))
+   `(hi-red-b   ((t (:foreground ,zenburn-red     :weight     bold))))
 ;;;;; info
    `(Info-quoted ((t (:inherit font-lock-constant-face))))
 ;;;;; isearch
