@@ -640,8 +640,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(guide-key/key-face ((t (:foreground ,zenburn-green))))
    `(guide-key/prefix-command-face ((t (:foreground ,zenburn-green+1))))
 ;;;;; hackernews
-   '(hackernews-comment-count-face ((t (:inherit link-visited :underline nil))))
-   '(hackernews-link-face          ((t (:inherit link         :underline nil))))
+   '(hackernews-comment-count ((t (:inherit link-visited :underline nil))))
+   '(hackernews-link          ((t (:inherit link         :underline nil))))
 ;;;;; helm
    `(helm-header
      ((t (:foreground ,zenburn-green
