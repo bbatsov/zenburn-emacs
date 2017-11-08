@@ -844,6 +844,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-section-highlight           ((t (:background ,zenburn-bg+05))))
    `(magit-section-heading             ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-section-heading-selection   ((t (:foreground ,zenburn-orange :weight bold))))
+
+   `(magit-diff-added-highlight ((t (:background ,zenburn-green))))
+   `(magit-diff-removed-highlight ((t (:background ,zenburn-red-3))))
+   `(magit-diff-added ((t (:background ,zenburn-green-1))))
+   `(magit-diff-removed ((t (:background ,zenburn-red-4))))
+
    `(magit-diff-file-heading           ((t (:weight bold))))
    `(magit-diff-file-heading-highlight ((t (:background ,zenburn-bg+05  :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,zenburn-bg+05
