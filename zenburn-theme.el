@@ -249,6 +249,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-latex-italic-face ((t (:foreground ,zenburn-cyan :slant italic))))
    `(font-latex-string-face ((t (:inherit ,font-lock-string-face))))
    `(font-latex-math-face ((t (:foreground ,zenburn-orange))))
+   `(font-latex-script-char-face ((t (:foreground ,zenburn-orange))))
 ;;;;; agda-mode
    `(agda2-highlight-keyword-face ((t (:foreground ,zenburn-yellow :weight bold))))
    `(agda2-highlight-string-face ((t (:foreground ,zenburn-red))))
