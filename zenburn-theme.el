@@ -1156,6 +1156,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(reb-match-1 ((t (:foreground ,zenburn-bg :background ,zenburn-blue))))
    `(reb-match-2 ((t (:foreground ,zenburn-bg :background ,zenburn-orange))))
    `(reb-match-3 ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
+;;;;; realgud
+   `(realgud-overlay-arrow1 ((t (:foreground ,zenburn-green))))
+   `(realgud-overlay-arrow2 ((t (:foreground ,zenburn-yellow))))
+   `(realgud-overlay-arrow3 ((t (:foreground ,zenburn-orange))))
+   `(realgud-bp-enabled-face ((t (:inherit error))))
+   `(realgud-bp-disabled-face ((t (:inherit secondary-selection))))
+   `(realgud-bp-line-enabled-face ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
+   `(realgud-bp-line-disabled-face ((t (:inherit secondary-selection))))
+   `(realgud-line-number ((t (:foreground ,zenburn-yellow))))
+   `(realgud-backtrace-number ((t (:foreground ,zenburn-yellow, :weight bold))))
 ;;;;; regex-tool
    `(regex-tool-matched-face ((t (:background ,zenburn-blue-4 :weight bold))))
 ;;;;; rpm-mode
