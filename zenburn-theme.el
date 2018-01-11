@@ -1104,6 +1104,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(p4-diff-file-face ((t :inherit diff-file-header)))
    `(p4-diff-head-face ((t :inherit diff-header)))
    `(p4-diff-ins-face ((t :inherit diff-added)))
+;;;;; c/perl
+   `(cperl-nonoverridable-face ((t (:foreground ,zenburn-magenta))))
+   `(cperl-array-face ((t (:foreground ,zenburn-yellow, :backgorund ,zenburn-bg))))
+   `(cperl-hash-face ((t (:foreground ,zenburn-yellow-1, :background ,zenburn-bg))))
 ;;;;; perspective
    `(persp-selected-face ((t (:foreground ,zenburn-yellow-2 :inherit mode-line))))
 ;;;;; powerline
