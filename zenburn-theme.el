@@ -1171,8 +1171,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(realgud-overlay-arrow3 ((t (:foreground ,zenburn-orange))))
    `(realgud-bp-enabled-face ((t (:inherit error))))
    `(realgud-bp-disabled-face ((t (:inherit secondary-selection))))
-   `(realgud-bp-line-enabled-face ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
-   `(realgud-bp-line-disabled-face ((t (:inherit secondary-selection))))
+   `(realgud-bp-line-enabled-face ((t (:box (:color ,zenburn-red :style nil)))))
+   `(realgud-bp-line-disabled-face ((t (:box (:color "grey70" :style nil)))))
    `(realgud-line-number ((t (:foreground ,zenburn-yellow))))
    `(realgud-backtrace-number ((t (:foreground ,zenburn-yellow, :weight bold))))
 ;;;;; regex-tool
