@@ -57,7 +57,7 @@
     ("zenburn-yellow"   . "#F0DFAF")
     ("zenburn-yellow-1" . "#E0CF9F")
     ("zenburn-yellow-2" . "#D0BF8F")
-    ("zenburn-green-1"  . "#5F7F5F")
+    ("zenburn-green-2"  . "#5F7F5F")
     ("zenburn-green"    . "#7F9F7F")
     ("zenburn-green+1"  . "#8FB28F")
     ("zenburn-green+2"  . "#9FC59F")
@@ -168,7 +168,7 @@ Also bind `class' to ((class color) (min-colors 89))."
       (t :inverse-video t)))
    `(mode-line-buffer-id ((t (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
-     ((t (:foreground ,zenburn-green-1
+     ((t (:foreground ,zenburn-green-2
                       :background ,zenburn-bg-05
                       :box (:line-width -1 :style released-button)))))
    `(region ((,class (:background ,zenburn-bg-1))
@@ -179,7 +179,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; font lock
    `(font-lock-builtin-face ((t (:foreground ,zenburn-fg :weight bold))))
    `(font-lock-comment-face ((t (:foreground ,zenburn-green))))
-   `(font-lock-comment-delimiter-face ((t (:foreground ,zenburn-green-1))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,zenburn-green-2))))
    `(font-lock-constant-face ((t (:foreground ,zenburn-green+4))))
    `(font-lock-doc-face ((t (:foreground ,zenburn-green+2))))
    `(font-lock-function-name-face ((t (:foreground ,zenburn-cyan))))
@@ -301,8 +301,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; bm
    `(bm-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
-   `(bm-fringe-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
-   `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
+   `(bm-fringe-persistent-face ((t (:background ,zenburn-green-2 :foreground ,zenburn-bg))))
+   `(bm-persistent-face ((t (:background ,zenburn-green-2 :foreground ,zenburn-bg))))
 ;;;;; calfw
    `(cfw:face-annotation ((t (:foreground ,zenburn-red :inherit cfw:face-day-title))))
    `(cfw:face-day-title ((t nil)))
@@ -331,7 +331,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(cider-traced-face ((t (:box (:color ,zenburn-cyan :line-width -1)))))
    `(cider-test-failure-face ((t (:background ,zenburn-red-4))))
    `(cider-test-error-face ((t (:background ,zenburn-magenta))))
-   `(cider-test-success-face ((t (:background ,zenburn-green-1))))
+   `(cider-test-success-face ((t (:background ,zenburn-green-2))))
    `(cider-fringe-good-face ((t (:foreground ,zenburn-green+4))))
 ;;;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,zenburn-cyan))))
@@ -381,7 +381,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; diff-hl
    `(diff-hl-change ((,class (:foreground ,zenburn-blue :background ,zenburn-blue-2))))
    `(diff-hl-delete ((,class (:foreground ,zenburn-red+1 :background ,zenburn-red-1))))
-   `(diff-hl-insert ((,class (:foreground ,zenburn-green+1 :background ,zenburn-green-1))))
+   `(diff-hl-insert ((,class (:foreground ,zenburn-green+1 :background ,zenburn-green-2))))
 ;;;;; dim-autoload
    `(dim-autoload-cookie-line ((t :foreground ,zenburn-bg+1)))
 ;;;;; dired+
@@ -406,7 +406,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diredp-number ((t (:foreground ,zenburn-green+1))))
    `(diredp-other-priv ((t (:foreground ,zenburn-yellow-1))))
    `(diredp-rare-priv ((t (:foreground ,zenburn-red-1))))
-   `(diredp-read-priv ((t (:foreground ,zenburn-green-1))))
+   `(diredp-read-priv ((t (:foreground ,zenburn-green-2))))
    `(diredp-symlink ((t (:foreground ,zenburn-yellow))))
    `(diredp-write-priv ((t (:foreground ,zenburn-magenta))))
 ;;;;; dired-async
@@ -416,7 +416,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; ediff
    `(ediff-current-diff-A ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
    `(ediff-current-diff-Ancestor ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
-   `(ediff-current-diff-B ((t (:foreground ,zenburn-fg :background ,zenburn-green-1))))
+   `(ediff-current-diff-B ((t (:foreground ,zenburn-fg :background ,zenburn-green-2))))
    `(ediff-current-diff-C ((t (:foreground ,zenburn-fg :background ,zenburn-blue-5))))
    `(ediff-even-diff-A ((t (:background ,zenburn-bg+1))))
    `(ediff-even-diff-Ancestor ((t (:background ,zenburn-bg+1))))
@@ -534,7 +534,7 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,zenburn-green)
                    :inherit unspecified :foreground unspecified :background unspecified))
-      (t (:foreground ,zenburn-green-1 :weight bold :underline t))))
+      (t (:foreground ,zenburn-green-2 :weight bold :underline t))))
 ;;;;; flyspell
    `(flyspell-duplicate
      ((((supports :underline (:style wave)))
@@ -741,7 +741,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ivy-cursor ((t (:foreground ,zenburn-bg :background ,zenburn-fg))))
    `(ivy-match-required-face ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
    `(ivy-minibuffer-match-face-1 ((t (:background ,zenburn-bg+1))))
-   `(ivy-minibuffer-match-face-2 ((t (:background ,zenburn-green-1))))
+   `(ivy-minibuffer-match-face-2 ((t (:background ,zenburn-green-2))))
    `(ivy-minibuffer-match-face-3 ((t (:background ,zenburn-green))))
    `(ivy-minibuffer-match-face-4 ((t (:background ,zenburn-green+1))))
    `(ivy-remote ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
@@ -772,13 +772,13 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; js2-mode
    `(js2-warning ((t (:underline ,zenburn-orange))))
    `(js2-error ((t (:foreground ,zenburn-red :weight bold))))
-   `(js2-jsdoc-tag ((t (:foreground ,zenburn-green-1))))
+   `(js2-jsdoc-tag ((t (:foreground ,zenburn-green-2))))
    `(js2-jsdoc-type ((t (:foreground ,zenburn-green+2))))
    `(js2-jsdoc-value ((t (:foreground ,zenburn-green+3))))
    `(js2-function-param ((t (:foreground, zenburn-orange))))
    `(js2-external-variable ((t (:foreground ,zenburn-orange))))
 ;;;;; additional js2 mode attributes for better syntax highlighting
-   `(js2-instance-member ((t (:foreground ,zenburn-green-1))))
+   `(js2-instance-member ((t (:foreground ,zenburn-green-2))))
    `(js2-jsdoc-html-tag-delimiter ((t (:foreground ,zenburn-orange))))
    `(js2-jsdoc-html-tag-name ((t (:foreground ,zenburn-red-1))))
    `(js2-object-property ((t (:foreground ,zenburn-blue+1))))
@@ -850,7 +850,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    `(magit-diff-added-highlight ((t (:background ,zenburn-green))))
    `(magit-diff-removed-highlight ((t (:background ,zenburn-red-3))))
-   `(magit-diff-added ((t (:background ,zenburn-green-1))))
+   `(magit-diff-added ((t (:background ,zenburn-green-2))))
    `(magit-diff-removed ((t (:background ,zenburn-red-4))))
 
    `(magit-diff-file-heading           ((t (:weight bold))))
@@ -869,7 +869,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-diffstat-removed ((t (:foreground ,zenburn-red))))
 ;;;;;; popup
    `(magit-popup-heading             ((t (:foreground ,zenburn-yellow  :weight bold))))
-   `(magit-popup-key                 ((t (:foreground ,zenburn-green-1 :weight bold))))
+   `(magit-popup-key                 ((t (:foreground ,zenburn-green-2 :weight bold))))
    `(magit-popup-argument            ((t (:foreground ,zenburn-green   :weight bold))))
    `(magit-popup-disabled-argument   ((t (:foreground ,zenburn-fg-1    :weight normal))))
    `(magit-popup-option-value        ((t (:foreground ,zenburn-blue-2  :weight bold))))
@@ -1005,7 +1005,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mu4e-cited-3-face ((t (:foreground ,zenburn-blue-2  :slant italic))))
    `(mu4e-cited-4-face ((t (:foreground ,zenburn-green   :slant italic))))
    `(mu4e-cited-5-face ((t (:foreground ,zenburn-blue-4  :slant italic))))
-   `(mu4e-cited-6-face ((t (:foreground ,zenburn-green-1 :slant italic))))
+   `(mu4e-cited-6-face ((t (:foreground ,zenburn-green-2 :slant italic))))
    `(mu4e-cited-7-face ((t (:foreground ,zenburn-blue    :slant italic))))
    `(mu4e-replied-face ((t (:foreground ,zenburn-bg+3))))
    `(mu4e-trashed-face ((t (:foreground ,zenburn-bg+3 :strike-through t))))
@@ -1079,7 +1079,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-habit-clear-face ((t :background ,zenburn-blue-3)))
    `(org-habit-overdue-face ((t :background ,zenburn-red-3)))
    `(org-habit-clear-future-face ((t :background ,zenburn-blue-4)))
-   `(org-habit-ready-future-face ((t :background ,zenburn-green-1)))
+   `(org-habit-ready-future-face ((t :background ,zenburn-green-2)))
    `(org-habit-alert-future-face ((t :background ,zenburn-yellow-2 :foreground ,zenburn-bg)))
    `(org-habit-overdue-future-face ((t :background ,zenburn-red-4)))
 ;;;;; outline
@@ -1194,7 +1194,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(rst-level-3-face ((t (:foreground ,zenburn-blue-1))))
    `(rst-level-4-face ((t (:foreground ,zenburn-yellow-2))))
    `(rst-level-5-face ((t (:foreground ,zenburn-cyan))))
-   `(rst-level-6-face ((t (:foreground ,zenburn-green-1))))
+   `(rst-level-6-face ((t (:foreground ,zenburn-green-2))))
 ;;;;; sh-mode
    `(sh-heredoc     ((t (:foreground ,zenburn-yellow :weight bold))))
    `(sh-quoted-exec ((t (:foreground ,zenburn-red))))
@@ -1407,7 +1407,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; nrepl-client
    `(nrepl-message-colors
      '(,zenburn-red ,zenburn-orange ,zenburn-yellow ,zenburn-green ,zenburn-green+4
-                    ,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
+       ,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
 ;;;;; pdf-tools
    `(pdf-view-midnight-colors '(,zenburn-fg . ,zenburn-bg-05))
 ;;;;; vc-annotate
@@ -1418,7 +1418,7 @@ Also bind `class' to ((class color) (min-colors 89))."
        ( 80. . ,zenburn-yellow-2)
        (100. . ,zenburn-yellow-1)
        (120. . ,zenburn-yellow)
-       (140. . ,zenburn-green-1)
+       (140. . ,zenburn-green-2)
        (160. . ,zenburn-green)
        (180. . ,zenburn-green+1)
        (200. . ,zenburn-green+2)
