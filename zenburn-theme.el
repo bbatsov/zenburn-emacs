@@ -380,7 +380,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diff-changed        ((t (:background "#555511" :foreground ,zenburn-yellow-1))))
    `(diff-removed        ((t (:background ,zenburn-red-6 :foreground ,zenburn-red+1))))
    `(diff-refine-added   ((t (:background ,zenburn-green-4 :foreground ,zenburn-green+3))))
-   `(diff-refine-change  ((t (:background "#888811" :foreground ,zenburn-yellow))))
+   `(diff-refine-changed ((t (:background "#888811" :foreground ,zenburn-yellow))))
    `(diff-refine-removed ((t (:background ,zenburn-red-5 :foreground ,zenburn-red+2))))
    `(diff-header ((,class (:background ,zenburn-bg+2))
                   (t (:background ,zenburn-fg :foreground ,zenburn-bg))))
