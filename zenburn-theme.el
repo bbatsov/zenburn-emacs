@@ -33,6 +33,23 @@
 
 (deftheme zenburn "The Zenburn color theme")
 
+(defgroup zenburn-theme nil
+  "Zenburn theme."
+  :prefix "zenburn-theme-"
+  :link '(url-link :tag "GitHub" "http://github.com/bbatsov/zenburn-emacs")
+  :tag "Zenburn theme")
+
+;;;###autoload
+(defcustom zenburn-override-colors-alist '()
+  "Place to override default theme colors.
+
+You can override a subset of the theme's default colors by
+defining them in this alist."
+  :group 'zenburn-theme
+  :type '(alist
+          :key-type (string :tag "Name")
+          :value-type (string :tag " Hex")))
+
 ;;; Color Palette
 
 (defvar zenburn-default-colors-alist
@@ -78,16 +95,6 @@ Each element has the form (NAME . HEX).
 `+N' suffixes indicate a color is lighter.
 `-N' suffixes indicate a color is darker.")
 
-(defvar zenburn-override-colors-alist
-  '()
-  "Place to override default theme colors.
-
-You can override a subset of the theme's default colors by
-defining them in this alist before loading the theme.")
-
-(defvar zenburn-colors-alist
-  (append zenburn-default-colors-alist zenburn-override-colors-alist))
-
 (defmacro zenburn-with-color-variables (&rest body)
   "`let' bind all colors defined in `zenburn-colors-alist' around BODY.
 Also bind `class' to ((class color) (min-colors 89))."
@@ -95,7 +102,8 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(let ((class '((class color) (min-colors 89)))
          ,@(mapcar (lambda (cons)
                      (list (intern (car cons)) (cdr cons)))
-                   zenburn-colors-alist))
+                   (append zenburn-default-colors-alist
+                           zenburn-override-colors-alist)))
      ,@body))
 
 ;;; Theme Faces
