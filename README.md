@@ -12,15 +12,16 @@ that of its many users I presume) that it's one of the best low
 contrast color themes out there and that it is exceptionally easy on
 the eyes.
 
-This theme uses the new built-in theming support available starting
-with Emacs 24.
+This theme uses the "new" (it used to be new several years ago when I
+created this package) built-in theming support available starting with
+Emacs 24.1.
 
 ## Installation
 
 ### Manual
 
 Download `zenburn-theme.el` to the directory `~/.emacs.d/themes/`. Add this to your
-`.emacs`:
+`.emacs` (or `init.el`):
 
 ```lisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
@@ -92,12 +93,13 @@ Source the `.bashrc` (or `.zshrc`) file and start Emacs again.
 
 # Bugs & Improvements
 
-Please, report any problems that you find on the projects integrated
+Please, report any problems that you find on the project's integrated
 issue tracker. If you've added some improvements and you want them
 included upstream don't hesitate to send me a patch or even better - a
 GitHub pull request. [These](https://github.com/bbatsov/zenburn-emacs/contributors)
 contributors have done so.
 
-You can support my work on Zenburn and [all my other projects](https://github.com/bbatsov) via [Patreon](https://www.patreon.com/bbatsov).
+You can support my work on Zenburn and [all my other projects](https://github.com/bbatsov)
+via [Patreon](https://www.patreon.com/bbatsov).
 
 [badge-license]: https://img.shields.io/badge/license-GPL_3-green.svg
