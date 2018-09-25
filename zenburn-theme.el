@@ -1140,6 +1140,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-habit-ready-future-face ((t :background ,zenburn-green-2)))
    `(org-habit-alert-future-face ((t :background ,zenburn-yellow-2 :foreground ,zenburn-bg)))
    `(org-habit-overdue-future-face ((t :background ,zenburn-red-4)))
+;;;;; org-ref
    `(org-ref-ref-face ((t :underline t)))
    `(org-ref-label-face ((t :underline t)))
    `(org-ref-cite-face ((t :underline t)))
