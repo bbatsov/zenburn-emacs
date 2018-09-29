@@ -50,6 +50,46 @@ defining them in this alist."
           :key-type (string :tag "Name")
           :value-type (string :tag " Hex")))
 
+(defcustom zenburn-use-variable-pitch nil
+  "Use variable pitch face for some headings and titles."
+  :type 'boolean
+  :group 'zenburn-theme)
+
+(defcustom zenburn-height-minus-1 0.8
+  "Font size -1."
+  :type 'number
+  :group 'zenburn-theme)
+
+(defcustom zenburn-height-plus-1 1.1
+  "Font size +1."
+  :type 'number
+  :group 'zenburn-theme)
+
+(defcustom zenburn-height-plus-2 1.15
+  "Font size +2."
+  :type 'number
+  :group 'zenburn-theme)
+
+(defcustom zenburn-height-plus-3 1.2
+  "Font size +3."
+  :type 'number
+  :group 'zenburn-theme)
+
+(defcustom zenburn-height-plus-4 1.3
+  "Font size +4."
+  :type 'number
+  :group 'zenburn-theme)
+
+(defcustom zenburn-scale-org-headlines nil
+  "Whether `org-mode' headlines should be scaled."
+  :type 'boolean
+  :group 'zenburn-theme)
+
+(defcustom zenburn-scale-outline-headlines nil
+  "Whether `outline-mode' headlines should be scaled."
+  :type 'boolean
+  :group 'zenburn-theme)
+
 ;;; Color Palette
 
 (defvar zenburn-default-colors-alist
@@ -112,7 +152,9 @@ Also bind `class' to ((class color) (min-colors 89))."
          ,@(mapcar (lambda (cons)
                      (list (intern (car cons)) (cdr cons)))
                    (append zenburn-default-colors-alist
-                           zenburn-override-colors-alist)))
+                           zenburn-override-colors-alist))
+         (z-variable-pitch (if zenburn-use-variable-pitch
+                               'variable-pitch 'default)))
      ,@body))
 
 ;;; Theme Faces
@@ -1106,15 +1148,23 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-done ((t (:weight bold :weight bold :foreground ,zenburn-green+3))))
    `(org-formula ((t (:foreground ,zenburn-yellow-2))))
    `(org-headline-done ((t (:foreground ,zenburn-green+3))))
-   `(org-hide ((t (:foreground ,zenburn-bg-1))))
-   `(org-level-1 ((t (:foreground ,zenburn-orange))))
-   `(org-level-2 ((t (:foreground ,zenburn-green+4))))
-   `(org-level-3 ((t (:foreground ,zenburn-blue-1))))
-   `(org-level-4 ((t (:foreground ,zenburn-yellow-2))))
-   `(org-level-5 ((t (:foreground ,zenburn-cyan))))
-   `(org-level-6 ((t (:foreground ,zenburn-green+2))))
-   `(org-level-7 ((t (:foreground ,zenburn-red-4))))
-   `(org-level-8 ((t (:foreground ,zenburn-blue-4))))
+   `(org-hide ((t (:foreground ,zenburn-bg))))
+   `(org-level-1 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-orange
+                               ,@(when zenburn-scale-org-headlines
+                                   (list :height zenburn-height-plus-4))))))
+   `(org-level-2 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+4
+                               ,@(when zenburn-scale-org-headlines
+                                   (list :height zenburn-height-plus-3))))))
+   `(org-level-3 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue-1
+                               ,@(when zenburn-scale-org-headlines
+                                   (list :height zenburn-height-plus-2))))))
+   `(org-level-4 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-yellow-2
+                               ,@(when zenburn-scale-org-headlines
+                                   (list :height zenburn-height-plus-1))))))
+   `(org-level-5 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-cyan))))
+   `(org-level-6 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+2))))
+   `(org-level-7 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-red-4))))
+   `(org-level-8 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue-4))))
    `(org-link ((t (:foreground ,zenburn-yellow-2 :underline t))))
    `(org-scheduled ((t (:foreground ,zenburn-green+4))))
    `(org-scheduled-previously ((t (:foreground ,zenburn-red))))
@@ -1133,7 +1183,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-mode-line-clock-overrun ((t (:foreground ,zenburn-bg :background ,zenburn-red-1))))
    `(org-ellipsis ((t (:foreground ,zenburn-yellow-1 :underline t))))
    `(org-footnote ((t (:foreground ,zenburn-cyan :underline t))))
-   `(org-document-title ((t (:foreground ,zenburn-blue))))
+   `(org-document-title ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue
+                                         :weight bold :height ,zenburn-height-plus-4))))
    `(org-document-info ((t (:foreground ,zenburn-blue))))
    `(org-habit-ready-face ((t :background ,zenburn-green)))
    `(org-habit-alert-face ((t :background ,zenburn-yellow-1 :foreground ,zenburn-bg)))
@@ -1150,14 +1201,22 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-ref-glossary-face ((t :underline t)))
    `(org-ref-acronym-face ((t :underline t)))
 ;;;;; outline
-   `(outline-1 ((t (:foreground ,zenburn-orange))))
-   `(outline-2 ((t (:foreground ,zenburn-green+4))))
-   `(outline-3 ((t (:foreground ,zenburn-blue-1))))
-   `(outline-4 ((t (:foreground ,zenburn-yellow-2))))
-   `(outline-5 ((t (:foreground ,zenburn-cyan))))
-   `(outline-6 ((t (:foreground ,zenburn-green+2))))
-   `(outline-7 ((t (:foreground ,zenburn-red-4))))
-   `(outline-8 ((t (:foreground ,zenburn-blue-4))))
+   `(outline-1 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-orange
+                             ,@(when zenburn-scale-outline-headlines
+                                 (list :height zenburn-height-plus-4))))))
+   `(outline-2 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+4
+                             ,@(when zenburn-scale-outline-headlines
+                                 (list :height zenburn-height-plus-3))))))
+   `(outline-3 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue-1
+                             ,@(when zenburn-scale-outline-headlines
+                                 (list :height zenburn-height-plus-2))))))
+   `(outline-4 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-yellow-2
+                             ,@(when zenburn-scale-outline-headlines
+                                 (list :height zenburn-height-plus-1))))))
+   `(outline-5 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-cyan))))
+   `(outline-6 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+2))))
+   `(outline-7 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-red-4))))
+   `(outline-8 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue-4))))
 ;;;;; p4
    `(p4-depot-added-face ((t :inherit diff-added)))
    `(p4-depot-branch-op-face ((t :inherit diff-changed)))
