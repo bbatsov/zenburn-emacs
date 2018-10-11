@@ -52,6 +52,7 @@ defining them in this alist."
 
 ;;; Color Palette
 
+(eval-when-compile
 (defvar zenburn-default-colors-alist
   '(("zenburn-fg+1"     . "#FFFFEF")
     ("zenburn-fg"       . "#DCDCCC")
@@ -113,7 +114,7 @@ Also bind `class' to ((class color) (min-colors 89))."
                      (list (intern (car cons)) (cdr cons)))
                    (append zenburn-default-colors-alist
                            zenburn-override-colors-alist)))
-     ,@body))
+     ,@body)))
 
 ;;; Theme Faces
 (zenburn-with-color-variables
@@ -1545,7 +1546,6 @@ This requires library `rainbow-mode'.")
 (provide-theme 'zenburn)
 
 ;; Local Variables:
-;; no-byte-compile: t
 ;; indent-tabs-mode: nil
 ;; eval: (when (require 'rainbow-mode nil t) (rainbow-mode 1))
 ;; End:
