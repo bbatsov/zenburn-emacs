@@ -61,6 +61,8 @@ Users of Debian 9 or later or Ubuntu 16.10 or later may simply
 
 ## Customization
 
+### Custom colors
+
 If you'd like to tweak the theme by changing just a few colors, you can
 do so by defining new values in the `zenburn-override-colors-alist`
 variable before loading the theme.
@@ -79,6 +81,23 @@ to your init file:
 
 To see the full list of color names you can override, consult the
 `zenburn-theme.el` source file.
+
+### Scaled headings
+
+The theme supports scaling the font size for some headings and titles as well
+as using a variable-pitch font for those. To enable this, use the following
+settings:
+
+```elisp
+;; use variable-pitch fonts for some headings and titles
+(setq zenburn-use-variable-pitch t)
+
+;; scale headings in org-mode
+(setq zenburn-scale-org-headlines t)
+
+;; scale headings in outline-mode
+(setq zenburn-scale-outline-headlines t)
+```
 
 ## Ugly colors in the terminal Emacs version
 
