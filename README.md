@@ -16,6 +16,8 @@ This theme uses the "new" (it used to be new several years ago when I
 created this package) built-in theming support available starting with
 Emacs 24.1.
 
+![Overview screenshot](screenshots/overview.png)
+
 ## Installation
 
 ### Manual
@@ -98,6 +100,12 @@ settings:
 ;; scale headings in outline-mode
 (setq zenburn-scale-outline-headlines t)
 ```
+
+The screenshot above shows the default setting with no scaled or
+variable-pitch fonts. With scaled headings and variable-pitch fonts it looks
+like this:
+
+![Scaled screenshot](screenshots/scaled.png)
 
 ## Ugly colors in the terminal Emacs version
 
