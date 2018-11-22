@@ -35,6 +35,7 @@
 
 (defgroup zenburn-theme nil
   "Zenburn theme."
+  :group 'faces
   :prefix "zenburn-theme-"
   :link '(url-link :tag "GitHub" "http://github.com/bbatsov/zenburn-emacs")
   :tag "Zenburn theme")
