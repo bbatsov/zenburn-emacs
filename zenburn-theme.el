@@ -455,6 +455,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(debbugs-gnu-stale ((t (:foreground ,zenburn-orange))))
    `(debbugs-gnu-tagged ((t (:foreground ,zenburn-red))))
 ;;;;; diff
+   ;; Please read (info "(magit)Theming Faces") before changing this.
    `(diff-added          ((t (:background "#335533" :foreground ,zenburn-green))))
    `(diff-changed        ((t (:background "#555511" :foreground ,zenburn-yellow-1))))
    `(diff-removed        ((t (:background "#553333" :foreground ,zenburn-red-2))))
@@ -961,6 +962,7 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:underline t))))
 ;;;;; magit
 ;;;;;; headings and diffs
+   ;; Please read (info "(magit)Theming Faces") before changing this.
    `(magit-section-highlight           ((t (:background ,zenburn-bg+05))))
    `(magit-section-heading             ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-section-heading-selection   ((t (:foreground ,zenburn-orange :weight bold))))
