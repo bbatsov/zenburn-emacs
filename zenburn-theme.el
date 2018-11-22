@@ -456,11 +456,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(debbugs-gnu-tagged ((t (:foreground ,zenburn-red))))
 ;;;;; diff
    `(diff-added          ((t (:background ,zenburn-green-5 :foreground ,zenburn-green+2))))
-   `(diff-changed        ((t (:background "#555511" :foreground ,zenburn-yellow-1))))
-   `(diff-removed        ((t (:background ,zenburn-red-6 :foreground ,zenburn-red+1))))
+   `(diff-changed        ((t (:background "#555511"        :foreground ,zenburn-yellow-1))))
+   `(diff-removed        ((t (:background ,zenburn-red-6   :foreground ,zenburn-red+1))))
    `(diff-refine-added   ((t (:background ,zenburn-green-4 :foreground ,zenburn-green+3))))
-   `(diff-refine-changed ((t (:background "#888811" :foreground ,zenburn-yellow))))
-   `(diff-refine-removed ((t (:background ,zenburn-red-5 :foreground ,zenburn-red+2))))
+   `(diff-refine-changed ((t (:background "#888811"        :foreground ,zenburn-yellow))))
+   `(diff-refine-removed ((t (:background ,zenburn-red-5   :foreground ,zenburn-red+2))))
    `(diff-header ((,class (:background ,zenburn-bg+2))
                   (t (:background ,zenburn-fg :foreground ,zenburn-bg))))
    `(diff-file-header
@@ -965,15 +965,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-section-heading             ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-section-heading-selection   ((t (:foreground ,zenburn-orange :weight bold))))
 
-   `(magit-diff-added ((t (:inherit diff-added))))
-   `(magit-diff-added-highlight ((t (:inherit diff-refine-added))))
-   `(magit-diff-removed ((t (:inherit diff-removed))))
-   `(magit-diff-removed-highlight ((t (:inherit diff-refine-removed))))
+   `(magit-diff-added                  ((t (:inherit diff-added))))
+   `(magit-diff-added-highlight        ((t (:inherit diff-refine-added))))
+   `(magit-diff-removed                ((t (:inherit diff-removed))))
+   `(magit-diff-removed-highlight      ((t (:inherit diff-refine-removed))))
 
    `(magit-diff-file-heading           ((t (:weight bold))))
-   `(magit-diff-file-heading-highlight ((t (:background ,zenburn-bg+05  :weight bold))))
-   `(magit-diff-file-heading-selection ((t (:background ,zenburn-bg+05
-                                                        :foreground ,zenburn-orange :weight bold))))
+   `(magit-diff-file-heading-highlight ((t (:background ,zenburn-bg+05 :weight bold))))
+   `(magit-diff-file-heading-selection ((t (:background ,zenburn-bg+05 :weight bold
+                                                        :foreground ,zenburn-orange))))
    `(magit-diff-hunk-heading           ((t (:background ,zenburn-bg+1))))
    `(magit-diff-hunk-heading-highlight ((t (:background ,zenburn-bg+2))))
    `(magit-diff-hunk-heading-selection ((t (:background ,zenburn-bg+2
@@ -982,8 +982,8 @@ Also bind `class' to ((class color) (min-colors 89))."
                                                         :foreground ,zenburn-bg+2))))
    `(magit-diff-context-highlight      ((t (:background ,zenburn-bg+05
                                                         :foreground "grey70"))))
-   `(magit-diffstat-added   ((t (:foreground ,zenburn-green+4))))
-   `(magit-diffstat-removed ((t (:foreground ,zenburn-red))))
+   `(magit-diffstat-added              ((t (:foreground ,zenburn-green+4))))
+   `(magit-diffstat-removed            ((t (:foreground ,zenburn-red))))
 ;;;;;; popup
    `(magit-popup-heading             ((t (:foreground ,zenburn-yellow  :weight bold))))
    `(magit-popup-key                 ((t (:foreground ,zenburn-green-2 :weight bold))))
