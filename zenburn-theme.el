@@ -964,16 +964,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-section-highlight           ((t (:background ,zenburn-bg+05))))
    `(magit-section-heading             ((t (:foreground ,zenburn-yellow :weight bold))))
    `(magit-section-heading-selection   ((t (:foreground ,zenburn-orange :weight bold))))
-
-   `(magit-diff-added                  ((t (:inherit diff-added))))
-   `(magit-diff-added-highlight        ((t (:inherit diff-refine-added))))
-   `(magit-diff-removed                ((t (:inherit diff-removed))))
-   `(magit-diff-removed-highlight      ((t (:inherit diff-refine-removed))))
-
    `(magit-diff-file-heading           ((t (:weight bold))))
    `(magit-diff-file-heading-highlight ((t (:background ,zenburn-bg+05 :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,zenburn-bg+05 :weight bold
                                                         :foreground ,zenburn-orange))))
+   `(magit-diff-added                  ((t (:inherit diff-added))))
+   `(magit-diff-added-highlight        ((t (:inherit diff-refine-added))))
+   `(magit-diff-removed                ((t (:inherit diff-removed))))
+   `(magit-diff-removed-highlight      ((t (:inherit diff-refine-removed))))
    `(magit-diff-hunk-heading           ((t (:background ,zenburn-bg+1))))
    `(magit-diff-hunk-heading-highlight ((t (:background ,zenburn-bg+2))))
    `(magit-diff-hunk-heading-selection ((t (:background ,zenburn-bg+2
