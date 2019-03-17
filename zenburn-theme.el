@@ -1399,17 +1399,17 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; sx
    `(sx-custom-button
      ((t (:background ,zenburn-fg :foreground ,zenburn-bg-1
-                      :box (:line-width 3 :style released-button) :height 0.9))))
+          :box (:line-width 3 :style released-button) :height 0.9))))
    `(sx-question-list-answers
      ((t (:foreground ,zenburn-green+3
-                      :height 1.0 :inherit sx-question-list-parent))))
+          :height 1.0 :inherit sx-question-list-parent))))
    `(sx-question-mode-accepted
      ((t (:foreground ,zenburn-green+3
-                      :height 1.3 :inherit sx-question-mode-title))))
+          :height 1.3 :inherit sx-question-mode-title))))
    '(sx-question-mode-content-face ((t (:inherit highlight))))
    `(sx-question-mode-kbd-tag
      ((t (:box (:color ,zenburn-bg-1 :line-width 3 :style released-button)
-               :height 0.9 :weight semi-bold))))
+          :height 0.9 :weight semi-bold))))
 ;;;;; tabbar
    `(tabbar-button ((t (:foreground ,zenburn-fg
                                     :background ,zenburn-bg))))
