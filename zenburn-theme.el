@@ -1197,7 +1197,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-ellipsis ((t (:foreground ,zenburn-yellow-1 :underline t))))
    `(org-footnote ((t (:foreground ,zenburn-cyan :underline t))))
    `(org-document-title ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue
-                                         :weight bold :height ,zenburn-height-plus-4))))
+                                      :weight bold
+                                      ,@(when zenburn-scale-org-headlines
+                                          (list :height zenburn-height-plus-4))))))
    `(org-document-info ((t (:foreground ,zenburn-blue))))
    `(org-habit-ready-face ((t :background ,zenburn-green)))
    `(org-habit-alert-face ((t :background ,zenburn-yellow-1 :foreground ,zenburn-bg)))
