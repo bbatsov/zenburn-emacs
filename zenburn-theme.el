@@ -1400,6 +1400,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(speedbar-selected-face ((t (:foreground ,zenburn-red))))
    `(speedbar-separator-face ((t (:foreground ,zenburn-bg :background ,zenburn-blue-1))))
    `(speedbar-tag-face ((t (:foreground ,zenburn-yellow))))
+;;;;; swiper
+   `(swiper-isearch-current-match ((t (:foreground ,zenburn-bg :background ,zenburn-blue-1))))
 ;;;;; sx
    `(sx-custom-button
      ((t (:background ,zenburn-fg :foreground ,zenburn-bg-1
