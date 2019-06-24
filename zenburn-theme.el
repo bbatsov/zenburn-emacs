@@ -204,6 +204,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(compilation-mode-line-run ((t (:foreground ,zenburn-yellow :weight bold))))
 ;;;;; completions
    `(completions-annotations ((t (:foreground ,zenburn-fg-1))))
+;;;;; customize
+   `(custom-variable-tag ((t (:foreground ,zenburn-blue :weight bold))))
+   `(custom-group-tag ((t (:foreground ,zenburn-blue :weight bold :height 1.2))))
+   `(custom-state ((t (:foreground ,zenburn-green+4))))
 ;;;;; eww
    '(eww-invalid-certificate ((t (:inherit error))))
    '(eww-valid-certificate   ((t (:inherit success))))
