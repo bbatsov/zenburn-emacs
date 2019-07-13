@@ -103,10 +103,13 @@ defining them in this alist."
 
 (defvar zenburn-default-colors-alist
   '(("zenburn-fg+1"     . "#FFFFEF")
+    ("zenburn-fg+2"     . "#FFFFFD")
     ("zenburn-fg"       . "#DCDCCC")
+    ("zenburn-fg-05"    . "#989890")
     ("zenburn-fg-1"     . "#656555")
     ("zenburn-bg-2"     . "#000000")
     ("zenburn-bg-1"     . "#2B2B2B")
+    ("zenburn-bg-08"    . "#303030")
     ("zenburn-bg-05"    . "#383838")
     ("zenburn-bg"       . "#3F3F3F")
     ("zenburn-bg+05"    . "#494949")
@@ -394,6 +397,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(cfw:face-toolbar ((t (:background ,zenburn-blue-5))))
    `(cfw:face-toolbar-button-off ((t (:underline nil :inherit link))))
    `(cfw:face-toolbar-button-on ((t (:underline nil :inherit link-visited))))
+;;;;; centaur-tabs
+   `(centaur-tabs-default ((t (:background ,zenburn-bg :foreground ,zenburn-fg :box nil))))
+   `(centaur-tabs-selected ((t (:background ,zenburn-bg :foreground ,zenburn-fg+2 :box nil))))
+   `(centaur-tabs-unselected ((t (:background ,zenburn-bg-1 :foreground ,zenburn-fg-05 :box nil))))
+   `(centaur-tabs-selected-modified ((t (:background ,zenburn-bg :foreground ,zenburn-orange :box nil))))
+   `(centaur-tabs-unselected-modified ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :box nil))))
+   `(centaur-tabs-active-bar-face ((t (:background ,zenburn-yellow :box nil))))
+   `(centaur-tabs-modified-marker-selected ((t (:inherit 'centaur-tabs-selected-modified :foreground ,zenburn-yellow :box nil))))
+   `(centaur-tabs-modified-marker-unselected ((t (:inherit 'centaur-tabs-unselected-modified :foreground ,zenburn-yellow :box nil))))
 ;;;;; cider
    `(cider-result-overlay-face ((t (:background unspecified))))
    `(cider-enlightened-face ((t (:box (:color ,zenburn-orange :line-width -1)))))
@@ -507,6 +519,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diredfl-read-priv ((t (:foreground ,zenburn-green-1))))
    `(diredfl-symlink ((t (:foreground ,zenburn-yellow))))
    `(diredfl-write-priv ((t (:foreground ,zenburn-magenta))))
+;;;;; doom-modeline
+   `(doom-modeline-bar  ((t (:background ,zenburn-yellow))))
+   `(doom-modeline-inactive-bar  ((t (:background nil))))
 ;;;;; ediff
    `(ediff-current-diff-A ((t (:inherit diff-removed))))
    `(ediff-current-diff-Ancestor ((t (:inherit ediff-current-diff-A))))
@@ -1392,6 +1407,11 @@ Also bind `class' to ((class color) (min-colors 89))."
       (t
        (:underline ,zenburn-green))))
    `(slime-highlight-face ((t (:inherit highlight))))
+;;;;; solaire
+   `(solaire-default-face ((t (:inherit default :background ,zenburn-bg-08))))
+   `(solaire-minibuffer-face ((t (:inherit default :background ,zenburn-bg-08))))
+   `(solaire-hl-line-face ((t (:inherit hl-line :background ,zenburn-bg))))
+   `(solaire-org-hide-face ((t (:inherit org-hide :background ,zenburn-bg-08))))
 ;;;;; speedbar
    `(speedbar-button-face ((t (:foreground ,zenburn-green+2))))
    `(speedbar-directory-face ((t (:foreground ,zenburn-cyan))))
