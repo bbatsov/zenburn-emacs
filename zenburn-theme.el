@@ -40,7 +40,6 @@
   :link '(url-link :tag "GitHub" "http://github.com/bbatsov/zenburn-emacs")
   :tag "Zenburn theme")
 
-;;;###autoload
 (defcustom zenburn-override-colors-alist '()
   "Place to override default theme colors.
 
@@ -101,7 +100,7 @@ defining them in this alist."
 
 ;;; Color Palette
 
-(defvar zenburn-default-colors-alist
+(defconst zenburn-default-colors-alist
   '(("zenburn-fg+1"     . "#FFFFEF")
     ("zenburn-fg+2"     . "#FFFFFD")
     ("zenburn-fg"       . "#DCDCCC")
@@ -156,6 +155,9 @@ Each element has the form (NAME . HEX).
 `+N' suffixes indicate a color is lighter.
 `-N' suffixes indicate a color is darker.")
 
+(defvar zenburn-colors-alist
+  (append zenburn-default-colors-alist zenburn-override-colors-alist))
+
 (defmacro zenburn-with-color-variables (&rest body)
   "`let' bind all colors defined in `zenburn-colors-alist' around BODY.
 Also bind `class' to ((class color) (min-colors 89))."
@@ -163,8 +165,7 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(let ((class '((class color) (min-colors 89)))
          ,@(mapcar (lambda (cons)
                      (list (intern (car cons)) (cdr cons)))
-                   (append zenburn-default-colors-alist
-                           zenburn-override-colors-alist))
+                   zenburn-colors-alist)
          (z-variable-pitch (if zenburn-use-variable-pitch
                                'variable-pitch 'default)))
      ,@body))
