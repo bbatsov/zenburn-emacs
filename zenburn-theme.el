@@ -1606,33 +1606,36 @@ Also bind `class' to ((class color) (min-colors 89))."
 
 ;;; Rainbow Support
 
-(declare-function rainbow-mode 'rainbow-mode)
-(declare-function rainbow-colorize-by-assoc 'rainbow-mode)
+(declare-function rainbow-mode "rainbow-mode")
+(declare-function rainbow-colorize-by-assoc "rainbow-mode")
 
-(defvar zenburn-add-font-lock-keywords nil
+(defcustom zenburn-add-font-lock-keywords nil
   "Whether to add font-lock keywords for zenburn color names.
 In buffers visiting library `zenburn-theme.el' the zenburn
 specific keywords are always added.  In all other Emacs-Lisp
 buffers this variable controls whether this should be done.
-This requires library `rainbow-mode'.")
+This requires library `rainbow-mode'."
+  :group 'zenburn-theme
+  :type 'boolean)
 
-(defvar zenburn-colors-font-lock-keywords nil)
+(defvar zenburn-colors-font-lock-keywords
+  `((,(regexp-opt (mapcar 'car zenburn-colors-alist) 'words)
+     (0 (rainbow-colorize-by-assoc zenburn-colors-alist)))))
 
-;; (defadvice rainbow-turn-on (after zenburn activate)
-;;   "Maybe also add font-lock keywords for zenburn colors."
-;;   (when (and (derived-mode-p 'emacs-lisp-mode)
-;;              (or zenburn-add-font-lock-keywords
-;;                  (equal (file-name-nondirectory (buffer-file-name))
-;;                         "zenburn-theme.el")))
-;;     (unless zenburn-colors-font-lock-keywords
-;;       (setq zenburn-colors-font-lock-keywords
-;;             `((,(regexp-opt (mapcar 'car zenburn-colors-alist) 'words)
-;;                (0 (rainbow-colorize-by-assoc zenburn-colors-alist))))))
-;;     (font-lock-add-keywords nil zenburn-colors-font-lock-keywords)))
+(defun zenburn-advice--rainbow-turn-on ()
+  "Maybe also add font-lock keywords for zenburn colors."
+  (when (and (derived-mode-p 'emacs-lisp-mode)
+             (or zenburn-add-font-lock-keywords
+                 (equal buffer-file-name (expand-file-name "zenburn-theme.el"))))
+    (font-lock-add-keywords nil zenburn-colors-font-lock-keywords t)))
 
-;; (defadvice rainbow-turn-off (after zenburn activate)
-;;   "Also remove font-lock keywords for zenburn colors."
-;;   (font-lock-remove-keywords nil zenburn-colors-font-lock-keywords))
+(defun zenburn-advice--rainbow-turn-off ()
+  "Also remove font-lock keywords for zenburn colors."
+  (font-lock-remove-keywords nil zenburn-colors-font-lock-keywords))
+
+(when (fboundp 'advice-add)
+  (advice-add 'rainbow-turn-on :after #'zenburn-advice--rainbow-turn-on)
+  (advice-add 'rainbow-turn-off :after #'zenburn-advice--rainbow-turn-off))
 
 ;;; Footer
 
