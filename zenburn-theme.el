@@ -1622,20 +1622,20 @@ This requires library `rainbow-mode'."
   `((,(regexp-opt (mapcar 'car zenburn-colors-alist) 'words)
      (0 (rainbow-colorize-by-assoc zenburn-colors-alist)))))
 
-(defun zenburn-advice--rainbow-turn-on ()
+(defun zenburn--advice-rainbow-turn-on ()
   "Maybe also add font-lock keywords for zenburn colors."
   (when (and (derived-mode-p 'emacs-lisp-mode)
              (or zenburn-add-font-lock-keywords
                  (equal buffer-file-name (expand-file-name "zenburn-theme.el"))))
     (font-lock-add-keywords nil zenburn-colors-font-lock-keywords t)))
 
-(defun zenburn-advice--rainbow-turn-off ()
+(defun zenburn--advice-rainbow-turn-off ()
   "Also remove font-lock keywords for zenburn colors."
   (font-lock-remove-keywords nil zenburn-colors-font-lock-keywords))
 
 (when (fboundp 'advice-add)
-  (advice-add 'rainbow-turn-on :after #'zenburn-advice--rainbow-turn-on)
-  (advice-add 'rainbow-turn-off :after #'zenburn-advice--rainbow-turn-off))
+  (advice-add 'rainbow-turn-on :after #'zenburn--advice-rainbow-turn-on)
+  (advice-add 'rainbow-turn-off :after #'zenburn--advice-rainbow-turn-off))
 
 ;;; Footer
 
