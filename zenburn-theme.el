@@ -211,6 +211,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(custom-variable-tag ((t (:foreground ,zenburn-blue :weight bold))))
    `(custom-group-tag ((t (:foreground ,zenburn-blue :weight bold :height 1.2))))
    `(custom-state ((t (:foreground ,zenburn-green+4))))
+;;;;; display-fill-column-indicator
+     `(fill-column-indicator ((,class :foreground ,zenburn-bg-05 :weight semilight)))
 ;;;;; eww
    '(eww-invalid-certificate ((t (:inherit error))))
    '(eww-valid-certificate   ((t (:inherit success))))
