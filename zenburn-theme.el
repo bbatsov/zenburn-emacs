@@ -817,7 +817,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; hl-line-mode
    `(hl-line-face ((,class (:background ,zenburn-bg-05))
                    (t :weight bold)))
-   `(hl-line ((,class (:background ,zenburn-bg-05)) ; old emacsen
+   `(hl-line ((,class (:background ,zenburn-bg-05 :extend t)) ; old emacsen
               (t :weight bold)))
 ;;;;; hl-sexp
    `(hl-sexp-face ((,class (:background ,zenburn-bg+1))
