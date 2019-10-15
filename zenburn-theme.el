@@ -1175,6 +1175,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-agenda-structure
      ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,zenburn-fg :weight bold))))
+   `(org-block ((t (:background ,zenburn-bg+05 :extend t))))
    `(org-checkbox ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg+1
                                    :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,zenburn-blue :underline t))))
@@ -1200,6 +1201,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-level-7 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-red-4))))
    `(org-level-8 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue-4))))
    `(org-link ((t (:foreground ,zenburn-yellow-2 :underline t))))
+   `(org-quote ((t (:background ,zenburn-bg+05 :extend t))))
    `(org-scheduled ((t (:foreground ,zenburn-green+4))))
    `(org-scheduled-previously ((t (:foreground ,zenburn-red))))
    `(org-scheduled-today ((t (:foreground ,zenburn-blue+1))))
