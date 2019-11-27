@@ -185,7 +185,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(fringe ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(header-line ((t (:foreground ,zenburn-yellow
                                   :background ,zenburn-bg-1
-                                  :box (:line-width -1 :style released-button)))))
+                                  :box (:line-width -1 :style released-button)
+                                  :extend t))))
    `(highlight ((t (:background ,zenburn-bg-05))))
    `(success ((t (:foreground ,zenburn-green :weight bold))))
    `(warning ((t (:foreground ,zenburn-orange :weight bold))))
@@ -766,13 +767,15 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:foreground ,zenburn-green
                       :background ,zenburn-bg
                       :underline nil
-                      :box nil))))
+                      :box nil
+                      :extend t))))
    `(helm-source-header
      ((t (:foreground ,zenburn-yellow
                       :background ,zenburn-bg-1
                       :underline nil
                       :weight bold
-                      :box (:line-width -1 :style released-button)))))
+                      :box (:line-width -1 :style released-button)
+                      :extend t))))
    `(helm-selection ((t (:background ,zenburn-bg+1 :underline nil))))
    `(helm-selection-line ((t (:background ,zenburn-bg+1))))
    `(helm-visible-mark ((t (:foreground ,zenburn-bg :background ,zenburn-yellow-2))))
