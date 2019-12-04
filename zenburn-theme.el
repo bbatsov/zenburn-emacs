@@ -51,11 +51,14 @@ defining them in this alist."
           :key-type (string :tag "Name")
           :value-type (string :tag " Hex")))
 
-(defcustom zenburn-use-variable-pitch nil
-  "Use variable pitch face for some headings and titles."
-  :type 'boolean
-  :group 'zenburn-theme
-  :package-version '(zenburn . "2.6"))
+(defvar zenburn-use-variable-pitch nil
+  "When non-nil, use variable pitch face for some headings and titles.")
+
+(defvar zenburn-scale-org-headlines nil
+  "Whether `org-mode' headlines should be scaled.")
+
+(defvar zenburn-scale-outline-headlines nil
+  "Whether `outline-mode' headlines should be scaled.")
 
 (defcustom zenburn-height-minus-1 0.8
   "Font size -1."
@@ -84,18 +87,6 @@ defining them in this alist."
 (defcustom zenburn-height-plus-4 1.3
   "Font size +4."
   :type 'number
-  :group 'zenburn-theme
-  :package-version '(zenburn . "2.6"))
-
-(defcustom zenburn-scale-org-headlines nil
-  "Whether `org-mode' headlines should be scaled."
-  :type 'boolean
-  :group 'zenburn-theme
-  :package-version '(zenburn . "2.6"))
-
-(defcustom zenburn-scale-outline-headlines nil
-  "Whether `outline-mode' headlines should be scaled."
-  :type 'boolean
   :group 'zenburn-theme
   :package-version '(zenburn . "2.6"))
 

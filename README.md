@@ -88,7 +88,7 @@ To see the full list of color names you can override, consult the
 
 The theme supports scaling the font size for some headings and titles as well
 as using a variable-pitch font for those. To enable this, use the following
-settings:
+settings before loading `zenburn-theme`:
 
 ```elisp
 ;; use variable-pitch fonts for some headings and titles
