@@ -118,7 +118,7 @@ export TERM=xterm-256color
 
 Source the `.bashrc` (or `.zshrc`) file and start Emacs again.
 
-# Bugs & Improvements
+## Bugs & Improvements
 
 Please, report any problems that you find on the project's integrated
 issue tracker. If you've added some improvements and you want them
