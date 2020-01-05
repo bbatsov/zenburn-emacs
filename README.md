@@ -107,7 +107,9 @@ like this:
 
 ![Scaled screenshot](screenshots/scaled.png)
 
-## Ugly colors in the terminal Emacs version
+## FAQ
+
+### Wrong colors in the terminal Emacs version
 
 If your Emacs looks considerably uglier in a terminal (compared to the
 GUI version) try adding this to your `.bashrc` or `.zshrc`:
