@@ -1606,7 +1606,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 (declare-function rainbow-mode 'rainbow-mode)
 (declare-function rainbow-colorize-by-assoc 'rainbow-mode)
 
-(defvar zenburn-add-font-lock-keywords nil
+(defcustom zenburn-add-font-lock-keywords nil
   "Whether to add font-lock keywords for zenburn color names.
 
 In buffers visiting library `zenburn-theme.el' the zenburn
@@ -1617,7 +1617,9 @@ then you have to turn `rainbow-mode' off and on again for the
 zenburn-specific font-lock keywords to be used.
 
 In all other Emacs-Lisp buffers this variable controls whether
-this should be done.  This requires library `rainbow-mode'.")
+this should be done.  This requires library `rainbow-mode'."
+  :type 'boolean
+  :group 'zenburn-theme)
 
 (defvar zenburn-colors-font-lock-keywords nil)
 
