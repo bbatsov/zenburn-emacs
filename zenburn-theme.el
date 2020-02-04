@@ -1612,7 +1612,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 In buffers visiting library `zenburn-theme.el' the zenburn
 specific keywords are always added, provided that library has
 been loaded (because that is where the code that does it is
-definded).  If you visit this file and only enable the theme,
+defined).  If you visit this file and only enable the theme,
 then you have to turn `rainbow-mode' off and on again for the
 zenburn-specific font-lock keywords to be used.
 
