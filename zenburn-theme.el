@@ -36,7 +36,7 @@
 (defgroup zenburn-theme nil
   "Zenburn theme."
   :group 'faces
-  :prefix "zenburn-theme-"
+  :prefix "zenburn-"
   :link '(url-link :tag "GitHub" "http://github.com/bbatsov/zenburn-emacs")
   :tag "Zenburn theme")
 
@@ -1606,18 +1606,20 @@ Also bind `class' to ((class color) (min-colors 89))."
 (declare-function rainbow-mode 'rainbow-mode)
 (declare-function rainbow-colorize-by-assoc 'rainbow-mode)
 
-(defvar zenburn-add-font-lock-keywords nil
+(defcustom zenburn-add-font-lock-keywords nil
   "Whether to add font-lock keywords for zenburn color names.
 
 In buffers visiting library `zenburn-theme.el' the zenburn
 specific keywords are always added, provided that library has
 been loaded (because that is where the code that does it is
-definded).  If you visit this file and only enable the theme,
+defined).  If you visit this file and only enable the theme,
 then you have to turn `rainbow-mode' off and on again for the
 zenburn-specific font-lock keywords to be used.
 
 In all other Emacs-Lisp buffers this variable controls whether
-this should be done.  This requires library `rainbow-mode'.")
+this should be done.  This requires library `rainbow-mode'."
+  :type 'boolean
+  :group 'zenburn-theme)
 
 (defvar zenburn-colors-font-lock-keywords nil)
 
