@@ -1355,6 +1355,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(rst-level-4-face ((t (:foreground ,zenburn-yellow-2))))
    `(rst-level-5-face ((t (:foreground ,zenburn-cyan))))
    `(rst-level-6-face ((t (:foreground ,zenburn-green-2))))
+;;;;; selectrum
+   `(selectrum-current-candidate ((t (:foreground ,zenburn-yellow :weight bold :underline t))))
+   `(selectrum-primary-highlight ((t (:background ,zenburn-green-2))))
+   `(selectrum-secondary-highlight ((t (:background ,zenburn-green))))
 ;;;;; sh-mode
    `(sh-heredoc     ((t (:foreground ,zenburn-yellow :weight bold))))
    `(sh-quoted-exec ((t (:foreground ,zenburn-red))))
