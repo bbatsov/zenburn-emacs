@@ -810,6 +810,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-swoop-target-word-face ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+2 :weight bold))))
 ;;;;; highlight-numbers
    `(highlight-numbers-number ((t (:foreground ,zenburn-blue))))
+;;;;; highlight-symbol
+   `(highlight-symbol-face ((t (:background ,zenburn-bg+2))))
+;;;;; highlight-thing
+   `(highlight-thing ((t (:background ,zenburn-bg+2))))
 ;;;;; hl-line-mode
    `(hl-line-face ((,class (:background ,zenburn-bg-05))
                    (t :weight bold)))
