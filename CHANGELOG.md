@@ -1,5 +1,13 @@
 # Changelog
 
+## master (unreleased)
+
+### New features
+
+### Changes
+
+### Bugs fixed
+
 ## 2.6 (2018-10-14)
 
 ### New features
