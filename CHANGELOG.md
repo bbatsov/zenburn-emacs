@@ -5,10 +5,19 @@
 ### New features
 
 * [#347](https://github.com/bbatsov/zenburn-emacs/issues/347): Add support for `highlight-symbol` and `highlight-thing`.
+* Add `helm-lxc` support.
+* Theme `swiper-line-face` and `swiper-isearch-current-match`.
+* [#330](https://github.com/bbatsov/zenburn-emacs/pull/330): Add centaur-tabs, doom-modeline, and solaire-mode support.
 
 ### Changes
 
+* [#346](https://github.com/bbatsov/zenburn-emacs/pull/346): Make numbers in `highlight-numbers` blue.
+* Make `zenburn-add-font-lock-keywords` customizable.
+
 ### Bugs fixed
+
+* [#321](https://github.com/bbatsov/zenburn-emacs/issues/321): Scale `org-document-title` only if `zenburn-scale-org-headlines` is `t`.
+* Fix lots of face inheritance issues on Emacs 27.
 
 ## 2.6 (2018-10-14)
 
