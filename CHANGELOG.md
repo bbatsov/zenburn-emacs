@@ -30,6 +30,7 @@
 * Add cider-fringe-good-face
 * Add realgud settings
 * Customize company-quickhelp colors
+* Support for highlight-symbol and highlight-thing (#347)
 
 ### Changes
 
