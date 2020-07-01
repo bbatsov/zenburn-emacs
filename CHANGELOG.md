@@ -4,6 +4,8 @@
 
 ### New features
 
+* [#347](https://github.com/bbatsov/zenburn-emacs/issues/347): Add support for `highlight-symbol` and `highlight-thing`.
+
 ### Changes
 
 ### Bugs fixed
@@ -30,7 +32,6 @@
 * Add cider-fringe-good-face
 * Add realgud settings
 * Customize company-quickhelp colors
-* Support for highlight-symbol and highlight-thing (#347)
 
 ### Changes
 
