@@ -128,7 +128,25 @@ included upstream don't hesitate to send me a patch or even better - a
 GitHub pull request. [These](https://github.com/bbatsov/zenburn-emacs/contributors)
 contributors have done so.
 
+## Donate
+
 You can support my work on Zenburn and [all my other projects](https://github.com/bbatsov)
 via [Patreon](https://www.patreon.com/bbatsov).
+
+## Contributors
+
+Here's a [list](https://github.com/bbatsov/zenburn-emacs/contributors) of all the people who have contributed to the
+development of Zenburn for Emacs.
+
+## Changelog
+
+A fairly extensive changelog is available [here](CHANGELOG.md).
+
+## License
+
+Copyright © 2010-2020 Bozhidar Batsov and
+[contributors](https://github.com/bbatsov/zenburn-emacs/contributors).
+
+Distributed under the GNU General Public License, version 3
 
 [badge-license]: https://img.shields.io/badge/license-GPL_3-green.svg
