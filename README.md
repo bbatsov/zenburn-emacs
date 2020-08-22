@@ -3,6 +3,7 @@
 [![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
 [![MELPA](http://melpa.org/packages/zenburn-theme-badge.svg)](http://melpa.org/#/zenburn-theme)
 [![MELPA Stable](http://stable.melpa.org/packages/zenburn-theme-badge.svg)](http://stable.melpa.org/#/zenburn-theme)
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C2204SR)
 [![Patreon](https://img.shields.io/badge/patreon-donate-orange.svg)](https://www.patreon.com/bbatsov)
 
 ## About
