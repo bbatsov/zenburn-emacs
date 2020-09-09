@@ -204,7 +204,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(custom-group-tag ((t (:foreground ,zenburn-blue :weight bold :height 1.2))))
    `(custom-state ((t (:foreground ,zenburn-green+4))))
 ;;;;; display-fill-column-indicator
-     `(fill-column-indicator ((,class :foreground ,zenburn-bg-05 :weight semilight)))
+   `(fill-column-indicator ((,class :foreground ,zenburn-bg-05 :weight semilight)))
 ;;;;; eww
    '(eww-invalid-certificate ((t (:inherit error))))
    '(eww-valid-certificate   ((t (:inherit success))))
@@ -558,6 +558,8 @@ Also bind `class' to ((class color) (min-colors 89))."
                                               :weight bold))))
    `(elfeed-search-tag-face ((t (:foreground ,zenburn-green))))
    `(elfeed-search-feed-face ((t (:foreground ,zenburn-cyan))))
+   `(elfeed-search-title-face ((t (:foreground ,zenburn-fg-05))))
+   `(elfeed-search-unread-title-face ((t (:foreground ,zenburn-fg :weight bold))))
 ;;;;; emacs-w3m
    `(w3m-anchor ((t (:foreground ,zenburn-yellow :underline t
                                  :weight bold))))
@@ -1437,17 +1439,17 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; sx
    `(sx-custom-button
      ((t (:background ,zenburn-fg :foreground ,zenburn-bg-1
-          :box (:line-width 3 :style released-button) :height 0.9))))
+                      :box (:line-width 3 :style released-button) :height 0.9))))
    `(sx-question-list-answers
      ((t (:foreground ,zenburn-green+3
-          :height 1.0 :inherit sx-question-list-parent))))
+                      :height 1.0 :inherit sx-question-list-parent))))
    `(sx-question-mode-accepted
      ((t (:foreground ,zenburn-green+3
-          :height 1.3 :inherit sx-question-mode-title))))
+                      :height 1.3 :inherit sx-question-mode-title))))
    '(sx-question-mode-content-face ((t (:inherit highlight))))
    `(sx-question-mode-kbd-tag
      ((t (:box (:color ,zenburn-bg-1 :line-width 3 :style released-button)
-          :height 0.9 :weight semi-bold))))
+               :height 0.9 :weight semi-bold))))
 ;;;;; tabbar
    `(tabbar-button ((t (:foreground ,zenburn-fg
                                     :background ,zenburn-bg))))
