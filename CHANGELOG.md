@@ -8,6 +8,7 @@
 * Add `helm-lxc` support.
 * Theme `swiper-line-face` and `swiper-isearch-current-match`.
 * [#330](https://github.com/bbatsov/zenburn-emacs/pull/330): Add centaur-tabs, doom-modeline, and solaire-mode support.
+* Add `notmuch` support
 
 ### Changes
 
