@@ -3,8 +3,6 @@
 [![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
 [![MELPA](http://melpa.org/packages/zenburn-theme-badge.svg)](http://melpa.org/#/zenburn-theme)
 [![MELPA Stable](http://stable.melpa.org/packages/zenburn-theme-badge.svg)](http://stable.melpa.org/#/zenburn-theme)
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C2204SR)
-[![Patreon](https://img.shields.io/badge/patreon-donate-orange.svg)](https://www.patreon.com/bbatsov)
 
 ## About
 
@@ -20,6 +18,16 @@ created this package) built-in theming support available starting with
 Emacs 24.1.
 
 ![Overview screenshot](screenshots/overview.png)
+
+------------
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C2204SR)
+[![Patreon](https://img.shields.io/badge/patreon-donate-orange.svg)](https://www.patreon.com/bbatsov)
+
+You can support the development of Zenburn for Emacs via
+[GitHub Sponsors](https://github.com/sponsors/bbatsov),
+[ko-fi](https://ko-fi.com/bbatsov),
+[PayPal](https://www.paypal.me/bbatsov) and
+[Patreon](https://www.patreon.com/bbatsov).
 
 ## Installation
 
@@ -134,7 +142,12 @@ contributors have done so.
 ## Donate
 
 You can support my work on Zenburn and [all my other projects](https://github.com/bbatsov)
-via [Patreon](https://www.patreon.com/bbatsov).
+via
+[GitHub Sponsors](https://github.com/sponsors/bbatsov),
+[ko-fi](https://ko-fi.com/bbatsov),
+[PayPal](https://www.paypal.me/bbatsov) and
+[Patreon](https://www.patreon.com/bbatsov).
+.
 
 ## Contributors
 
