@@ -2,6 +2,8 @@
 
 ## master (unreleased)
 
+## 2.7 (2020-11-21)
+
 ### New features
 
 * [#347](https://github.com/bbatsov/zenburn-emacs/issues/347): Add support for `highlight-symbol` and `highlight-thing`.
