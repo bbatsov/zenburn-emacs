@@ -1189,6 +1189,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(notmuch-tag-unread ((t (:foreground ,zenburn-red))))
    `(notmuch-tree-match-author-face ((t (:foreground ,zenburn-green+1))))
    `(notmuch-tree-match-tag-face ((t (:foreground ,zenburn-green+1))))
+;;;;; orderless
+   `(orderless-match-face-0 ((t (:foreground ,zenburn-green))))
+   `(orderless-match-face-1 ((t (:foreground ,zenburn-magenta))))
+   `(orderless-match-face-2 ((t (:foreground ,zenburn-blue))))
+   `(orderless-match-face-3 ((t (:foreground ,zenburn-orange))))
 ;;;;; org-mode
    `(org-agenda-date-today
      ((t (:foreground ,zenburn-fg+1 :slant italic :weight bold))) t)
@@ -1502,6 +1507,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(undo-tree-visualizer-default-face ((t (:foreground ,zenburn-fg))))
    `(undo-tree-visualizer-register-face ((t (:foreground ,zenburn-yellow))))
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,zenburn-cyan))))
+;;;;; vertico
+   `(vertico-current ((t (:foreground ,zenburn-yellow :weight bold :underline t))))
 ;;;;; visual-regexp
    `(vr/group-0 ((t (:foreground ,zenburn-bg :background ,zenburn-green :weight bold))))
    `(vr/group-1 ((t (:foreground ,zenburn-bg :background ,zenburn-orange :weight bold))))
