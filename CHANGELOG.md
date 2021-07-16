@@ -2,6 +2,11 @@
 
 ## master (unreleased)
 
+### New features
+
+* Add `tab-bar-mode` support
+* Add `tab-line-mode` support
+
 ## 2.7 (2020-11-21)
 
 ### New features
