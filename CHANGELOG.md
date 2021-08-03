@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+### Changes
+
+* Add `helm-ff-file-extension` face
+
 ## 2.7 (2020-11-21)
 
 ### New features
