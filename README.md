@@ -46,7 +46,7 @@ Now you can load the theme with the interactive function `load-theme` like this:
 
 ### Package.el
 
-Zenburn is available in both [MELPA Stable](http://stable.melpa.org)
+Zenburn is available in [NonGNU ELPA](https://elpa.nongnu.org/), [MELPA Stable](http://stable.melpa.org)
 and [MELPA](http://melpa.org).
 
 You can install `zenburn` with the following command:
@@ -141,13 +141,13 @@ contributors have done so.
 
 ## Donate
 
-You can support my work on Zenburn and [all my other projects](https://github.com/bbatsov)
-via
-[GitHub Sponsors](https://github.com/sponsors/bbatsov),
-[ko-fi](https://ko-fi.com/bbatsov),
-[PayPal](https://www.paypal.me/bbatsov) and
-[Patreon](https://www.patreon.com/bbatsov).
-.
+You can support my work on Zenburn and [all my other OSS projects](https://batsov.com/projects)
+via the following platforms:
+
+* [GitHub Sponsors](https://github.com/sponsors/bbatsov)
+* [ko-fi](https://ko-fi.com/bbatsov)
+* [PayPal](https://www.paypal.me/bbatsov)
+* [Patreon](https://www.patreon.com/bbatsov)
 
 ## Contributors
 
@@ -160,7 +160,7 @@ A fairly extensive changelog is available [here](CHANGELOG.md).
 
 ## License
 
-Copyright © 2010-2020 Bozhidar Batsov and
+Copyright © 2010-2022 Bozhidar Batsov and
 [contributors](https://github.com/bbatsov/zenburn-emacs/contributors).
 
 Distributed under the GNU General Public License, version 3
