@@ -1372,6 +1372,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(realgud-backtrace-number ((t (:foreground ,zenburn-yellow, :weight bold))))
 ;;;;; regex-tool
    `(regex-tool-matched-face ((t (:background ,zenburn-blue-4 :weight bold))))
+;;;;; rmail
+   `(rmail-highlight ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(rmail-header-name ((t (:foreground ,zenburn-blue))))
 ;;;;; rpm-mode
    `(rpm-spec-dir-face ((t (:foreground ,zenburn-green))))
    `(rpm-spec-doc-face ((t (:foreground ,zenburn-green))))
