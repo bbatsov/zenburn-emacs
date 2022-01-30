@@ -6,6 +6,7 @@
 
 * Add `helm-ff-file-extension` face
 * Add `rmail` support
+* Add `tab-bar-mode` support
 
 ## 2.7 (2020-11-21)
 
