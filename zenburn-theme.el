@@ -1310,7 +1310,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(p4-diff-ins-face ((t :inherit diff-added)))
 ;;;;; c/perl
    `(cperl-nonoverridable-face ((t (:foreground ,zenburn-magenta))))
-   `(cperl-array-face ((t (:foreground ,zenburn-yellow, :backgorund ,zenburn-bg))))
+   `(cperl-array-face ((t (:foreground ,zenburn-yellow, :background ,zenburn-bg))))
    `(cperl-hash-face ((t (:foreground ,zenburn-yellow-1, :background ,zenburn-bg))))
 ;;;;; paren-face
    `(parenthesis ((t (:foreground ,zenburn-fg-1))))
