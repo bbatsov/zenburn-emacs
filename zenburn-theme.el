@@ -165,6 +165,23 @@ Also bind `class' to ((class color) (min-colors 89))."
   (custom-theme-set-faces
    'zenburn
 ;;;; Built-in
+;;;;; ansi-colors
+   `(ansi-color-black ((t (:foreground ,zenburn-bg
+                                       :background ,zenburn-bg-1))))
+   `(ansi-color-red ((t (:foreground ,zenburn-red-2
+                                     :background ,zenburn-red-4))))
+   `(ansi-color-green ((t (:foreground ,zenburn-green
+                                       :background ,zenburn-green+2))))
+   `(ansi-color-yellow ((t (:foreground ,zenburn-orange
+                                        :background ,zenburn-yellow))))
+   `(ansi-color-blue ((t (:foreground ,zenburn-blue-1
+                                      :background ,zenburn-blue-4))))
+   `(ansi-color-magenta ((t (:foreground ,zenburn-magenta
+                                         :background ,zenburn-red))))
+   `(ansi-color-cyan ((t (:foreground ,zenburn-cyan
+                                      :background ,zenburn-blue))))
+   `(ansi-color-white ((t (:foreground ,zenburn-fg
+                                       :background ,zenburn-fg-1))))
 ;;;;; basic coloring
    '(button ((t (:underline t))))
    `(link ((t (:foreground ,zenburn-yellow :underline t :weight bold))))
