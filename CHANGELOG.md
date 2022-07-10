@@ -4,11 +4,11 @@
 
 ### Changes
 
-* Add `helm-ff-file-extension` face
-* Add `rmail` support
-* Add `tab-bar-mode` support
+* Add `helm-ff-file-extension` face.
+* Add `rmail` support.
+* Add `tab-bar-mode` support.
 * [#367](https://github.com/bbatsov/zenburn-emacs/pull/367): Brighten org headline levels 7 and 8 to improve contrast and possibly help those with color blindness.
-* Add support for `ansi-color` faces
+* Add support for `ansi-color` faces.
 
 ## 2.7 (2020-11-21)
 
@@ -18,7 +18,7 @@
 * Add `helm-lxc` support.
 * Theme `swiper-line-face` and `swiper-isearch-current-match`.
 * [#330](https://github.com/bbatsov/zenburn-emacs/pull/330): Add centaur-tabs, doom-modeline, and solaire-mode support.
-* Add `notmuch` support
+* Add `notmuch` support.
 
 ### Changes
 
