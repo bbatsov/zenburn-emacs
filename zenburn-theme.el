@@ -1556,6 +1556,18 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(tab-bar-tab-inactive ((t (:foreground ,zenburn-fg
                                            :background ,zenburn-bg+1
                                            :box (:line-width -1 :style released-button)))))
+;;;;; tab-line
+   `(tab-line ((t (:background ,zenburn-bg+1))))
+   `(tab-line-tab ((t (:foreground ,zenburn-fg
+                                  :background ,zenburn-bg
+                                  :weight bold
+                                  :box (:line-width -1 :style released-button)))))
+   `(tab-line-tab-inactive ((t (:foreground ,zenburn-fg
+                                           :background ,zenburn-bg+1
+                                           :box (:line-width -1 :style released-button)))))
+   `(tab-line-tab-current ((t (:foreground ,zenburn-fg
+                                           :background ,zenburn-bg+1
+                                           :box (:line-width -1 :style pressed-button)))))
 ;;;;; term
    `(term-color-black ((t (:foreground ,zenburn-bg
                                        :background ,zenburn-bg-1))))
