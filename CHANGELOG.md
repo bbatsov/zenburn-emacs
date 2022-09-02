@@ -7,6 +7,7 @@
 * Add `helm-ff-file-extension` face.
 * Add `rmail` support.
 * Add `tab-bar-mode` support.
+* Add `tab-line-mode` support.
 * [#367](https://github.com/bbatsov/zenburn-emacs/pull/367): Brighten org headline levels 7 and 8 to improve contrast and possibly help those with color blindness.
 * Add support for `ansi-color` faces.
 * Add support for SLY faces.
