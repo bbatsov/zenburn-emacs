@@ -1549,25 +1549,36 @@ Also bind `class' to ((class color) (min-colors 89))."
                                         :box (:line-width -1 :style released-button)))))
 ;;;;; tab-bar
    `(tab-bar ((t (:background ,zenburn-bg+1))))
-   `(tab-bar-tab ((t (:foreground ,zenburn-fg
-                                  :background ,zenburn-bg
-                                  :weight bold
-                                  :box (:line-width -1 :style released-button)))))
-   `(tab-bar-tab-inactive ((t (:foreground ,zenburn-fg
-                                           :background ,zenburn-bg+1
-                                           :box (:line-width -1 :style released-button)))))
+   `(tab-bar-tab
+     ((t (:foreground ,zenburn-fg
+                      :background ,zenburn-bg
+                      :weight bold
+                      :height 1.1
+                      :box (:line-width (6 . 4) :color ,zenburn-bg :style nil)))))
+   `(tab-bar-tab-inactive
+     ((t (:foreground ,zenburn-fg
+                      :background ,zenburn-bg+1
+                      :height 1.1
+                      :box (:line-width (6 . 4) :color ,zenburn-bg+1 :style nil)))))
 ;;;;; tab-line
    `(tab-line ((t (:background ,zenburn-bg+1))))
-   `(tab-line-tab ((t (:foreground ,zenburn-fg
-                                  :background ,zenburn-bg
-                                  :weight bold
-                                  :box (:line-width -1 :style released-button)))))
-   `(tab-line-tab-inactive ((t (:foreground ,zenburn-fg
-                                           :background ,zenburn-bg+1
-                                           :box (:line-width -1 :style released-button)))))
-   `(tab-line-tab-current ((t (:foreground ,zenburn-fg
-                                           :background ,zenburn-bg+1
-                                           :box (:line-width -1 :style pressed-button)))))
+   `(tab-line-tab
+     ((t (:foreground ,zenburn-fg
+                      :background ,zenburn-bg+1
+                      :box (:line-width (6 . 4) :color ,zenburn-bg+1 :style nil)))))
+   `(tab-line-tab-inactive
+     ((t (:foreground ,zenburn-fg
+                      :background ,zenburn-bg+1
+                      :box (:line-width (6 . 4) :color ,zenburn-bg+1 :style nil)))))
+   `(tab-line-tab-current
+     ((t (:foreground ,zenburn-fg
+                      :background ,zenburn-bg
+                      :weight bold
+                      :box (:line-width (6 . 4) :color ,zenburn-bg :style nil)))))
+   `(tab-line-highlight
+     ((t (:foreground ,zenburn-fg
+                      :background ,zenburn-bg+2
+                      :box (:line-width (6 . 4) :color ,zenburn-bg+2 :style nil)))))
 ;;;;; term
    `(term-color-black ((t (:foreground ,zenburn-bg
                                        :background ,zenburn-bg-1))))
@@ -1700,6 +1711,12 @@ Also bind `class' to ((class color) (min-colors 89))."
        ,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
 ;;;;; pdf-tools
    `(pdf-view-midnight-colors '(,zenburn-fg . ,zenburn-bg-05))
+;;;;; tab-bar
+   ;; For some reason, the padding doesn't display properly if the
+   ;; tab-bar-separator is "", swe we use a zero-width space instead
+   `(tab-bar-separator "\u200b")
+;;;;; tab-line
+   `(tab-line-separator "")
 ;;;;; vc-annotate
    `(vc-annotate-color-map
      '(( 20. . ,zenburn-red-1)
