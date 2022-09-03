@@ -1579,6 +1579,11 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:foreground ,zenburn-fg
                       :background ,zenburn-bg+2
                       :box (:line-width (6 . 4) :color ,zenburn-bg+2 :style nil)))))
+   `(tab-line-tab-group
+     ((t (:foreground ,zenburn-fg
+                      :background ,zenburn-bg-1
+                      :weight bold
+                      :box (:line-width (6 . 4) :color ,zenburn-bg-1 :style nil)))))
 ;;;;; term
    `(term-color-black ((t (:foreground ,zenburn-bg
                                        :background ,zenburn-bg-1))))
@@ -1716,7 +1721,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; tab-bar-separator is "", swe we use a zero-width space instead
    `(tab-bar-separator "\u200b")
 ;;;;; tab-line
-   `(tab-line-separator "")
+   `(tab-line-separator "\u200b")
 ;;;;; vc-annotate
    `(vc-annotate-color-map
      '(( 20. . ,zenburn-red-1)
