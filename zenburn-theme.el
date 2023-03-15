@@ -4,7 +4,7 @@
 
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
-;; Version: 2.8.0-snapshot
+;; Version: 2.8.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -31,7 +31,7 @@
 
 ;;; Code:
 
-(deftheme zenburn "The Zenburn color theme")
+(deftheme zenburn "The Zenburn color theme.")
 
 (defgroup zenburn-theme nil
   "Zenburn theme."

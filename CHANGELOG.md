@@ -2,6 +2,8 @@
 
 ## master (unreleased)
 
+## 2.8 (2023-03-15)
+
 ### Changes
 
 * Add `helm-ff-file-extension` face.
