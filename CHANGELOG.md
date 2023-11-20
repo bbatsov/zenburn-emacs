@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+### New features
+
+* Add `corfu` support.
+
 ## 2.8 (2023-03-15)
 
 ### Changes

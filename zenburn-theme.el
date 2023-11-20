@@ -412,6 +412,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(company-scrollbar-bg ((t (:background ,zenburn-bg+2))))
    `(company-preview ((t (:background ,zenburn-green+2))))
    `(company-preview-common ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg-1))))
+;;;;; corfu
+   `(corfu-default ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
+   `(corfu-current ((t (:foreground ,zenburn-fg :background ,zenburn-bg-1))))
+   `(corfu-bar ((t (:background ,zenburn-bg-1))))
+   `(corfu-bar ((t (:background ,zenburn-bg-2))))
 ;;;;; bm
    `(bm-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
