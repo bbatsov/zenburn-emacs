@@ -13,9 +13,10 @@ that of its many users I presume) that it's one of the best low
 contrast color themes out there and that it is exceptionally easy on
 the eyes.
 
-This theme uses the "new" (it used to be new several years ago when I
-created this package) built-in theming support available starting with
+This theme uses the "new"[^1] built-in theming support available starting with
 Emacs 24.1.
+
+[^1]: It used to be new in 2010 when I created this package.
 
 ![Overview screenshot](screenshots/overview.png)
 
