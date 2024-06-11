@@ -1693,6 +1693,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(wl-highlight-summary-displaying-face ((t (:underline t :weight bold))))
 ;;;;; which-func-mode
    `(which-func ((t (:foreground ,zenburn-green+4))))
+;;;;; window-tool-bar-mode
+   `(window-tool-bar-button ((t (:foreground ,zenburn-fg
+                                 :background ,zenburn-bg
+                                 :box (:line-width -1 :style released-button)))))
+   `(window-tool-bar-button-hover ((t (:foreground ,zenburn-fg
+                                       :background ,zenburn-bg+1
+                                       :box (:line-width -1 :style released-button)))))
+   `(window-tool-bar-button-disabled ((t (:foreground ,zenburn-fg
+                                          :background ,zenburn-bg+3
+                                          :box (:line-width -1 :style released-button)))))
 ;;;;; xcscope
    `(cscope-file-face ((t (:foreground ,zenburn-yellow :weight bold))))
    `(cscope-function-face ((t (:foreground ,zenburn-cyan :weight bold))))
