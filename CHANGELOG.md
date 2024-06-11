@@ -5,6 +5,7 @@
 ### New features
 
 * Add `corfu` support.
+* Add `window-tool-bar` support.
 
 ## 2.8 (2023-03-15)
 
