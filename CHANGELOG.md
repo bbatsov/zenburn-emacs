@@ -2,6 +2,8 @@
 
 ## master (unreleased)
 
+* [#635eeec](https://github.com/wilya7/zenburn-emacs/commit/635eeecf04ae162b41e1b6c1e596e608f1b30746): Fix warning for helm-grep-match face by adding explicit face definition.
+
 ### New features
 
 * Add `corfu` support.
