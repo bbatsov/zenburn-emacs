@@ -410,7 +410,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(company-tooltip-common-selection ((t (:foreground ,zenburn-green+2))))
    `(company-scrollbar-fg ((t (:background ,zenburn-bg-1))))
    `(company-scrollbar-bg ((t (:background ,zenburn-bg+2))))
-   `(company-preview ((t (:background ,zenburn-green+2))))
+   `(company-preview ((t (:foreground ,zenburn-bg-1 :background ,zenburn-green+2))))
    `(company-preview-common ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg-1))))
 ;;;;; corfu
    `(corfu-default ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))

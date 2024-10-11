@@ -19,6 +19,7 @@
 * [#367](https://github.com/bbatsov/zenburn-emacs/pull/367): Brighten org headline levels 7 and 8 to improve contrast and possibly help those with color blindness.
 * Add support for `ansi-color` faces.
 * Add support for SLY faces.
+* [#361](https://github.com/bbatsov/zenburn-emacs/issues/361): Make the `company-preview` face more readable.
 
 ## 2.7 (2020-11-21)
 
