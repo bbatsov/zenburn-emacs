@@ -60,6 +60,14 @@ To load it automatically on Emacs startup add this to your init file:
 (load-theme 'zenburn t)
 ```
 
+If you prefer to use `use-package` just add the following:
+
+``` emacs-lisp
+(use-package zenburn-theme
+  :config
+  (load-theme 'zenburn t))
+```
+
 ### Emacs Prelude
 
 Zenburn for Emacs is already bundled into
@@ -74,6 +82,24 @@ Users of Debian 9 or later or Ubuntu 16.10 or later may simply
 `apt-get install elpa-zenburn-theme`.
 
 ## Customization
+
+### Custom faces
+
+If want to change some faces you can do it
+with `custom-theme-set-faces` or `use-package`. Here's an example:
+
+``` emacs-lisp
+(use-package zenburn-theme
+  :preface
+  (setq my/zenburn-colors-alist
+        '((fg . "#DCDCCC") (bg . "#1C1C1C") (cyan . "#93E0E3")))
+  :custom-face
+  (region ((t (:background ,(alist-get my/zenburn-colors-alist 'cyan)))))
+  :config
+  (load-theme 'zenburn t))
+```
+
+See [this article](https://emacsredux.com/blog/2025/02/13/customizing-color-themes/) for more details.
 
 ### Custom colors
 
