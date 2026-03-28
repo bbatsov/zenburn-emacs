@@ -628,7 +628,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-direct-msg-face ((t (:inherit erc-default-face))))
    `(erc-error-face ((t (:inherit font-lock-warning-face))))
    `(erc-fool-face ((t (:inherit erc-default-face))))
-   `(erc-highlight-face ((t (:inherit hover-highlight))))
+   `(erc-highlight-face ((t (:background ,zenburn-bg+1))))
    `(erc-input-face ((t (:foreground ,zenburn-yellow))))
    `(erc-keyword-face ((t (:foreground ,zenburn-blue :weight bold))))
    `(erc-nick-default-face ((t (:foreground ,zenburn-yellow :weight bold))))
@@ -998,18 +998,18 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(lispy-cursor-face ((t (:foreground ,zenburn-bg :background ,zenburn-fg))))
    `(lispy-face-hint ((t (:inherit highlight :foreground ,zenburn-yellow))))
 ;;;;; ruler-mode
-   `(ruler-mode-column-number ((t (:inherit 'ruler-mode-default :foreground ,zenburn-fg))))
-   `(ruler-mode-fill-column ((t (:inherit 'ruler-mode-default :foreground ,zenburn-yellow))))
-   `(ruler-mode-goal-column ((t (:inherit 'ruler-mode-fill-column))))
-   `(ruler-mode-comment-column ((t (:inherit 'ruler-mode-fill-column))))
-   `(ruler-mode-tab-stop ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-column-number ((t (:inherit ruler-mode-default :foreground ,zenburn-fg))))
+   `(ruler-mode-fill-column ((t (:inherit ruler-mode-default :foreground ,zenburn-yellow))))
+   `(ruler-mode-goal-column ((t (:inherit ruler-mode-fill-column))))
+   `(ruler-mode-comment-column ((t (:inherit ruler-mode-fill-column))))
+   `(ruler-mode-tab-stop ((t (:inherit ruler-mode-fill-column))))
    `(ruler-mode-current-column ((t (:foreground ,zenburn-yellow :box t))))
    `(ruler-mode-default ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
 
 ;;;;; lui
    `(lui-time-stamp-face ((t (:foreground ,zenburn-blue-1))))
    `(lui-hilight-face ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
-   `(lui-button-face ((t (:inherit hover-highlight))))
+   `(lui-button-face ((t (:foreground ,zenburn-blue-1 :underline t))))
 ;;;;; macrostep
    `(macrostep-gensym-1
      ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg-1))))
