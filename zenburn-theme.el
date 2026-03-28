@@ -1849,6 +1849,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(wl-highlight-summary-displaying-face ((t (:underline t :weight bold))))
 ;;;;; which-func-mode
    `(which-func ((t (:foreground ,zenburn-green+4))))
+;;;;; which-key
+   `(which-key-key-face ((t (:foreground ,zenburn-blue :weight bold))))
+   `(which-key-separator-face ((t (:foreground ,zenburn-green))))
+   `(which-key-note-face ((t (:foreground ,zenburn-fg-1))))
+   `(which-key-command-description-face ((t (:foreground ,zenburn-fg))))
+   `(which-key-local-map-description-face ((t (:foreground ,zenburn-cyan))))
+   `(which-key-highlighted-command-face ((t (:foreground ,zenburn-orange :weight bold))))
+   `(which-key-group-description-face ((t (:foreground ,zenburn-magenta))))
+   `(which-key-special-key-face ((t (:foreground ,zenburn-red+1 :weight bold))))
+   `(which-key-docstring-face ((t (:foreground ,zenburn-green :slant italic))))
 ;;;;; window-tool-bar-mode
    `(window-tool-bar-button ((t (:foreground ,zenburn-fg
                                  :background ,zenburn-bg
