@@ -220,6 +220,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(completions-annotations ((t (:foreground ,zenburn-fg-1))))
    `(completions-common-part ((t (:foreground ,zenburn-blue))))
    `(completions-first-difference ((t (:foreground ,zenburn-fg+1))))
+   `(completions-group-title ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(completions-group-separator ((t (:foreground ,zenburn-green :strike-through t))))
+   `(completions-highlight ((t (:background ,zenburn-bg+2))))
 ;;;;; customize
    `(custom-variable-tag ((t (:foreground ,zenburn-blue :weight bold))))
    `(custom-group-tag ((t (:foreground ,zenburn-blue :weight bold :height 1.2))))
@@ -248,6 +251,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; isearch
    `(isearch ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg+2))))
    `(isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
+   `(isearch-group-1 ((t (:foreground ,zenburn-fg :background ,zenburn-blue-3))))
+   `(isearch-group-2 ((t (:foreground ,zenburn-fg :background ,zenburn-green-2))))
    `(lazy-highlight ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg-05))))
 
    `(menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
@@ -257,6 +262,7 @@ Also bind `class' to ((class color) (min-colors 89))."
                            :background ,zenburn-bg-1
                            :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
+   `(mode-line-active ((,class (:inherit mode-line))))
    `(mode-line-buffer-id ((t (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,zenburn-green-2
@@ -283,11 +289,24 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-lock-type-face ((t (:foreground ,zenburn-blue-1))))
    `(font-lock-variable-name-face ((t (:foreground ,zenburn-orange))))
    `(font-lock-warning-face ((t (:foreground ,zenburn-yellow-2 :weight bold))))
+;;;;; font lock (Emacs 29+)
+   `(font-lock-bracket-face ((t (:foreground ,zenburn-fg))))
+   `(font-lock-delimiter-face ((t (:foreground ,zenburn-fg))))
+   `(font-lock-escape-face ((t (:foreground ,zenburn-green :weight bold))))
+   `(font-lock-function-call-face ((t (:foreground ,zenburn-cyan))))
+   `(font-lock-misc-punctuation-face ((t (:foreground ,zenburn-fg))))
+   `(font-lock-number-face ((t (:foreground ,zenburn-green+4))))
+   `(font-lock-operator-face ((t (:foreground ,zenburn-fg))))
+   `(font-lock-property-name-face ((t (:foreground ,zenburn-orange))))
+   `(font-lock-property-use-face ((t (:foreground ,zenburn-orange))))
+   `(font-lock-variable-use-face ((t (:foreground ,zenburn-orange))))
 
    `(c-annotation-face ((t (:inherit font-lock-constant-face))))
 ;;;;; line numbers (Emacs 26.1 and above)
    `(line-number ((t (:inherit default :foreground ,zenburn-bg+3 :background ,zenburn-bg-05))))
    `(line-number-current-line ((t (:inherit line-number :foreground ,zenburn-yellow-2))))
+   `(line-number-major-tick ((t (:inherit line-number :foreground ,zenburn-yellow-2 :weight bold))))
+   `(line-number-minor-tick ((t (:inherit line-number :foreground ,zenburn-bg+05))))
 ;;;;; man
    '(Man-overstrike ((t (:inherit font-lock-keyword-face))))
    '(Man-underline  ((t (:inherit (font-lock-string-face underline)))))
@@ -566,6 +585,11 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; doom-modeline
    `(doom-modeline-bar  ((t (:background ,zenburn-yellow))))
    `(doom-modeline-inactive-bar  ((t (:background nil))))
+;;;;; eglot
+   `(eglot-highlight-symbol-face ((t (:background ,zenburn-bg+2 :weight bold))))
+   `(eglot-diagnostic-tag-unnecessary-face ((t (:foreground ,zenburn-green :underline (:style wave :color ,zenburn-bg+3)))))
+   `(eglot-diagnostic-tag-deprecated-face ((t (:foreground ,zenburn-green :strike-through ,zenburn-bg+3))))
+   `(eglot-inlay-hint-face ((t (:foreground ,zenburn-bg+3 :height 0.9))))
 ;;;;; ediff
    `(ediff-current-diff-A ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
    `(ediff-current-diff-Ancestor ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
@@ -1578,6 +1602,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(tab-bar-tab-inactive ((t (:foreground ,zenburn-fg
                                            :background ,zenburn-bg+1
                                            :box (:line-width -1 :style released-button)))))
+   `(tab-bar-tab-ungrouped ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg+1))))
+   `(tab-bar-tab-group-current ((t (:foreground ,zenburn-yellow :background ,zenburn-bg :weight bold))))
+   `(tab-bar-tab-group-inactive ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg+1))))
 ;;;;; tab-line
    `(tab-line ((t (:background ,zenburn-bg+1))))
    `(tab-line-tab ((t (:foreground ,zenburn-fg
