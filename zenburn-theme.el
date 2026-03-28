@@ -1720,6 +1720,30 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(tab-line-tab-current ((t (:foreground ,zenburn-fg
                                            :background ,zenburn-bg+1
                                            :box (:line-width -1 :style pressed-button)))))
+;;;;; transient
+   `(transient-heading ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(transient-argument ((t (:foreground ,zenburn-orange :weight bold))))
+   `(transient-inactive-argument ((t (:foreground ,zenburn-fg-1))))
+   `(transient-inapt-argument ((t (:foreground ,zenburn-fg-1 :slant italic))))
+   `(transient-value ((t (:foreground ,zenburn-cyan :weight bold))))
+   `(transient-inactive-value ((t (:foreground ,zenburn-fg-1))))
+   `(transient-delimiter ((t (:foreground ,zenburn-bg+3))))
+   `(transient-unreachable ((t (:foreground ,zenburn-fg-1))))
+   `(transient-inapt-suffix ((t (:foreground ,zenburn-fg-1 :slant italic))))
+   `(transient-active-infix ((t (:background ,zenburn-bg+1))))
+   `(transient-enabled-suffix ((t (:foreground ,zenburn-green+2 :background "#335533" :weight bold))))
+   `(transient-disabled-suffix ((t (:foreground ,zenburn-red :background "#553333" :weight bold))))
+   `(transient-higher-level ((t (:underline t))))
+   `(transient-key ((t (:foreground ,zenburn-blue))))
+   `(transient-key-stay ((t (:foreground ,zenburn-cyan :weight bold))))
+   `(transient-key-noop ((t (:foreground ,zenburn-fg-1))))
+   `(transient-key-return ((t (:foreground ,zenburn-magenta))))
+   `(transient-key-recurse ((t (:foreground ,zenburn-orange))))
+   `(transient-key-stack ((t (:foreground ,zenburn-blue :weight bold))))
+   `(transient-key-exit ((t (:foreground ,zenburn-red))))
+   `(transient-unreachable-key ((t (:foreground ,zenburn-fg-1))))
+   `(transient-nonstandard-key ((t (:foreground ,zenburn-yellow :underline t))))
+   `(transient-mismatched-key ((t (:foreground ,zenburn-yellow :underline t))))
 ;;;;; term
    `(term-color-black ((t (:foreground ,zenburn-bg
                                        :background ,zenburn-bg-1))))
