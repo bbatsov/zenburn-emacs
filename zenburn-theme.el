@@ -1601,6 +1601,14 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; smartparens
    `(sp-show-pair-mismatch-face ((t (:foreground ,zenburn-red+1 :background ,zenburn-bg+3 :weight bold))))
    `(sp-show-pair-match-face ((t (:background ,zenburn-bg+3 :weight bold))))
+;;;;; smerge
+   `(smerge-base ((t (:background "#555511" :extend t))))
+   `(smerge-markers ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg+1 :extend t))))
+   `(smerge-upper ((t (:background "#553333" :extend t))))
+   `(smerge-lower ((t (:background "#335533" :extend t))))
+   `(smerge-refined-added ((t (:foreground ,zenburn-green+4 :background "#338833" :weight bold))))
+   `(smerge-refined-removed ((t (:foreground ,zenburn-red :background "#883333" :weight bold))))
+   `(smerge-refined-changed ((t (:foreground ,zenburn-yellow :background "#888811" :weight bold))))
 ;;;;; sml-mode-line
    '(sml-modeline-end-face ((t :inherit default :width condensed)))
 ;;;;; SLIME
