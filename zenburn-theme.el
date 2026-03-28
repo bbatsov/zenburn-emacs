@@ -651,6 +651,19 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(elfeed-search-feed-face ((t (:foreground ,zenburn-cyan))))
    `(elfeed-search-title-face ((t (:foreground ,zenburn-fg-05))))
    `(elfeed-search-unread-title-face ((t (:foreground ,zenburn-fg :weight bold))))
+;;;;; embark
+   `(embark-keybinding ((t (:foreground ,zenburn-blue :weight bold))))
+   `(embark-keybinding-repeat ((t (:foreground ,zenburn-magenta :weight bold))))
+   `(embark-keymap ((t (:foreground ,zenburn-bg+3))))
+   `(embark-target ((t (:foreground ,zenburn-orange :weight bold))))
+   `(embark-verbose-indicator-documentation ((t (:foreground ,zenburn-green :slant italic))))
+   `(embark-verbose-indicator-title ((t (:foreground ,zenburn-fg :weight bold))))
+   `(embark-verbose-indicator-shadowed ((t (:foreground ,zenburn-bg+3))))
+   `(embark-collect-candidate ((t (:foreground ,zenburn-fg))))
+   `(embark-collect-group-title ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(embark-collect-group-separator ((t (:foreground ,zenburn-green :strike-through t))))
+   `(embark-collect-annotation ((t (:foreground ,zenburn-fg-1))))
+   `(embark-selected ((t (:background ,zenburn-bg+1 :weight bold))))
 ;;;;; emacs-w3m
    `(w3m-anchor ((t (:foreground ,zenburn-yellow :underline t
                                  :weight bold))))
