@@ -1,13 +1,13 @@
 # zenburn-theme for Emacs
 
-[![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
-[![MELPA](http://melpa.org/packages/zenburn-theme-badge.svg)](http://melpa.org/#/zenburn-theme)
-[![MELPA Stable](http://stable.melpa.org/packages/zenburn-theme-badge.svg)](http://stable.melpa.org/#/zenburn-theme)
+[![License GPL 3][badge-license]](https://www.gnu.org/licenses/gpl-3.0.txt)
+[![MELPA](https://melpa.org/packages/zenburn-theme-badge.svg)](https://melpa.org/#/zenburn-theme)
+[![MELPA Stable](https://stable.melpa.org/packages/zenburn-theme-badge.svg)](https://stable.melpa.org/#/zenburn-theme)
 
 ## About
 
 Zenburn for Emacs is a direct port of the popular
-[Zenburn](http://kippura.org/zenburnpage/) theme for vim,
+[Zenburn](https://kippura.org/zenburnpage/) theme for vim,
 developed by [Jani Nurminen](https://github.com/jnurmine). It's my personal belief (and
 that of its many users I presume) that it's one of the best low
 contrast color themes out there and that it is exceptionally easy on
@@ -47,8 +47,8 @@ Now you can load the theme with the interactive function `load-theme` like this:
 
 ### Package.el
 
-Zenburn is available in [NonGNU ELPA](https://elpa.nongnu.org/), [MELPA Stable](http://stable.melpa.org)
-and [MELPA](http://melpa.org).
+Zenburn is available in [NonGNU ELPA](https://elpa.nongnu.org/), [MELPA Stable](https://stable.melpa.org)
+and [MELPA](https://melpa.org).
 
 You can install `zenburn` with the following command:
 
@@ -85,7 +85,7 @@ Users of Debian 9 or later or Ubuntu 16.10 or later may simply
 
 ### Custom faces
 
-If want to change some faces you can do it
+If you want to change some faces you can do it
 with `custom-theme-set-faces` or `use-package`. Here's an example:
 
 ``` emacs-lisp
@@ -187,7 +187,7 @@ A fairly extensive changelog is available [here](CHANGELOG.md).
 
 ## License
 
-Copyright © 2010-2024 Bozhidar Batsov and
+Copyright © 2010-2026 Bozhidar Batsov and
 [contributors](https://github.com/bbatsov/zenburn-emacs/contributors).
 
 Distributed under the GNU General Public License, version 3
