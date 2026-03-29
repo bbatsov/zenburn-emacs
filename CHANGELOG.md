@@ -2,9 +2,11 @@
 
 ## master (unreleased)
 
+## 2.9.0 (2026-03-29)
+
 ### New features
 
-* Add `corfu` support.
+* Add `corfu` support (with `corfu-annotations`, `corfu-deprecated`).
 * Add `window-tool-bar` support.
 * Add `consult` support.
 * Add `embark` support.
@@ -17,16 +19,17 @@
 * Add missing modern Emacs faces: `font-lock-number-face`, `font-lock-operator-face`, `font-lock-bracket-face`, `font-lock-delimiter-face`, `font-lock-escape-face`, `font-lock-function-call-face`, `font-lock-property-name-face`, `font-lock-property-use-face`, `font-lock-variable-use-face` (Emacs 29+), `mode-line-active`, `isearch-group-1`, `isearch-group-2`, `completions-group-title`, `completions-group-separator`, `completions-highlight`, `line-number-major-tick`, `line-number-minor-tick`, `tab-bar-tab-group-current`, `tab-bar-tab-group-inactive`, `tab-bar-tab-ungrouped`.
 * Expand `doom-modeline` support (from 2 to 50 faces).
 * Expand `vertico` support (add `vertico-multiline`, `vertico-group-title`, `vertico-group-separator`).
-* Add missing `corfu` faces (`corfu-annotations`, `corfu-deprecated`).
+* Add GitHub Actions CI for byte-compilation and theme loading.
 
 ### Bug fixes
 
 * Fix missing colon in `ediff-fine-diff-Ancestor` face `:weight` keyword.
 * Fix trailing colon in `ledger-font-pending-face` face `:weight` keyword.
 * Fix duplicate `corfu-bar` definition (second one is now `corfu-border`).
-* Fix duplicate `:weight bold` in `org-done` and `org-tag`.
+* Fix duplicate `:weight bold` in `org-done`, `org-tag`, `org-todo`, and `org-warning`.
 * Replace `hover-highlight` inherit (from niche `hl-line+` package) with direct styling in `erc-highlight-face` and `lui-button-face`.
 * Fix spurious quotes in `ruler-mode` face `:inherit` values.
+* Fix typo in README and upgrade URLs to HTTPS.
 
 ## 2.8 (2023-03-15)
 
