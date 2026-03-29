@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  byte-compile:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        emacs-version: ['27.1', '28.2', '29.4', '30.1', 'snapshot']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: purcell/setup-emacs@master
+        with:
+          version: ${{ matrix.emacs-version }}
+      - name: Byte-compile
+        run: |
+          emacs --batch -L . \
+            --eval "(setq byte-compile-error-on-warn t)" \
+            -f batch-byte-compile zenburn-theme.el
+      - name: Load theme
+        run: emacs --batch -L . -l zenburn-theme.el
