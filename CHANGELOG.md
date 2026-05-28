@@ -10,6 +10,7 @@
 * Add `helpful` support.
 * Add `wgrep` support.
 * Add `multiple-cursors` support.
+* Add `eldoc` support (`eldoc-highlight-function-argument`).
 
 ### Changes
 
