@@ -5,6 +5,7 @@
 ### New features
 
 * Add `lsp-mode` and `lsp-ui` support.
+* Add `hl-todo` support.
 
 ### Changes
 

@@ -1046,6 +1046,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; hl-sexp
    `(hl-sexp-face ((,class (:background ,zenburn-bg+1))
                    (t :weight bold)))
+;;;;; hl-todo
+   `(hl-todo ((t (:foreground ,zenburn-magenta :weight bold))))
 ;;;;; hydra
    `(hydra-face-red ((t (:foreground ,zenburn-red-1 :background ,zenburn-bg))))
    `(hydra-face-amaranth ((t (:foreground ,zenburn-red-3 :background ,zenburn-bg))))
