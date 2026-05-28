@@ -8,6 +8,7 @@
 * Add `hl-todo` support.
 * Add `nerd-icons` support.
 * Add `helpful` support.
+* Add `wgrep` support.
 
 ### Changes
 

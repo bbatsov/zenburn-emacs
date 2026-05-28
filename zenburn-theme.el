@@ -2001,6 +2001,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(window-tool-bar-button-disabled ((t (:foreground ,zenburn-fg
                                           :background ,zenburn-bg+3
                                           :box (:line-width -1 :style released-button)))))
+;;;;; wgrep
+   `(wgrep-face ((t (:foreground ,zenburn-green :background ,zenburn-green-5))))
+   `(wgrep-delete-face ((t (:foreground ,zenburn-red :background ,zenburn-red-6))))
+   `(wgrep-done-face ((t (:foreground ,zenburn-blue))))
+   `(wgrep-file-face ((t (:foreground ,zenburn-fg-1))))
+   `(wgrep-reject-face ((t (:foreground ,zenburn-red :weight bold))))
 ;;;;; xcscope
    `(cscope-file-face ((t (:foreground ,zenburn-yellow :weight bold))))
    `(cscope-function-face ((t (:foreground ,zenburn-cyan :weight bold))))
