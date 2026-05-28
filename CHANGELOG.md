@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+### New features
+
+* Add `lsp-mode` and `lsp-ui` support.
+
 ### Changes
 
 * Expand `adoc-mode` support: cover all 37 faces, give title levels distinct per-level colors with optional scaling via `zenburn-scale-outline-headlines`, differentiate `adoc-meta-face` from `adoc-meta-hide-face`, and fix `adoc-emphasis-face` to render italic instead of bold.
