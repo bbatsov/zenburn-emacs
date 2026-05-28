@@ -872,6 +872,10 @@ Also bind `class' to ((class color) (min-colors 89))."
        (:underline (:style wave :color ,zenburn-green)
                    :inherit unspecified :foreground unspecified :background unspecified))
       (t (:foreground ,zenburn-green-2 :weight bold :underline t))))
+   `(flymake-end-of-line-diagnostics-face ((t (:height 0.85 :box (:line-width -1 :color ,zenburn-bg+2)))))
+   `(flymake-error-echo ((t (:foreground ,zenburn-red-1 :weight bold))))
+   `(flymake-warning-echo ((t (:foreground ,zenburn-orange :weight bold))))
+   `(flymake-note-echo ((t (:foreground ,zenburn-green-2 :weight bold))))
 ;;;;; flyspell
    `(flyspell-duplicate
      ((((supports :underline (:style wave)))

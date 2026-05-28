@@ -19,6 +19,7 @@
 * Add `symbol-overlay` support.
 * Add `citar` support.
 * Add `corfu-popupinfo` face.
+* Add `flymake-end-of-line-diagnostics-face` and `flymake-{error,warning,note}-echo` faces.
 
 ### Changes
 
