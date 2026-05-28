@@ -17,6 +17,7 @@
 * Add `denote` support.
 * Add `jinx` support.
 * Add `symbol-overlay` support.
+* Add `citar` support.
 
 ### Changes
 

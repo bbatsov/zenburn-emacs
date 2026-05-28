@@ -542,6 +542,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(cider-test-error-face ((t (:background ,zenburn-magenta))))
    `(cider-test-success-face ((t (:background ,zenburn-green-2))))
    `(cider-fringe-good-face ((t (:foreground ,zenburn-green+4))))
+;;;;; citar
+   `(citar ((t (:foreground ,zenburn-fg))))
+   `(citar-highlight ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(citar-icon ((t (:foreground ,zenburn-blue))))
 ;;;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,zenburn-cyan))))
    `(circe-my-message-face ((t (:foreground ,zenburn-fg))))
