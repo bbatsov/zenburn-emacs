@@ -470,6 +470,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(corfu-border ((t (:background ,zenburn-bg-2))))
    `(corfu-annotations ((t (:foreground ,zenburn-fg-1))))
    `(corfu-deprecated ((t (:foreground ,zenburn-fg-1 :strike-through t))))
+   `(corfu-popupinfo ((t (:background ,zenburn-bg-05))))
 ;;;;; consult
    `(consult-preview-line ((t (:background ,zenburn-bg+1))))
    `(consult-highlight-match ((t (:foreground ,zenburn-yellow :weight bold))))

@@ -18,6 +18,7 @@
 * Add `jinx` support.
 * Add `symbol-overlay` support.
 * Add `citar` support.
+* Add `corfu-popupinfo` face.
 
 ### Changes
 
