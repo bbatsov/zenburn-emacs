@@ -9,6 +9,7 @@
 * Add `nerd-icons` support.
 * Add `helpful` support.
 * Add `wgrep` support.
+* Add `multiple-cursors` support.
 
 ### Changes
 

@@ -1389,6 +1389,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(paren-face-match ((t (:foreground ,zenburn-cyan :background ,zenburn-bg :weight bold))))
    `(paren-face-mismatch ((t (:foreground ,zenburn-bg :background ,zenburn-magenta :weight bold))))
    `(paren-face-no-match ((t (:foreground ,zenburn-bg :background ,zenburn-red :weight bold))))
+;;;;; multiple-cursors
+   `(mc/cursor-face ((t (:inverse-video nil :background ,zenburn-bg+2 :foreground ,zenburn-fg))))
+   `(mc/cursor-bar-face ((t (:background ,zenburn-fg :height 1))))
+   `(mc/region-face ((t (:inherit region))))
 ;;;;; mingus
    `(mingus-directory-face ((t (:foreground ,zenburn-blue))))
    `(mingus-pausing-face ((t (:foreground ,zenburn-magenta))))
