@@ -575,6 +575,21 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(debbugs-gnu-pending ((t (:foreground ,zenburn-blue))))
    `(debbugs-gnu-stale ((t (:foreground ,zenburn-orange))))
    `(debbugs-gnu-tagged ((t (:foreground ,zenburn-red))))
+;;;;; denote
+   `(denote-faces-title ((t (:foreground ,zenburn-fg :weight bold))))
+   `(denote-faces-subdirectory ((t (:foreground ,zenburn-blue :weight bold))))
+   `(denote-faces-date ((t (:foreground ,zenburn-cyan))))
+   `(denote-faces-time ((t (:foreground ,zenburn-cyan))))
+   `(denote-faces-time-delimiter ((t (:foreground ,zenburn-fg-1))))
+   `(denote-faces-year ((t (:foreground ,zenburn-cyan))))
+   `(denote-faces-keywords ((t (:foreground ,zenburn-magenta :weight bold))))
+   `(denote-faces-extension ((t (:foreground ,zenburn-fg-1))))
+   `(denote-faces-delimiter ((t (:foreground ,zenburn-fg-1))))
+   `(denote-faces-signature ((t (:foreground ,zenburn-orange :weight bold))))
+   `(denote-faces-link ((t (:inherit link))))
+   `(denote-faces-prompt-current-name ((t (:foreground ,zenburn-cyan))))
+   `(denote-faces-prompt-new-name ((t (:foreground ,zenburn-green+2))))
+   `(denote-faces-prompt-old-name ((t (:foreground ,zenburn-red))))
 ;;;;; diff
    ;; Please read (info "(magit)Theming Faces") before changing this.
    `(diff-added          ((t (:background "#335533" :foreground ,zenburn-green))))

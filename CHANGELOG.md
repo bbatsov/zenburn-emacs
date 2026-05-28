@@ -14,6 +14,7 @@
 * Add `pulse` support.
 * Add `treemacs` support.
 * Add `breadcrumb` support.
+* Add `denote` support.
 
 ### Changes
 
