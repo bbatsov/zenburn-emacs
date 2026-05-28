@@ -6,6 +6,7 @@
 
 * Add `lsp-mode` and `lsp-ui` support.
 * Add `hl-todo` support.
+* Add `nerd-icons` support.
 
 ### Changes
 
