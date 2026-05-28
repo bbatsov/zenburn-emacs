@@ -1032,6 +1032,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; helm-swoop
    `(helm-swoop-target-line-face ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(helm-swoop-target-word-face ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+2 :weight bold))))
+;;;;; helpful
+   `(helpful-heading ((t (:foreground ,zenburn-blue :weight bold :height 1.2))))
 ;;;;; highlight-numbers
    `(highlight-numbers-number ((t (:foreground ,zenburn-blue))))
 ;;;;; highlight-symbol
