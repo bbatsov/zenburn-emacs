@@ -1129,6 +1129,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ido-indicator ((t (:foreground ,zenburn-yellow :background ,zenburn-red-4))))
 ;;;;; iedit-mode
    `(iedit-occurrence ((t (:background ,zenburn-bg+2 :weight bold))))
+;;;;; jinx
+   `(jinx-misspelled
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-red) :inherit unspecified))
+      (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
+   `(jinx-highlight ((t (:inherit isearch))))
+   `(jinx-save ((t (:foreground ,zenburn-green+2 :weight bold))))
+   `(jinx-key ((t (:foreground ,zenburn-blue :weight bold))))
+   `(jinx-annotation ((t (:foreground ,zenburn-fg-1))))
 ;;;;; jabber-mode
    `(jabber-roster-user-away ((t (:foreground ,zenburn-green+2))))
    `(jabber-roster-user-online ((t (:foreground ,zenburn-blue-1))))

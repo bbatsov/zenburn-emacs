@@ -15,6 +15,7 @@
 * Add `treemacs` support.
 * Add `breadcrumb` support.
 * Add `denote` support.
+* Add `jinx` support.
 
 ### Changes
 
