@@ -13,6 +13,7 @@
 * Add `eldoc` support (`eldoc-highlight-function-argument`).
 * Add `pulse` support.
 * Add `treemacs` support.
+* Add `breadcrumb` support.
 
 ### Changes
 

@@ -495,6 +495,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    `(bm-fringe-persistent-face ((t (:background ,zenburn-green-2 :foreground ,zenburn-bg))))
    `(bm-persistent-face ((t (:background ,zenburn-green-2 :foreground ,zenburn-bg))))
+;;;;; breadcrumb
+   `(breadcrumb-face ((t (:foreground ,zenburn-fg-1))))
+   `(breadcrumb-imenu-leaf-face ((t (:foreground ,zenburn-blue :weight bold))))
+   `(breadcrumb-imenu-crumbs-face ((t (:foreground ,zenburn-fg-1))))
+   `(breadcrumb-project-leaf-face ((t (:foreground ,zenburn-fg :weight bold))))
+   `(breadcrumb-project-crumbs-face ((t (:foreground ,zenburn-fg-1))))
+   `(breadcrumb-project-base-face ((t (:foreground ,zenburn-fg-1 :weight bold))))
+   `(breadcrumb-imenu-base-face ((t (:foreground ,zenburn-fg-1 :weight bold))))
 ;;;;; calfw
    `(cfw:face-annotation ((t (:foreground ,zenburn-red :inherit cfw:face-day-title))))
    `(cfw:face-day-title ((t nil)))
