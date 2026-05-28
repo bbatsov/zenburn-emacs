@@ -16,6 +16,7 @@
 * Add `breadcrumb` support.
 * Add `denote` support.
 * Add `jinx` support.
+* Add `symbol-overlay` support.
 
 ### Changes
 

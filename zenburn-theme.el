@@ -1846,6 +1846,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(speedbar-tag-face ((t (:foreground ,zenburn-yellow))))
 ;;;;; swiper
    `(swiper-line-face ((t (:underline t))))
+;;;;; symbol-overlay
+   `(symbol-overlay-default-face ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg))))
+   `(symbol-overlay-face-1 ((t (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
+   `(symbol-overlay-face-2 ((t (:background ,zenburn-magenta :foreground ,zenburn-bg))))
+   `(symbol-overlay-face-3 ((t (:background ,zenburn-yellow-2 :foreground ,zenburn-bg))))
+   `(symbol-overlay-face-4 ((t (:background ,zenburn-orange :foreground ,zenburn-bg))))
+   `(symbol-overlay-face-5 ((t (:background ,zenburn-red-3 :foreground ,zenburn-fg))))
+   `(symbol-overlay-face-6 ((t (:background ,zenburn-red-1 :foreground ,zenburn-bg))))
+   `(symbol-overlay-face-7 ((t (:background ,zenburn-green-2 :foreground ,zenburn-fg))))
+   `(symbol-overlay-face-8 ((t (:background ,zenburn-cyan :foreground ,zenburn-bg))))
 ;;;;; sx
    `(sx-custom-button
      ((t (:background ,zenburn-fg :foreground ,zenburn-bg-1
