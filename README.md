@@ -1,5 +1,6 @@
 # zenburn-theme for Emacs
 
+[![CI](https://github.com/bbatsov/zenburn-emacs/actions/workflows/ci.yml/badge.svg)](https://github.com/bbatsov/zenburn-emacs/actions/workflows/ci.yml)
 [![License GPL 3][badge-license]](https://www.gnu.org/licenses/gpl-3.0.txt)
 [![MELPA](https://melpa.org/packages/zenburn-theme-badge.svg)](https://melpa.org/#/zenburn-theme)
 [![MELPA Stable](https://stable.melpa.org/packages/zenburn-theme-badge.svg)](https://stable.melpa.org/#/zenburn-theme)
