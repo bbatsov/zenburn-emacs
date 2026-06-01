@@ -1,0 +1,6 @@
+; -*- mode: emacs-lisp; lexical-binding: t; no-byte-compile: t -*-
+
+(eldev-use-package-archive 'gnu)
+(eldev-use-package-archive 'melpa)
+
+(eldev-add-extra-dependencies 'test 'buttercup)
