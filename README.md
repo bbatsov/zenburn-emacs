@@ -140,9 +140,7 @@ settings **before** loading `zenburn-theme`:
 (setq zenburn-scale-outline-headlines t)
 ```
 
-The screenshot above shows the default setting with no scaled or
-variable-pitch fonts. With scaled headings and variable-pitch fonts it looks
-like this:
+With these settings, an Org buffer with headings looks like this:
 
 ![Scaled screenshot](screenshots/scaled.png)
 
