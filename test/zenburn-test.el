@@ -189,7 +189,15 @@ frame-side face recomputation (which is unreliable in batch)."
            cider-stacktrace-fn-face cider-fringe-bad-face
            cider-reader-conditional-face cider-debug-prompt-face
            nrepl-message-1-face nrepl-message-8-face)
-    (inf-ruby inf-ruby-result-overlay-face))
+    (inf-ruby inf-ruby-result-overlay-face)
+    (vundo vundo-node vundo-stem vundo-branch-stem vundo-highlight
+           vundo-saved vundo-last-saved vundo-diff-highlight)
+    (easy-kill easy-kill-selection easy-kill-origin)
+    (copilot copilot-overlay-face)
+    (mistty mistty-fringe-face)
+    (keycast keycast-key keycast-command)
+    (dictionary dictionary-word-entry-face dictionary-word-definition-face
+                dictionary-reference-face dictionary-button-face))
   "Alist of (PACKAGE . FACES) the theme is expected to cover.")
 
 (describe "package face coverage"
