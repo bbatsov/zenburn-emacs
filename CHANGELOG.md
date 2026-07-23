@@ -2,6 +2,11 @@
 
 ## master (unreleased)
 
+### New features
+
+* [#387](https://github.com/bbatsov/zenburn-emacs/pull/387): Add face support for asciidoc-mode, vundo, easy-kill, clojure-mode, copilot, git-timemachine, haskell-mode, keycast, dictionary, mistty, erlang and inf-ruby.
+* [#387](https://github.com/bbatsov/zenburn-emacs/pull/387): Deepen cider coverage with the REPL, stacktrace and inline error faces, plus faces for the nREPL message log.
+
 ## 2.10.0 (2026-06-01)
 
 ### New features
