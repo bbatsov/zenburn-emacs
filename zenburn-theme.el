@@ -695,6 +695,8 @@ the just-introduced bindings."
    `(circe-server-face ((t (:foreground ,zenburn-green))))
    `(circe-topic-diff-new-face ((t (:foreground ,zenburn-orange :weight bold))))
    `(circe-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
+;;;;; copilot
+   `(copilot-overlay-face ((t (:foreground ,zenburn-fg-1 :slant italic))))
 ;;;;; coq
    `(coq-solve-tactics-face ((t (:foreground nil :inherit font-lock-constant-face))))
 ;;;;; ctable
@@ -723,6 +725,11 @@ the just-introduced bindings."
    `(denote-faces-prompt-current-name ((t (:foreground ,zenburn-cyan))))
    `(denote-faces-prompt-new-name ((t (:foreground ,zenburn-green+2))))
    `(denote-faces-prompt-old-name ((t (:foreground ,zenburn-red))))
+;;;;; dictionary
+   `(dictionary-word-entry-face ((t (:foreground ,zenburn-orange :weight bold))))
+   `(dictionary-word-definition-face ((t (:foreground ,zenburn-fg))))
+   `(dictionary-reference-face ((t (:inherit link))))
+   `(dictionary-button-face ((t (:inherit link))))
 ;;;;; diff
    ;; Please read (info "(magit)Theming Faces") before changing this.
    `(diff-added          ((t (:background ,zenburn-diff-added-bg          :foreground ,zenburn-diff-added-fg))))
@@ -839,6 +846,9 @@ the just-introduced bindings."
    `(doom-modeline-battery-error ((t (:inherit error))))
    `(doom-modeline-time ((t (:foreground ,zenburn-bg+3))))
    `(doom-modeline-compilation ((t (:foreground ,zenburn-orange :weight bold))))
+;;;;; easy-kill
+   `(easy-kill-selection ((t (:background ,zenburn-bg-1 :extend t))))
+   `(easy-kill-origin ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
 ;;;;; eglot
    `(eglot-highlight-symbol-face ((t (:background ,zenburn-bg+2 :weight bold))))
    `(eglot-diagnostic-tag-unnecessary-face ((t (:foreground ,zenburn-green :underline (:style wave :color ,zenburn-bg+3)))))
@@ -1262,6 +1272,9 @@ the just-introduced bindings."
    `(js2-function-call ((t (:foreground ,zenburn-cyan))))
    `(js2-private-member ((t (:foreground ,zenburn-blue-1))))
    `(js2-keywords ((t (:foreground ,zenburn-magenta))))
+;;;;; keycast
+   `(keycast-key ((t (:foreground ,zenburn-bg :background ,zenburn-blue :weight bold))))
+   `(keycast-command ((t (:weight bold))))
 ;;;;; ledger-mode
    `(ledger-font-payee-uncleared-face ((t (:foreground ,zenburn-red-1 :weight bold))))
    `(ledger-font-payee-cleared-face ((t (:foreground ,zenburn-fg :weight normal))))
@@ -1487,6 +1500,8 @@ the just-introduced bindings."
    `(paren-face-match ((t (:foreground ,zenburn-cyan :background ,zenburn-bg :weight bold))))
    `(paren-face-mismatch ((t (:foreground ,zenburn-bg :background ,zenburn-magenta :weight bold))))
    `(paren-face-no-match ((t (:foreground ,zenburn-bg :background ,zenburn-red :weight bold))))
+;;;;; mistty
+   `(mistty-fringe-face ((t (:foreground ,zenburn-bg+2))))
 ;;;;; multiple-cursors
    `(mc/cursor-face ((t (:inverse-video nil :background ,zenburn-bg+2 :foreground ,zenburn-fg))))
    `(mc/cursor-bar-face ((t (:background ,zenburn-fg :height 1))))
@@ -2035,6 +2050,14 @@ the just-introduced bindings."
    `(vr/match-separator-face ((t (:foreground ,zenburn-red :weight bold))))
 ;;;;; volatile-highlights
    `(vhl/default-face ((t (:background ,zenburn-bg-05))))
+;;;;; vundo
+   `(vundo-node ((t (:foreground ,zenburn-fg-1))))
+   `(vundo-stem ((t (:foreground ,zenburn-bg+3))))
+   `(vundo-branch-stem ((t (:foreground ,zenburn-fg-1))))
+   `(vundo-highlight ((t (:foreground ,zenburn-red-1 :weight bold))))
+   `(vundo-saved ((t (:foreground ,zenburn-green+2))))
+   `(vundo-last-saved ((t (:foreground ,zenburn-green+2 :weight bold))))
+   `(vundo-diff-highlight ((t (:foreground ,zenburn-orange :weight bold))))
 ;;;;; web-mode
    `(web-mode-builtin-face ((t (:inherit ,font-lock-builtin-face))))
    `(web-mode-comment-face ((t (:inherit ,font-lock-comment-face))))
