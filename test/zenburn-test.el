@@ -182,7 +182,14 @@ frame-side face recomputation (which is unreliable in batch)."
                    asciidoc-admonition-important-label-face
                    asciidoc-admonition-caution-label-face
                    asciidoc-admonition-warning-label-face
-                   asciidoc-admonition-warning-face))
+                   asciidoc-admonition-warning-face)
+    (cider cider-repl-prompt-face cider-repl-stdout-face
+           cider-repl-stderr-face cider-error-highlight-face
+           cider-warning-highlight-face cider-stacktrace-error-class-face
+           cider-stacktrace-fn-face cider-fringe-bad-face
+           cider-reader-conditional-face cider-debug-prompt-face
+           nrepl-message-1-face nrepl-message-8-face)
+    (inf-ruby inf-ruby-result-overlay-face))
   "Alist of (PACKAGE . FACES) the theme is expected to cover.")
 
 (describe "package face coverage"
