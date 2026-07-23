@@ -695,6 +695,10 @@ the just-introduced bindings."
    `(circe-server-face ((t (:foreground ,zenburn-green))))
    `(circe-topic-diff-new-face ((t (:foreground ,zenburn-orange :weight bold))))
    `(circe-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
+;;;;; clojure-mode
+   `(clojure-keyword-face ((t (:foreground ,zenburn-cyan))))
+   `(clojure-character-face ((t (:inherit font-lock-string-face))))
+   `(clojure-discard-face ((t (:inherit font-lock-comment-face))))
 ;;;;; copilot
    `(copilot-overlay-face ((t (:foreground ,zenburn-fg-1 :slant italic))))
 ;;;;; coq
@@ -931,6 +935,13 @@ the just-introduced bindings."
    `(erc-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
    `(erc-timestamp-face ((t (:foreground ,zenburn-green+4))))
    `(erc-underline-face ((t (:underline t))))
+;;;;; erlang
+   `(erlang-font-lock-exported-function-name-face ((t (:inherit font-lock-function-name-face :weight bold))))
+   `(erlang-edoc-heading ((t (:foreground ,zenburn-orange :weight bold))))
+   `(erlang-edoc-tag ((t (:foreground ,zenburn-fg-1))))
+   `(erlang-edoc-macro ((t (:inherit font-lock-preprocessor-face))))
+   `(erlang-edoc-verbatim ((t (:foreground ,zenburn-green+1))))
+   `(erlang-edoc-todo ((t (:inherit hl-todo))))
 ;;;;; eros
    `(eros-result-overlay-face ((t (:background unspecified))))
 ;;;;; ert
@@ -1062,6 +1073,10 @@ the just-introduced bindings."
    `(git-gutter-fr:modified ((t (:foreground ,zenburn-magenta :weight bold))))
 ;;;;; git-rebase
    `(git-rebase-hash ((t (:foreground, zenburn-orange))))
+;;;;; git-timemachine
+   `(git-timemachine-commit ((t (:foreground ,zenburn-orange :weight bold))))
+   `(git-timemachine-minibuffer-author-face ((t (:foreground ,zenburn-orange))))
+   `(git-timemachine-minibuffer-detail-face ((t (:foreground ,zenburn-fg-1))))
 ;;;;; gnus
    `(gnus-group-mail-1 ((t (:weight bold :inherit gnus-group-mail-1-empty))))
    `(gnus-group-mail-1-empty ((t (:inherit gnus-group-news-1-empty))))
@@ -1134,6 +1149,30 @@ the just-introduced bindings."
 ;;;;; hackernews
    '(hackernews-comment-count ((t (:inherit link-visited :underline nil))))
    '(hackernews-link          ((t (:inherit link         :underline nil))))
+;;;;; haskell-mode
+   `(haskell-keyword-face ((t (:inherit font-lock-keyword-face))))
+   `(haskell-type-face ((t (:inherit font-lock-type-face))))
+   `(haskell-constructor-face ((t (:inherit font-lock-type-face))))
+   `(haskell-definition-face ((t (:inherit font-lock-function-name-face))))
+   `(haskell-operator-face ((t (:foreground ,zenburn-fg))))
+   `(haskell-pragma-face ((t (:inherit font-lock-preprocessor-face))))
+   `(haskell-quasi-quote-face ((t (:inherit font-lock-string-face))))
+   `(haskell-literate-comment-face ((t (:inherit font-lock-comment-face))))
+   `(haskell-hole-face ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(haskell-error-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-red) :inherit unspecified))
+      (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
+   `(haskell-warning-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,zenburn-orange) :inherit unspecified))
+      (t (:foreground ,zenburn-orange :weight bold :underline t))))
+   `(haskell-interactive-face-prompt ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(haskell-interactive-face-prompt-cont ((t (:foreground ,zenburn-yellow-2))))
+   `(haskell-interactive-face-compile-error ((t (:foreground ,zenburn-red :weight bold))))
+   `(haskell-interactive-face-compile-warning ((t (:foreground ,zenburn-orange :weight bold))))
+   `(haskell-interactive-face-result ((t (:foreground ,zenburn-fg))))
+   `(haskell-interactive-face-garbage ((t (:foreground ,zenburn-fg-1))))
 ;;;;; helm
    `(helm-header
      ((t (:foreground ,zenburn-green

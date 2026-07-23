@@ -197,7 +197,22 @@ frame-side face recomputation (which is unreliable in batch)."
     (mistty mistty-fringe-face)
     (keycast keycast-key keycast-command)
     (dictionary dictionary-word-entry-face dictionary-word-definition-face
-                dictionary-reference-face dictionary-button-face))
+                dictionary-reference-face dictionary-button-face)
+    (clojure-mode clojure-keyword-face clojure-character-face
+                  clojure-discard-face)
+    (haskell-mode haskell-keyword-face haskell-type-face
+                  haskell-constructor-face haskell-definition-face
+                  haskell-operator-face haskell-pragma-face
+                  haskell-hole-face haskell-error-face haskell-warning-face
+                  haskell-interactive-face-prompt
+                  haskell-interactive-face-compile-error
+                  haskell-interactive-face-result)
+    (erlang erlang-font-lock-exported-function-name-face
+            erlang-edoc-heading erlang-edoc-tag erlang-edoc-macro
+            erlang-edoc-verbatim erlang-edoc-todo)
+    (git-timemachine git-timemachine-commit
+                     git-timemachine-minibuffer-author-face
+                     git-timemachine-minibuffer-detail-face))
   "Alist of (PACKAGE . FACES) the theme is expected to cover.")
 
 (describe "package face coverage"
