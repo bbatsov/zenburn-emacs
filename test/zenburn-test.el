@@ -166,4 +166,37 @@ frame-side face recomputation (which is unreliable in batch)."
       (zenburn-test--reload))
     (expect (zenburn-test--face-attr 'default :background) :to-equal "#123456")))
 
+;;; Package face coverage
+;;
+;; One entry per package: representative faces that the theme must set.
+;; Guards against sections silently disappearing during refactors.
+
+(defconst zenburn-test--package-faces
+  '((asciidoc-mode asciidoc-document-title-face asciidoc-title-1-face
+                   asciidoc-title-5-face asciidoc-markup-face
+                   asciidoc-code-face asciidoc-link-face asciidoc-url-face
+                   asciidoc-metadata-key-face asciidoc-highlight-face
+                   asciidoc-admonition-note-label-face
+                   asciidoc-admonition-note-face
+                   asciidoc-admonition-tip-label-face
+                   asciidoc-admonition-important-label-face
+                   asciidoc-admonition-caution-label-face
+                   asciidoc-admonition-warning-label-face
+                   asciidoc-admonition-warning-face))
+  "Alist of (PACKAGE . FACES) the theme is expected to cover.")
+
+(describe "package face coverage"
+  (before-all
+    (zenburn-test--reload))
+  (after-all
+    (disable-theme 'zenburn))
+
+  (dolist (entry zenburn-test--package-faces)
+    (let ((package (car entry))
+          (faces (cdr entry)))
+      (it (format "themes %s" package)
+        (dolist (face faces)
+          (expect (assq 'zenburn (get face 'theme-face))
+                  :to-be-truthy))))))
+
 ;;; zenburn-test.el ends here
