@@ -1,6 +1,6 @@
 # Changelog
 
-## master (unreleased)
+## 2.11.0 (2026-07-26)
 
 ### New features
 
