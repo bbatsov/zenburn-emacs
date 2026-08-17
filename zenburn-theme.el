@@ -225,21 +225,19 @@ Bindings are introduced in order: positional palette first (from
 reference positional palette names as symbols, which resolve against
 the just-introduced bindings."
   (declare (indent 0))
-  `(let* (,@(mapcar (lambda (cons)
-                      (list (intern (car cons)) (cdr cons)))
-                    (append zenburn-default-colors-alist
-                            zenburn-override-colors-alist))
-          ,@(mapcar (lambda (cons)
-                      (list (intern (car cons)) (cdr cons)))
-                    (append zenburn-default-semantic-colors-alist
-                            zenburn-override-semantic-colors-alist)))
-     ;; Silence the byte compiler.
-     (ignore ,@(mapcar (lambda (cons) (intern (car cons)))
-                       (append zenburn-default-colors-alist
-                               zenburn-override-colors-alist
-                               zenburn-default-semantic-colors-alist
-                               zenburn-override-semantic-colors-alist)))
-     ,@body))
+  (let (sym val binds vars)
+    (dolist (cons (append zenburn-default-colors-alist
+                          zenburn-override-colors-alist
+                          zenburn-default-semantic-colors-alist
+                          zenburn-override-semantic-colors-alist))
+      (setq sym (intern (car cons))
+            val (cdr cons))
+      (push (list sym val) binds)
+      (push sym vars))
+    `(let* (,@(nreverse binds))
+       ;; Silence the byte compiler.
+       (ignore ,@(nreverse vars))
+       ,@body)))
 
 ;;; Theme Faces
 (zenburn-with-color-variables
