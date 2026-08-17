@@ -233,6 +233,12 @@ the just-introduced bindings."
                       (list (intern (car cons)) (cdr cons)))
                     (append zenburn-default-semantic-colors-alist
                             zenburn-override-semantic-colors-alist)))
+     ;; Silence the byte compiler.
+     (ignore ,@(mapcar (lambda (cons) (intern (car cons)))
+                       (append zenburn-default-colors-alist
+                               zenburn-override-colors-alist
+                               zenburn-default-semantic-colors-alist
+                               zenburn-override-semantic-colors-alist)))
      ,@body))
 
 ;;; Theme Faces
