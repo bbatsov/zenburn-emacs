@@ -2073,6 +2073,28 @@ the just-introduced bindings."
                                       :background ,zenburn-blue))))
    `(term-color-white ((t (:foreground ,zenburn-fg
                                        :background ,zenburn-fg-1))))
+   ;; The bright faces exist since Emacs 28. Without them the bright half of
+   ;; the palette falls back to stock ANSI. Each bright is one palette step above
+   ;; its non-bright counterpart, so the second tier reads as emphasis without
+   ;; leaving Zenburn's low-contrast range.
+   `(term-color-bright-black ((t (:foreground ,zenburn-bg+3
+                                              :background ,zenburn-bg+3))))
+   `(term-color-bright-red ((t (:foreground ,zenburn-red
+                                            :background ,zenburn-red))))
+   `(term-color-bright-green ((t (:foreground ,zenburn-green+1
+                                              :background ,zenburn-green+1))))
+   `(term-color-bright-yellow ((t (:foreground ,zenburn-yellow-1
+                                               :background ,zenburn-yellow-1))))
+   `(term-color-bright-blue ((t (:foreground ,zenburn-blue
+                                             :background ,zenburn-blue))))
+   ;; Zenburn has a single magenta, so the bright slot borrows red+1 rather
+   ;; than repeating `zenburn-magenta' and losing the distinction.
+   `(term-color-bright-magenta ((t (:foreground ,zenburn-red+1
+                                                :background ,zenburn-red+1))))
+   `(term-color-bright-cyan ((t (:foreground ,zenburn-blue+2
+                                             :background ,zenburn-blue+2))))
+   `(term-color-bright-white ((t (:foreground ,zenburn-fg+1
+                                              :background ,zenburn-fg+1))))
    '(term-default-fg-color ((t (:inherit term-color-white))))
    '(term-default-bg-color ((t (:inherit term-color-black))))
 ;;;;; undo-tree
