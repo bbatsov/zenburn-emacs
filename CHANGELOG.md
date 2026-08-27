@@ -1,5 +1,11 @@
 # Changelog
 
+## master (unreleased)
+
+### New features
+
+* Add the eight `term-color-bright-*` faces (Emacs 28+).
+
 ## 2.11.0 (2026-07-26)
 
 ### New features
