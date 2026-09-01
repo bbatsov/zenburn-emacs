@@ -367,6 +367,13 @@ the talking.  Anything arriving here new should be argued for.")
               (rx-to-string '(seq ";;; " (1+ nonl) " --- " (1+ nonl)
                                   "-*- lexical-binding: t" (opt ";") " -*-")))))
 
+  (it "keeps the summary to MELPA's conventions"
+    (let ((summary (with-temp-buffer
+                     (insert-file-contents zenburn-test--source-file)
+                     (buffer-substring-no-properties (point-min) (line-end-position)))))
+      (expect summary :not :to-match "for Emacs")
+      (expect summary :not :to-match (rx "." (0+ blank) "-*-"))))
+
   (it "declares the headers a package needs"
     (let ((text (with-temp-buffer
                   (insert-file-contents zenburn-test--source-file)
