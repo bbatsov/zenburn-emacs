@@ -1,5 +1,12 @@
 # Changelog
 
+## master (unreleased)
+
+### Bug fixes
+
+* [#393](https://github.com/bbatsov/zenburn-emacs/pull/393): Make face text readable on its own background: `whitespace-indentation` and `whitespace-space-after-tab` were red on yellow at 1.95:1, and `show-paren-mismatch` red on a grey lift at 2.35:1.
+* [#393](https://github.com/bbatsov/zenburn-emacs/pull/393): Give `ediff-fine-diff-B` dark text, its background being the one light enough to need it.
+
 ## 2.11.0 (2026-07-26)
 
 ### New features
