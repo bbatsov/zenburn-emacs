@@ -872,7 +872,7 @@ the just-introduced bindings."
    `(ediff-even-diff-C ((t (:background ,zenburn-bg+1))))
    `(ediff-fine-diff-A ((t (:foreground ,zenburn-fg :background ,zenburn-red-2 :weight bold))))
    `(ediff-fine-diff-Ancestor ((t (:foreground ,zenburn-fg :background ,zenburn-red-2 :weight bold))))
-   `(ediff-fine-diff-B ((t (:foreground ,zenburn-fg :background ,zenburn-green :weight bold))))
+   `(ediff-fine-diff-B ((t (:foreground ,zenburn-bg :background ,zenburn-green :weight bold))))
    `(ediff-fine-diff-C ((t (:foreground ,zenburn-fg :background ,zenburn-blue-3 :weight bold ))))
    `(ediff-odd-diff-A ((t (:background ,zenburn-bg+2))))
    `(ediff-odd-diff-Ancestor ((t (:background ,zenburn-bg+2))))
@@ -1858,7 +1858,7 @@ the just-introduced bindings."
    `(sh-heredoc     ((t (:foreground ,zenburn-yellow :weight bold))))
    `(sh-quoted-exec ((t (:foreground ,zenburn-red))))
 ;;;;; show-paren
-   `(show-paren-mismatch ((t (:foreground ,zenburn-red+1 :background ,zenburn-bg+3 :weight bold))))
+   `(show-paren-mismatch ((t (:foreground ,zenburn-fg+1 :background ,zenburn-red-4 :weight bold))))
    `(show-paren-match ((t (:foreground ,zenburn-fg :background ,zenburn-bg+3 :weight bold))))
 ;;;;; smart-mode-line
    ;; use (setq sml/theme nil) to enable Zenburn for sml
@@ -1880,7 +1880,7 @@ the just-introduced bindings."
    `(sml/charging ((t (:foreground ,zenburn-green+4))))
    `(sml/discharging ((t (:foreground ,zenburn-red+1))))
 ;;;;; smartparens
-   `(sp-show-pair-mismatch-face ((t (:foreground ,zenburn-red+1 :background ,zenburn-bg+3 :weight bold))))
+   `(sp-show-pair-mismatch-face ((t (:foreground ,zenburn-fg+1 :background ,zenburn-red-4 :weight bold))))
    `(sp-show-pair-match-face ((t (:background ,zenburn-bg+3 :weight bold))))
 ;;;;; smerge
    `(smerge-base ((t (:background "#555511" :extend t))))
@@ -2136,9 +2136,9 @@ the just-introduced bindings."
    `(whitespace-trailing ((t (:background ,zenburn-red))))
    `(whitespace-line ((t (:background ,zenburn-bg :foreground ,zenburn-magenta))))
    `(whitespace-space-before-tab ((t (:background ,zenburn-orange :foreground ,zenburn-orange))))
-   `(whitespace-indentation ((t (:background ,zenburn-yellow :foreground ,zenburn-red))))
+   `(whitespace-indentation ((t (:background ,zenburn-yellow :foreground ,zenburn-bg))))
    `(whitespace-empty ((t (:background ,zenburn-yellow))))
-   `(whitespace-space-after-tab ((t (:background ,zenburn-yellow :foreground ,zenburn-red))))
+   `(whitespace-space-after-tab ((t (:background ,zenburn-yellow :foreground ,zenburn-bg))))
 ;;;;; wanderlust
    `(wl-highlight-folder-few-face ((t (:foreground ,zenburn-red-2))))
    `(wl-highlight-folder-many-face ((t (:foreground ,zenburn-red-1))))

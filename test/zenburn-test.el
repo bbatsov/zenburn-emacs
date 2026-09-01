@@ -20,6 +20,43 @@
   (add-to-list 'custom-theme-load-path
                (expand-file-name ".." dir)))
 
+(defconst zenburn-test--source-file
+  (expand-file-name
+   "../zenburn-theme.el"
+   (file-name-directory (or load-file-name buffer-file-name default-directory)))
+  "Path to the theme source, for the checks that read it as text.")
+
+(defun zenburn-test--hex-p (color)
+  "Return non-nil if COLOR is a six-digit hex string.
+A few faces use named colors such as \"grey70\", which we can't measure
+without a display, so they sit outside the contrast checks."
+  (and (stringp color) (string-match-p "\\`#[0-9a-fA-F]\\{6\\}\\'" color)))
+
+(defun zenburn-test--luminance (hex)
+  "Return the WCAG relative luminance of the color HEX."
+  (let ((channels (mapcar
+                   (lambda (offset)
+                     (let ((v (/ (string-to-number
+                                  (substring hex offset (+ offset 2)) 16)
+                                 255.0)))
+                       (if (<= v 0.04045) (/ v 12.92)
+                         (expt (/ (+ v 0.055) 1.055) 2.4))))
+                   '(1 3 5))))
+    (+ (* 0.2126 (nth 0 channels))
+       (* 0.7152 (nth 1 channels))
+       (* 0.0722 (nth 2 channels)))))
+
+(defun zenburn-test--contrast (a b)
+  "Return the WCAG contrast ratio between the colors A and B."
+  (let* ((la (zenburn-test--luminance a))
+         (lb (zenburn-test--luminance b))
+         (lighter (max la lb)) (darker (min la lb)))
+    (/ (+ lighter 0.05) (+ darker 0.05))))
+
+(defun zenburn-test--color (name)
+  "Return NAME's value from the default palette."
+  (cdr (assoc name zenburn-default-colors-alist)))
+
 (defun zenburn-test--reload ()
   "Disable and (re-)load the Zenburn theme.
 Reloading re-evaluates the theme file, which picks up any let-bound
@@ -231,5 +268,129 @@ frame-side face recomputation (which is unreliable in batch)."
         (dolist (face faces)
           (expect (assq 'zenburn (get face 'theme-face))
                   :to-be-truthy))))))
+;;; Text has to be readable on its own background
+
+(defconst zenburn-test--legibility-floor 3.0
+  "Contrast a face's own text must reach against its own background.")
+
+(defconst zenburn-test--legibility-exceptions
+  '(;; the cursor's background is the cursor, not a backdrop for text
+    cursor
+    ;; fringe and margin indicators, drawn as a glyph or a bar rather than
+    ;; text on a background
+    diff-hl-change diff-hl-delete diff-hl-insert
+    bm-fringe-persistent-face bm-persistent-face ctbl:face-continue-bar
+    ;; deliberately receding chrome
+    line-number mode-line-inactive hydra-face-amaranth
+    ;; diff and merge tints, where the background carries the meaning
+    diff-added diff-removed diff-refine-changed smerge-refined-changed
+    ediff-fine-diff-A ediff-fine-diff-Ancestor ediff-fine-diff-C
+    isearch-group-1 neo-vc-unlocked-changes-face)
+  "Faces allowed below `zenburn-test--legibility-floor'.
+Each is a deliberate choice rather than an oversight: a cursor, a fringe
+glyph, chrome that is supposed to recede, or a tint whose background does
+the talking.  Anything arriving here new should be argued for.")
+
+(describe "text on its own background"
+  (before-each (zenburn-test--reload))
+
+  (it "stays readable"
+    (let ((illegible '()))
+      (mapatoms
+       (lambda (sym)
+         (let ((fg (zenburn-test--face-attr sym :foreground))
+               (bg (zenburn-test--face-attr sym :background)))
+           (when (and (zenburn-test--hex-p fg) (zenburn-test--hex-p bg)
+                      ;; ansi and term color faces set both alike on purpose,
+                      ;; and so do the whitespace block markers, which mark a
+                      ;; region with a color rather than a glyph
+                      (not (string-equal (upcase fg) (upcase bg)))
+                      (not (string-match-p "\\`\\(ansi\\|term\\)-color-" (symbol-name sym)))
+                      ;; the two foregrounds Zenburn hands to de-emphasized text
+                      (not (member (upcase fg)
+                                   (list (upcase (zenburn-test--color "zenburn-fg-1"))
+                                         (upcase (zenburn-test--color "zenburn-fg-05")))))
+                      (not (memq sym zenburn-test--legibility-exceptions))
+                      (< (zenburn-test--contrast fg bg) zenburn-test--legibility-floor))
+             (push (list sym (zenburn-test--contrast fg bg)) illegible)))))
+      (expect illegible :to-equal '()))))
+
+;;; The shape of the source itself
+
+(defun zenburn-test--face-body ()
+  "Return the part of the source holding the face definitions."
+  (with-temp-buffer
+    (insert-file-contents zenburn-test--source-file)
+    (goto-char (point-min))
+    (search-forward "custom-theme-set-faces")
+    (buffer-substring-no-properties (point) (point-max))))
+
+(defun zenburn-test--matches (regexp string &optional group)
+  "Return every GROUP match of REGEXP in STRING."
+  (let ((start 0) (found '()))
+    (while (string-match regexp string start)
+      (push (match-string (or group 1) string) found)
+      (setq start (match-end 0)))
+    (nreverse found)))
+
+(describe "the source"
+  (it "defines each face exactly once"
+    (let* ((faces (zenburn-test--matches
+                   "`(\\([^ ()]+\\) ((t (" (zenburn-test--face-body)))
+           (seen (make-hash-table :test 'equal)) (dupes '()))
+      (dolist (face faces)
+        (when (gethash face seen) (push face dupes))
+        (puthash face t seen))
+      (expect (delete-dups dupes) :to-equal '())))
+
+  (it "only refers to colors the palette defines"
+    (let* ((defined (append (mapcar #'car zenburn-default-colors-alist)
+                            (mapcar #'car zenburn-default-semantic-colors-alist)))
+           (used (delete-dups (zenburn-test--matches
+                               ",\\(zenburn-[a-z0-9+-]+\\)" (zenburn-test--face-body)))))
+      (expect (seq-remove (lambda (name)
+                            (or (member name defined)
+                                ;; the theme also binds a few non-palette locals
+                                (string-prefix-p "zenburn-test" name)))
+                          used)
+              :to-equal '()))))
+
+;;; Package headers
+
+(describe "package headers"
+  (it "opens with a summary and a lexical-binding cookie"
+    (let ((first-line (with-temp-buffer
+                        (insert-file-contents zenburn-test--source-file)
+                        (buffer-substring-no-properties
+                         (point-min) (line-end-position)))))
+      (expect first-line :to-match
+              (rx-to-string '(seq ";;; " (1+ nonl) " --- " (1+ nonl)
+                                  "-*- lexical-binding: t" (opt ";") " -*-")))))
+
+  (it "declares the headers a package needs"
+    (let ((text (with-temp-buffer
+                  (insert-file-contents zenburn-test--source-file)
+                  (buffer-string))))
+      ;; no Package-Requires here: the theme has never declared one, so
+      ;; there is no stated minimum Emacs version to check against
+      (dolist (header '("Author" "URL" "Version"))
+        (expect (string-match-p (concat "^;; " header ": ") text) :not :to-be nil)))))
+
+;;; Emphasis restraint
+
+(describe "emphasis"
+  (before-each (zenburn-test--reload))
+
+  (it "never stacks three emphasis attributes on one face"
+    (let ((overwrought '()))
+      (mapatoms
+       (lambda (sym)
+         (when (assoc 'zenburn (get sym 'theme-face))
+           (when (> (seq-count (lambda (attr) (zenburn-test--face-attr sym attr))
+                               '(:weight :slant :underline :box :overline :strike-through))
+                    2)
+             (unless (memq sym '(cscope-separator-face))
+               (push sym overwrought))))))
+      (expect overwrought :to-equal '()))))
 
 ;;; zenburn-test.el ends here
