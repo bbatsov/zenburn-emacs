@@ -822,7 +822,7 @@ the just-introduced bindings."
    `(doom-modeline-notification ((t (:foreground ,zenburn-orange))))
    `(doom-modeline-unread-number ((t (:foreground ,zenburn-fg :weight bold))))
    `(doom-modeline-bar ((t (:background ,zenburn-yellow))))
-   `(doom-modeline-bar-inactive ((t (:background nil))))
+   `(doom-modeline-bar-inactive ((t (:background unspecified))))
    `(doom-modeline-evil-emacs-state ((t (:foreground ,zenburn-magenta :weight bold))))
    `(doom-modeline-evil-insert-state ((t (:foreground ,zenburn-green :weight bold))))
    `(doom-modeline-evil-motion-state ((t (:foreground ,zenburn-blue :weight bold))))
