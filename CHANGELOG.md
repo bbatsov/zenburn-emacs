@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+### New features
+
+* [#396](https://github.com/bbatsov/zenburn-emacs/pull/396): Theme about 125 more built-in faces whose defaults hardcode colors from outside the palette: `help-key-binding`, the Customize state tags, `proced`, `package`, `todo-mode`, `icomplete`, the Emacs 31 `elisp-*` faces and more.
+
 ### Bug fixes
 
 * [#393](https://github.com/bbatsov/zenburn-emacs/pull/393): Make face text readable on its own background: `whitespace-indentation` and `whitespace-space-after-tab` were red on yellow at 1.95:1, and `show-paren-mismatch` red on a grey lift at 2.35:1.
