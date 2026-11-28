@@ -281,6 +281,12 @@ the just-introduced bindings."
    `(widget-single-line-field ((t (:background ,zenburn-bg+1))))
    `(widget-button-pressed ((t (:foreground ,zenburn-red))))
    `(widget-documentation ((t (:foreground ,zenburn-fg-05))))
+   `(homoglyph ((t (:foreground ,zenburn-yellow))))
+   `(scroll-bar ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg-1))))
+   `(shadow ((t (:foreground ,zenburn-fg-05))))
+   `(window-divider ((t (:foreground ,zenburn-bg+3))))
+   `(window-divider-first-pixel ((t (:foreground ,zenburn-bg+3))))
+   `(window-divider-last-pixel ((t (:foreground ,zenburn-bg+3))))
 ;;;;; ansi-colors
    `(ansi-color-black ((t (:foreground ,zenburn-bg
                                        :background ,zenburn-bg-1))))
@@ -298,6 +304,14 @@ the just-introduced bindings."
                                       :background ,zenburn-blue))))
    `(ansi-color-white ((t (:foreground ,zenburn-fg
                                        :background ,zenburn-fg-1))))
+   `(ansi-color-bright-black ((t (:foreground ,zenburn-bg+3 :background ,zenburn-bg+3))))
+   `(ansi-color-bright-blue ((t (:foreground ,zenburn-blue+1 :background ,zenburn-blue+1))))
+   `(ansi-color-bright-cyan ((t (:foreground ,zenburn-blue+2 :background ,zenburn-blue+2))))
+   `(ansi-color-bright-green ((t (:foreground ,zenburn-green+3 :background ,zenburn-green+3))))
+   `(ansi-color-bright-magenta ((t (:foreground ,zenburn-magenta :background ,zenburn-magenta))))
+   `(ansi-color-bright-red ((t (:foreground ,zenburn-red+1 :background ,zenburn-red+1))))
+   `(ansi-color-bright-white ((t (:foreground ,zenburn-fg+1 :background ,zenburn-fg+1))))
+   `(ansi-color-bright-yellow ((t (:foreground ,zenburn-yellow :background ,zenburn-yellow))))
 ;;;;; compilation
    `(compilation-column-number ((t (:foreground ,zenburn-yellow))))
    `(compilation-error ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
@@ -334,6 +348,13 @@ the just-introduced bindings."
    `(custom-set ((t (:foreground ,zenburn-blue))))
    `(custom-themed ((t (:foreground ,zenburn-cyan))))
    `(custom-variable-obsolete ((t (:foreground ,zenburn-fg-1))))
+   `(custom-button ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1
+                                    :box (:line-width 2 :color ,zenburn-bg+3 :style released-button)))))
+   `(custom-button-mouse ((t (:foreground ,zenburn-fg :background ,zenburn-bg+2
+                                          :box (:line-width 2 :color ,zenburn-bg+3 :style released-button)))))
+   `(custom-button-pressed ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1
+                                            :box (:line-width 2 :color ,zenburn-bg+3 :style pressed-button)))))
+   `(custom-group-tag-1 ((t (:foreground ,zenburn-magenta :weight bold :height 1.2))))
 ;;;;; display-fill-column-indicator
    `(fill-column-indicator ((t :foreground ,zenburn-bg-05 :weight semilight)))
 ;;;;; eldoc
@@ -343,6 +364,14 @@ the just-introduced bindings."
    '(eww-valid-certificate   ((t (:inherit success))))
    `(eww-form-file ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1
                         :box (:line-width -1 :color ,zenburn-fg-1)))))
+   `(eww-form-checkbox ((t (:foreground ,zenburn-blue :weight bold))))
+   `(eww-form-select ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1
+                                      :box (:line-width -1 :color ,zenburn-bg+3)))))
+   `(eww-form-submit ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1
+                                      :box (:line-width -1 :color ,zenburn-fg-1)))))
+   `(eww-form-text ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1
+                                    :box (:line-width -1 :color ,zenburn-bg+3)))))
+   `(eww-form-textarea ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
 ;;;;; grep
    `(match ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
 ;;;;; hi-lock
@@ -357,6 +386,10 @@ the just-introduced bindings."
    `(hi-salmon ((t (:foreground ,zenburn-bg :background ,zenburn-orange))))
 ;;;;; info
    `(Info-quoted ((t (:inherit font-lock-constant-face))))
+   `(info-menu-star ((t (:foreground ,zenburn-red))))
+   `(info-node ((t (:foreground ,zenburn-blue :weight bold))))
+   `(info-title-1 ((t (:inherit info-title-2 :height 1.2))))
+   `(info-title-2 ((t (:inherit info-title-3 :height 1.2))))
 ;;;;; isearch
    `(isearch ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg+2))))
    `(isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
@@ -372,6 +405,7 @@ the just-introduced bindings."
                       :box (:line-width -1 :style released-button)))))
    `(mode-line-active ((t (:inherit mode-line))))
    `(mode-line-buffer-id ((t (:foreground ,zenburn-yellow :weight bold))))
+   `(mode-line-highlight ((t (:foreground ,zenburn-orange))))
    `(mode-line-inactive
      ((t (:foreground ,zenburn-green-2
                       :background ,zenburn-bg-05
@@ -541,6 +575,35 @@ the just-introduced bindings."
    `(todo-search ((t (:foreground ,zenburn-fg :background ,zenburn-bg+2))))
    `(todo-sorted-column ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(todo-top-priority ((t (:foreground ,zenburn-orange))))
+
+;;;;; bookmark
+   `(bookmark-face ((t (:foreground ,zenburn-yellow))))
+
+;;;;; calendar
+   `(diary ((t (:foreground ,zenburn-yellow))))
+   `(diary-button ((t (:foreground ,zenburn-blue :underline t))))
+   `(holiday ((t (:foreground ,zenburn-orange))))
+
+;;;;; dired
+   `(dired-broken-symlink ((t (:foreground ,zenburn-red :weight bold))))
+
+;;;;; epa
+   `(epa-field-body ((t (:foreground ,zenburn-fg-05 :slant italic))))
+   `(epa-field-name ((t (:foreground ,zenburn-blue :weight bold))))
+   `(epa-mark ((t (:foreground ,zenburn-orange :weight bold))))
+   `(epa-string ((t (:foreground ,zenburn-green+2))))
+   `(epa-validity-high ((t (:foreground ,zenburn-green+2 :weight bold))))
+   `(epa-validity-medium ((t (:foreground ,zenburn-yellow))))
+
+;;;;; shr
+   `(shr-mark ((t (:foreground ,zenburn-bg :background ,zenburn-yellow))))
+   `(shr-selected-link ((t (:foreground ,zenburn-orange :underline t))))
+
+;;;;; sieve
+   `(sieve-action-commands ((t (:foreground ,zenburn-blue))))
+   `(sieve-control-commands ((t (:foreground ,zenburn-magenta))))
+   `(sieve-tagged-arguments ((t (:foreground ,zenburn-orange))))
+   `(sieve-test-commands ((t (:foreground ,zenburn-cyan))))
 
 ;;;; Third-party packages
 
@@ -879,6 +942,9 @@ the just-introduced bindings."
      ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg :weight bold))))
    `(diff-changed-unspecified ((t (:background ,zenburn-diff-changed-bg :extend t))))
    `(diff-error ((t (:foreground ,zenburn-red-1 :weight bold))))
+   `(diff-indicator-added ((t (:foreground ,zenburn-green))))
+   `(diff-indicator-changed ((t (:foreground ,zenburn-yellow-2))))
+   `(diff-indicator-removed ((t (:foreground ,zenburn-red-2))))
 ;;;;; diff-hl
    `(diff-hl-change ((t (:foreground ,zenburn-blue :background ,zenburn-blue-2))))
    `(diff-hl-delete ((t (:foreground ,zenburn-red+1 :background ,zenburn-red-1))))
@@ -1069,6 +1135,11 @@ the just-introduced bindings."
    `(erc-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
    `(erc-timestamp-face ((t (:foreground ,zenburn-green+4))))
    `(erc-underline-face ((t (:underline t))))
+   `(erc-fill-wrap-merge-indicator-face ((t (:foreground ,zenburn-fg-05))))
+   `(erc-header-line ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
+   `(erc-inverse-face ((t (:foreground ,zenburn-bg :background ,zenburn-fg))))
+   `(erc-keep-place-indicator-arrow ((t (:foreground ,zenburn-green+2))))
+   `(erc-keep-place-indicator-line ((t (:underline (:style wave :color ,zenburn-green+2)))))
 ;;;;; erlang
    `(erlang-font-lock-exported-function-name-face ((t (:inherit font-lock-function-name-face :weight bold))))
    `(erlang-edoc-heading ((t (:foreground ,zenburn-orange :weight bold))))
@@ -1095,6 +1166,7 @@ the just-introduced bindings."
    `(eshell-ls-product ((t (:inherit font-lock-doc-face))))
    `(eshell-ls-special ((t (:foreground ,zenburn-yellow :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
+   `(eshell-ls-readonly ((t (:foreground ,zenburn-fg-05))))
 ;;;;; flx
    `(flx-highlight-face ((t (:foreground ,zenburn-green+2 :weight bold))))
 ;;;;; flycheck
@@ -1677,7 +1749,6 @@ the just-introduced bindings."
    `(markup-verbatim-face ((t (:inherit font-lock-constant-face))))
    `(markup-value-face ((t (:foreground ,zenburn-yellow))))
 ;;;;; message-mode
-   `(message-cited-text ((t (:inherit font-lock-comment-face))))
    `(message-header-name ((t (:foreground ,zenburn-green+1))))
    `(message-header-other ((t (:foreground ,zenburn-green))))
    `(message-header-to ((t (:foreground ,zenburn-yellow :weight bold))))
@@ -1687,6 +1758,10 @@ the just-introduced bindings."
    `(message-header-xheader ((t (:foreground ,zenburn-green))))
    `(message-mml ((t (:foreground ,zenburn-yellow :weight bold))))
    `(message-separator ((t (:inherit font-lock-comment-face))))
+   `(message-cited-text-1 ((t (:inherit font-lock-comment-face))))
+   `(message-cited-text-2 ((t (:foreground ,zenburn-green+2))))
+   `(message-cited-text-3 ((t (:foreground ,zenburn-cyan))))
+   `(message-cited-text-4 ((t (:foreground ,zenburn-fg-05))))
 ;;;;; mic-paren
    `(paren-face-match ((t (:foreground ,zenburn-cyan :background ,zenburn-bg :weight bold))))
    `(paren-face-mismatch ((t (:foreground ,zenburn-bg :background ,zenburn-magenta :weight bold))))
@@ -1873,6 +1948,8 @@ the just-introduced bindings."
    `(org-headline-todo ((t (:foreground ,zenburn-orange))))
    `(org-latex-and-related ((t (:foreground ,zenburn-orange))))
    `(org-table-header ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1 :weight bold))))
+   `(org-agenda-done ((t (:foreground ,zenburn-green+2))))
+   `(org-drawer ((t (:foreground ,zenburn-fg-05))))
 ;;;;; org-ref
    `(org-ref-ref-face ((t :underline t)))
    `(org-ref-label-face ((t :underline t)))
@@ -2021,6 +2098,7 @@ the just-introduced bindings."
 ;;;;; show-paren
    `(show-paren-mismatch ((t (:foreground ,zenburn-fg+1 :background ,zenburn-red-4 :weight bold))))
    `(show-paren-match ((t (:foreground ,zenburn-fg :background ,zenburn-bg+3 :weight bold))))
+   `(blink-matching-paren-offscreen ((t (:inherit show-paren-match))))
 ;;;;; smart-mode-line
    ;; use (setq sml/theme nil) to enable Zenburn for sml
    `(sml/global ((t (:foreground ,zenburn-fg :weight bold))))
@@ -2189,6 +2267,13 @@ the just-introduced bindings."
    `(transient-unreachable-key ((t (:foreground ,zenburn-fg-1))))
    `(transient-nonstandard-key ((t (:foreground ,zenburn-yellow :underline t))))
    `(transient-mismatched-key ((t (:foreground ,zenburn-yellow :underline t))))
+   `(transient-amaranth ((t (:foreground ,zenburn-red-1))))
+   `(transient-blue ((t (:foreground ,zenburn-blue))))
+   `(transient-pink ((t (:foreground ,zenburn-magenta))))
+   `(transient-purple ((t (:foreground ,zenburn-magenta))))
+   `(transient-red ((t (:foreground ,zenburn-red))))
+   `(transient-separator ((t (:background ,zenburn-bg+1 :extend t))))
+   `(transient-teal ((t (:foreground ,zenburn-cyan))))
 ;;;;; treemacs
    `(treemacs-directory-face ((t (:foreground ,zenburn-blue :weight bold))))
    `(treemacs-directory-collapsed-face ((t (:foreground ,zenburn-blue))))
@@ -2302,6 +2387,7 @@ the just-introduced bindings."
    `(whitespace-empty ((t (:background ,zenburn-yellow))))
    `(whitespace-space-after-tab ((t (:background ,zenburn-yellow :foreground ,zenburn-bg))))
    `(whitespace-missing-newline-at-eof ((t (:foreground ,zenburn-bg :background ,zenburn-yellow))))
+   `(whitespace-big-indent ((t (:foreground ,zenburn-orange :background ,zenburn-bg+1))))
 ;;;;; wanderlust
    `(wl-highlight-folder-few-face ((t (:foreground ,zenburn-red-2))))
    `(wl-highlight-folder-many-face ((t (:foreground ,zenburn-red-1))))
