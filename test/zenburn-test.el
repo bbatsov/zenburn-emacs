@@ -216,7 +216,19 @@ frame-side face recomputation (which is unreliable in batch)."
 ;; Guards against sections silently disappearing during refactors.
 
 (defconst zenburn-test--package-faces
-  '(;; Built-in faces whose defaults hardcode colors from outside the palette.
+  '(;; Popular third-party packages, kept free of off-palette colors.
+    ;; "eldev audit-faces" checks them in full.
+    (helm helm-selection helm-match helm-source-header helm-visible-mark
+          helm-ff-directory helm-ff-dotted-directory helm-buffer-not-saved
+          helm-grep-lineno helm-ff-rsync-progress-1)
+    (lsp-mode lsp-headerline-breadcrumb-path-error-face
+              lsp-headerline-breadcrumb-symbols-warning-face
+              lsp-dired-path-error-face lsp-installation-buffer-face)
+    (popular-packages magit-diff-our-heading magit-diff-added-indicator
+                      company-template-field corfu-indexed corfu-quick1
+                      vertico-quick1 flycheck-annotate-error-background
+                      markdown-highlighting-face)
+    ;; Built-in faces whose defaults hardcode colors from outside the palette.
     (basic help-key-binding nobreak-space nobreak-hyphen separator-line
            tool-bar tty-menu-enabled-face tty-menu-selected-face
            minibuffer-nonselected confusingly-reordered textsec-suspicious
