@@ -5,6 +5,7 @@
 ### New features
 
 * [#396](https://github.com/bbatsov/zenburn-emacs/pull/396): Theme about 125 more built-in faces whose defaults hardcode colors from outside the palette: `help-key-binding`, the Customize state tags, `proced`, `package`, `todo-mode`, `icomplete`, the Emacs 31 `elisp-*` faces and more.
+* [#397](https://github.com/bbatsov/zenburn-emacs/pull/397): Theme the remaining built-in faces that hardcode a color, among them `shadow`, `window-divider`, the Customize buttons, the bright ANSI colors, the EWW form fields, `epa`, `sieve` and the cited text of `message-mode`, and have the test suite fail when a new Emacs brings in more of them.
 
 ### Bug fixes
 

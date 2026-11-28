@@ -4,3 +4,19 @@
 (eldev-use-package-archive 'melpa)
 
 (eldev-add-extra-dependencies 'test 'buttercup)
+
+;; The built-in faces are audited by the test suite.  Doing the same for
+;; third-party packages means installing them, so that part is a command to
+;; run by hand rather than something for CI.
+(eldev-defcommand zenburn-audit-faces (&rest parameters)
+  "Report the faces of popular third-party packages that hardcode a
+color the theme doesn't override.  With no PACKAGEs, audit the list in
+`zenburn-face-audit-packages'."
+  :command        audit-faces
+  :parameters     "[PACKAGE...]"
+  (eldev-call-process eldev-emacs-executable
+      `("--batch" "-Q" "-L" "." "-l" "test/zenburn-face-audit.el"
+        "--eval" ,(format "(progn (add-to-list 'custom-theme-load-path default-directory) (zenburn-face-audit-report 'zenburn '%S))"
+                          (mapcar #'intern parameters)))
+    :forward-output t
+    :die-on-error   t))
